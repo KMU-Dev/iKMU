@@ -24,6 +24,10 @@
 .end annotation
 
 
+# static fields
+.field private static final SMALI_TAG:Ljava/lang/String; = "Smali: MyKMUActivity.GetCurrentClassData"
+
+
 # instance fields
 .field private result:Ljava/lang/String;
 
@@ -142,9 +146,15 @@
 
     move-result-object v1
 
+    sget-object v2, Ltw/edu/kmu/act/MyKMUActivity$GetCurrentClassData;->SMALI_TAG:Ljava/lang/String;
+
+    invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-virtual {v0, v1, p1}, Ltw/edu/kmu/resource/ServerResource;->getWebServiceDataUsingPost(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
 
     move-result-object p1
+
+    invoke-static {v2, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     iput-object p1, p0, Ltw/edu/kmu/act/MyKMUActivity$GetCurrentClassData;->resultString:Ljava/lang/String;
 
@@ -300,6 +310,10 @@
     move-result-object v0
 
     iput-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity$GetCurrentClassData;->url:Ljava/lang/String;
+
+    sget-object v1, Ltw/edu/kmu/act/MyKMUActivity$GetCurrentClassData;->SMALI_TAG:Ljava/lang/String;
+
+    invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 

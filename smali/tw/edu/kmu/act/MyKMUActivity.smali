@@ -20,6 +20,8 @@
 
 .field private static final TAG:Ljava/lang/String; = "MyKMUActivity"
 
+.field private static final SMALI_TAG:Ljava/lang/String; = "Smali: MyKMUActivity"
+
 
 # instance fields
 .field private beaconClassDataList:Ljava/util/ArrayList;
@@ -859,6 +861,22 @@
 
     iget-object v5, v1, Ltw/edu/kmu/act/MyKMUActivity;->elementsData:Ljava/util/ArrayList;
 
+    # get SMALI_TAG
+    sget-object v6, Ltw/edu/kmu/act/MyKMUActivity;->SMALI_TAG:Ljava/lang/String;
+
+    # set fake class room
+    # const/4 v7, 0x0
+
+    # invoke-virtual {v4, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    # move-result-object v7
+
+    # check-cast v7, Ltw/edu/kmu/view/TreeElement;
+
+    # const-string v8, "IR 301"
+
+    # invoke-virtual {v7, v8}, Ltw/edu/kmu/view/TreeElement;->setClassRoom(Ljava/lang/String;)V
+
     invoke-direct {v3, v1, v4, v5, v0}, Ltw/edu/kmu/adapter/CurrentClassTreeViewAdapter;-><init>(Ltw/edu/kmu/act/MyKMUActivity;Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/view/LayoutInflater;)V
 
     .line 1064
@@ -1113,6 +1131,15 @@
 
     .line 1200
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->classDataList:Ljava/util/ArrayList;
+
+    # Log class Data List
+    invoke-virtual {v0}, Ljava/util/ArrayList;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    sget-object v2, Ltw/edu/kmu/act/MyKMUActivity;->SMALI_TAG:Ljava/lang/String;
+
+    invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     if-eqz v0, :cond_2
 

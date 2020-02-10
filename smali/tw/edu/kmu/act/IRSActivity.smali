@@ -20,6 +20,8 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "IRSActivity"
 
+.field private static final SMALI_TAG:Ljava/lang/String; = "Smali: IRSActivity"
+
 
 # instance fields
 .field private aHandler:Landroid/os/Handler;
@@ -6820,6 +6822,15 @@
     move-result-object p1
 
     check-cast p1, Ljava/util/ArrayList;
+
+    # Log Bundle.getSerializable("classRoomList"):ArrayList
+    sget-object v0, Ltw/edu/kmu/act/IRSActivity;->SMALI_TAG:Ljava/lang/String;
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 v0, 0x1
 

@@ -19,6 +19,8 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "IRSRecordActivity"
 
+.field private static final SMALI_TAG:Ljava/lang/String; = "Smali: IRSRecordActivity"
+
 
 # instance fields
 .field private askDataList:Ljava/util/ArrayList;
