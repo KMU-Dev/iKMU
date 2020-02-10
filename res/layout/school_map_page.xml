@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/buttonListLayout" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <Button android:id="@id/btSchool" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="校園" android:layout_weight="1.0" />
+        <Button android:id="@id/btFood" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="食" android:layout_weight="1.0" />
+        <Button android:id="@id/btClothes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="衣" android:layout_weight="1.0" />
+        <Button android:id="@id/btLife" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="住" android:layout_weight="1.0" />
+        <Button android:id="@id/btWalk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="行" android:layout_weight="1.0" />
+        <Button android:id="@id/btEdu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="育" android:layout_weight="1.0" />
+        <Button android:id="@id/btPlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="樂" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/buttonListLayout">
+        <com.google.android.maps.MapView android:id="@id/schoolMap" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:apiKey="0ruWQzW8wePH-OYAJYf16eiuEBRx5U8VhATgNpg" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+</RelativeLayout>

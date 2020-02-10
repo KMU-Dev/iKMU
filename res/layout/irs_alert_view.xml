@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/list_bg" android:layout_width="200.0dip" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn1" android:padding="10.0dip" android:focusable="false" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0dip" android:text="btn1" />
+    <Button android:id="@id/btn2" android:padding="10.0dip" android:focusable="false" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0dip" android:text="btn2" />
+    <Button android:id="@id/btn3" android:padding="10.0dip" android:focusable="false" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0dip" android:text="btn3" />
+    <Button android:id="@id/btn4" android:padding="10.0dip" android:focusable="false" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0dip" android:text="btn4" />
+</LinearLayout>

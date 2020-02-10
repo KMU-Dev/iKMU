@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/root1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/title1" android:background="@drawable/year_search_btn" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:text="所有班級" android:layout_weight="1.0" />
+            <tw.edu.kmu.view.SegmentedGroup android:orientation="horizontal" android:id="@id/segGroup" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="5.0dip" segmentedgroup:sc_border_width="1.0dip" segmentedgroup:sc_corner_radius="5.0dip" segmentedgroup:sc_tint_color="#ff007aff">
+                <RadioButton android:id="@id/button1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="60秒快問快答" android:layout_weight="4.0" style="@style/RadioButton" />
+                <RadioButton android:id="@id/button2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="題庫選題" android:layout_weight="3.0" style="@style/RadioButton" />
+                <RadioButton android:id="@id/button3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="試卷" android:layout_weight="3.0" style="@style/RadioButton" />
+            </tw.edu.kmu.view.SegmentedGroup>
+            <LinearLayout android:orientation="vertical" android:id="@id/form1" android:background="@drawable/year_search_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="60秒快問快答" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/form2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/send" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_margin="5.0dip" android:text="出題" android:layout_weight="1.0" />
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btnDeatil" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_margin="5.0dip" android:text="答題詳情" android:layout_weight="1.0" />
+            </LinearLayout>
+            <lecho.lib.hellocharts.view.ColumnChartView android:id="@id/chart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:minHeight="200.0dip" />
+            <TextView android:textSize="16.0sp" android:gravity="center|left" android:id="@id/titleCount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="答題人數" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rootEnd" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

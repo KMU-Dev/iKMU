@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" style="@style/title_bar_iphone" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true">
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btn1" android:background="@drawable/my_new_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="5.0dip" />
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btn2" android:background="@drawable/my_new_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="附檔" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentLeft="true">
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/sProgressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleSmallTitle" />
+        <Button android:textSize="14.0dip" android:layout_gravity="center_vertical" android:id="@id/btFunction" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更新" />
+        <ImageView android:id="@id/imagelogo" android:layout_width="50.0dip" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <Spinner android:layout_gravity="center_vertical" android:id="@id/spinner" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

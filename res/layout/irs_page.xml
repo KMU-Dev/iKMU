@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/rootSc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="70.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/root1" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/root11" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/title1" android:padding="5.0dip" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/irs_quick_mode" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/quickCountTime" android:background="@color/gray" android:padding="2.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="20.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/root2" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                <Button android:id="@id/btn1" android:padding="10.0dip" android:focusable="false" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0dip" android:text="btn1" />
+                <Button android:id="@id/btn2" android:padding="10.0dip" android:focusable="false" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0dip" android:text="btn2" />
+                <Button android:id="@id/btn3" android:padding="10.0dip" android:focusable="false" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0dip" android:text="btn3" />
+                <Button android:id="@id/btn4" android:padding="10.0dip" android:focusable="false" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0dip" android:text="btn4" />
+                <Button android:id="@id/btn5" android:padding="10.0dip" android:focusable="false" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0dip" android:text="btn5" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/root21" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <EditText android:textSize="14.0sp" android:textColor="@color/black" android:textColorHint="@color/black" android:id="@id/quickEdit" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:text="@string/irs_hint_answer" android:layout_weight="1.0" />
+                <Button android:textColor="@color/white" android:id="@id/quickbtn" android:background="@drawable/irs_btn_send" android:padding="2.0dip" android:focusable="false" android:layout_width="60.0dip" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:text="@string/system_msg_Submit" />
+            </LinearLayout>
+            <ImageView android:id="@id/bar1" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/root4" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:id="@id/img_status" android:background="@drawable/cycle_green" android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_margin="1.0dip" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/title41" android:padding="2.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/irs_multiple_mode" />
+                <Button android:textSize="14.0sp" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/btn41" android:background="#00ffffff" android:padding="0.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/irs_add_row" android:drawableRight="@drawable/btnadd" />
+                <Button android:textSize="14.0sp" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/btn42" android:background="#00ffffff" android:padding="0.0dip" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/irs_delete_row" android:drawableRight="@drawable/btndelete" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/countTime" android:background="@color/gray" android:padding="2.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/form1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </ScrollView>
+            <ImageView android:id="@id/bar2" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="5.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/root3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/title2" android:padding="5.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:text="@string/irs_student_msg" />
+                    <CheckBox android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/checkbox1" android:padding="2.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/system_msg_anonymous" />
+                </LinearLayout>
+                <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/root31" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Button android:textColor="@color/white" android:id="@id/btn21" android:padding="5.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" />
+                        <Button android:textColor="@color/white" android:id="@id/btn22" android:padding="5.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/root32" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                            <EditText android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/stuQuEdit" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:hint="@string/irs_hint_stu_qu" android:layout_weight="1.0" />
+                            <Button android:textColor="@color/white" android:id="@id/btn23" android:background="@drawable/irs_btn_send" android:padding="2.0dip" android:focusable="false" android:layout_width="60.0dip" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:text="@string/system_msg_sendQu" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rootEnd" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/red" android:layout_gravity="center" android:id="@id/btnGet" android:background="@drawable/irs_btn_get" android:padding="5.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:text="重新收題" android:layout_alignParentBottom="true" />
+</RelativeLayout>

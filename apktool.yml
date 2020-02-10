@@ -1,0 +1,59 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: iKMU_4.3.3.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- jpg
+- mp3
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '14'
+  targetSdkVersion: '28'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  androidsupportmultidexversion.txt: '0'
+  bundle.properties: '8'
+  firebase-analytics-impl.properties: '8'
+  firebase-common.properties: '8'
+  firebase-iid.properties: '8'
+  firebase-messaging.properties: '8'
+  install.txt: '8'
+  play-services-ads-identifier.properties: '8'
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-location.properties: '8'
+  play-services-maps.properties: '8'
+  play-services-measurement-base.properties: '8'
+  play-services-places-placereport.properties: '8'
+  play-services-places.properties: '8'
+  play-services-stats.properties: '8'
+  play-services-tasks.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/logcat.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_cs.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_de.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_es.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_fr.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_hu.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_it.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_ja.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_ko.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_pl.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_pt_BR.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_ru.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_CN.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_TW.properties: '8'
+  org/eclipse/paho/client/mqttv3/logging/jsr47min.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.1
+versionInfo:
+  versionCode: '78'
+  versionName: 4.3.3

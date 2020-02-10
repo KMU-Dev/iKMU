@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffd2deef" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/title0" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:text="各題分數" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title1" android:background="#ff5b9bd5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title2" android:background="#ff5b9bd5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title3" android:background="#ff5b9bd5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title4" android:background="#ff5b9bd5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title5" android:background="#ff5b9bd5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/data1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/data2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/data3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/data4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/data5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title6" android:background="#ff5b9bd5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title7" android:background="#ff5b9bd5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title8" android:background="#ff5b9bd5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title9" android:background="#ff5b9bd5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title10" android:background="#ff5b9bd5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/data6" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/data7" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/data8" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/data9" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/data10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <Button android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/btn1" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_margin="20.0dip" android:text="確定" android:layout_weight="1.0" />
+</LinearLayout>

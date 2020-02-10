@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.maps.MapView android:id="@id/schoolMap" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:apiKey="0ruWQzW8wePH-OYAJYf16eiuEBRx5U8VhATgNpg" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+</RelativeLayout>

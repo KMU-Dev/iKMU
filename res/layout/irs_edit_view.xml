@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/editRoot" android:background="#ff99bfff" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/title" android:layout_width="50.0dip" android:layout_height="40.0dip" />
+    <EditText android:textSize="14.0sp" android:textColor="@color/black" android:textColorHint="@color/white" android:id="@id/edit" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="@string/irs_hint_answer" />
+</LinearLayout>

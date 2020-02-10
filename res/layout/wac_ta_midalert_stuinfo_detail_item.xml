@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/wac_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+            <View android:layout_gravity="center" android:id="@id/view1" android:background="@drawable/cycle_empty_btn" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="5.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/title11" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="12113" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/title12" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="123" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/title21" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="12113" android:layout_weight="1.0" />
+            <View android:layout_gravity="center" android:background="@drawable/wac_teacher" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="5.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/title22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="123" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

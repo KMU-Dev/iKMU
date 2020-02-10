@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto">
+    <tw.edu.kmu.view.ZoomImageBox android:id="@id/gallery" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spacing="20.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <tw.edu.kmu.view.ProgressWheel android:id="@id/pw_spinner" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_centerInParent="true" ProgressWheel:barColor="#ff0097d6" ProgressWheel:barLength="60.0dip" ProgressWheel:barWidth="15.0dip" ProgressWheel:rimColor="#330097d6" ProgressWheel:rimWidth="10.0dip" ProgressWheel:text="" ProgressWheel:textColor="#ffffffff" ProgressWheel:textSize="20.0sp" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="left" android:id="@id/title" android:background="#7f000000" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

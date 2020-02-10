@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/imgLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/imageView" android:layout_width="100.0dip" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/no_image" android:scaleType="fitXY" />
+        <ProgressBar android:id="@id/sProgressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleSmallTitle" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/textLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imgLayout">
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="textView02" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/title">
+            <TextView android:textSize="15.0dip" android:textColor="@color/lite_yellow" android:id="@id/contentType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/lite_yellow" android:id="@id/unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/contentType" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/lite_yellow" android:id="@id/datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="textView01" android:layout_toRightOf="@id/unit" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

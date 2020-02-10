@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rLayout" android:background="#ff00398b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:id="@id/title" android:background="#c800a2b4" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/title_bar" />
+    <android.support.design.widget.TabLayout android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="50.0dip" app:tabBackground="@drawable/tab_background_select" app:tabIndicatorColor="@color/news_tabIndicatorColor" app:tabMode="scrollable" app:tabSelectedTextColor="@color/news_tabSelectedTextColor" app:tabTextColor="@color/news_tabTextColor" />
+</LinearLayout>

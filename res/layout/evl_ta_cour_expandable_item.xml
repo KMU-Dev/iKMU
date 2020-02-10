@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line1" android:background="#ffaaaaaa" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="40.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/title1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffaaaaaa" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/title2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="123" android:layout_weight="1.0" />
+        <View android:background="#ffaaaaaa" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/title3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="123" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@id/line2" android:background="#ffaaaaaa" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@drawable/list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+    <include android:id="@id/rLayout" layout="@layout/ar_title_bar_phone" />
+    <LinearLayout android:id="@id/bottom_toolbar_info" android:background="#ff00358b" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/ar_list_icon" android:background="@drawable/ar_list_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/ar_map_icon" android:background="@drawable/ar_map_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ar_view_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/ar_view_icon" android:background="@drawable/ar_view_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_toolbar_info" android:layout_below="@id/rLayout">
+        <ListView android:id="@id/arListView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/white" android:dividerHeight="1.0px" />
+    </LinearLayout>
+</RelativeLayout>

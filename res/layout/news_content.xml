@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@drawable/list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:gravity="left" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/layout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <TextView android:textSize="18.0sp" android:textColor="@color/lite_yellow" android:gravity="left" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/lite_yellow" android:gravity="left" android:id="@id/title3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll" android:background="#ff70ced8" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/btn_close" android:background="@drawable/web_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="10.0dip" />
+        <Button android:id="@id/btn_back" android:background="@drawable/web_arrow_left" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="10.0dip" />
+        <Button android:id="@id/btn_forward" android:background="@drawable/web_arrow_right" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="10.0dip" />
+        <Button android:id="@id/btn_reload" android:background="@drawable/web_reload" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="10.0dip" />
+    </LinearLayout>
+    <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll" android:layout_below="@id/layout02" />
+    <ProgressBar android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+</RelativeLayout>

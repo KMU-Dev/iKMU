@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/RLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/myTV" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dip" />
+    <android.view.SurfaceView android:id="@id/myCam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/myTV"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <LinearLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:id="@id/btSchool" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="校園" android:layout_weight="1.0" />
+        <Button android:id="@id/btFoodAndClothes" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="食衣" android:layout_weight="1.0" />
+        <Button android:id="@id/btLiveAndWalk" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="住行" android:layout_weight="1.0" />
+        <Button android:id="@id/btEduAndPlay" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="育樂" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

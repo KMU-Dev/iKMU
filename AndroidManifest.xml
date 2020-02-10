@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" android:installLocation="auto" package="tw.edu.kmu.act" platformBuildVersionCode="78" platformBuildVersionName="4.3.3">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <permission android:name="tw.edu.kmu.act.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="tw.edu.kmu.act.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="tw.edu.kmu.act.permission.C2D_MESSAGE"/>
+    <application android:icon="@drawable/app_logo" android:label="@string/app_name" android:largeHeap="true" android:name="tw.edu.kmu.act.MyApplication" android:networkSecurityConfig="@xml/network_security_config" android:theme="@style/TitleTheme" android:debuggable="true">
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="tw.edu.kmu.act.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="tw.edu.kmu.act.MainPageActivityV2" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.WacTeaMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.WacTeaFun1Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.WacTeaFun1DetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.WacTeaYearActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.WacTeaFun2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.WacTeaFun2DetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.WacTeaFun3Activity" android:screenOrientation="portrait" android:theme="@style/TitleTheme2"/>
+        <activity android:name="tw.edu.kmu.act.WacTeaFun4Activity" android:screenOrientation="portrait" android:theme="@style/TitleTheme2"/>
+        <activity android:name="tw.edu.kmu.act.WacTeaFun5Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.AuthorizationSeatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.IRSActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.IRS4TAActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.IRSRecordActivity" android:screenOrientation="portrait" android:theme="@style/TitleTheme2"/>
+        <activity android:name="tw.edu.kmu.act.IRSTAReplyListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.IRSTAReplyDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.IRSTAStuReplyListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.EvlTAClassActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.EvlTAActivity" android:screenOrientation="portrait" android:theme="@style/TitleTheme2"/>
+        <activity android:name="tw.edu.kmu.act.EvlTAStatDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.EvlTACourseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.EvlTACourseDetailActivity" android:screenOrientation="portrait" android:theme="@style/TitleTheme2"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView1Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView3Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView4Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView5Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView2L2ZoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView2L3SeatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView2L3SeatV2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView2L4TimeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView5L2ZoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView5L3SeatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView5L3SeatV2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SeatBookingView5L4TimeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.CalendarQueryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.NewsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.NewsContentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.AboutSchoolActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.AboutSchoolLevel2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.KMUSongActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.ARListActivity" android:screenOrientation="portrait" android:theme="@style/TitleTheme2"/>
+        <activity android:name="tw.edu.kmu.act.ARMapV2Activity" android:screenOrientation="portrait" android:theme="@style/TitleTheme2"/>
+        <activity android:name="tw.edu.kmu.act.ARViewActivity" android:screenOrientation="portrait" android:theme="@style/TitleTheme2"/>
+        <activity android:name="tw.edu.kmu.act.PoiContentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.MyKMUActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.MyScoreActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.MyScoreDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.ClassRoomQueryNewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.ClassRoomQueryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.ClassRoomResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.ClassRoomResultDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.MyScheduledClassActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.MyScheduledClassDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.GalleryListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.GalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.GalleryGridViewActivity"/>
+        <activity android:name="tw.edu.kmu.act.GalleryZoomImageActivity"/>
+        <activity android:name="tw.edu.kmu.act.ZoomImageActivity"/>
+        <activity android:name="tw.edu.kmu.act.ENewsAllActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.ENewsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.ENewsContentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TrafficActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TrafficTabActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TrafficInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TrafficParkingInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TrafficActivityV2" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.BusActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.BusInfoListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SafetyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SafetyMapV2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.YoutubeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.WebActivity"/>
+        <activity android:name="tw.edu.kmu.act.QuestionnaireActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.AuthorizationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.AppInstallActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TrafficBikeMapV2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.EvlClassActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.EvlQuestionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.EvlProgActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TBLCourseListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TBLMyGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TBLReplyRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TBLTpListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TBLActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TBLGRATActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.TBLReadOnlyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tw.edu.kmu.act.VideoActivity"/>
+        <service android:name="tw.edu.kmu.act.LoadImageService"/>
+        <uses-library android:name="com.google.android.maps" android:required="false"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <service android:name="tw.edu.kmu.service.ConfigInfoService"/>
+        <service android:exported="false" android:name="com.estimote.sdk.service.BeaconService"/>
+        <service android:name="tw.edu.kmu.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="tw.edu.kmu.fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="tw.edu.kmu.service.ConfigInfoJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_map_apikey"/>
+        <provider android:authorities="tw.edu.kmu.act.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:label="" android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" android:theme="@style/EasyPermissions.Transparent"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="tw.edu.kmu.act"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="tw.edu.kmu.act.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>

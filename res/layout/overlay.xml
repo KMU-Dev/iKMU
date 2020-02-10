@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RLayoutWeb" android:background="@drawable/popmessage2" android:padding="5.0px" android:layout_width="40.0dip" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:id="@id/popTextView" android:layout_width="120.0px" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/rightPoint" android:layout_width="30.0px" android:layout_height="wrap_content" android:layout_toRightOf="@id/popTextView" />
+</RelativeLayout>

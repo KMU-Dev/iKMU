@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="@drawable/calendar_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rLayout">
+        <RelativeLayout android:id="@id/previous" android:layout_width="40.0dip" android:layout_height="30.0dip" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/arrow_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/next" android:layout_width="40.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true">
+            <ImageView android:background="@drawable/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <GridView android:layout_gravity="center_horizontal" android:id="@id/gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:stretchMode="columnWidth" android:numColumns="7" android:layout_below="@id/header"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@color/white" android:dividerHeight="1.0px" android:layout_below="@id/gridview" />
+</RelativeLayout>

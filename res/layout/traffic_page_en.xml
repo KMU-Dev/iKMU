@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@drawable/blur_bg_tw" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/tbLayout" android:background="#abababab" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="60.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:id="@id/tableRow1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnIcon1" android:background="@drawable/traffic_en1" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/mykmu_icon_title1" android:layout_below="@id/btnIcon1" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnIcon2" android:background="@drawable/traffic_en2" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/mykmu_icon_title2" android:layout_below="@id/btnIcon2" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnIcon5" android:background="@drawable/kmu_c3" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/mykmu_icon_title3" android:layout_below="@id/btnIcon5" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/tableRow2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="25.0dip">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnIcon3" android:background="@drawable/traffic_en3" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/mykmu_icon_title1" android:layout_below="@id/btnIcon3" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnIcon4" android:background="@drawable/traffic_en4" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/mykmu_icon_title2" android:layout_below="@id/btnIcon4" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnIcon6" android:background="@drawable/kmu_c6" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/mykmu_icon_title3" android:layout_below="@id/btnIcon6" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/tableRow3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="25.0dip">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnIcon7" android:background="@drawable/kmu_c7" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/mykmu_icon_title1" android:layout_below="@id/btnIcon7" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnIcon8" android:background="@drawable/kmu_c8" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/mykmu_icon_title2" android:layout_below="@id/btnIcon8" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnIcon9" android:background="@drawable/kmu_c8" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/mykmu_icon_title3" android:layout_below="@id/btnIcon9" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/tableRow4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <RelativeLayout android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnIcon10" android:background="@drawable/kmu_c8" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/mykmu_icon_title1" android:layout_below="@id/btnIcon10" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnIcon11" android:background="@drawable/kmu_c8" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/mykmu_icon_title2" android:layout_below="@id/btnIcon11" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnIcon12" android:background="@drawable/kmu_c8" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/mykmu_icon_title3" android:layout_below="@id/btnIcon12" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+</RelativeLayout>

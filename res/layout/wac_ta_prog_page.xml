@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_main" android:background="#ff133658" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:id="@id/title_txt" android:background="@drawable/iphone_title_bar_black" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/title_bar" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:gravity="center" android:id="@id/btn1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="主授課" android:layout_weight="1.0" />
+        <Button android:gravity="center" android:id="@id/btn2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="非主授課" android:layout_weight="1.0" />
+        <Button android:gravity="center" android:id="@id/btn3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="集中上課\nblock" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/title1" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="主授課時間" />
+    <View android:background="#ffababab" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <android.support.design.widget.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabBackground="@drawable/wac_tab_background_select" app:tabIndicatorColor="@color/red" app:tabMode="fixed" app:tabSelectedTextColor="@color/white" app:tabTextColor="@color/white" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

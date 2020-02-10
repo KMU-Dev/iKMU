@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/root1" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="5.0dip">
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="週時數/總時數" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/form1" android:background="@drawable/wac_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title111" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="加權週時數" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title112" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="加權總時數" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title113" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="未加權總時數" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title121" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title122" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title131" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="含其他週時數" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title132" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="含其他總時數" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title141" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title142" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="5.0dip">
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/title12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="加權各類別時數" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/form2" android:background="@drawable/wac_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title211" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="正課" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title212" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="臨床" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title213" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="英聽" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title214" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="PBL" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title221" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title222" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title223" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title224" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title231" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="專大" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title232" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="遠距" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title233" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="服務" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title234" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="數位" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title241" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title242" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title243" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title244" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="30.0dip">
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title251" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="專研" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title252" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="大規模線上" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title253" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="TBL" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title254" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="臨床技能" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title261" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title262" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title263" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title264" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title271" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="實驗" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title272" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title273" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title274" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title281" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title282" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title283" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title284" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title41" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="其他(臨2不列入計算)" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title311" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="臨1" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title312" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="臨2" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title313" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="其他" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title321" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title322" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title323" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title51" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="減授時數" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title411" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="主管行教" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title412" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="其他申減" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title413" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="指導學生" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/title414" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="小計" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title421" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title422" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title423" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title424" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

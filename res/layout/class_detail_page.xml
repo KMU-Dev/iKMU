@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/layout99" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <tw.edu.kmu.view.BorderTextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/title1" android:background="#cc337fcc" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/text11" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/text12" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/text21" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/text22" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/text31" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/text32" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/text41" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/text42" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/text51" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <tw.edu.kmu.view.BorderTextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/title2" android:background="#cc337fcc" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/desc2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+            <tw.edu.kmu.view.BorderTextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/title3" android:background="#cc337fcc" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/desc3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+            <tw.edu.kmu.view.BorderTextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/title4" android:background="#cc337fcc" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/desc4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+            <tw.edu.kmu.view.BorderTextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/title5" android:background="#cc337fcc" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/desc5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+            <tw.edu.kmu.view.BorderTextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/title6" android:background="#cc337fcc" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/desc6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+            <tw.edu.kmu.view.BorderTextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/title7" android:background="#cc337fcc" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/desc7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

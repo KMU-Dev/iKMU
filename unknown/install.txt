@@ -1,0 +1,2 @@
+lib中加入chts_android_lib.jar
+.classpath中加入  <classpathentry kind="lib" path="lib/chts_android_lib.jar"/>

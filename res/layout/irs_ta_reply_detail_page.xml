@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/blue" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/root1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@drawable/access_time" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="5.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@drawable/student" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="5.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/title3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="A:" />
+            <EditText android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/edit1" android:background="@drawable/year_search_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:minHeight="80.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/imgRoot" android:background="@drawable/year_search_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:minHeight="200.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="選擇附件圖檔" />
+            </LinearLayout>
+            <CheckBox android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/checkBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="公開此提問" />
+            <Button android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/send" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="20.0dip" android:text="送出" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

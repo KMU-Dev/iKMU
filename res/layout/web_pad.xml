@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll" android:background="#ff70ced8" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/btn_close" android:background="@drawable/web_close" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" />
+        <Button android:id="@id/btn_back" android:background="@drawable/web_arrow_left" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" />
+        <Button android:id="@id/btn_forward" android:background="@drawable/web_arrow_right" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" />
+        <Button android:id="@id/btn_reload" android:background="@drawable/web_reload" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" />
+    </LinearLayout>
+    <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip" android:layout_above="@id/ll" />
+    <ProgressBar android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+</RelativeLayout>

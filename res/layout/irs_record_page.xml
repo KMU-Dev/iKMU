@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_main" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:id="@id/title_txt" android:background="@drawable/iphone_title_bar_black" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/title_bar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/dd" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <Spinner android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/dep" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </LinearLayout>
+    <android.support.design.widget.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabBackground="@drawable/irs_tab_background_select" app:tabIndicatorColor="@color/red" app:tabMode="scrollable" app:tabSelectedTextColor="@color/black" app:tabTextColor="@color/black" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

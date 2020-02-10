@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/title_txt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Title" android:singleLine="true" style="@style/title_bar_text" />
+    <Button android:textSize="14.0dip" android:id="@id/btFunction" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="更新" android:layout_alignParentRight="true" />
+</RelativeLayout>

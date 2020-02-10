@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/main_page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/tbLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip" android:layout_marginBottom="120.0dip" android:layout_centerHorizontal="true">
+        <LinearLayout android:id="@id/tableRow1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnNews" android:background="@drawable/icon1" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_news" android:layout_below="@id/btnNews" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnAboutKMU" android:background="@drawable/icon2" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_about_kmu" android:layout_below="@id/btnAboutKMU" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnSchool" android:background="@drawable/icon3" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_school" android:layout_below="@id/btnSchool" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnVideo" android:background="@drawable/icon4" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_video" android:layout_below="@id/btnVideo" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/tableRow2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnMyKMU" android:background="@drawable/icon5" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_myKMU" android:layout_below="@id/btnMyKMU" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnSms" android:background="@drawable/icon6" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_sms" android:layout_below="@id/btnSms" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnLib" android:background="@drawable/icon7" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_lib" android:layout_below="@id/btnLib" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnGallery" android:background="@drawable/icon12" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_gallery" android:layout_below="@id/btnGallery" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/tableRow3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnEpaper" android:background="@drawable/icon15" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_epaper" android:layout_below="@id/btnEpaper" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnTraffic" android:background="@drawable/icon8" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_traffic" android:layout_below="@id/btnTraffic" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnSafety" android:background="@drawable/icon13" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_safety" android:layout_below="@id/btnSafety" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnQuestionary" android:background="@drawable/icon9" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_questionary" android:layout_below="@id/btnQuestionary" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/tableRow4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btn13" android:background="@drawable/icon20" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_13" android:layout_below="@id/btn13" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btn14" android:background="@drawable/icon21" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_14" android:layout_below="@id/btn14" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btn15" android:background="@drawable/icon16" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_15" android:layout_below="@id/btn15" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnCalendar" android:background="@drawable/icon_calendar" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_calendar" android:layout_below="@id/btnCalendar" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/tableRow5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btnSetting" android:background="@drawable/icon17" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_setting" android:layout_below="@id/btnSetting" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btn18" android:background="@drawable/icon9" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_questionary" android:layout_below="@id/btn18" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btn19" android:background="@drawable/icon20" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_14" android:layout_below="@id/btn19" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/btn20" android:background="@drawable/icon21" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/icon_title_15" android:layout_below="@id/btn20" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+</RelativeLayout>

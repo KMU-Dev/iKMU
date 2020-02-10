@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/title1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/setting_title_notification" />
+    <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/setting_btn_bg" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_margin="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/desc1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/icon_title_news" android:layout_alignParentLeft="true" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        <ToggleButton android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/title2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/setting_title_authentication" />
+    <Button android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/btn2" android:background="@drawable/setting_btn_bg" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_margin="10.0dip" android:text="@string/setting_title_login" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/title3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/setting_title_gallery_cache" />
+    <Button android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/btn3" android:background="@drawable/setting_btn_bg" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_margin="10.0dip" android:text="@string/setting_title_clear_cache" />
+</LinearLayout>

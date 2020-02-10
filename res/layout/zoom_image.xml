@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ProgressWheel="http://schemas.android.com/apk/res/tw.edu.kmu.act">
+    <tw.edu.kmu.view.ZoomImageBox android:id="@id/gallery" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spacing="20.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <tw.edu.kmu.view.ProgressWheel android:id="@id/pw_spinner" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_centerInParent="true" ProgressWheel:barColor="#ff0097d6" ProgressWheel:barLength="60.0dip" ProgressWheel:barWidth="15.0dip" ProgressWheel:rimColor="#330097d6" ProgressWheel:rimWidth="10.0dip" ProgressWheel:text="" ProgressWheel:textColor="#ffffffff" ProgressWheel:textSize="20.0sp" />
+    </RelativeLayout>
+</FrameLayout>

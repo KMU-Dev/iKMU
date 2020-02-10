@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/aboutKmuRLayout" android:background="@color/white_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/aboutKMUImgView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentTop="true">
+            <Button android:id="@id/btPlaySong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_song" android:layout_weight="1.0" />
+            <Button android:id="@id/btPlaySongOld" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_song_old" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

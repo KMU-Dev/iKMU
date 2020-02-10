@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/root1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="5.0dip">
+                <TextView android:gravity="center|left" android:id="@id/title11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="學年" android:layout_weight="1.0" />
+                <TextView android:gravity="center|right" android:id="@id/title12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="總計" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/form1" android:background="@drawable/wac_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title21" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="教學成長累計" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title22" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="研究成長累計" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title31" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="12" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title32" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="11" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <View android:background="#ff5b9bd5" android:layout_width="3.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title41" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="自我成長分數" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="3.0dip" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <View android:background="#ff5b9bd5" android:layout_width="3.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title51" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="輔導知能" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title52" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="性別平等" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title53" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="倫理法律" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title54" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="不分類" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="3.0dip" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <View android:background="#ff5b9bd5" android:layout_width="3.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title61" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="學年" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title62" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="學年" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title63" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="學年" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title64" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="學年" android:layout_weight="1.0" />
+                    <View android:background="#ff5b9bd5" android:layout_width="3.0dip" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <View android:background="#ff5b9bd5" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title71" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="總計" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

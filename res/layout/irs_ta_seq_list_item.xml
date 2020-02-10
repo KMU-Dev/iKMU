@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff5a96d2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="所有班級" />
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btn1" android:background="@drawable/white_round_btn" android:focusable="false" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="名單" />
+        <Button android:textSize="16.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btn2" android:background="@drawable/white_round_btn" android:focusable="false" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="選取" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/title3" android:background="#ffffffff" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="123" />
+</LinearLayout>

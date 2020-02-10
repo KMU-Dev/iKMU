@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rLayout1" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <tw.edu.kmu.view.KHorizontalScrollView android:id="@id/hsView1" android:background="#ffb3d465" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </tw.edu.kmu.view.KHorizontalScrollView>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/dd" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <Spinner android:textSize="16.0sp" android:textColor="@color/lite_yellow" android:layout_gravity="center" android:id="@id/dep" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rLayout2" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <tw.edu.kmu.view.KHorizontalScrollView android:id="@id/hsView2" android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </tw.edu.kmu.view.KHorizontalScrollView>
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+    <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/gray" android:dividerHeight="1.0px" />
+</LinearLayout>
