@@ -6,6 +6,8 @@
 # static fields
 .field public static final TAG:Ljava/lang/String; = "ConfigData"
 
+.field public static final SMALI_TAG:Ljava/lang/String; = "ConfigData"
+
 .field public static instance:Ltw/edu/kmu/vo/ConfigData;
 
 
@@ -31,7 +33,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
+    .locals 2
 
     .line 31
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,6 +47,17 @@
 
     .line 36
     invoke-direct {p0, p1}, Ltw/edu/kmu/vo/ConfigData;->initBeaconDataList(Landroid/content/Context;)V
+
+    # Log beaconDataList
+    iget-object v0, p0, Ltw/edu/kmu/vo/ConfigData;->beaconDataList:Ljava/util/ArrayList;
+
+    sget-object v1, Ltw/edu/kmu/vo/ConfigData;->SMALI_TAG:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method
