@@ -1,0 +1,10 @@
+# apktool
+build/
+dist/
+
+# Android Studio
+.idea/
+gen/
+
+# Install script
+apkinstall.bat
