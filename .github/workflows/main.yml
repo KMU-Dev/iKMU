@@ -37,7 +37,7 @@ jobs:
       - name: Install apksigner
         run: sudo apt update && sudo apt upgrade && sudo apt install apksigner -y
       - name: Create secrets directory
-        uses: mkdir $HOME/secrets
+        run: mkdir $HOME/secrets
       - name: Decode signing keystore
         env:
           SIGNING_KEYSTORE: ${{ secrets.SIGNING_KEYSTORE }}
