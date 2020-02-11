@@ -17,3 +17,9 @@ jobs:
       run: chmod +x /usr/local/bin/apktool
     - name: Build unsigned apk
       run: apktool b .
+    - name: Upload unsigned apk
+      if: success()
+      uses: actions/upload-artifact@v1
+      with:
+        name:  i高醫_4.3.3_unsigned.apk
+        path:  dist/iKMU_4.3.3.apk
