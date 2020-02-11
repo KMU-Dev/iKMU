@@ -95,3 +95,40 @@ A step by step series of examples that tell you how to get a development env run
 	```bash
 	adb shell am start -n tw.edu.kmu.act/tw.edu.kmu.act.SplashActivity
 	```
+
+## Built With
+
+* [Apktool](https://ibotpeaches.github.io/Apktool/) - The Android reverse engineering command line tool
+* [Smali](https://github.com/JesusFreke/smali) - An assembler for the dex format used by dalvik
+
+## Versioning
+
+We follow the original i高醫(iKMU) version to name our release. To add our mod version to the orginal version, add the version behind the orginal one.
+
+* If the version is in development and hasn't finished its function, add `snapshot` behind the version.
+
+* If the version is done with all works and ready for test, add `alpha` behind the version.
+
+* If the version is tested and ready to release, add `beta` behind the version.
+
+**Example**
+
+* If i高醫(iKMU) version is 4.3.3 and our mod version is 1.0.0, the version will become `4.3.3-1.0.0`.
+
+* If there is a version with i高醫(iKMU) version 4.3.3 and mod version 1.0.0, and it is ready for release, the version will be `4.3.3-1.0.0-beta`.
+
+To modify the built apk version, change version in [apktool.yml](https://github.com/KMU-Dev/iKMU/blob/master/apktool.yml#LINE56)
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/KMU-Dev/iKMU/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Authors
+
+* **ZhaoTzuHsien** - *Remove IRS bluetooth verification*
+
+See also the list of [contributors](https://github.com/KMU-Dev/iKMU/blob/master/CONTRIBUTORS.md) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/KMU-Dev/iKMU/blob/master/LICENSE) file for details
