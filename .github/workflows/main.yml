@@ -33,16 +33,20 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name:  i高醫_4.3.3_unsigned.apk
-          path:  dist/i高醫_4.3.3_unsigned.apk
+          path:  dist/iKMU_4.3.3_unsigned.apk
+      - name: Install apksigner
+        run: sudo apt update && sudo apt upgrade && sudo apt install apksigner -y
+      - name: Create secrets directory
+        uses: mkdir $HOME/secrets
+      - name: Decode signing keystore
+        env:
+          SIGNING_KEYSTORE: ${{ secrets.SIGNING_KEYSTORE }}
+        run: $SIGNING_KEYSTORE | base64 --decode > $HOME/secrets/release.keystore
       - name: Sign apk
-        id: sign
-        uses: r0adkll/sign-android-release@v1
-        with:
-          releaseDirectory: dist/i高醫_4.3.3_unsigned.apk
-          signingKeyBase64: ${{ secrets.SIGNING_KEYSTORE }}
-          alias: ${{ secrets.SIGNING_ALIAS }}
-          keyStorePassword: ${{ secrets.SIGNING_KEYSTORE_PASSWORD }}
-          keyPassword: ${{ secrets.SIGNING_KEY_PASSWORD }}
+        env:
+          SIGNING_ALIAS: ${{ secrets.SIGNING_ALIAS }}
+          SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
+        uses: apksigner sign --ks $HOME/secrets/release.keystore --ks-key-alias "$SIGNING_ALIAS" --ks-pass pass:$SIGNING_KEY_PASSWORD dist/iKMU_4.3.3_unsigned.apk
       - name: Rename signed apk
         run: mv ${{steps.sign.outputs.signedReleaseFile}} dist/iKMU_4.3.3.apk
       - name: Upload signed apk
