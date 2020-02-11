@@ -46,7 +46,7 @@ jobs:
         env:
           SIGNING_ALIAS: ${{ secrets.SIGNING_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
-        uses: apksigner sign --ks $HOME/secrets/release.keystore --ks-key-alias "$SIGNING_ALIAS" --ks-pass pass:$SIGNING_KEY_PASSWORD dist/iKMU_4.3.3_unsigned.apk
+        run: apksigner sign --ks $HOME/secrets/release.keystore --ks-key-alias "$SIGNING_ALIAS" --ks-pass pass:$SIGNING_KEY_PASSWORD dist/iKMU_4.3.3_unsigned.apk
       - name: Rename signed apk
         run: mv ${{steps.sign.outputs.signedReleaseFile}} dist/iKMU_4.3.3.apk
       - name: Upload signed apk
