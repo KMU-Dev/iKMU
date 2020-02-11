@@ -13,7 +13,7 @@ jobs:
       run: wget -O /usr/local/bin/apktool https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
     - name: Download Apktool Jar
       run: wget -O /usr/local/bin/apktool.jar https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.4.1.jar
-    - name: Make apktool exectubale
+    - name: Make apktool executable
       run: chmod +x /usr/local/bin/apktool
     - name: Build unsigned apk
       run: apktool b .
