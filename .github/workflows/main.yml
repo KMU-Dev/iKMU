@@ -41,7 +41,7 @@ jobs:
       - name: Decode signing keystore
         env:
           SIGNING_KEYSTORE: ${{ secrets.SIGNING_KEYSTORE }}
-        run: $SIGNING_KEYSTORE | base64 --decode > $HOME/secrets/release.keystore
+        run: touch $HOME/secrets/release.keystore && $SIGNING_KEYSTORE | base64 --decode > $HOME/secrets/release.keystore
       - name: Sign apk
         env:
           SIGNING_ALIAS: ${{ secrets.SIGNING_ALIAS }}
