@@ -1,4 +1,4 @@
-name: CI (Push)
+name: CI
 
 on: [push]
 
@@ -9,15 +9,9 @@ jobs:
     container: openjdk:11
     steps:
     - uses: actions/checkout@v2
-    - name: Get Apktool version
-      id: get-apktool-verion
-      uses: CumulusDS/get-yaml-paths-action@v0.0.3
-      with:
-        file:  apktool.yml
-        version: version
     - name: Download Apktool wrapper
       run: wget -O /usr/local/bin/apktool https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
     - name: Download Apktool Jar
-      run: wget -O /usr/local/bin/apktool.jar https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_${{steps.get-apktool-verion.outputs.version}}.jar
+      run: wget -O /usr/local/bin/apktool.jar https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.4.1.jar
     - name: Build unsigned apk
       run: apktool b .
