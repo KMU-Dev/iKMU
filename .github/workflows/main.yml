@@ -17,8 +17,8 @@ jobs:
       run: chmod +x /usr/local/bin/apktool
     - name: Build unsigned apk
       run: apktool b .
-    - name: Install apksigner and tree
-      run: sudo apt update && sudo apt install apksigner -y
+    - name: Install apksigner
+      run: apt update && apt install apksigner -y
     - name: Create secrets directory
       run: mkdir $HOME/secrets
     - name: Decode signing keystore
