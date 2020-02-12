@@ -17,42 +17,23 @@ jobs:
       run: chmod +x /usr/local/bin/apktool
     - name: Build unsigned apk
       run: apktool b .
-    - name: Upload unsigned apk
+    - name: Install apksigner and tree
+      run: sudo apt update && sudo apt install apksigner -y
+    - name: Create secrets directory
+      run: mkdir $HOME/secrets
+    - name: Decode signing keystore
+      env:
+        SIGNING_KEYSTORE: ${{ secrets.SIGNING_KEYSTORE }}
+      run: base64 -d <<< "$SIGNING_KEYSTORE" > $HOME/secrets/release.keystore
+    - name: Sign apk
+      env:
+        SIGNING_ALIAS: ${{ secrets.SIGNING_ALIAS }}
+        SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
+      run: apksigner sign --ks $HOME/secrets/release.keystore --ks-key-alias "$SIGNING_ALIAS" --ks-pass pass:$SIGNING_KEY_PASSWORD dist/iKMU_4.3.3.apk
+    - name: Upload signed apk
       if: success()
       uses: actions/upload-artifact@v1
       with:
-        name:  i高醫_4.3.3_unsigned.apk
+        name:  iKMU_4.3.3
         path:  dist/iKMU_4.3.3.apk
-  sign:
-    name: Sign
-    runs-on: ubuntu-latest
-    needs: build
-    if: success()
-    steps:
-      - name: Download unsigned apk
-        uses: actions/download-artifact@v1
-        with:
-          name:  i高醫_4.3.3_unsigned.apk
-      - name: Install apksigner and tree
-        run: sudo apt update && sudo apt install apksigner tree -y
-      - name: Create secrets directory
-        run: mkdir $HOME/secrets
-      - name: Decode signing keystore
-        env:
-          SIGNING_KEYSTORE: ${{ secrets.SIGNING_KEYSTORE }}
-        run: base64 -d <<< "$SIGNING_KEYSTORE" > $HOME/secrets/release.keystore
-      - name: Show project file structure
-        run: tree -d .
-      - name: Sign apk
-        env:
-          SIGNING_ALIAS: ${{ secrets.SIGNING_ALIAS }}
-          SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
-        run: apksigner sign --ks $HOME/secrets/release.keystore --ks-key-alias "$SIGNING_ALIAS" --ks-pass pass:$SIGNING_KEY_PASSWORD i高醫_4.3.3_unsigned.apk
-      - name: Rename signed apk
-        run: mv i高醫_4.3.3_unsigned.apk dist/iKMU_4.3.3.apk
-      - name: Upload signed apk
-        if: success()
-        uses: actions/upload-artifact@v1
-        with:
-          name:  i高醫_4.3.3.apk
-          path:  dist/iKMU_4.3.3.apk
+      
