@@ -33,7 +33,7 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name:  i高醫_4.3.3_unsigned.apk
-          path:  dist/iKMU_4.3.3_unsigned.apk
+          path:  dist
       - name: Install apksigner
         run: sudo apt update && sudo apt install apksigner -y
       - name: Create secrets directory
@@ -46,9 +46,9 @@ jobs:
         env:
           SIGNING_ALIAS: ${{ secrets.SIGNING_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
-        run: apksigner sign --ks $HOME/secrets/release.keystore --ks-key-alias "$SIGNING_ALIAS" --ks-pass pass:$SIGNING_KEY_PASSWORD dist/iKMU_4.3.3_unsigned.apk
+        run: apksigner sign --ks $HOME/secrets/release.keystore --ks-key-alias "$SIGNING_ALIAS" --ks-pass pass:$SIGNING_KEY_PASSWORD dist/i高醫_4.3.3_unsigned.apk
       - name: Rename signed apk
-        run: mv ${{steps.sign.outputs.signedReleaseFile}} dist/iKMU_4.3.3.apk
+        run: mv dist/i高醫_4.3.3_unsigned.apk dist/iKMU_4.3.3.apk
       - name: Upload signed apk
         if: success()
         uses: actions/upload-artifact@v1
