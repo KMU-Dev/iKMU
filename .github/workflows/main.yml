@@ -41,7 +41,7 @@ jobs:
       - name: Decode signing keystore
         env:
           SIGNING_KEYSTORE: ${{ secrets.SIGNING_KEYSTORE }}
-        run: openssl base64 -d -out $HOME/secrets/release.keystore $SIGNING_KEYSTORE && ls $HOME/secrets
+        run: base64 -d <<< "$SIGNING_KEYSTORE" > $HOME/secrets/release.keystore
       - name: Sign apk
         env:
           SIGNING_ALIAS: ${{ secrets.SIGNING_ALIAS }}
