@@ -33,14 +33,16 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name:  i高醫_4.3.3_unsigned.apk
-      - name: Install apksigner
-        run: sudo apt update && sudo apt install apksigner -y
+      - name: Install apksigner and tree
+        run: sudo apt update && sudo apt install apksigner tree -y
       - name: Create secrets directory
         run: mkdir $HOME/secrets
       - name: Decode signing keystore
         env:
           SIGNING_KEYSTORE: ${{ secrets.SIGNING_KEYSTORE }}
         run: base64 -d <<< "$SIGNING_KEYSTORE" > $HOME/secrets/release.keystore
+      - name: Show project file structure
+        run: tree -d .
       - name: Sign apk
         env:
           SIGNING_ALIAS: ${{ secrets.SIGNING_ALIAS }}
