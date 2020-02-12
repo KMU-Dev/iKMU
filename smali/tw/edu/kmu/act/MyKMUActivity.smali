@@ -3620,6 +3620,7 @@
 
     const-string v0, ""
 
+    # TODO: start crack bluetooth
     .line 972
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
