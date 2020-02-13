@@ -54,6 +54,7 @@ jobs:
         with:
           version_regex: ^v[[:digit:].-]+(alpha|beta)?$
           prerelease_regex: ^v[[:digit:].-]+(alpha|beta)$
+          changelog_file: CHANGELOG.md
       - name: Upload release asset
         if: steps.create_release.outputs.upload_url != ''
         uses: actions/upload-release-asset@v1
