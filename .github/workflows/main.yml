@@ -52,7 +52,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          version_regex: ^v[\d.-]+
+          version_regex: ^v[\d.-]+(alpha|beta)?$
           prerelease_regex: ^v[\d.-]+(alpha|beta)$
       - name: Upload release asset
         if: steps.create_release.outputs.upload_url != ''
