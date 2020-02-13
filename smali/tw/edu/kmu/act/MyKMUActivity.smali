@@ -1868,17 +1868,12 @@
 
     move-result v0
 
-    if-nez v0, :cond_0
-
-    return-void
-
     .line 800
-    :cond_0
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->beaconManager:Lcom/estimote/sdk/BeaconManager;
 
     invoke-virtual {v0}, Lcom/estimote/sdk/BeaconManager;->isBluetoothEnabled()Z
 
-    move-result v0
+    const/4 v0, 0x1
 
     if-nez v0, :cond_1
 
