@@ -3540,9 +3540,12 @@
 .end method
 
 .method public startIRSEvent(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 3
+    .locals 4
 
     .line 952
+    # preserve classRoom
+    move-object v3, p1
+
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->dialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
@@ -3629,7 +3632,8 @@
     .line 972
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v0
+    # Always match condition -> :cond_4
+    const/4 v0, 0x1
 
     if-nez v0, :cond_4
 
@@ -3638,7 +3642,8 @@
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
-    move-result p1
+    # Always match condition -> not :cond_3, goto :goto_0
+    const/4 p1, 0x1
 
     if-eqz p1, :cond_3
 
@@ -3764,6 +3769,12 @@
 
     .line 1006
     iget-object p3, p0, Ltw/edu/kmu/act/MyKMUActivity;->classRoomList:Ljava/util/ArrayList;
+
+    new-instance p3, Ljava/util/ArrayList;
+
+    invoke-direct {p3}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-virtual {p3, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
