@@ -2,6 +2,8 @@
 .super Ljava/lang/Object;
 .source "MyKMUActivity.java"
 
+# TODO: Annotations: beaconClassDialog positiveButton OnClickListener
+
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
 

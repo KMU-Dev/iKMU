@@ -3795,3 +3795,63 @@
 
     return-void
 .end method
+
+# TODO: create method getClassRoom(String classId):String
+.method private getClassRoom(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
+
+    iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->classDataList:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    # while variables: v0 -> Iterator, v1 -> HashMap<String, String>
+    # while condition start
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0 # while condition end
+
+    # while body start
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/HashMap;
+
+    const-string v2, "classId"
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String; # v2 -> classData.get("classId"): String
+
+    # if condition start
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1 # if condition end
+
+    # if body start
+    const-string v2, "classRoom"
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String; # v2 -> classData.get("classRoom"): String
+
+    return-object v2
+
+    :cond_1 # if body end
+    goto :goto_0 # while body end
+
+    :cond_0
+    const-string v0, ""
+    return-object v0
+.end method
