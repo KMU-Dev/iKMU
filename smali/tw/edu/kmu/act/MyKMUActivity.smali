@@ -886,7 +886,7 @@
 .end method
 
 .method private showBeaconClassDialog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 8
+    .locals 9
 
     .line 1343
     sget-object v0, Ltw/edu/kmu/act/MyKMUActivity;->TAG:Ljava/lang/String;
@@ -1028,9 +1028,14 @@
 
     move-object v6, p4
 
-    invoke-direct/range {v1 .. v6}, Ltw/edu/kmu/act/MyKMUActivity$32;-><init>(Ltw/edu/kmu/act/MyKMUActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    # TODO: pass classRoom to beaconClassDialog positiveButton OnClickListener
+    invoke-direct {p0, v3}, Ltw/edu/kmu/act/MyKMUActivity;->getClassRoom(Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-virtual {v0, p3, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    move-result-object v7
+
+    invoke-direct/range {v1 .. v7}, Ltw/edu/kmu/act/MyKMUActivity$32;-><init>(Ltw/edu/kmu/act/MyKMUActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v0, p3, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     const p1, 0x7f0c00f9
 
@@ -3853,5 +3858,6 @@
 
     :cond_0
     const-string v0, ""
+
     return-object v0
 .end method
