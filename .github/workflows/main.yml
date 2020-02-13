@@ -36,6 +36,10 @@ jobs:
       with:
         name:  iKMU_4.3.3
         path:  dist/iKMU_4.3.3.apk
+    - name: Print github.ref
+      env:
+        REF: ${{github.ref}}
+      run: echo "$REF"
   pre-release:
     name: Github Pre-Release
     runs-on: ubuntu-latest
