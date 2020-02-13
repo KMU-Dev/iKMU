@@ -48,13 +48,13 @@ jobs:
       - name: Create Release
         id: create_release
         continue-on-error: true
-        uses: Roang-zero1/github-create-release-action@v2.1.0
+        uses: Roang-zero1/github-create-release-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           version_regex: ^v[[:digit:].-]+(alpha|beta)?$
           prerelease_regex: ^v[[:digit:].-]+(alpha|beta)$
-          changelog_file: CHANGELOG.md
+          update_existing:  'true'
       - name: Upload release asset
         if: steps.create_release.outputs.upload_url != ''
         uses: actions/upload-release-asset@v1
