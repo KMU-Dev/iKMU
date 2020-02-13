@@ -52,8 +52,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          version_regex: '^v[\d.-]+(alpha|beta)?$'
-          prerelease_regex: '^v[\d.-]+(alpha|beta)$'
+          version_regex: ^v[[:digit:].-]+(alpha|beta)?$
+          prerelease_regex: ^v[[:digit:].-]+(alpha|beta)$
       - name: Upload release asset
         if: steps.create_release.outputs.upload_url != ''
         uses: actions/upload-release-asset@v1
