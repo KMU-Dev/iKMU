@@ -14,6 +14,8 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "CurrentClassTreeViewAdapter"
 
+.field private static final SMALI_TAG:Ljava/lang/String; = "Smali: CurrentClassTreeViewAdapter"
+
 
 # instance fields
 .field private context:Ltw/edu/kmu/act/MyKMUActivity;
@@ -51,7 +53,7 @@
 .end method
 
 .method public constructor <init>(Ltw/edu/kmu/act/MyKMUActivity;Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/view/LayoutInflater;)V
-    .locals 0
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -86,6 +88,51 @@
 
     .line 42
     iput p1, p0, Ltw/edu/kmu/adapter/CurrentClassTreeViewAdapter;->indentionBase:I
+
+    # Get Smali Tag
+    sget-object v0, Ltw/edu/kmu/adapter/CurrentClassTreeViewAdapter;->SMALI_TAG:Ljava/lang/String;
+
+    # Log this.elements
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "this.elements = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/util/ArrayList;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    # Log this.elementsData
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "this.elementsData = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p3}, Ljava/util/ArrayList;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method
