@@ -1,5 +1,8 @@
 # i高醫(iKMU)
 
+[![CI](https://github.com/KMU-Dev/iKMU/workflows/CI/badge.svg)](https://github.com/KMU-Dev/iKMU/actions?query=workflow%3ACI+branch%3Amaster++)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 The whole brand-new iKMU Android app, providing you with its enchantment function.
 
 ## Getting Started
@@ -123,11 +126,11 @@ To modify the built apk version, change version in [apktool.yml](https://github.
 
 Please read [CONTRIBUTING.md](https://github.com/KMU-Dev/iKMU/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Authors
+## Release
 
-* **ZhaoTzuHsien** - *Remove IRS bluetooth verification*
+You can find release in [Github Release](https://github.com/KMU-Dev/iKMU/releases) page.
 
-See also the list of [contributors](https://github.com/KMU-Dev/iKMU/blob/master/CONTRIBUTORS.md) who participated in this project.
+**Note:** pre-release version may contain bugs, use it carefully!
 
 ## License
 
