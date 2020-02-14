@@ -123,12 +123,6 @@ To modify the built apk version, change version in [apktool.yml](https://github.
 
 Please read [CONTRIBUTING.md](https://github.com/KMU-Dev/iKMU/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Authors
-
-* **ZhaoTzuHsien** - *Remove IRS bluetooth verification*
-
-See also the list of [contributors](https://github.com/KMU-Dev/iKMU/blob/master/CONTRIBUTORS.md) who participated in this project.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/KMU-Dev/iKMU/blob/master/LICENSE) file for details
