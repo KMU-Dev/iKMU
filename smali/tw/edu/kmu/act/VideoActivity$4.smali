@@ -48,7 +48,7 @@
     :cond_0
     iget-object v0, p0, Ltw/edu/kmu/act/VideoActivity$4;->this$0:Ltw/edu/kmu/act/VideoActivity;
 
-    const v1, 0x7f08014f
+    const v1, 0x7f080159
 
     invoke-virtual {v0, v1}, Ltw/edu/kmu/act/VideoActivity;->findViewById(I)Landroid/view/View;
 

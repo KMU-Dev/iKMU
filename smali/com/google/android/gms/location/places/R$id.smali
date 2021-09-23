@@ -15,21 +15,21 @@
 
 
 # static fields
-.field public static final place_autocomplete_clear_button:I = 0x7f080141
+.field public static final place_autocomplete_clear_button:I = 0x7f08014b
 
-.field public static final place_autocomplete_powered_by_google:I = 0x7f080142
+.field public static final place_autocomplete_powered_by_google:I = 0x7f08014c
 
-.field public static final place_autocomplete_prediction_primary_text:I = 0x7f080143
+.field public static final place_autocomplete_prediction_primary_text:I = 0x7f08014d
 
-.field public static final place_autocomplete_prediction_secondary_text:I = 0x7f080144
+.field public static final place_autocomplete_prediction_secondary_text:I = 0x7f08014e
 
-.field public static final place_autocomplete_progress:I = 0x7f080145
+.field public static final place_autocomplete_progress:I = 0x7f08014f
 
-.field public static final place_autocomplete_search_button:I = 0x7f080146
+.field public static final place_autocomplete_search_button:I = 0x7f080150
 
-.field public static final place_autocomplete_search_input:I = 0x7f080147
+.field public static final place_autocomplete_search_input:I = 0x7f080151
 
-.field public static final place_autocomplete_separator:I = 0x7f080148
+.field public static final place_autocomplete_separator:I = 0x7f080152
 
 
 # direct methods

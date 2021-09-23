@@ -321,7 +321,7 @@
     goto/16 :goto_24
 
     :cond_0
-    const v0, 0x7f0801c9
+    const v0, 0x7f0801d7
 
     .line 153
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -330,7 +330,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0801dc
+    const v1, 0x7f0801ea
 
     .line 154
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -339,7 +339,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f080202
+    const v2, 0x7f080210
 
     .line 155
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -348,7 +348,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f08020e
+    const v3, 0x7f08021c
 
     .line 156
     invoke-virtual {p0, v3}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -357,7 +357,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v4, 0x7f080218
+    const v4, 0x7f080226
 
     .line 157
     invoke-virtual {p0, v4}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -366,7 +366,7 @@
 
     check-cast v4, Landroid/widget/TextView;
 
-    const v5, 0x7f08021d
+    const v5, 0x7f08022b
 
     .line 158
     invoke-virtual {p0, v5}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -375,7 +375,7 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    const v6, 0x7f080222
+    const v6, 0x7f080230
 
     .line 159
     invoke-virtual {p0, v6}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -500,7 +500,7 @@
 
     check-cast v0, Ljava/util/HashMap;
 
-    const v2, 0x7f0801b5
+    const v2, 0x7f0801c3
 
     .line 170
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -509,7 +509,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f0801b6
+    const v3, 0x7f0801c4
 
     .line 171
     invoke-virtual {p0, v3}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -518,7 +518,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v4, 0x7f0801b8
+    const v4, 0x7f0801c6
 
     .line 172
     invoke-virtual {p0, v4}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -527,7 +527,7 @@
 
     check-cast v4, Landroid/widget/TextView;
 
-    const v5, 0x7f0801b9
+    const v5, 0x7f0801c7
 
     .line 173
     invoke-virtual {p0, v5}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -536,7 +536,7 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    const v6, 0x7f0801ba
+    const v6, 0x7f0801c8
 
     .line 174
     invoke-virtual {p0, v6}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -545,7 +545,7 @@
 
     check-cast v6, Landroid/widget/TextView;
 
-    const v7, 0x7f0801bb
+    const v7, 0x7f0801c9
 
     .line 175
     invoke-virtual {p0, v7}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -554,7 +554,7 @@
 
     check-cast v7, Landroid/widget/TextView;
 
-    const v8, 0x7f0801bc
+    const v8, 0x7f0801ca
 
     .line 176
     invoke-virtual {p0, v8}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -563,7 +563,7 @@
 
     check-cast v8, Landroid/widget/TextView;
 
-    const v9, 0x7f0801bd
+    const v9, 0x7f0801cb
 
     .line 177
     invoke-virtual {p0, v9}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -572,7 +572,7 @@
 
     check-cast v9, Landroid/widget/TextView;
 
-    const v10, 0x7f0801be
+    const v10, 0x7f0801cc
 
     .line 178
     invoke-virtual {p0, v10}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -941,7 +941,7 @@
 
     invoke-virtual {v9, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f0800bd
+    const v2, 0x7f0800c8
 
     .line 189
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -998,7 +998,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f0800be
+    const v2, 0x7f0800c9
 
     .line 193
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -1055,7 +1055,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f0800bf
+    const v2, 0x7f0800ca
 
     .line 197
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -1112,7 +1112,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f0800c0
+    const v2, 0x7f0800cb
 
     .line 201
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -1169,7 +1169,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f0800c1
+    const v2, 0x7f0800cc
 
     .line 205
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -1218,7 +1218,7 @@
     .line 207
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f0800c2
+    const v2, 0x7f0800cd
 
     .line 209
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/MyScheduledClassDetailActivity;->findViewById(I)Landroid/view/View;
@@ -1701,7 +1701,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c003b
+    const v0, 0x7f0c003a
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

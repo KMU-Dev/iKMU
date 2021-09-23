@@ -80,7 +80,7 @@
     .line 157
     iget-object p2, p0, Ltw/edu/kmu/act/GalleryActivity$2;->this$0:Ltw/edu/kmu/act/GalleryActivity;
 
-    const p3, 0x7f0800ec
+    const p3, 0x7f0800f6
 
     invoke-virtual {p2, p3}, Ltw/edu/kmu/act/GalleryActivity;->findViewById(I)Landroid/view/View;
 
@@ -124,7 +124,7 @@
     .line 161
     iget-object p2, p0, Ltw/edu/kmu/act/GalleryActivity$2;->this$0:Ltw/edu/kmu/act/GalleryActivity;
 
-    const p3, 0x7f0800ea
+    const p3, 0x7f0800f4
 
     invoke-virtual {p2, p3}, Ltw/edu/kmu/act/GalleryActivity;->findViewById(I)Landroid/view/View;
 
@@ -294,7 +294,7 @@
     .line 195
     iget-object p1, p0, Ltw/edu/kmu/act/GalleryActivity$2;->this$0:Ltw/edu/kmu/act/GalleryActivity;
 
-    const v0, 0x7f0800ec
+    const v0, 0x7f0800f6
 
     invoke-virtual {p1, v0}, Ltw/edu/kmu/act/GalleryActivity;->findViewById(I)Landroid/view/View;
 

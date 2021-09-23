@@ -124,7 +124,7 @@
     .line 40
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/VideoActivity;->setRequestedOrientation(I)V
 
-    const p1, 0x7f0a00e3
+    const p1, 0x7f0a00e5
 
     .line 41
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/VideoActivity;->setContentView(I)V
@@ -133,13 +133,13 @@
 
     :cond_1
     :goto_0
-    const p1, 0x7f0a00e2
+    const p1, 0x7f0a00e4
 
     .line 35
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/VideoActivity;->setContentView(I)V
 
     :goto_1
-    const p1, 0x7f08003f
+    const p1, 0x7f08003e
 
     .line 51
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/VideoActivity;->findViewById(I)Landroid/view/View;
@@ -158,7 +158,7 @@
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_2
-    const p1, 0x7f080039
+    const p1, 0x7f080038
 
     .line 68
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/VideoActivity;->findViewById(I)Landroid/view/View;
@@ -186,7 +186,7 @@
     .line 82
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    const v0, 0x7f080245
+    const v0, 0x7f080252
 
     .line 84
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/VideoActivity;->findViewById(I)Landroid/view/View;
@@ -195,7 +195,7 @@
 
     check-cast v0, Landroid/widget/VideoView;
 
-    const v1, 0x7f08014f
+    const v1, 0x7f080159
 
     .line 85
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/VideoActivity;->findViewById(I)Landroid/view/View;

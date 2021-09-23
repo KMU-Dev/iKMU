@@ -27,7 +27,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/EvlQuestionActivity;Landroid/widget/ScrollView;)V
     .locals 0
 
-    .line 190
+    .line 200
     iput-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$2;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     iput-object p2, p0, Ltw/edu/kmu/act/EvlQuestionActivity$2;->val$scrollView:Landroid/widget/ScrollView;
@@ -42,7 +42,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 195
+    .line 205
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$2;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     invoke-static {p1}, Ltw/edu/kmu/act/EvlQuestionActivity;->access$200(Ltw/edu/kmu/act/EvlQuestionActivity;)Landroid/widget/Button;
@@ -53,7 +53,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 196
+    .line 206
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$2;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     invoke-static {p1}, Ltw/edu/kmu/act/EvlQuestionActivity;->access$100(Ltw/edu/kmu/act/EvlQuestionActivity;)Landroid/widget/Button;
@@ -68,21 +68,21 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setBackgroundColor(I)V
 
-    .line 197
+    .line 207
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$2;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     const-string v0, "teacher"
 
     invoke-static {p1, v0}, Ltw/edu/kmu/act/EvlQuestionActivity;->access$302(Ltw/edu/kmu/act/EvlQuestionActivity;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 198
+    .line 208
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$2;->val$scrollView:Landroid/widget/ScrollView;
 
     const/16 v0, 0x8
 
     invoke-virtual {p1, v0}, Landroid/widget/ScrollView;->setVisibility(I)V
 
-    .line 199
+    .line 209
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$2;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     invoke-static {p1}, Ltw/edu/kmu/act/EvlQuestionActivity;->access$400(Ltw/edu/kmu/act/EvlQuestionActivity;)Landroid/widget/TextView;
@@ -93,7 +93,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 200
+    .line 210
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$2;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     invoke-static {p1}, Ltw/edu/kmu/act/EvlQuestionActivity;->access$500(Ltw/edu/kmu/act/EvlQuestionActivity;)Landroid/widget/LinearLayout;

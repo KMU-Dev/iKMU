@@ -223,7 +223,7 @@
     .line 68
     iput p3, p0, Ltw/edu/kmu/adapter/YoutubeListViewAdapter;->resource:I
 
-    const p1, 0x7f0c001d
+    const p1, 0x7f0c001c
 
     .line 69
     invoke-virtual {p6, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -275,7 +275,7 @@
 
     invoke-direct {p3, p0, v0}, Ltw/edu/kmu/adapter/YoutubeListViewAdapter$ViewHolder;-><init>(Ltw/edu/kmu/adapter/YoutubeListViewAdapter;Ltw/edu/kmu/adapter/YoutubeListViewAdapter$1;)V
 
-    const v0, 0x7f0801c7
+    const v0, 0x7f0801d5
 
     .line 94
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -286,7 +286,7 @@
 
     iput-object v0, p3, Ltw/edu/kmu/adapter/YoutubeListViewAdapter$ViewHolder;->title:Landroid/widget/TextView;
 
-    const v0, 0x7f08019c
+    const v0, 0x7f0801aa
 
     .line 95
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -297,7 +297,7 @@
 
     iput-object v0, p3, Ltw/edu/kmu/adapter/YoutubeListViewAdapter$ViewHolder;->speaker:Landroid/widget/TextView;
 
-    const v0, 0x7f0800fe
+    const v0, 0x7f080108
 
     .line 96
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;

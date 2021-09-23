@@ -29,71 +29,71 @@
 
 .field public static final async:I = 0x7f08002e
 
-.field public static final blocking:I = 0x7f080036
+.field public static final blocking:I = 0x7f080035
 
-.field public static final cancel_action:I = 0x7f080091
+.field public static final cancel_action:I = 0x7f080090
 
-.field public static final chronometer:I = 0x7f08009a
+.field public static final chronometer:I = 0x7f0800a3
 
-.field public static final end_padder:I = 0x7f0800d9
+.field public static final end_padder:I = 0x7f0800e3
 
-.field public static final forever:I = 0x7f0800e6
+.field public static final forever:I = 0x7f0800f0
 
-.field public static final ghost_view:I = 0x7f0800ee
+.field public static final ghost_view:I = 0x7f0800f8
 
-.field public static final icon:I = 0x7f0800f9
+.field public static final icon:I = 0x7f080103
 
-.field public static final icon_group:I = 0x7f0800fa
+.field public static final icon_group:I = 0x7f080104
 
-.field public static final info:I = 0x7f080109
+.field public static final info:I = 0x7f080113
 
-.field public static final italic:I = 0x7f08010a
+.field public static final italic:I = 0x7f080114
 
-.field public static final line1:I = 0x7f080113
+.field public static final line1:I = 0x7f08011d
 
-.field public static final line3:I = 0x7f080115
+.field public static final line3:I = 0x7f08011f
 
-.field public static final media_actions:I = 0x7f080127
+.field public static final media_actions:I = 0x7f080131
 
-.field public static final normal:I = 0x7f080138
+.field public static final normal:I = 0x7f080142
 
-.field public static final notification_background:I = 0x7f080139
+.field public static final notification_background:I = 0x7f080143
 
-.field public static final notification_main_column:I = 0x7f08013a
+.field public static final notification_main_column:I = 0x7f080144
 
-.field public static final notification_main_column_container:I = 0x7f08013b
+.field public static final notification_main_column_container:I = 0x7f080145
 
-.field public static final parent_matrix:I = 0x7f08013f
+.field public static final parent_matrix:I = 0x7f080149
 
-.field public static final right_icon:I = 0x7f080165
+.field public static final right_icon:I = 0x7f080172
 
-.field public static final right_side:I = 0x7f080166
+.field public static final right_side:I = 0x7f080173
 
-.field public static final save_image_matrix:I = 0x7f080179
+.field public static final save_image_matrix:I = 0x7f080187
 
-.field public static final save_non_transition_alpha:I = 0x7f08017a
+.field public static final save_non_transition_alpha:I = 0x7f080188
 
-.field public static final save_scale_type:I = 0x7f08017b
+.field public static final save_scale_type:I = 0x7f080189
 
-.field public static final status_bar_latest_event_content:I = 0x7f0801a4
+.field public static final status_bar_latest_event_content:I = 0x7f0801b2
 
-.field public static final text:I = 0x7f0801b3
+.field public static final text:I = 0x7f0801c1
 
-.field public static final text2:I = 0x7f0801b7
+.field public static final text2:I = 0x7f0801c5
 
-.field public static final time:I = 0x7f0801c6
+.field public static final time:I = 0x7f0801d4
 
-.field public static final title:I = 0x7f0801c7
+.field public static final title:I = 0x7f0801d5
 
-.field public static final transition_current_scene:I = 0x7f080232
+.field public static final transition_current_scene:I = 0x7f08023f
 
-.field public static final transition_layout_save:I = 0x7f080233
+.field public static final transition_layout_save:I = 0x7f080240
 
-.field public static final transition_position:I = 0x7f080234
+.field public static final transition_position:I = 0x7f080241
 
-.field public static final transition_scene_layoutid_cache:I = 0x7f080235
+.field public static final transition_scene_layoutid_cache:I = 0x7f080242
 
-.field public static final transition_transform:I = 0x7f080236
+.field public static final transition_transform:I = 0x7f080243
 
 
 # direct methods

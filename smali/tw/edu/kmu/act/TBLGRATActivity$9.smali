@@ -27,7 +27,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/lang/String;)V
     .locals 0
 
-    .line 585
+    .line 587
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$9;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iput-object p2, p0, Ltw/edu/kmu/act/TBLGRATActivity$9;->val$fileName:Ljava/lang/String;
@@ -42,14 +42,14 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 588
+    .line 590
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$9;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     const/4 v0, 0x0
 
-    invoke-static {p1, v0}, Ltw/edu/kmu/act/TBLGRATActivity;->access$702(Ltw/edu/kmu/act/TBLGRATActivity;Z)Z
+    invoke-static {p1, v0}, Ltw/edu/kmu/act/TBLGRATActivity;->access$302(Ltw/edu/kmu/act/TBLGRATActivity;Z)Z
 
-    .line 589
+    .line 591
     new-instance p1, Landroid/content/Intent;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$9;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
@@ -60,7 +60,7 @@
 
     const-string v0, "imgFileName"
 
-    .line 590
+    .line 592
     iget-object v1, p0, Ltw/edu/kmu/act/TBLGRATActivity$9;->val$fileName:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
@@ -69,10 +69,17 @@
 
     const-string v1, ""
 
-    .line 591
+    .line 593
     invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 592
+    const-string v0, "inSampleSize"
+
+    const-string v1, "1"
+
+    .line 594
+    invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 595
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$9;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-virtual {v0, p1}, Ltw/edu/kmu/act/TBLGRATActivity;->startActivity(Landroid/content/Intent;)V

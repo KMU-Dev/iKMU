@@ -67,7 +67,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0801c9
+    const v0, 0x7f0801d7
 
     .line 67
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/EvlProgActivity;->findViewById(I)Landroid/view/View;
@@ -76,7 +76,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v3, 0x7f0801dc
+    const v3, 0x7f0801ea
 
     .line 68
     invoke-virtual {p0, v3}, Ltw/edu/kmu/act/EvlProgActivity;->findViewById(I)Landroid/view/View;
@@ -85,7 +85,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v4, 0x7f080202
+    const v4, 0x7f080210
 
     .line 69
     invoke-virtual {p0, v4}, Ltw/edu/kmu/act/EvlProgActivity;->findViewById(I)Landroid/view/View;
@@ -122,7 +122,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0801dd
+    const v0, 0x7f0801eb
 
     .line 79
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/EvlProgActivity;->findViewById(I)Landroid/view/View;
@@ -131,7 +131,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v3, 0x7f0801e2
+    const v3, 0x7f0801f0
 
     .line 80
     invoke-virtual {p0, v3}, Ltw/edu/kmu/act/EvlProgActivity;->findViewById(I)Landroid/view/View;
@@ -440,15 +440,15 @@
 
     :array_0
     .array-data 4
-        0x7f0801c9
-        0x7f0801dc
-        0x7f080202
+        0x7f0801d7
+        0x7f0801ea
+        0x7f080210
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f0801c9
-        0x7f0801dc
+        0x7f0801d7
+        0x7f0801ea
     .end array-data
 .end method
 
@@ -475,7 +475,7 @@
     .line 35
     invoke-super {p0, p1}, Ltw/edu/kmu/act/BasicActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 37
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/EvlProgActivity;->findViewById(I)Landroid/view/View;
@@ -529,7 +529,7 @@
 
     invoke-static {p1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const p1, 0x7f080116
+    const p1, 0x7f080120
 
     .line 44
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/EvlProgActivity;->findViewById(I)Landroid/view/View;
@@ -540,7 +540,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/EvlProgActivity;->linearLayout1:Landroid/widget/LinearLayout;
 
-    const p1, 0x7f080117
+    const p1, 0x7f080121
 
     .line 45
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/EvlProgActivity;->findViewById(I)Landroid/view/View;

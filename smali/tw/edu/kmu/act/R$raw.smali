@@ -21,16 +21,24 @@
 
 .field public static final anthem2:I = 0x7f0b0002
 
-.field public static final play:I = 0x7f0b0003
+.field public static final kmu_bks:I = 0x7f0b0003
 
-.field public static final server:I = 0x7f0b0004
+.field public static final kmu_bks_2022:I = 0x7f0b0004
+
+.field public static final kmu_etbl_2021:I = 0x7f0b0005
+
+.field public static final kmu_etbl_2021_bks:I = 0x7f0b0006
+
+.field public static final play:I = 0x7f0b0007
+
+.field public static final server:I = 0x7f0b0008
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 4616
+    .line 4631
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

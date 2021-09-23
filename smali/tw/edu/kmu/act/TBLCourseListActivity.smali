@@ -320,7 +320,7 @@
 
     new-array v6, v1, [I
 
-    const v1, 0x7f0801c7
+    const v1, 0x7f0801d5
 
     aput v1, v6, v7
 
@@ -489,7 +489,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f080122
+    const v3, 0x7f08012c
 
     .line 86
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -571,7 +571,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLCourseListActivity;->sharedData:Landroid/content/SharedPreferences;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 49
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLCourseListActivity;->findViewById(I)Landroid/view/View;

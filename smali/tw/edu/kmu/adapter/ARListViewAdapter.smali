@@ -241,7 +241,7 @@
 
     invoke-direct {v2, p0, v1}, Ltw/edu/kmu/adapter/ARListViewAdapter$ViewHolder;-><init>(Ltw/edu/kmu/adapter/ARListViewAdapter;Ltw/edu/kmu/adapter/ARListViewAdapter$1;)V
 
-    const v1, 0x7f0801c7
+    const v1, 0x7f0801d5
 
     .line 63
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -252,7 +252,7 @@
 
     iput-object v1, v2, Ltw/edu/kmu/adapter/ARListViewAdapter$ViewHolder;->title:Landroid/widget/TextView;
 
-    const v1, 0x7f0800ca
+    const v1, 0x7f0800d5
 
     .line 64
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -263,7 +263,7 @@
 
     iput-object v1, v2, Ltw/edu/kmu/adapter/ARListViewAdapter$ViewHolder;->distance:Landroid/widget/TextView;
 
-    const v1, 0x7f0800fe
+    const v1, 0x7f080108
 
     .line 65
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;

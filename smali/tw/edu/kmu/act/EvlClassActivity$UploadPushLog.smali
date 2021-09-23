@@ -40,34 +40,34 @@
 .method private constructor <init>(Ltw/edu/kmu/act/EvlClassActivity;)V
     .locals 1
 
-    .line 316
+    .line 323
     iput-object p1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->this$0:Ltw/edu/kmu/act/EvlClassActivity;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     const-string p1, ""
 
-    .line 319
+    .line 326
     iput-object p1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->result:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 320
+    .line 327
     iput-object p1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->resultString:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 321
+    .line 328
     iput-object p1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->returnCode:Ljava/lang/String;
 
-    .line 323
+    .line 330
     iget-object p1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->this$0:Ltw/edu/kmu/act/EvlClassActivity;
 
     invoke-virtual {p1}, Ltw/edu/kmu/act/EvlClassActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const v0, 0x7f0c0012
+    const v0, 0x7f0c0011
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -81,7 +81,7 @@
 .method synthetic constructor <init>(Ltw/edu/kmu/act/EvlClassActivity;Ltw/edu/kmu/act/EvlClassActivity$1;)V
     .locals 0
 
-    .line 316
+    .line 323
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;-><init>(Ltw/edu/kmu/act/EvlClassActivity;)V
 
     return-void
@@ -92,7 +92,7 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 316
+    .line 323
     check-cast p1, [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->doInBackground([Ljava/lang/String;)Ljava/lang/String;
@@ -105,7 +105,7 @@
 .method protected varargs doInBackground([Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    .line 334
+    .line 341
     :try_start_0
     new-instance p1, Ljava/util/HashMap;
 
@@ -113,7 +113,7 @@
 
     const-string v0, "year"
 
-    .line 335
+    .line 342
     iget-object v1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->this$0:Ltw/edu/kmu/act/EvlClassActivity;
 
     invoke-static {v1}, Ltw/edu/kmu/act/EvlClassActivity;->access$800(Ltw/edu/kmu/act/EvlClassActivity;)Landroid/os/Bundle;
@@ -130,7 +130,7 @@
 
     const-string v0, "sem"
 
-    .line 336
+    .line 343
     iget-object v1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->this$0:Ltw/edu/kmu/act/EvlClassActivity;
 
     invoke-static {v1}, Ltw/edu/kmu/act/EvlClassActivity;->access$800(Ltw/edu/kmu/act/EvlClassActivity;)Landroid/os/Bundle;
@@ -147,7 +147,7 @@
 
     const-string v0, "stuno"
 
-    .line 337
+    .line 344
     iget-object v1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->this$0:Ltw/edu/kmu/act/EvlClassActivity;
 
     invoke-static {v1}, Ltw/edu/kmu/act/EvlClassActivity;->access$900(Ltw/edu/kmu/act/EvlClassActivity;)Ltw/edu/kmu/act/MyApplication;
@@ -160,7 +160,7 @@
 
     const-string v0, "seqno"
 
-    .line 338
+    .line 345
     iget-object v1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->this$0:Ltw/edu/kmu/act/EvlClassActivity;
 
     invoke-static {v1}, Ltw/edu/kmu/act/EvlClassActivity;->access$800(Ltw/edu/kmu/act/EvlClassActivity;)Landroid/os/Bundle;
@@ -177,7 +177,7 @@
 
     const-string v0, "teafno"
 
-    .line 339
+    .line 346
     iget-object v1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->this$0:Ltw/edu/kmu/act/EvlClassActivity;
 
     invoke-static {v1}, Ltw/edu/kmu/act/EvlClassActivity;->access$800(Ltw/edu/kmu/act/EvlClassActivity;)Landroid/os/Bundle;
@@ -192,7 +192,31 @@
 
     invoke-virtual {p1, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 340
+    const-string v0, "os"
+
+    const-string v1, "android"
+
+    .line 347
+    invoke-virtual {p1, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "version"
+
+    .line 348
+    iget-object v1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->this$0:Ltw/edu/kmu/act/EvlClassActivity;
+
+    invoke-static {v1}, Ltw/edu/kmu/act/EvlClassActivity;->access$900(Ltw/edu/kmu/act/EvlClassActivity;)Ltw/edu/kmu/act/MyApplication;
+
+    move-result-object v1
+
+    iget-object v2, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->this$0:Ltw/edu/kmu/act/EvlClassActivity;
+
+    invoke-virtual {v1, v2}, Ltw/edu/kmu/act/MyApplication;->getVersionName(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 349
     invoke-static {}, Ltw/edu/kmu/act/EvlClassActivity;->access$1000()Ljava/lang/String;
 
     move-result-object v0
@@ -217,7 +241,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 341
+    .line 350
     invoke-static {}, Ltw/edu/kmu/act/EvlClassActivity;->access$1000()Ljava/lang/String;
 
     move-result-object v0
@@ -240,7 +264,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 342
+    .line 351
     iget-object v0, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->this$0:Ltw/edu/kmu/act/EvlClassActivity;
 
     iget-object v0, v0, Ltw/edu/kmu/act/EvlClassActivity;->serverResource:Ltw/edu/kmu/resource/ServerResource;
@@ -253,7 +277,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->resultString:Ljava/lang/String;
 
-    .line 343
+    .line 352
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->resultString:Ljava/lang/String;
@@ -270,7 +294,7 @@
 
     const-string p1, "true"
 
-    .line 344
+    .line 353
     iput-object p1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->result:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -282,10 +306,10 @@
 
     const-string v0, "false"
 
-    .line 346
+    .line 355
     iput-object v0, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->result:Ljava/lang/String;
 
-    .line 347
+    .line 356
     invoke-static {}, Ltw/edu/kmu/act/EvlClassActivity;->access$1000()Ljava/lang/String;
 
     move-result-object v0
@@ -319,7 +343,7 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 316
+    .line 323
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->onPostExecute(Ljava/lang/String;)V
@@ -330,10 +354,10 @@
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 0
 
-    .line 354
+    .line 363
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
-    .line 355
+    .line 364
     iget-object p1, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->this$0:Ltw/edu/kmu/act/EvlClassActivity;
 
     iget-object p1, p1, Ltw/edu/kmu/act/EvlClassActivity;->progressDialog:Landroid/app/ProgressDialog;
@@ -346,10 +370,10 @@
 .method protected onPreExecute()V
     .locals 1
 
-    .line 327
+    .line 334
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
-    .line 328
+    .line 335
     iget-object v0, p0, Ltw/edu/kmu/act/EvlClassActivity$UploadPushLog;->this$0:Ltw/edu/kmu/act/EvlClassActivity;
 
     iget-object v0, v0, Ltw/edu/kmu/act/EvlClassActivity;->progressDialog:Landroid/app/ProgressDialog;

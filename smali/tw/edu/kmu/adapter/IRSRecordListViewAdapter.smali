@@ -95,7 +95,7 @@
     .line 57
     iput p3, p0, Ltw/edu/kmu/adapter/IRSRecordListViewAdapter;->resource:I
 
-    const p2, 0x7f0c008a
+    const p2, 0x7f0c0088
 
     .line 58
     invoke-virtual {p1, p2}, Ltw/edu/kmu/act/IRSRecordActivity;->getString(I)Ljava/lang/String;
@@ -1150,7 +1150,7 @@
 
     invoke-direct {v5, v6}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f08004f
+    const v6, 0x7f08004e
 
     .line 471
     invoke-virtual {v5, v6}, Landroid/widget/Button;->setId(I)V
@@ -1742,7 +1742,7 @@
 
     invoke-virtual {v8, v9}, Landroid/widget/RadioButton;->setText(Ljava/lang/CharSequence;)V
 
-    const v9, 0x7f08004f
+    const v9, 0x7f08004e
 
     const-string v10, "optKey"
 
@@ -2333,7 +2333,7 @@
 
     invoke-virtual {v7, v8}, Landroid/widget/CheckBox;->setText(Ljava/lang/CharSequence;)V
 
-    const v8, 0x7f08004f
+    const v8, 0x7f08004e
 
     const-string v9, "optKey"
 

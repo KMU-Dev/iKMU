@@ -622,7 +622,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f0c001d
+    const v3, 0x7f0c001c
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1010,7 +1010,7 @@
 .method private initBtn()V
     .locals 4
 
-    const v0, 0x7f080040
+    const v0, 0x7f08003f
 
     .line 120
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/GalleryZoomImageActivity;->findViewById(I)Landroid/view/View;
@@ -1387,7 +1387,7 @@
 .method private setGalleryImage()V
     .locals 3
 
-    const v0, 0x7f0801c7
+    const v0, 0x7f0801d5
 
     .line 245
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/GalleryZoomImageActivity;->findViewById(I)Landroid/view/View;
@@ -1428,7 +1428,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    const v0, 0x7f0800e9
+    const v0, 0x7f0800f3
 
     .line 272
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/GalleryZoomImageActivity;->findViewById(I)Landroid/view/View;
@@ -1508,7 +1508,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a0069
+    const v0, 0x7f0a006b
 
     return v0
 .end method
@@ -1535,7 +1535,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c0102
+    const v0, 0x7f0c00fe
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1605,7 +1605,7 @@
     :cond_0
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/GalleryZoomImageActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f080151
+    const p1, 0x7f08015b
 
     .line 109
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/GalleryZoomImageActivity;->findViewById(I)Landroid/view/View;

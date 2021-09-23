@@ -36,7 +36,7 @@
 .method public getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a0098
+    const v0, 0x7f0a009a
 
     return v0
 .end method
@@ -66,7 +66,7 @@
 
     check-cast p1, Landroid/widget/RelativeLayout;
 
-    const p2, 0x7f0801c7
+    const p2, 0x7f0801d5
 
     .line 44
     invoke-virtual {p1, p2}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
@@ -82,7 +82,7 @@
 
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const p2, 0x7f0800b6
+    const p2, 0x7f0800c1
 
     .line 46
     invoke-virtual {p1, p2}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;

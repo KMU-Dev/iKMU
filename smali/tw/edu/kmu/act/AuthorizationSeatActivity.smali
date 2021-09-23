@@ -796,7 +796,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c0062
+    const v0, 0x7f0c0060
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -824,7 +824,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationSeatActivity;->sharedData:Landroid/content/SharedPreferences;
 
-    const p1, 0x7f0801c7
+    const p1, 0x7f0801d5
 
     .line 64
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/AuthorizationSeatActivity;->findViewById(I)Landroid/view/View;
@@ -835,7 +835,7 @@
 
     iput-object v1, p0, Ltw/edu/kmu/act/AuthorizationSeatActivity;->title:Landroid/widget/TextView;
 
-    const v1, 0x7f0800d1
+    const v1, 0x7f0800db
 
     .line 66
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/AuthorizationSeatActivity;->findViewById(I)Landroid/view/View;
@@ -846,7 +846,7 @@
 
     iput-object v1, p0, Ltw/edu/kmu/act/AuthorizationSeatActivity;->edit1:Landroid/widget/EditText;
 
-    const v1, 0x7f0800d2
+    const v1, 0x7f0800dc
 
     .line 67
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/AuthorizationSeatActivity;->findViewById(I)Landroid/view/View;
@@ -983,7 +983,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v1, 0x7f08004f
+    const v1, 0x7f08004e
 
     .line 83
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/AuthorizationSeatActivity;->findViewById(I)Landroid/view/View;

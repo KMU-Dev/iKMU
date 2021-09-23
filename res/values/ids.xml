@@ -39,7 +39,6 @@
     <item type="id" name="bar2" />
     <item type="id" name="bar21" />
     <item type="id" name="bar22" />
-    <item type="id" name="bar3" />
     <item type="id" name="bottom_toolbar_info" />
     <item type="id" name="btClose" />
     <item type="id" name="btClothes" />
@@ -131,11 +130,23 @@
     <item type="id" name="buttonPanel" />
     <item type="id" name="cancel_action" />
     <item type="id" name="category" />
+    <item type="id" name="cb_Content20" />
+    <item type="id" name="cb_Content21" />
+    <item type="id" name="cb_Content22" />
+    <item type="id" name="cb_Content23" />
+    <item type="id" name="cb_Content24" />
+    <item type="id" name="cb_Content25" />
+    <item type="id" name="cb_Content26" />
+    <item type="id" name="cb_Content27" />
+    <item type="id" name="cb_Content28" />
+    <item type="id" name="cb_Content29" />
     <item type="id" name="chart" />
     <item type="id" name="checkBox" />
     <item type="id" name="checkbox" />
     <item type="id" name="checkbox1" />
     <item type="id" name="chronometer" />
+    <item type="id" name="compview11" />
+    <item type="id" name="compview2" />
     <item type="id" name="container" />
     <item type="id" name="content" />
     <item type="id" name="contentPanel" />
@@ -183,12 +194,11 @@
     <item type="id" name="e1" />
     <item type="id" name="e2" />
     <item type="id" name="e3" />
-    <item type="id" name="e4" />
     <item type="id" name="edit" />
     <item type="id" name="edit1" />
     <item type="id" name="edit2" />
     <item type="id" name="edit3" />
-    <item type="id" name="edit4" />
+    <item type="id" name="edit9" />
     <item type="id" name="editRoot" />
     <item type="id" name="edit_query" />
     <item type="id" name="edit_text" />
@@ -304,8 +314,11 @@
     <item type="id" name="rank4" />
     <item type="id" name="rank5" />
     <item type="id" name="rank6" />
+    <item type="id" name="rb_Content1" />
+    <item type="id" name="rb_Content2" />
     <item type="id" name="refresh_layout" />
     <item type="id" name="relativeLayout1" />
+    <item type="id" name="rgComp" />
     <item type="id" name="rightPoint" />
     <item type="id" name="right_icon" />
     <item type="id" name="right_side" />
@@ -321,6 +334,7 @@
     <item type="id" name="root4" />
     <item type="id" name="rootEnd" />
     <item type="id" name="rootSc" />
+    <item type="id" name="root_layout" />
     <item type="id" name="ry3" />
     <item type="id" name="ry6" />
     <item type="id" name="ry7" />
@@ -490,7 +504,6 @@
     <item type="id" name="titleE1" />
     <item type="id" name="titleE2" />
     <item type="id" name="titleE3" />
-    <item type="id" name="titleE4" />
     <item type="id" name="titleHint" />
     <item type="id" name="title_template" />
     <item type="id" name="title_txt" />

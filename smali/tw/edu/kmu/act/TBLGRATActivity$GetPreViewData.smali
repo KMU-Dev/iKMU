@@ -44,19 +44,19 @@
 .method private constructor <init>(Ltw/edu/kmu/act/TBLGRATActivity;)V
     .locals 1
 
-    .line 1719
+    .line 1724
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     const-string p1, ""
 
-    .line 1721
+    .line 1726
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->resultString:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 1722
+    .line 1727
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->returnCode:Ljava/lang/String;
 
     const-string p1, ""
@@ -65,21 +65,21 @@
 
     const-string p1, ""
 
-    .line 1723
+    .line 1728
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->reason:Ljava/lang/String;
 
     const-string p1, ""
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->ereason:Ljava/lang/String;
 
-    .line 1724
+    .line 1729
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-virtual {p1}, Ltw/edu/kmu/act/TBLGRATActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const v0, 0x7f0c0052
+    const v0, 0x7f0c0051
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -93,7 +93,7 @@
 .method synthetic constructor <init>(Ltw/edu/kmu/act/TBLGRATActivity;Ltw/edu/kmu/act/TBLGRATActivity$1;)V
     .locals 0
 
-    .line 1719
+    .line 1724
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;)V
 
     return-void
@@ -102,7 +102,7 @@
 .method static synthetic access$2000(Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;)Ljava/lang/String;
     .locals 0
 
-    .line 1719
+    .line 1724
     iget-object p0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->rtnCode:Ljava/lang/String;
 
     return-object p0
@@ -113,7 +113,7 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1719
+    .line 1724
     check-cast p1, [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->doInBackground([Ljava/lang/String;)Ljava/lang/String;
@@ -126,7 +126,7 @@
 .method protected varargs doInBackground([Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
-    .line 1736
+    .line 1741
     :try_start_0
     new-instance v0, Ljava/util/HashMap;
 
@@ -134,7 +134,7 @@
 
     const-string v1, "stuno"
 
-    .line 1737
+    .line 1742
     iget-object v2, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iget-object v2, v2, Ltw/edu/kmu/act/TBLGRATActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
@@ -145,7 +145,7 @@
 
     const-string v1, "quid"
 
-    .line 1738
+    .line 1743
     iget-object v2, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-static {v2}, Ltw/edu/kmu/act/TBLGRATActivity;->access$1200(Ltw/edu/kmu/act/TBLGRATActivity;)Landroid/os/Bundle;
@@ -164,7 +164,7 @@
 
     const/4 v2, 0x0
 
-    .line 1739
+    .line 1744
     aget-object v2, p1, v2
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -173,12 +173,12 @@
 
     const/4 v2, 0x1
 
-    .line 1740
+    .line 1745
     aget-object p1, p1, v2
 
     invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1741
+    .line 1746
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iget-object p1, p1, Ltw/edu/kmu/act/TBLGRATActivity;->serverResource:Ltw/edu/kmu/resource/ServerResource;
@@ -191,7 +191,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->resultString:Ljava/lang/String;
 
-    .line 1742
+    .line 1747
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->resultString:Ljava/lang/String;
@@ -206,7 +206,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->returnCode:Ljava/lang/String;
 
-    .line 1743
+    .line 1748
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->resultString:Ljava/lang/String;
@@ -221,7 +221,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->rtnCode:Ljava/lang/String;
 
-    .line 1744
+    .line 1749
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
@@ -234,7 +234,7 @@
 
     invoke-static {p1, v0}, Ltw/edu/kmu/act/TBLGRATActivity;->access$1802(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/util/HashMap;)Ljava/util/HashMap;
 
-    .line 1745
+    .line 1750
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
@@ -263,7 +263,7 @@
 
     invoke-static {p1, v0}, Ltw/edu/kmu/act/TBLGRATActivity;->access$1902(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
-    .line 1746
+    .line 1751
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->resultString:Ljava/lang/String;
@@ -278,7 +278,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->reason:Ljava/lang/String;
 
-    .line 1747
+    .line 1752
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->resultString:Ljava/lang/String;
@@ -300,7 +300,7 @@
     :catch_0
     move-exception p1
 
-    .line 1751
+    .line 1756
     invoke-static {}, Ltw/edu/kmu/act/TBLGRATActivity;->access$900()Ljava/lang/String;
 
     move-result-object v0
@@ -334,7 +334,7 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1719
+    .line 1724
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->onPostExecute(Ljava/lang/String;)V
@@ -345,10 +345,10 @@
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 3
 
-    .line 1758
+    .line 1763
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
-    .line 1759
+    .line 1764
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iget-object p1, p1, Ltw/edu/kmu/act/TBLGRATActivity;->progressDialog:Landroid/app/ProgressDialog;
@@ -357,7 +357,7 @@
 
     const-string p1, "true"
 
-    .line 1760
+    .line 1765
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->returnCode:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -366,7 +366,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 1762
+    .line 1767
     :try_start_0
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
@@ -379,7 +379,7 @@
     :catch_0
     move-exception p1
 
-    .line 1764
+    .line 1769
     invoke-static {}, Ltw/edu/kmu/act/TBLGRATActivity;->access$900()Ljava/lang/String;
 
     move-result-object v0
@@ -406,7 +406,7 @@
 
     goto :goto_2
 
-    .line 1767
+    .line 1772
     :cond_0
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
@@ -427,7 +427,7 @@
     :cond_1
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->reason:Ljava/lang/String;
 
-    .line 1768
+    .line 1773
     :goto_0
     invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -451,12 +451,12 @@
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData$1;-><init>(Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;)V
 
-    .line 1769
+    .line 1774
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    .line 1779
+    .line 1784
     invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     :goto_2
@@ -466,10 +466,10 @@
 .method protected onPreExecute()V
     .locals 1
 
-    .line 1728
+    .line 1733
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
-    .line 1729
+    .line 1734
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iget-object v0, v0, Ltw/edu/kmu/act/TBLGRATActivity;->progressDialog:Landroid/app/ProgressDialog;

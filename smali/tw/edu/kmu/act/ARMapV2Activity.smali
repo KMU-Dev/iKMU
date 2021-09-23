@@ -264,7 +264,7 @@
 .method private createTab1()V
     .locals 4
 
-    const v0, 0x7f0801a8
+    const v0, 0x7f0801b6
 
     .line 98
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/ARMapV2Activity;->findViewById(I)Landroid/view/View;
@@ -898,7 +898,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c008a
+    const v0, 0x7f0c0088
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -926,7 +926,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ARMapV2Activity;->setContentView(I)V
 
-    const p1, 0x7f0801c7
+    const p1, 0x7f0801d5
 
     .line 83
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ARMapV2Activity;->findViewById(I)Landroid/view/View;
@@ -940,7 +940,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c00cb
+    const v1, 0x7f0c00c9
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -953,7 +953,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f080125
+    const v0, 0x7f08012f
 
     invoke-virtual {p1, v0}, Landroid/support/v4/app/FragmentManager;->findFragmentById(I)Landroid/support/v4/app/Fragment;
 

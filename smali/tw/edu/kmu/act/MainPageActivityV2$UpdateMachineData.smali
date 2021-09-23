@@ -34,12 +34,12 @@
 .method public constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;Ljava/lang/String;)V
     .locals 0
 
-    .line 1086
+    .line 1104
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$UpdateMachineData;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
-    .line 1087
+    .line 1105
     iput-object p2, p0, Ltw/edu/kmu/act/MainPageActivityV2$UpdateMachineData;->regId:Ljava/lang/String;
 
     return-void
@@ -50,7 +50,7 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1082
+    .line 1100
     check-cast p1, [Ljava/lang/Integer;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2$UpdateMachineData;->doInBackground([Ljava/lang/Integer;)Ljava/lang/String;
@@ -63,7 +63,7 @@
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/String;
     .locals 5
 
-    .line 1100
+    .line 1118
     :try_start_0
     iget-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$UpdateMachineData;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
@@ -73,12 +73,12 @@
 
     check-cast p1, Ltw/edu/kmu/act/MyApplication;
 
-    .line 1102
+    .line 1120
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1103
+    .line 1121
     new-instance v1, Lorg/apache/http/message/BasicNameValuePair;
 
     const-string v2, "os"
@@ -89,7 +89,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1104
+    .line 1122
     new-instance v1, Lorg/apache/http/message/BasicNameValuePair;
 
     const-string v2, "t"
@@ -100,7 +100,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1105
+    .line 1123
     new-instance v1, Lorg/apache/http/message/BasicNameValuePair;
 
     const-string v2, "device"
@@ -125,7 +125,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1106
+    .line 1124
     new-instance v1, Lorg/apache/http/message/BasicNameValuePair;
 
     const-string v2, "deviceid"
@@ -138,7 +138,7 @@
 
     const-string v1, ""
 
-    .line 1107
+    .line 1125
     iget-object v2, p1, Ltw/edu/kmu/act/MyApplication;->UserID:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -147,7 +147,7 @@
 
     if-nez v1, :cond_0
 
-    .line 1108
+    .line 1126
     new-instance v1, Lorg/apache/http/message/BasicNameValuePair;
 
     const-string v2, "u"
@@ -158,7 +158,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1110
+    .line 1128
     :cond_0
     invoke-static {}, Ltw/edu/kmu/act/MainPageActivityV2;->access$300()Ljava/lang/String;
 
@@ -182,20 +182,20 @@
 
     invoke-static {p1, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1112
+    .line 1130
     iget-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$UpdateMachineData;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-virtual {p1}, Ltw/edu/kmu/act/MainPageActivityV2;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const v1, 0x7f0c0061
+    const v1, 0x7f0c005f
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 1113
+    .line 1131
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -227,7 +227,7 @@
 
     move-result-object p1
 
-    .line 1114
+    .line 1132
     :goto_0
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$UpdateMachineData;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
@@ -239,7 +239,7 @@
 
     move-result-object v0
 
-    .line 1115
+    .line 1133
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
@@ -250,12 +250,12 @@
 
     const-string v0, "\"result\":\"1\""
 
-    .line 1116
+    .line 1134
     invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
-    .line 1120
+    .line 1138
     invoke-static {}, Ltw/edu/kmu/act/MainPageActivityV2;->access$300()Ljava/lang/String;
 
     move-result-object v0
@@ -283,7 +283,7 @@
     :catch_0
     move-exception p1
 
-    .line 1123
+    .line 1141
     invoke-static {}, Ltw/edu/kmu/act/MainPageActivityV2;->access$300()Ljava/lang/String;
 
     move-result-object v0
@@ -317,7 +317,7 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1082
+    .line 1100
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2$UpdateMachineData;->onPostExecute(Ljava/lang/String;)V
@@ -328,7 +328,7 @@
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 0
 
-    .line 1131
+    .line 1149
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
     return-void
@@ -337,7 +337,7 @@
 .method protected onPreExecute()V
     .locals 0
 
-    .line 1092
+    .line 1110
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
     return-void

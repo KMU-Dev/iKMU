@@ -260,7 +260,7 @@
 
     iget-object p2, p0, Ltw/edu/kmu/act/TBLTpListActivity$3;->this$0:Ltw/edu/kmu/act/TBLTpListActivity;
 
-    const p3, 0x7f0c0133
+    const p3, 0x7f0c012f
 
     .line 209
     invoke-virtual {p2, p3}, Ltw/edu/kmu/act/TBLTpListActivity;->getStringById(I)Ljava/lang/String;

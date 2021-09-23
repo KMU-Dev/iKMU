@@ -2,8 +2,6 @@
 .super Ljava/lang/Object;
 .source "MyKMUActivity.java"
 
-# TODO: Annotations: beaconClassDialog positiveButton OnClickListener
-
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
 
@@ -30,11 +28,9 @@
 
 .field final synthetic val$teacherNo:Ljava/lang/String;
 
-.field final synthetic val$classRoom:Ljava/lang/String;
-
 
 # direct methods
-.method constructor <init>(Ltw/edu/kmu/act/MyKMUActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method constructor <init>(Ltw/edu/kmu/act/MyKMUActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 1350
@@ -47,8 +43,6 @@
     iput-object p4, p0, Ltw/edu/kmu/act/MyKMUActivity$32;->val$chineseco:Ljava/lang/String;
 
     iput-object p5, p0, Ltw/edu/kmu/act/MyKMUActivity$32;->val$seqNo:Ljava/lang/String;
-
-    iput-object p6, p0, Ltw/edu/kmu/act/MyKMUActivity$32;->val$classRoom:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,8 +57,7 @@
     .line 1354
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity$32;->this$0:Ltw/edu/kmu/act/MyKMUActivity;
 
-    # TODO: pass classRoom to startIRSEvent()
-    iget-object v1, p0, Ltw/edu/kmu/act/MyKMUActivity$32;->val$classRoom:Ljava/lang/String;
+    const-string v1, ""
 
     iget-object v2, p0, Ltw/edu/kmu/act/MyKMUActivity$32;->val$classId:Ljava/lang/String;
 

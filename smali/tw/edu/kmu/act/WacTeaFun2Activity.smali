@@ -190,7 +190,7 @@
 .method private initBtnFunction()V
     .locals 4
 
-    const v0, 0x7f080040
+    const v0, 0x7f08003f
 
     .line 68
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun2Activity;->findViewById(I)Landroid/view/View;
@@ -291,7 +291,7 @@
 
     iget-object v3, p0, Ltw/edu/kmu/act/WacTeaFun2Activity;->stuInfoList:Ljava/util/ArrayList;
 
-    const v4, 0x7f0a00ef
+    const v4, 0x7f0a00f1
 
     const/4 v1, 0x7
 
@@ -369,13 +369,13 @@
 
     :array_0
     .array-data 4
-        0x7f0801cb
-        0x7f0801cf
-        0x7f080203
-        0x7f080207
-        0x7f08020b
-        0x7f08020c
-        0x7f08020d
+        0x7f0801d9
+        0x7f0801dd
+        0x7f080211
+        0x7f080215
+        0x7f080219
+        0x7f08021a
+        0x7f08021b
     .end array-data
 .end method
 
@@ -427,7 +427,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f080122
+    const v2, 0x7f08012c
 
     .line 109
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -466,7 +466,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00ec
+    const v0, 0x7f0a00ee
 
     return v0
 .end method
@@ -511,7 +511,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c0067
+    const v1, 0x7f0c0065
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -533,7 +533,7 @@
     iput-object p1, p0, Ltw/edu/kmu/act/WacTeaFun2Activity;->typeKey:[Ljava/lang/String;
 
     :cond_0
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 55
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/WacTeaFun2Activity;->findViewById(I)Landroid/view/View;

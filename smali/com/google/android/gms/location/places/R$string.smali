@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final place_autocomplete_clear_button:I = 0x7f0c0109
+.field public static final place_autocomplete_clear_button:I = 0x7f0c0105
 
-.field public static final place_autocomplete_search_hint:I = 0x7f0c010a
+.field public static final place_autocomplete_search_hint:I = 0x7f0c0106
 
 
 # direct methods

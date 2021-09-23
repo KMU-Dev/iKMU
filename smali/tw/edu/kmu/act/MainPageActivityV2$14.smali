@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 707
+    .line 714
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$14;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 3
 
-    .line 711
+    .line 718
     new-instance p1, Landroid/content/Intent;
 
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$14;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
@@ -49,10 +49,10 @@
 
     const-string v0, "url"
 
-    .line 712
+    .line 719
     iget-object v1, p0, Ltw/edu/kmu/act/MainPageActivityV2$14;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
-    const v2, 0x7f0c0038
+    const v2, 0x7f0c0037
 
     invoke-static {v1, v2}, Ltw/edu/kmu/act/MainPageActivityV2;->access$600(Ltw/edu/kmu/act/MainPageActivityV2;I)Ljava/lang/String;
 
@@ -62,10 +62,10 @@
 
     const-string v0, "title"
 
-    .line 713
+    .line 720
     iget-object v1, p0, Ltw/edu/kmu/act/MainPageActivityV2$14;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
-    const v2, 0x7f0c00c6
+    const v2, 0x7f0c00c4
 
     invoke-static {v1, v2}, Ltw/edu/kmu/act/MainPageActivityV2;->access$600(Ltw/edu/kmu/act/MainPageActivityV2;I)Ljava/lang/String;
 
@@ -77,10 +77,10 @@
 
     const-string v1, "true"
 
-    .line 714
+    .line 721
     invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 715
+    .line 722
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$14;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-virtual {v0, p1}, Ltw/edu/kmu/act/MainPageActivityV2;->startActivity(Landroid/content/Intent;)V

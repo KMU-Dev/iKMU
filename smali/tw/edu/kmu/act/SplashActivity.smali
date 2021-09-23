@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Ltw/edu/kmu/act/SplashActivity$getServerData;,
+        Ltw/edu/kmu/act/SplashActivity$GetServerData;,
         Ltw/edu/kmu/act/SplashActivity$GetZipFile;
     }
 .end annotation
@@ -62,20 +62,20 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 31
+    .line 33
     invoke-direct {p0}, Ltw/edu/kmu/act/BasicActivity;-><init>()V
 
     const/16 v0, 0xa
 
-    .line 44
+    .line 46
     iput v0, p0, Ltw/edu/kmu/act/SplashActivity;->CLOSE_PROGRESSBAR:I
 
     const/16 v0, 0x64
 
-    .line 46
+    .line 48
     iput v0, p0, Ltw/edu/kmu/act/SplashActivity;->CLOSE_UPDATE_PROGRESSBAR:I
 
-    .line 74
+    .line 80
     new-instance v0, Ltw/edu/kmu/act/SplashActivity$1;
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/SplashActivity$1;-><init>(Ltw/edu/kmu/act/SplashActivity;)V
@@ -85,55 +85,55 @@
     return-void
 .end method
 
-.method static synthetic access$000(Ltw/edu/kmu/act/SplashActivity;)V
+.method static synthetic access$100(Ltw/edu/kmu/act/SplashActivity;)V
     .locals 0
 
-    .line 31
+    .line 33
     invoke-direct {p0}, Ltw/edu/kmu/act/SplashActivity;->checkUpdateInfo()V
 
     return-void
 .end method
 
-.method static synthetic access$100(Ltw/edu/kmu/act/SplashActivity;)V
+.method static synthetic access$200(Ltw/edu/kmu/act/SplashActivity;)V
     .locals 0
 
-    .line 31
+    .line 33
     invoke-direct {p0}, Ltw/edu/kmu/act/SplashActivity;->switchActivity()V
 
     return-void
 .end method
 
-.method static synthetic access$300(Ltw/edu/kmu/act/SplashActivity;)V
+.method static synthetic access$400(Ltw/edu/kmu/act/SplashActivity;)V
     .locals 0
 
-    .line 31
+    .line 33
     invoke-direct {p0}, Ltw/edu/kmu/act/SplashActivity;->getZipFile()V
 
     return-void
 .end method
 
-.method static synthetic access$400(Ltw/edu/kmu/act/SplashActivity;)Landroid/os/Handler;
+.method static synthetic access$500(Ltw/edu/kmu/act/SplashActivity;)Landroid/os/Handler;
     .locals 0
 
-    .line 31
+    .line 33
     iget-object p0, p0, Ltw/edu/kmu/act/SplashActivity;->handler:Landroid/os/Handler;
 
     return-object p0
 .end method
 
-.method static synthetic access$502(Ltw/edu/kmu/act/SplashActivity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
+.method static synthetic access$602(Ltw/edu/kmu/act/SplashActivity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
 
-    .line 31
+    .line 33
     iput-object p1, p0, Ltw/edu/kmu/act/SplashActivity;->serverDataList:Ljava/util/ArrayList;
 
     return-object p1
 .end method
 
-.method static synthetic access$600(Ltw/edu/kmu/act/SplashActivity;)Ljava/util/ArrayList;
+.method static synthetic access$700(Ltw/edu/kmu/act/SplashActivity;)Ljava/util/ArrayList;
     .locals 0
 
-    .line 31
+    .line 33
     invoke-direct {p0}, Ltw/edu/kmu/act/SplashActivity;->readServerDataList()Ljava/util/ArrayList;
 
     move-result-object p0
@@ -144,7 +144,7 @@
 .method private checkUpdateInfo()V
     .locals 6
 
-    .line 101
+    .line 107
     iget-object v0, p0, Ltw/edu/kmu/act/SplashActivity;->serverDataList:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_1
@@ -157,7 +157,7 @@
 
     if-lez v0, :cond_1
 
-    .line 103
+    .line 109
     iget-object v0, p0, Ltw/edu/kmu/act/SplashActivity;->serverDataList:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
@@ -168,7 +168,7 @@
 
     check-cast v0, Ljava/util/HashMap;
 
-    .line 104
+    .line 110
     iget-object v2, p0, Ltw/edu/kmu/act/SplashActivity;->sharedData:Landroid/content/SharedPreferences;
 
     const-string v3, "dataVersion"
@@ -179,7 +179,7 @@
 
     move-result-object v2
 
-    .line 105
+    .line 111
     sget-object v3, Ltw/edu/kmu/act/SplashActivity;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -198,7 +198,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 106
+    .line 112
     sget-object v3, Ltw/edu/kmu/act/SplashActivity;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -227,7 +227,7 @@
 
     const-string v3, "dataVersion"
 
-    .line 107
+    .line 113
     invoke-virtual {v0, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -262,7 +262,7 @@
 
     if-nez v2, :cond_0
 
-    .line 108
+    .line 114
     iget-object v2, p0, Ltw/edu/kmu/act/SplashActivity;->sharedData:Landroid/content/SharedPreferences;
 
     invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -273,7 +273,7 @@
 
     const-string v4, "dataVersion"
 
-    .line 109
+    .line 115
     invoke-virtual {v0, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
@@ -282,24 +282,24 @@
 
     invoke-interface {v2, v3, v4}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 110
+    .line 116
     invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    .line 111
+    .line 117
     sget-object v2, Ltw/edu/kmu/act/SplashActivity;->TAG:Ljava/lang/String;
 
     const-string v3, "go to getZipFile"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 112
+    .line 118
     iget-object v2, p0, Ltw/edu/kmu/act/SplashActivity;->progressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v2}, Landroid/app/ProgressDialog;->show()V
 
     const-string v2, "dataUrl"
 
-    .line 113
+    .line 119
     invoke-virtual {v0, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -308,7 +308,7 @@
 
     iput-object v2, p0, Ltw/edu/kmu/act/SplashActivity;->dataId:Ljava/lang/String;
 
-    .line 114
+    .line 120
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -333,7 +333,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/SplashActivity;->dataurl:Ljava/lang/String;
 
-    .line 115
+    .line 121
     new-instance v0, Ltw/edu/kmu/act/SplashActivity$GetZipFile;
 
     const/4 v2, 0x0
@@ -342,7 +342,7 @@
 
     const/4 v2, 0x1
 
-    .line 116
+    .line 122
     new-array v2, v2, [Ljava/lang/Integer;
 
     const/16 v3, 0x3e8
@@ -357,7 +357,7 @@
 
     goto :goto_0
 
-    .line 118
+    .line 124
     :cond_0
     sget-object v0, Ltw/edu/kmu/act/SplashActivity;->TAG:Ljava/lang/String;
 
@@ -365,12 +365,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 119
+    .line 125
     invoke-direct {p0}, Ltw/edu/kmu/act/SplashActivity;->switchActivity()V
 
     goto :goto_0
 
-    .line 122
+    .line 128
     :cond_1
     invoke-direct {p0}, Ltw/edu/kmu/act/SplashActivity;->switchActivity()V
 
@@ -381,7 +381,7 @@
 .method private getZipFile()V
     .locals 10
 
-    .line 171
+    .line 177
     :try_start_0
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
@@ -389,7 +389,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/SplashActivity;->sdCard:Ljava/io/File;
 
-    .line 172
+    .line 178
     new-instance v0, Ljava/io/File;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -428,7 +428,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/SplashActivity;->imgStorage:Ljava/io/File;
 
-    .line 173
+    .line 179
     iget-object v0, p0, Ltw/edu/kmu/act/SplashActivity;->imgStorage:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
@@ -437,12 +437,12 @@
 
     if-nez v0, :cond_0
 
-    .line 174
+    .line 180
     iget-object v0, p0, Ltw/edu/kmu/act/SplashActivity;->imgStorage:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
-    .line 177
+    .line 183
     :cond_0
     new-instance v0, Ljava/net/URL;
 
@@ -450,12 +450,12 @@
 
     invoke-direct {v0, v1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    .line 178
+    .line 184
     invoke-virtual {v0}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object v0
 
-    .line 179
+    .line 185
     new-instance v1, Ljava/io/BufferedInputStream;
 
     invoke-virtual {v0}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
@@ -464,7 +464,7 @@
 
     invoke-direct {v1, v2}, Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;)V
 
-    .line 180
+    .line 186
     new-instance v2, Ljava/io/File;
 
     iget-object v3, p0, Ltw/edu/kmu/act/SplashActivity;->imgStorage:Ljava/io/File;
@@ -487,26 +487,26 @@
 
     invoke-direct {v2, v3, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 181
+    .line 187
     new-instance v3, Ljava/io/FileOutputStream;
 
     invoke-direct {v3, v2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
     const/16 v2, 0x400
 
-    .line 184
+    .line 190
     new-array v2, v2, [B
 
     const-wide/16 v4, 0x0
 
-    .line 186
+    .line 192
     invoke-virtual {v0}, Ljava/net/URLConnection;->getContentLength()I
 
     move-result v0
 
     int-to-long v6, v0
 
-    .line 188
+    .line 194
     :goto_0
     invoke-virtual {v1, v2}, Ljava/io/InputStream;->read([B)I
 
@@ -524,21 +524,21 @@
 
     mul-long v8, v8, v4
 
-    .line 191
+    .line 197
     div-long/2addr v8, v6
 
     const/4 v8, 0x0
 
-    .line 192
+    .line 198
     invoke-virtual {v3, v2, v8, v0}, Ljava/io/FileOutputStream;->write([BII)V
 
     goto :goto_0
 
-    .line 195
+    .line 201
     :cond_1
     invoke-virtual {v3}, Ljava/io/FileOutputStream;->close()V
 
-    .line 196
+    .line 202
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -548,7 +548,7 @@
     :catch_0
     move-exception v0
 
-    .line 199
+    .line 205
     sget-object v1, Ltw/edu/kmu/act/SplashActivity;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -571,7 +571,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 200
+    .line 206
     iget-object v0, p0, Ltw/edu/kmu/act/SplashActivity;->handler:Landroid/os/Handler;
 
     const/16 v1, 0xbb8
@@ -595,12 +595,12 @@
         }
     .end annotation
 
-    .line 300
+    .line 307
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 302
+    .line 309
     :try_start_0
     new-instance v1, Ljava/util/HashMap;
 
@@ -610,28 +610,25 @@
 
     const-string v3, "android"
 
-    .line 303
+    .line 310
     invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 304
+    .line 311
     iget-object v2, p0, Ltw/edu/kmu/act/SplashActivity;->serverResource:Ltw/edu/kmu/resource/ServerResource;
 
     iget-object v3, p0, Ltw/edu/kmu/act/SplashActivity;->url:Ljava/lang/String;
 
-    invoke-virtual {v2, v3, v1}, Ltw/edu/kmu/resource/ServerResource;->readServerData(Ljava/lang/String;Ljava/util/HashMap;)Ljava/util/ArrayList;
-
-    move-result-object v1
+    invoke-virtual {v2, v3, v1}, Ltw/edu/kmu/resource/ServerResource;->getWebServiceDataUsingGet(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
     :try_end_0
+    .catch Ljavax/net/ssl/SSLHandshakeException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-object v0, v1
 
     goto :goto_0
 
     :catch_0
     move-exception v1
 
-    .line 306
+    .line 318
     sget-object v2, Ltw/edu/kmu/act/SplashActivity;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -654,12 +651,50 @@
 
     invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 307
-    iget-object v1, p0, Ltw/edu/kmu/act/SplashActivity;->handler:Landroid/os/Handler;
+    goto :goto_0
 
-    const/16 v2, 0xbb8
+    :catch_1
+    move-exception v1
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+    .line 313
+    sget-object v2, Ltw/edu/kmu/act/SplashActivity;->TAG:Ljava/lang/String;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "SSLHandshakeException:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljavax/net/ssl/SSLHandshakeException;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 314
+    iget-object v1, p0, Ltw/edu/kmu/act/SplashActivity;->sharedData:Landroid/content/SharedPreferences;
+
+    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v1
+
+    const-string v2, "cer"
+
+    const v3, 0x7f0b0003
+
+    .line 315
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+
+    .line 316
+    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     :goto_0
     return-object v0
@@ -668,7 +703,7 @@
 .method private switchActivity()V
     .locals 4
 
-    .line 153
+    .line 159
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
@@ -689,7 +724,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00d3
+    const v0, 0x7f0a00d5
 
     return v0
 .end method
@@ -703,42 +738,91 @@
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 1
+    .locals 3
 
-    .line 54
+    .line 56
     invoke-super {p0, p1}, Ltw/edu/kmu/act/BasicActivity;->onCreate(Landroid/os/Bundle;)V
 
     const-string p1, "Data"
 
     const/4 v0, 0x0
 
-    .line 56
+    .line 58
     invoke-virtual {p0, p1, v0}, Ltw/edu/kmu/act/SplashActivity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p1
 
     iput-object p1, p0, Ltw/edu/kmu/act/SplashActivity;->sharedData:Landroid/content/SharedPreferences;
 
+    .line 60
+    iget-object p1, p0, Ltw/edu/kmu/act/SplashActivity;->sharedData:Landroid/content/SharedPreferences;
+
+    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object p1
+
+    const-string v1, "cer"
+
+    const v2, 0x7f0b0004
+
+    .line 61
+    invoke-interface {p1, v1, v2}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+
+    .line 62
+    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
     const p1, 0x7f080028
 
-    .line 58
+    .line 64
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SplashActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroid/widget/TextView;
 
-    .line 59
-    iget-object v0, p0, Ltw/edu/kmu/act/SplashActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
+    .line 65
+    iget-object v1, p0, Ltw/edu/kmu/act/SplashActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    invoke-virtual {v0, p0}, Ltw/edu/kmu/act/MyApplication;->getVersionName(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v1, p0}, Ltw/edu/kmu/act/MyApplication;->getVersionName(Landroid/content/Context;)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 70
-    invoke-direct {p0}, Ltw/edu/kmu/act/SplashActivity;->switchActivity()V
+    .line 67
+    invoke-virtual {p0}, Ltw/edu/kmu/act/SplashActivity;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    const v1, 0x7f0c0046
+
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Ltw/edu/kmu/act/SplashActivity;->url:Ljava/lang/String;
+
+    .line 73
+    new-instance p1, Ltw/edu/kmu/act/SplashActivity$GetServerData;
+
+    const/4 v1, 0x0
+
+    invoke-direct {p1, p0, v1}, Ltw/edu/kmu/act/SplashActivity$GetServerData;-><init>(Ltw/edu/kmu/act/SplashActivity;Ltw/edu/kmu/act/SplashActivity$1;)V
+
+    const/4 v1, 0x1
+
+    .line 74
+    new-array v1, v1, [Ljava/lang/Integer;
+
+    const/16 v2, 0x3e8
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    aput-object v2, v1, v0
+
+    invoke-virtual {p1, v1}, Ltw/edu/kmu/act/SplashActivity$GetServerData;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     return-void
 .end method

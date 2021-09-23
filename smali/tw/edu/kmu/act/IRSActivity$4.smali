@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/IRSActivity;)V
     .locals 0
 
-    .line 580
+    .line 583
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity$4;->this$0:Ltw/edu/kmu/act/IRSActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +38,14 @@
 .method public onClick(Landroid/view/View;)V
     .locals 3
 
-    .line 585
+    .line 588
     iget-object p1, p0, Ltw/edu/kmu/act/IRSActivity$4;->this$0:Ltw/edu/kmu/act/IRSActivity;
 
     invoke-virtual {p1}, Ltw/edu/kmu/act/IRSActivity;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object p1
 
-    const v0, 0x7f0a0072
+    const v0, 0x7f0a0074
 
     const/4 v1, 0x0
 
@@ -53,16 +53,16 @@
 
     move-result-object p1
 
-    const v0, 0x7f0801c7
+    const v0, 0x7f0801d5
 
-    .line 586
+    .line 589
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 587
+    .line 590
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -89,7 +89,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 588
+    .line 591
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity$4;->this$0:Ltw/edu/kmu/act/IRSActivity;
 
     invoke-static {v0}, Ltw/edu/kmu/act/IRSActivity;->access$2100(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/LinearLayout;

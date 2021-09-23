@@ -331,7 +331,7 @@
 
     iget-object v4, p0, Ltw/edu/kmu/act/QuestionnaireActivity;->serverDataList:Ljava/util/ArrayList;
 
-    const v5, 0x7f0a00b1
+    const v5, 0x7f0a00b3
 
     const/4 v2, 0x3
 
@@ -381,9 +381,9 @@
 
     :array_0
     .array-data 4
-        0x7f0801c7
-        0x7f080238
-        0x7f0800b6
+        0x7f0801d5
+        0x7f080245
+        0x7f0800c1
     .end array-data
 .end method
 
@@ -392,7 +392,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a008d
+    const v0, 0x7f0a008f
 
     return v0
 .end method
@@ -424,7 +424,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c00c9
+    const v0, 0x7f0c00c7
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -432,7 +432,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/QuestionnaireActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 45
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/QuestionnaireActivity;->findViewById(I)Landroid/view/View;

@@ -79,7 +79,7 @@
 .method private initBtn()V
     .locals 4
 
-    const v0, 0x7f080040
+    const v0, 0x7f08003f
 
     .line 93
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/GalleryGridViewActivity;->findViewById(I)Landroid/view/View;
@@ -142,7 +142,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a006c
+    const v0, 0x7f0a006e
 
     return v0
 .end method
@@ -199,7 +199,7 @@
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    const v0, 0x7f0800ef
+    const v0, 0x7f0800f9
 
     .line 54
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/GalleryGridViewActivity;->findViewById(I)Landroid/view/View;

@@ -221,7 +221,7 @@
 
     move-result v0
 
-    const v1, 0x7f08004b
+    const v1, 0x7f08004a
 
     .line 54
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/KMUSongActivity;->findViewById(I)Landroid/view/View;
@@ -238,7 +238,7 @@
     .line 56
     new-instance v3, Ltw/edu/kmu/listener/PlaySongListener;
 
-    const v4, 0x7f0c010c
+    const v4, 0x7f0c0108
 
     invoke-direct {v3, v1, v0, v4}, Ltw/edu/kmu/listener/PlaySongListener;-><init>(Landroid/widget/Button;II)V
 
@@ -280,7 +280,7 @@
 
     move-result p1
 
-    const v0, 0x7f08004a
+    const v0, 0x7f080049
 
     .line 59
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/KMUSongActivity;->findViewById(I)Landroid/view/View;
@@ -295,7 +295,7 @@
     .line 61
     new-instance v1, Ltw/edu/kmu/listener/PlaySongListener;
 
-    const v2, 0x7f0c010b
+    const v2, 0x7f0c0107
 
     invoke-direct {v1, v0, p1, v2}, Ltw/edu/kmu/listener/PlaySongListener;-><init>(Landroid/widget/Button;II)V
 

@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/WebActivity;)V
     .locals 0
 
-    .line 189
+    .line 193
     iput-object p1, p0, Ltw/edu/kmu/act/WebActivity$2;->this$0:Ltw/edu/kmu/act/WebActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 193
+    .line 197
     iget-object p1, p0, Ltw/edu/kmu/act/WebActivity$2;->this$0:Ltw/edu/kmu/act/WebActivity;
 
     invoke-virtual {p1}, Ltw/edu/kmu/act/WebActivity;->finish()V

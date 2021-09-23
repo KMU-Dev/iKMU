@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/SplashActivity;)V
     .locals 0
 
-    .line 153
+    .line 159
     iput-object p1, p0, Ltw/edu/kmu/act/SplashActivity$2;->this$0:Ltw/edu/kmu/act/SplashActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 3
 
-    .line 156
+    .line 162
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
@@ -55,12 +55,12 @@
 
     move-result-object v0
 
-    .line 157
+    .line 163
     iget-object v1, p0, Ltw/edu/kmu/act/SplashActivity$2;->this$0:Ltw/edu/kmu/act/SplashActivity;
 
     invoke-virtual {v1, v0}, Ltw/edu/kmu/act/SplashActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 158
+    .line 164
     iget-object v0, p0, Ltw/edu/kmu/act/SplashActivity$2;->this$0:Ltw/edu/kmu/act/SplashActivity;
 
     invoke-virtual {v0}, Ltw/edu/kmu/act/SplashActivity;->finish()V

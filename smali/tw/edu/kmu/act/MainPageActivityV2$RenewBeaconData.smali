@@ -32,7 +32,7 @@
 .method private constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 1035
+    .line 1053
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$RenewBeaconData;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -43,7 +43,7 @@
 .method synthetic constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;Ltw/edu/kmu/act/MainPageActivityV2$1;)V
     .locals 0
 
-    .line 1035
+    .line 1053
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2$RenewBeaconData;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     return-void
@@ -54,7 +54,7 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1035
+    .line 1053
     check-cast p1, [Ljava/lang/Integer;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2$RenewBeaconData;->doInBackground([Ljava/lang/Integer;)Ljava/lang/String;
@@ -67,7 +67,7 @@
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/String;
     .locals 1
 
-    .line 1045
+    .line 1063
     iget-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$RenewBeaconData;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     const-string v0, "URL_BEACON_INFO"
@@ -82,7 +82,7 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1035
+    .line 1053
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2$RenewBeaconData;->onPostExecute(Ljava/lang/String;)V
@@ -93,13 +93,13 @@
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 0
 
-    .line 1051
+    .line 1069
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
-    .line 1052
+    .line 1070
     invoke-static {}, Ltw/edu/kmu/vo/ConfigData;->deleteInstance()V
 
-    .line 1053
+    .line 1071
     iget-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$RenewBeaconData;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-static {p1}, Ltw/edu/kmu/vo/ConfigData;->getInstance(Landroid/content/Context;)Ltw/edu/kmu/vo/ConfigData;
@@ -110,7 +110,7 @@
 .method protected onPreExecute()V
     .locals 0
 
-    .line 1039
+    .line 1057
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
     return-void

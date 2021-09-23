@@ -72,7 +72,7 @@
 
     iget-object v1, p0, Ltw/edu/kmu/act/TBLReplyRecordActivity$1;->this$0:Ltw/edu/kmu/act/TBLReplyRecordActivity;
 
-    const v2, 0x7f0c00fc
+    const v2, 0x7f0c00f8
 
     .line 90
     invoke-virtual {v1, v2}, Ltw/edu/kmu/act/TBLReplyRecordActivity;->getStringById(I)Ljava/lang/String;
@@ -85,7 +85,7 @@
 
     iget-object v1, p0, Ltw/edu/kmu/act/TBLReplyRecordActivity$1;->this$0:Ltw/edu/kmu/act/TBLReplyRecordActivity;
 
-    const v2, 0x7f0c00fa
+    const v2, 0x7f0c00f6
 
     .line 91
     invoke-virtual {v1, v2}, Ltw/edu/kmu/act/TBLReplyRecordActivity;->getStringById(I)Ljava/lang/String;
@@ -98,7 +98,7 @@
 
     iget-object v1, p0, Ltw/edu/kmu/act/TBLReplyRecordActivity$1;->this$0:Ltw/edu/kmu/act/TBLReplyRecordActivity;
 
-    const v2, 0x7f0c00fb
+    const v2, 0x7f0c00f7
 
     .line 92
     invoke-virtual {v1, v2}, Ltw/edu/kmu/act/TBLReplyRecordActivity;->getStringById(I)Ljava/lang/String;
@@ -115,7 +115,7 @@
 
     iget-object v1, p0, Ltw/edu/kmu/act/TBLReplyRecordActivity$1;->this$0:Ltw/edu/kmu/act/TBLReplyRecordActivity;
 
-    const v2, 0x7f0c00f9
+    const v2, 0x7f0c00f5
 
     .line 99
     invoke-virtual {v1, v2}, Ltw/edu/kmu/act/TBLReplyRecordActivity;->getStringById(I)Ljava/lang/String;

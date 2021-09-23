@@ -349,7 +349,7 @@
 
     invoke-virtual {v0, v1, v1}, Landroid/view/Window;->setFlags(II)V
 
-    const v0, 0x7f0a00b7
+    const v0, 0x7f0a00b9
 
     .line 48
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/SafetyMapV2Activity;->setContentView(I)V
@@ -359,11 +359,11 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a006f
+    const v1, 0x7f0a0071
 
     invoke-virtual {v0, p1, v1}, Landroid/view/Window;->setFeatureInt(II)V
 
-    const p1, 0x7f08022e
+    const p1, 0x7f08023b
 
     .line 51
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SafetyMapV2Activity;->findViewById(I)Landroid/view/View;
@@ -388,7 +388,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f080125
+    const v0, 0x7f08012f
 
     invoke-virtual {p1, v0}, Landroid/support/v4/app/FragmentManager;->findFragmentById(I)Landroid/support/v4/app/Fragment;
 

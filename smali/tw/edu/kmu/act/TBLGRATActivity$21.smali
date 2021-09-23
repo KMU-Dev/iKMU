@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/TBLGRATActivity;)V
     .locals 0
 
-    .line 1315
+    .line 1320
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$21;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 14
 
-    .line 1344
+    .line 1349
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$21;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-static {v0}, Ltw/edu/kmu/act/TBLGRATActivity;->access$1000(Ltw/edu/kmu/act/TBLGRATActivity;)I
@@ -51,25 +51,25 @@
 
     const-wide/16 v2, 0x3e8
 
-    .line 1345
+    .line 1350
     div-long v4, v0, v2
 
     const-wide/32 v6, 0xea60
 
-    .line 1346
+    .line 1351
     div-long v6, v0, v6
 
     const-wide/32 v8, 0x36ee80
 
-    .line 1347
+    .line 1352
     div-long v8, v0, v8
 
     const-wide/32 v10, 0x5265c00
 
-    .line 1348
+    .line 1353
     div-long/2addr v0, v10
 
-    .line 1350
+    .line 1355
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -164,7 +164,7 @@
 
     goto :goto_0
 
-    .line 1351
+    .line 1356
     :goto_1
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -256,7 +256,7 @@
 
     goto :goto_2
 
-    .line 1352
+    .line 1357
     :goto_3
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -344,7 +344,7 @@
 
     goto :goto_4
 
-    .line 1355
+    .line 1360
     :goto_5
     iget-object v5, p0, Ltw/edu/kmu/act/TBLGRATActivity$21;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
@@ -354,7 +354,7 @@
 
     if-gtz v5, :cond_3
 
-    .line 1357
+    .line 1362
     invoke-static {}, Ltw/edu/kmu/act/TBLGRATActivity;->access$900()Ljava/lang/String;
 
     move-result-object v0
@@ -363,17 +363,17 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1358
+    .line 1363
     new-instance v0, Landroid/os/Message;
 
     invoke-direct {v0}, Landroid/os/Message;-><init>()V
 
     const/4 v1, 0x5
 
-    .line 1359
+    .line 1364
     iput v1, v0, Landroid/os/Message;->what:I
 
-    .line 1360
+    .line 1365
     iget-object v1, p0, Ltw/edu/kmu/act/TBLGRATActivity$21;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-static {v1}, Ltw/edu/kmu/act/TBLGRATActivity;->access$1100(Ltw/edu/kmu/act/TBLGRATActivity;)Landroid/os/Handler;
@@ -384,13 +384,13 @@
 
     goto :goto_6
 
-    .line 1363
+    .line 1368
     :cond_3
     iget-object v5, p0, Ltw/edu/kmu/act/TBLGRATActivity$21;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-static {v5}, Ltw/edu/kmu/act/TBLGRATActivity;->access$1010(Ltw/edu/kmu/act/TBLGRATActivity;)I
 
-    .line 1364
+    .line 1369
     iget-object v5, p0, Ltw/edu/kmu/act/TBLGRATActivity$21;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-static {v5}, Ltw/edu/kmu/act/TBLGRATActivity;->access$100(Ltw/edu/kmu/act/TBLGRATActivity;)Landroid/os/Handler;
@@ -403,17 +403,17 @@
 
     invoke-virtual {v5, v6, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1365
+    .line 1370
     new-instance v2, Landroid/os/Message;
 
     invoke-direct {v2}, Landroid/os/Message;-><init>()V
 
     const/16 v3, 0x33
 
-    .line 1366
+    .line 1371
     iput v3, v2, Landroid/os/Message;->what:I
 
-    .line 1367
+    .line 1372
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -438,7 +438,7 @@
 
     iput-object v0, v2, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 1368
+    .line 1373
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$21;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-static {v0}, Ltw/edu/kmu/act/TBLGRATActivity;->access$1100(Ltw/edu/kmu/act/TBLGRATActivity;)Landroid/os/Handler;

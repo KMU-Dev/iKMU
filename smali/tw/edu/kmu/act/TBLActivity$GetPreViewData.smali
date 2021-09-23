@@ -44,43 +44,43 @@
 .method private constructor <init>(Ltw/edu/kmu/act/TBLActivity;)V
     .locals 1
 
-    .line 1497
+    .line 1502
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     const-string p1, ""
 
-    .line 1499
+    .line 1504
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->resultString:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 1500
+    .line 1505
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->returnCode:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 1501
+    .line 1506
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->rtnCode:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 1502
+    .line 1507
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->reason:Ljava/lang/String;
 
     const-string p1, ""
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->ereason:Ljava/lang/String;
 
-    .line 1503
+    .line 1508
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-virtual {p1}, Ltw/edu/kmu/act/TBLActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const v0, 0x7f0c005b
+    const v0, 0x7f0c005a
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -94,7 +94,7 @@
 .method synthetic constructor <init>(Ltw/edu/kmu/act/TBLActivity;Ltw/edu/kmu/act/TBLActivity$1;)V
     .locals 0
 
-    .line 1497
+    .line 1502
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;-><init>(Ltw/edu/kmu/act/TBLActivity;)V
 
     return-void
@@ -103,7 +103,7 @@
 .method static synthetic access$1800(Ltw/edu/kmu/act/TBLActivity$GetPreViewData;)Ljava/lang/String;
     .locals 0
 
-    .line 1497
+    .line 1502
     iget-object p0, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->rtnCode:Ljava/lang/String;
 
     return-object p0
@@ -114,7 +114,7 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1497
+    .line 1502
     check-cast p1, [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->doInBackground([Ljava/lang/String;)Ljava/lang/String;
@@ -127,7 +127,7 @@
 .method protected varargs doInBackground([Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
-    .line 1515
+    .line 1520
     :try_start_0
     new-instance v0, Ljava/util/HashMap;
 
@@ -135,7 +135,7 @@
 
     const-string v1, "stuno"
 
-    .line 1516
+    .line 1521
     iget-object v2, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iget-object v2, v2, Ltw/edu/kmu/act/TBLActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
@@ -146,7 +146,7 @@
 
     const-string v1, "quid"
 
-    .line 1517
+    .line 1522
     iget-object v2, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-static {v2}, Ltw/edu/kmu/act/TBLActivity;->access$1100(Ltw/edu/kmu/act/TBLActivity;)Landroid/os/Bundle;
@@ -165,7 +165,7 @@
 
     const/4 v2, 0x0
 
-    .line 1518
+    .line 1523
     aget-object v2, p1, v2
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -174,12 +174,12 @@
 
     const/4 v2, 0x1
 
-    .line 1519
+    .line 1524
     aget-object p1, p1, v2
 
     invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1520
+    .line 1525
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iget-object p1, p1, Ltw/edu/kmu/act/TBLActivity;->serverResource:Ltw/edu/kmu/resource/ServerResource;
@@ -192,7 +192,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->resultString:Ljava/lang/String;
 
-    .line 1521
+    .line 1526
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->resultString:Ljava/lang/String;
@@ -207,7 +207,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->returnCode:Ljava/lang/String;
 
-    .line 1522
+    .line 1527
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->resultString:Ljava/lang/String;
@@ -222,7 +222,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->rtnCode:Ljava/lang/String;
 
-    .line 1523
+    .line 1528
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
@@ -235,7 +235,7 @@
 
     invoke-static {p1, v0}, Ltw/edu/kmu/act/TBLActivity;->access$1602(Ltw/edu/kmu/act/TBLActivity;Ljava/util/HashMap;)Ljava/util/HashMap;
 
-    .line 1524
+    .line 1529
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
@@ -264,7 +264,7 @@
 
     invoke-static {p1, v0}, Ltw/edu/kmu/act/TBLActivity;->access$1702(Ltw/edu/kmu/act/TBLActivity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
-    .line 1525
+    .line 1530
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->resultString:Ljava/lang/String;
@@ -279,7 +279,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->reason:Ljava/lang/String;
 
-    .line 1526
+    .line 1531
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->resultString:Ljava/lang/String;
@@ -301,7 +301,7 @@
     :catch_0
     move-exception p1
 
-    .line 1530
+    .line 1535
     invoke-static {}, Ltw/edu/kmu/act/TBLActivity;->access$800()Ljava/lang/String;
 
     move-result-object v0
@@ -335,7 +335,7 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1497
+    .line 1502
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->onPostExecute(Ljava/lang/String;)V
@@ -346,10 +346,10 @@
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 3
 
-    .line 1537
+    .line 1542
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
-    .line 1538
+    .line 1543
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iget-object p1, p1, Ltw/edu/kmu/act/TBLActivity;->progressDialog:Landroid/app/ProgressDialog;
@@ -358,7 +358,7 @@
 
     const-string p1, "true"
 
-    .line 1539
+    .line 1544
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->returnCode:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -367,7 +367,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 1541
+    .line 1546
     :try_start_0
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
@@ -380,7 +380,7 @@
     :catch_0
     move-exception p1
 
-    .line 1543
+    .line 1548
     invoke-static {}, Ltw/edu/kmu/act/TBLActivity;->access$800()Ljava/lang/String;
 
     move-result-object v0
@@ -407,7 +407,7 @@
 
     goto :goto_2
 
-    .line 1546
+    .line 1551
     :cond_0
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
@@ -428,7 +428,7 @@
     :cond_1
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->reason:Ljava/lang/String;
 
-    .line 1547
+    .line 1552
     :goto_0
     invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -452,12 +452,12 @@
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/TBLActivity$GetPreViewData$1;-><init>(Ltw/edu/kmu/act/TBLActivity$GetPreViewData;)V
 
-    .line 1548
+    .line 1553
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    .line 1558
+    .line 1563
     invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     :goto_2
@@ -467,10 +467,10 @@
 .method protected onPreExecute()V
     .locals 1
 
-    .line 1507
+    .line 1512
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
-    .line 1508
+    .line 1513
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iget-object v0, v0, Ltw/edu/kmu/act/TBLActivity;->progressDialog:Landroid/app/ProgressDialog;

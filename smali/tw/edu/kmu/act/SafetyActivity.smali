@@ -334,7 +334,7 @@
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f08011b
+    const v0, 0x7f080125
 
     .line 87
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/SafetyActivity;->findViewById(I)Landroid/view/View;
@@ -354,7 +354,7 @@
 
     iget-object v3, p0, Ltw/edu/kmu/act/SafetyActivity;->serverDataList:Ljava/util/ArrayList;
 
-    const v4, 0x7f0a00b5
+    const v4, 0x7f0a00b7
 
     const/4 v1, 0x2
 
@@ -422,8 +422,8 @@
 
     :array_0
     .array-data 4
-        0x7f08011a
-        0x7f0801b1
+        0x7f080124
+        0x7f0801bf
     .end array-data
 .end method
 
@@ -432,7 +432,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00b2
+    const v0, 0x7f0a00b4
 
     return v0
 .end method
@@ -459,7 +459,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c00ca
+    const v1, 0x7f0c00c8
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -467,7 +467,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SafetyActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f08014f
+    const p1, 0x7f080159
 
     .line 66
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SafetyActivity;->findViewById(I)Landroid/view/View;
@@ -488,7 +488,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c0046
+    const v1, 0x7f0c0045
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

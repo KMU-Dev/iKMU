@@ -27,7 +27,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/TBLGRATActivity;Ltw/edu/kmu/act/TBLGRATActivity$ViewDialog;)V
     .locals 0
 
-    .line 1273
+    .line 1278
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$20;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iput-object p2, p0, Ltw/edu/kmu/act/TBLGRATActivity$20;->val$alertDialog:Ltw/edu/kmu/act/TBLGRATActivity$ViewDialog;
@@ -42,7 +42,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1277
+    .line 1282
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$20;->val$alertDialog:Ltw/edu/kmu/act/TBLGRATActivity$ViewDialog;
 
     invoke-virtual {p1}, Ltw/edu/kmu/act/TBLGRATActivity$ViewDialog;->dismiss()V

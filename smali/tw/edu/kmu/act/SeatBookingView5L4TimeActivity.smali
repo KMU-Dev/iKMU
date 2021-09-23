@@ -281,7 +281,7 @@
 .method private initBtn()V
     .locals 3
 
-    const v0, 0x7f080040
+    const v0, 0x7f08003f
 
     .line 74
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/SeatBookingView5L4TimeActivity;->findViewById(I)Landroid/view/View;
@@ -1072,7 +1072,7 @@
     :cond_6
     new-instance v0, Ltw/edu/kmu/adapter/SeatBookingView5L4TimeAdapter;
 
-    const v6, 0x7f0a00cb
+    const v6, 0x7f0a00cd
 
     new-array v7, v5, [Ljava/lang/String;
 
@@ -1082,7 +1082,7 @@
 
     new-array v8, v5, [I
 
-    const v2, 0x7f0801c9
+    const v2, 0x7f0801d7
 
     aput v2, v8, v1
 
@@ -1122,7 +1122,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00c5
+    const v0, 0x7f0a00c7
 
     return v0
 .end method
@@ -1181,7 +1181,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SeatBookingView5L4TimeActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 60
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SeatBookingView5L4TimeActivity;->findViewById(I)Landroid/view/View;

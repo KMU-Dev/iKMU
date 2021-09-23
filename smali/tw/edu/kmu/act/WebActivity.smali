@@ -44,7 +44,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 22
+    .line 23
     invoke-direct {p0}, Ltw/edu/kmu/act/BasicActivity;-><init>()V
 
     return-void
@@ -53,7 +53,7 @@
 .method static synthetic access$000()Ljava/lang/String;
     .locals 1
 
-    .line 22
+    .line 23
     sget-object v0, Ltw/edu/kmu/act/WebActivity;->TAG:Ljava/lang/String;
 
     return-object v0
@@ -62,7 +62,7 @@
 .method static synthetic access$100(Ltw/edu/kmu/act/WebActivity;)V
     .locals 0
 
-    .line 22
+    .line 23
     invoke-direct {p0}, Ltw/edu/kmu/act/WebActivity;->setBtnStatus()V
 
     return-void
@@ -71,7 +71,7 @@
 .method static synthetic access$200(Ltw/edu/kmu/act/WebActivity;)Ltw/edu/kmu/act/MyApplication;
     .locals 0
 
-    .line 22
+    .line 23
     iget-object p0, p0, Ltw/edu/kmu/act/WebActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     return-object p0
@@ -80,7 +80,7 @@
 .method static synthetic access$300(Ltw/edu/kmu/act/WebActivity;)Landroid/webkit/WebView;
     .locals 0
 
-    .line 22
+    .line 23
     iget-object p0, p0, Ltw/edu/kmu/act/WebActivity;->webView:Landroid/webkit/WebView;
 
     return-object p0
@@ -89,9 +89,9 @@
 .method private initViews()V
     .locals 2
 
-    const v0, 0x7f080088
+    const v0, 0x7f080087
 
-    .line 188
+    .line 192
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WebActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -100,7 +100,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/WebActivity;->btnClose:Landroid/widget/Button;
 
-    .line 189
+    .line 193
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->btnClose:Landroid/widget/Button;
 
     new-instance v1, Ltw/edu/kmu/act/WebActivity$2;
@@ -109,9 +109,9 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080087
+    const v0, 0x7f080086
 
-    .line 197
+    .line 201
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WebActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -120,7 +120,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/WebActivity;->btnBack:Landroid/widget/Button;
 
-    .line 199
+    .line 203
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->btnBack:Landroid/widget/Button;
 
     new-instance v1, Ltw/edu/kmu/act/WebActivity$3;
@@ -129,9 +129,9 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080089
+    const v0, 0x7f080088
 
-    .line 207
+    .line 211
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WebActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -140,7 +140,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/WebActivity;->btnForward:Landroid/widget/Button;
 
-    .line 209
+    .line 213
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->btnForward:Landroid/widget/Button;
 
     new-instance v1, Ltw/edu/kmu/act/WebActivity$4;
@@ -149,9 +149,9 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f08008a
+    const v0, 0x7f080089
 
-    .line 217
+    .line 221
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WebActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -160,7 +160,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/WebActivity;->btnReload:Landroid/widget/Button;
 
-    .line 218
+    .line 222
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->btnReload:Landroid/widget/Button;
 
     new-instance v1, Ltw/edu/kmu/act/WebActivity$5;
@@ -175,7 +175,7 @@
 .method private setBtnStatus()V
     .locals 2
 
-    .line 227
+    .line 231
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->btnBack:Landroid/widget/Button;
 
     iget-object v1, p0, Ltw/edu/kmu/act/WebActivity;->webView:Landroid/webkit/WebView;
@@ -196,7 +196,7 @@
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 228
+    .line 232
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->btnForward:Landroid/widget/Button;
 
     iget-object v1, p0, Ltw/edu/kmu/act/WebActivity;->webView:Landroid/webkit/WebView;
@@ -225,7 +225,7 @@
 .method protected getFunctionButtonId()I
     .locals 1
 
-    const v0, 0x7f080040
+    const v0, 0x7f08003f
 
     return v0
 .end method
@@ -233,17 +233,17 @@
 .method protected getLayoutId()I
     .locals 1
 
-    .line 235
+    .line 239
     iget-boolean v0, p0, Ltw/edu/kmu/act/WebActivity;->isPad:Z
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a00f5
+    const v0, 0x7f0a00f7
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0a00f6
+    const v0, 0x7f0a00f8
 
     :goto_0
     return v0
@@ -252,7 +252,7 @@
 .method protected getTitleId()I
     .locals 1
 
-    const v0, 0x7f08022e
+    const v0, 0x7f08023b
 
     return v0
 .end method
@@ -260,7 +260,7 @@
 .method public hideProgress()V
     .locals 2
 
-    .line 272
+    .line 276
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->progressbar:Landroid/widget/ProgressBar;
 
     const/16 v1, 0x8
@@ -271,12 +271,12 @@
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 8
+    .locals 4
 
-    .line 36
+    .line 37
     invoke-super {p0, p1}, Ltw/edu/kmu/act/BasicActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 39
+    .line 40
     invoke-virtual {p0}, Ltw/edu/kmu/act/WebActivity;->getApplication()Landroid/app/Application;
 
     move-result-object p1
@@ -285,12 +285,12 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/WebActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    .line 40
+    .line 41
     invoke-virtual {p0}, Ltw/edu/kmu/act/WebActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
 
-    .line 41
+    .line 42
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
@@ -303,7 +303,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/WebActivity;->url:Ljava/lang/String;
 
-    .line 42
+    .line 43
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
@@ -316,7 +316,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/WebActivity;->title:Ljava/lang/String;
 
-    .line 43
+    .line 44
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
@@ -329,20 +329,20 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/WebActivity;->scale:Ljava/lang/String;
 
-    .line 45
+    .line 46
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->title:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    .line 46
+    .line 47
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->title:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WebActivity;->setTitle(Ljava/lang/CharSequence;)V
 
     :cond_0
-    const v0, 0x7f08014f
+    const v0, 0x7f080159
 
-    .line 48
+    .line 49
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WebActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -351,9 +351,9 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/WebActivity;->progressbar:Landroid/widget/ProgressBar;
 
-    const v0, 0x7f08024c
+    const v0, 0x7f080259
 
-    .line 49
+    .line 50
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WebActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -362,17 +362,17 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/WebActivity;->webView:Landroid/webkit/WebView;
 
-    .line 51
+    .line 52
     invoke-direct {p0}, Ltw/edu/kmu/act/WebActivity;->initViews()V
 
-    .line 53
+    .line 54
     new-instance v0, Ltw/edu/kmu/act/WebActivity$1;
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/WebActivity$1;-><init>(Ltw/edu/kmu/act/WebActivity;)V
 
     iput-object v0, p0, Ltw/edu/kmu/act/WebActivity;->myClient:Landroid/webkit/WebViewClient;
 
-    .line 141
+    .line 142
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->webView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
@@ -381,28 +381,28 @@
 
     const/4 v1, 0x1
 
-    .line 143
+    .line 144
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setBuiltInZoomControls(Z)V
 
-    .line 145
+    .line 146
     sget-object v2, Landroid/webkit/WebSettings$PluginState;->ON:Landroid/webkit/WebSettings$PluginState;
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setPluginState(Landroid/webkit/WebSettings$PluginState;)V
 
-    .line 146
+    .line 147
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 
-    .line 148
+    .line 149
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V
 
-    .line 150
+    .line 151
     iget-object v2, p0, Ltw/edu/kmu/act/WebActivity;->webView:Landroid/webkit/WebView;
 
     iget-object v3, p0, Ltw/edu/kmu/act/WebActivity;->myClient:Landroid/webkit/WebViewClient;
 
     invoke-virtual {v2, v3}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
-    .line 152
+    .line 153
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v2
@@ -417,27 +417,27 @@
 
     const-string v3, ""
 
-    .line 154
+    .line 155
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 155
+    .line 156
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setLoadWithOverviewMode(Z)V
 
-    .line 156
+    .line 157
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setUseWideViewPort(Z)V
 
-    .line 160
+    .line 161
     :cond_1
     :try_start_0
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->scale:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
-    .line 161
+    .line 162
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->webView:Landroid/webkit/WebView;
 
     iget-object v2, p0, Ltw/edu/kmu/act/WebActivity;->scale:Ljava/lang/String;
@@ -455,23 +455,23 @@
     :catch_0
     move-exception v0
 
-    .line 164
+    .line 165
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 166
+    .line 167
     :cond_2
     :goto_0
     invoke-static {p0}, Landroid/webkit/CookieSyncManager;->createInstance(Landroid/content/Context;)Landroid/webkit/CookieSyncManager;
 
-    .line 167
+    .line 168
     invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
 
     move-result-object v0
 
-    .line 168
+    .line 169
     invoke-virtual {v0, v1}, Landroid/webkit/CookieManager;->setAcceptCookie(Z)V
 
-    .line 170
+    .line 171
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object p1
@@ -480,35 +480,42 @@
 
     invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object p1
 
-    if-eqz v4, :cond_3
+    if-eqz p1, :cond_3
 
-    const-string p1, ""
-
-    .line 172
-    invoke-virtual {v4, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_3
+    const-string v1, ""
 
     .line 173
-    iget-object v2, p0, Ltw/edu/kmu/act/WebActivity;->webView:Landroid/webkit/WebView;
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const/4 v3, 0x0
+    move-result v1
 
-    const-string v5, "text/html"
+    if-nez v1, :cond_3
 
-    const-string v6, "utf-8"
+    .line 175
+    invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
-    const/4 v7, 0x0
+    move-result-object p1
 
-    invoke-virtual/range {v2 .. v7}, Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    const/4 v0, 0x0
+
+    invoke-static {p1, v0}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 177
+    iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->webView:Landroid/webkit/WebView;
+
+    const-string v1, "text/html; charset=UTF-8"
+
+    const-string v2, "base64"
+
+    invoke-virtual {v0, p1, v1, v2}, Landroid/webkit/WebView;->loadData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 175
+    .line 179
     :cond_3
     iget-object p1, p0, Ltw/edu/kmu/act/WebActivity;->url:Ljava/lang/String;
 
@@ -520,10 +527,10 @@
 
     const-string v0, "Cookies 1"
 
-    .line 177
+    .line 181
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 179
+    .line 183
     :cond_4
     iget-object p1, p0, Ltw/edu/kmu/act/WebActivity;->webView:Landroid/webkit/WebView;
 
@@ -542,14 +549,14 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 250
+    .line 254
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getRepeatCount()I
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 252
+    .line 256
     iget-object p1, p0, Ltw/edu/kmu/act/WebActivity;->webView:Landroid/webkit/WebView;
 
     invoke-virtual {p1}, Landroid/webkit/WebView;->canGoBack()Z
@@ -560,7 +567,7 @@
 
     const/4 p1, 0x0
 
-    .line 254
+    .line 258
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->webView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->goBack()V
@@ -570,13 +577,13 @@
     :cond_0
     const/4 p1, 0x1
 
-    .line 258
+    .line 262
     :goto_0
     invoke-virtual {p2}, Landroid/view/KeyEvent;->startTracking()V
 
     return p1
 
-    .line 261
+    .line 265
     :cond_1
     invoke-super {p0, p1, p2}, Ltw/edu/kmu/act/BasicActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
@@ -588,7 +595,7 @@
 .method public showProgress()V
     .locals 2
 
-    .line 266
+    .line 270
     iget-object v0, p0, Ltw/edu/kmu/act/WebActivity;->progressbar:Landroid/widget/ProgressBar;
 
     const/4 v1, 0x0

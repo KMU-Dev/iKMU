@@ -284,7 +284,7 @@
 .method private initView()V
     .locals 10
 
-    const v0, 0x7f080106
+    const v0, 0x7f080110
 
     .line 95
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->findViewById(I)Landroid/view/View;
@@ -295,7 +295,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->imgRoot:Landroid/widget/LinearLayout;
 
-    const v0, 0x7f080097
+    const v0, 0x7f0800a0
 
     .line 97
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->findViewById(I)Landroid/view/View;
@@ -325,7 +325,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    const v0, 0x7f0800d1
+    const v0, 0x7f0800db
 
     .line 100
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->findViewById(I)Landroid/view/View;
@@ -336,7 +336,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->edit1:Landroid/widget/EditText;
 
-    const v0, 0x7f0801c7
+    const v0, 0x7f0801d5
 
     .line 101
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->findViewById(I)Landroid/view/View;
@@ -360,7 +360,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0801c9
+    const v0, 0x7f0801d7
 
     .line 104
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->findViewById(I)Landroid/view/View;
@@ -371,7 +371,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->title1:Landroid/widget/TextView;
 
-    const v0, 0x7f0801dc
+    const v0, 0x7f0801ea
 
     .line 105
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->findViewById(I)Landroid/view/View;
@@ -382,7 +382,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->title2:Landroid/widget/TextView;
 
-    const v0, 0x7f080202
+    const v0, 0x7f080210
 
     .line 106
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->findViewById(I)Landroid/view/View;
@@ -446,7 +446,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f080192
+    const v0, 0x7f0801a0
 
     .line 112
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->findViewById(I)Landroid/view/View;
@@ -705,7 +705,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a007a
+    const v0, 0x7f0a007c
 
     return v0
 .end method
@@ -960,7 +960,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c0034
+    const v0, 0x7f0c0033
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -968,7 +968,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->url:Ljava/lang/String;
 
-    const p1, 0x7f0c00db
+    const p1, 0x7f0c00d9
 
     .line 87
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRSTAReplyDetailActivity;->getString(I)Ljava/lang/String;

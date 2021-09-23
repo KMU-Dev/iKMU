@@ -36,7 +36,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a0093
+    const v0, 0x7f0a0095
 
     return v0
 .end method
@@ -63,7 +63,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/ENewsContentActivity;->bundle:Landroid/os/Bundle;
 
-    const p1, 0x7f0801c7
+    const p1, 0x7f0801d5
 
     .line 25
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ENewsContentActivity;->findViewById(I)Landroid/view/View;
@@ -96,7 +96,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const p1, 0x7f0801dc
+    const p1, 0x7f0801ea
 
     .line 30
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ENewsContentActivity;->findViewById(I)Landroid/view/View;
@@ -116,7 +116,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f080202
+    const p1, 0x7f080210
 
     .line 34
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ENewsContentActivity;->findViewById(I)Landroid/view/View;
@@ -154,7 +154,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f08024c
+    const p1, 0x7f080259
 
     .line 38
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ENewsContentActivity;->findViewById(I)Landroid/view/View;

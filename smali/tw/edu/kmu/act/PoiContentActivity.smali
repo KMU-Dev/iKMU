@@ -157,7 +157,7 @@
 
     check-cast v1, Ljava/util/HashMap;
 
-    const v2, 0x7f08010e
+    const v2, 0x7f080118
 
     .line 238
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/PoiContentActivity;->findViewById(I)Landroid/view/View;
@@ -443,7 +443,7 @@
 .method private initBtn()V
     .locals 4
 
-    const v0, 0x7f080040
+    const v0, 0x7f08003f
 
     .line 149
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/PoiContentActivity;->findViewById(I)Landroid/view/View;
@@ -514,7 +514,7 @@
 .method private initText()V
     .locals 7
 
-    const v0, 0x7f0801b4
+    const v0, 0x7f0801c2
 
     .line 183
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/PoiContentActivity;->findViewById(I)Landroid/view/View;
@@ -959,7 +959,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00af
+    const v0, 0x7f0a00b1
 
     return v0
 .end method
@@ -1001,7 +1001,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/PoiContentActivity;->display:Landroid/view/Display;
 
-    const p1, 0x7f0800e9
+    const p1, 0x7f0800f3
 
     .line 77
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/PoiContentActivity;->findViewById(I)Landroid/view/View;
@@ -1105,7 +1105,7 @@
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f080168
+    const v0, 0x7f080175
 
     .line 421
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/PoiContentActivity;->findViewById(I)Landroid/view/View;
@@ -1273,7 +1273,7 @@
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 2
 
-    const v0, 0x7f08022e
+    const v0, 0x7f08023b
 
     .line 133
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/PoiContentActivity;->findViewById(I)Landroid/view/View;
@@ -1298,7 +1298,7 @@
 
     invoke-virtual {v0, v1, v1, p1, v1}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    const p1, 0x7f080040
+    const p1, 0x7f08003f
 
     .line 137
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/PoiContentActivity;->findViewById(I)Landroid/view/View;

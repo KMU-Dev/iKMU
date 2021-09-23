@@ -19,8 +19,6 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "IRSRecordActivity"
 
-.field private static final SMALI_TAG:Ljava/lang/String; = "Smali: IRSRecordActivity"
-
 
 # instance fields
 .field private askDataList:Ljava/util/ArrayList;
@@ -382,7 +380,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSRecordActivity;->pageList:Ljava/util/List;
 
-    const v0, 0x7f0801af
+    const v0, 0x7f0801bd
 
     .line 176
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSRecordActivity;->findViewById(I)Landroid/view/View;
@@ -452,7 +450,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0076
+    const v1, 0x7f0a0078
 
     const/4 v2, 0x0
 
@@ -479,7 +477,7 @@
 
     invoke-interface {v3, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const v1, 0x7f08011b
+    const v1, 0x7f080125
 
     .line 183
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -490,7 +488,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSRecordActivity;->lv:Landroid/widget/ListView;
 
-    const v0, 0x7f08013c
+    const v0, 0x7f080146
 
     .line 184
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSRecordActivity;->findViewById(I)Landroid/view/View;
@@ -519,7 +517,7 @@
 .method private getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a0075
+    const v0, 0x7f0a0077
 
     return v0
 .end method
@@ -527,7 +525,7 @@
 .method private initClassSpinner()V
     .locals 5
 
-    const v0, 0x7f0800ba
+    const v0, 0x7f0800c5
 
     .line 124
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSRecordActivity;->findViewById(I)Landroid/view/View;
@@ -836,14 +834,14 @@
 
     :array_0
     .array-data 4
-        0x7f0801cb
-        0x7f0801cf
+        0x7f0801d9
+        0x7f0801dd
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f0801cb
-        0x7f0801cf
+        0x7f0801d9
+        0x7f0801dd
     .end array-data
 .end method
 
@@ -952,7 +950,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c008a
+    const v0, 0x7f0c0088
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1023,7 +1021,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSRecordActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    const p1, 0x7f08022e
+    const p1, 0x7f08023b
 
     .line 109
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRSRecordActivity;->findViewById(I)Landroid/view/View;
@@ -1041,7 +1039,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c00f0
+    const v2, 0x7f0c00ec
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2142,7 +2140,7 @@
 
     invoke-virtual {v11, v14}, Landroid/widget/RadioButton;->setText(Ljava/lang/CharSequence;)V
 
-    const v14, 0x7f08004f
+    const v14, 0x7f08004e
 
     const-string v15, "optKey"
 
@@ -2366,7 +2364,7 @@
 
     invoke-virtual {v11, v14}, Landroid/widget/CheckBox;->setText(Ljava/lang/CharSequence;)V
 
-    const v14, 0x7f08004f
+    const v14, 0x7f08004e
 
     const-string v15, "optKey"
 

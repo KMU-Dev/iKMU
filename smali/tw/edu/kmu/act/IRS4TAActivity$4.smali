@@ -233,7 +233,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f08008c
+    .packed-switch 0x7f08008b
         :pswitch_2
         :pswitch_1
         :pswitch_0

@@ -278,7 +278,7 @@
 
     invoke-direct {v1, p0, v2}, Ltw/edu/kmu/adapter/ClassListViewAdapter$ViewHolder;-><init>(Ltw/edu/kmu/adapter/ClassListViewAdapter;Ltw/edu/kmu/adapter/ClassListViewAdapter$1;)V
 
-    const v2, 0x7f0801c9
+    const v2, 0x7f0801d7
 
     .line 92
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -289,7 +289,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/ClassListViewAdapter$ViewHolder;->title1:Landroid/widget/TextView;
 
-    const v2, 0x7f0801dc
+    const v2, 0x7f0801ea
 
     .line 93
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -300,7 +300,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/ClassListViewAdapter$ViewHolder;->title2:Landroid/widget/TextView;
 
-    const v2, 0x7f0800fd
+    const v2, 0x7f080107
 
     .line 94
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -408,7 +408,7 @@
 
     move-result-object p1
 
-    const v2, 0x7f0c008a
+    const v2, 0x7f0c0088
 
     invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

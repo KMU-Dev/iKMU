@@ -247,7 +247,7 @@
 .method private initDateBtn()V
     .locals 13
 
-    const v0, 0x7f080117
+    const v0, 0x7f080121
 
     .line 184
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/ClassRoomQueryNewActivity;->findViewById(I)Landroid/view/View;
@@ -532,7 +532,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v0, 0x7f0800ba
+    const v0, 0x7f0800c5
 
     .line 155
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/ClassRoomQueryNewActivity;->findViewById(I)Landroid/view/View;
@@ -745,7 +745,7 @@
         }
     .end annotation
 
-    const v0, 0x7f080116
+    const v0, 0x7f080120
 
     .line 267
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/ClassRoomQueryNewActivity;->findViewById(I)Landroid/view/View;
@@ -1684,8 +1684,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801c9
-        0x7f0801dc
+        0x7f0801d7
+        0x7f0801ea
     .end array-data
 .end method
 
@@ -1990,7 +1990,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c00ea
+    const v0, 0x7f0c00e6
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2022,7 +2022,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/ClassRoomQueryNewActivity;->display:Landroid/view/Display;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 79
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ClassRoomQueryNewActivity;->findViewById(I)Landroid/view/View;

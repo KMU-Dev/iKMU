@@ -42,6 +42,8 @@
 
 .field public static final debugMode:Z = false
 
+.field public static final evlTestMode:Z = false
+
 .field public static final irs_imageUrl:Ljava/lang/String; = "https://mbms.kmu.edu.tw:443/KmuIrs/file.serv?fileID="
 
 .field public static final logMode:Z = false

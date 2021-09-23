@@ -34,14 +34,14 @@
 .method private constructor <init>(Ltw/edu/kmu/act/EvlQuestionActivity;)V
     .locals 0
 
-    .line 857
+    .line 1035
     iput-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     const-string p1, ""
 
-    .line 859
+    .line 1037
     iput-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->returnCode:Ljava/lang/String;
 
     return-void
@@ -50,7 +50,7 @@
 .method synthetic constructor <init>(Ltw/edu/kmu/act/EvlQuestionActivity;Ltw/edu/kmu/act/EvlQuestionActivity$1;)V
     .locals 0
 
-    .line 857
+    .line 1035
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;-><init>(Ltw/edu/kmu/act/EvlQuestionActivity;)V
 
     return-void
@@ -61,7 +61,7 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 857
+    .line 1035
     check-cast p1, [Ljava/lang/Integer;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->doInBackground([Ljava/lang/Integer;)Ljava/lang/String;
@@ -74,7 +74,7 @@
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/String;
     .locals 3
 
-    .line 868
+    .line 1046
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     iget-object v0, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
@@ -87,7 +87,7 @@
 
     const-string p1, "class"
 
-    .line 869
+    .line 1047
     iget-object v0, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     invoke-static {v0}, Ltw/edu/kmu/act/EvlQuestionActivity;->access$300(Ltw/edu/kmu/act/EvlQuestionActivity;)Ljava/lang/String;
@@ -100,7 +100,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 870
+    .line 1048
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     iget-object v0, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
@@ -117,7 +117,7 @@
 
     invoke-static {p1, v0}, Ltw/edu/kmu/act/EvlQuestionActivity;->access$1002(Ltw/edu/kmu/act/EvlQuestionActivity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
-    .line 871
+    .line 1049
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     iget-object v0, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
@@ -136,7 +136,7 @@
 
     goto :goto_0
 
-    .line 873
+    .line 1051
     :cond_0
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
@@ -156,7 +156,7 @@
 
     invoke-static {p1, v0}, Ltw/edu/kmu/act/EvlQuestionActivity;->access$702(Ltw/edu/kmu/act/EvlQuestionActivity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
-    .line 874
+    .line 1052
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     iget-object v0, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
@@ -175,7 +175,7 @@
 
     invoke-static {p1, v0}, Ltw/edu/kmu/act/EvlQuestionActivity;->access$1002(Ltw/edu/kmu/act/EvlQuestionActivity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
-    .line 875
+    .line 1053
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     iget-object v0, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
@@ -194,7 +194,7 @@
 
     invoke-static {p1, v0}, Ltw/edu/kmu/act/EvlQuestionActivity;->access$2402(Ltw/edu/kmu/act/EvlQuestionActivity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
-    .line 877
+    .line 1055
     :goto_0
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
@@ -214,7 +214,7 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 857
+    .line 1035
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->onPostExecute(Ljava/lang/String;)V
@@ -225,10 +225,10 @@
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 2
 
-    .line 884
+    .line 1062
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
-    .line 886
+    .line 1064
     :try_start_0
     new-instance p1, Lorg/json/JSONObject;
 
@@ -250,7 +250,7 @@
 
     const-string p1, "false"
 
-    .line 887
+    .line 1065
     iget-object v0, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->returnCode:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -259,14 +259,14 @@
 
     if-eqz p1, :cond_2
 
-    .line 888
+    .line 1066
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     invoke-direct {p1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 889
+    .line 1067
     new-instance v0, Lorg/json/JSONObject;
 
     iget-object v1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
@@ -297,7 +297,7 @@
 
     invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    .line 890
+    .line 1068
     iget-object v0, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;
 
     iget-boolean v0, v0, Ltw/edu/kmu/act/EvlQuestionActivity;->isEnglish:Z
@@ -318,12 +318,12 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 898
+    .line 1076
     invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object p1
 
-    .line 899
+    .line 1077
     invoke-virtual {p1}, Landroid/app/AlertDialog;->show()V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -333,7 +333,7 @@
     :catch_0
     move-exception p1
 
-    .line 904
+    .line 1082
     invoke-virtual {p1}, Lorg/json/JSONException;->printStackTrace()V
 
     :cond_2
@@ -344,7 +344,7 @@
 .method protected onPreExecute()V
     .locals 0
 
-    .line 863
+    .line 1041
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
     return-void

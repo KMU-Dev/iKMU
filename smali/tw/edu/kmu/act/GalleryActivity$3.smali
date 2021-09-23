@@ -38,7 +38,7 @@
     .line 251
     iget-object v0, p0, Ltw/edu/kmu/act/GalleryActivity$3;->this$0:Ltw/edu/kmu/act/GalleryActivity;
 
-    const v1, 0x7f08014f
+    const v1, 0x7f080159
 
     invoke-virtual {v0, v1}, Ltw/edu/kmu/act/GalleryActivity;->findViewById(I)Landroid/view/View;
 

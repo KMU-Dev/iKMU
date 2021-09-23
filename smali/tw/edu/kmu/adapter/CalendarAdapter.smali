@@ -281,7 +281,7 @@
     move-result-object p2
 
     :cond_0
-    const p3, 0x7f0800b4
+    const p3, 0x7f0800bf
 
     .line 89
     invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -489,7 +489,7 @@
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     :cond_5
-    const p3, 0x7f0800b5
+    const p3, 0x7f0800c0
 
     .line 128
     invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;

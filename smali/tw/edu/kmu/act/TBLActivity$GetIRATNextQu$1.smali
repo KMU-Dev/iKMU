@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;)V
     .locals 0
 
-    .line 1480
+    .line 1485
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu$1;->this$1:Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 1485
+    .line 1490
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu$1;->this$1:Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;
 
     invoke-static {p1}, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->access$1500(Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;)Ljava/lang/String;
@@ -53,16 +53,16 @@
 
     if-eqz p1, :cond_0
 
-    .line 1486
+    .line 1491
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu$1;->this$1:Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;
 
     iget-object p1, p1, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     const/4 p2, 0x0
 
-    invoke-static {p1, p2}, Ltw/edu/kmu/act/TBLActivity;->access$602(Ltw/edu/kmu/act/TBLActivity;Z)Z
+    invoke-static {p1, p2}, Ltw/edu/kmu/act/TBLActivity;->access$302(Ltw/edu/kmu/act/TBLActivity;Z)Z
 
-    .line 1487
+    .line 1492
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu$1;->this$1:Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;
 
     iget-object p1, p1, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->this$0:Ltw/edu/kmu/act/TBLActivity;

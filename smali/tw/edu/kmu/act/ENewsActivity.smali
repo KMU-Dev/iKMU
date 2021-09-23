@@ -368,8 +368,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801c7
-        0x7f080238
+        0x7f0801d5
+        0x7f080245
     .end array-data
 .end method
 
@@ -418,7 +418,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ENewsActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 48
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ENewsActivity;->findViewById(I)Landroid/view/View;
@@ -434,7 +434,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c000e
+    const v0, 0x7f0c000d
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

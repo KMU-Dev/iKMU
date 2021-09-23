@@ -44,43 +44,43 @@
 .method private constructor <init>(Ltw/edu/kmu/act/TBLActivity;)V
     .locals 1
 
-    .line 1419
+    .line 1424
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     const-string p1, ""
 
-    .line 1421
+    .line 1426
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->resultString:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 1422
+    .line 1427
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->returnCode:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 1423
+    .line 1428
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->rtnCode:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 1424
+    .line 1429
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->reason:Ljava/lang/String;
 
     const-string p1, ""
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->ereason:Ljava/lang/String;
 
-    .line 1425
+    .line 1430
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-virtual {p1}, Ltw/edu/kmu/act/TBLActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const v0, 0x7f0c0059
+    const v0, 0x7f0c0058
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -94,7 +94,7 @@
 .method synthetic constructor <init>(Ltw/edu/kmu/act/TBLActivity;Ltw/edu/kmu/act/TBLActivity$1;)V
     .locals 0
 
-    .line 1419
+    .line 1424
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;-><init>(Ltw/edu/kmu/act/TBLActivity;)V
 
     return-void
@@ -103,7 +103,7 @@
 .method static synthetic access$1500(Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;)Ljava/lang/String;
     .locals 0
 
-    .line 1419
+    .line 1424
     iget-object p0, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->rtnCode:Ljava/lang/String;
 
     return-object p0
@@ -114,7 +114,7 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1419
+    .line 1424
     check-cast p1, [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->doInBackground([Ljava/lang/String;)Ljava/lang/String;
@@ -132,7 +132,7 @@
 
     const/4 v1, 0x0
 
-    .line 1436
+    .line 1441
     aget-object v1, p1, v1
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -141,14 +141,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 1437
+    .line 1442
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-virtual {v0}, Ltw/edu/kmu/act/TBLActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x7f0c005d
+    const v1, 0x7f0c005c
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -158,7 +158,7 @@
 
     goto :goto_0
 
-    .line 1439
+    .line 1444
     :cond_0
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
@@ -166,7 +166,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c0059
+    const v1, 0x7f0c0058
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -174,7 +174,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->url:Ljava/lang/String;
 
-    .line 1441
+    .line 1446
     :goto_0
     new-instance v0, Ljava/util/HashMap;
 
@@ -182,7 +182,7 @@
 
     const-string v1, "stuno"
 
-    .line 1445
+    .line 1450
     iget-object v2, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iget-object v2, v2, Ltw/edu/kmu/act/TBLActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
@@ -193,7 +193,7 @@
 
     const-string v1, "quid"
 
-    .line 1446
+    .line 1451
     iget-object v2, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-static {v2}, Ltw/edu/kmu/act/TBLActivity;->access$1100(Ltw/edu/kmu/act/TBLActivity;)Landroid/os/Bundle;
@@ -212,7 +212,7 @@
 
     const/4 v2, 0x1
 
-    .line 1447
+    .line 1452
     aget-object v2, p1, v2
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -221,12 +221,12 @@
 
     const/4 v2, 0x2
 
-    .line 1448
+    .line 1453
     aget-object p1, p1, v2
 
     invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1450
+    .line 1455
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iget-object p1, p1, Ltw/edu/kmu/act/TBLActivity;->serverResource:Ltw/edu/kmu/resource/ServerResource;
@@ -239,7 +239,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->resultString:Ljava/lang/String;
 
-    .line 1452
+    .line 1457
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->resultString:Ljava/lang/String;
@@ -254,7 +254,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->returnCode:Ljava/lang/String;
 
-    .line 1453
+    .line 1458
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->resultString:Ljava/lang/String;
@@ -269,7 +269,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->rtnCode:Ljava/lang/String;
 
-    .line 1454
+    .line 1459
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->resultString:Ljava/lang/String;
@@ -284,7 +284,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->reason:Ljava/lang/String;
 
-    .line 1455
+    .line 1460
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->resultString:Ljava/lang/String;
@@ -306,7 +306,7 @@
     :catch_0
     move-exception p1
 
-    .line 1458
+    .line 1463
     invoke-static {}, Ltw/edu/kmu/act/TBLActivity;->access$800()Ljava/lang/String;
 
     move-result-object v0
@@ -340,7 +340,7 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1419
+    .line 1424
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->onPostExecute(Ljava/lang/String;)V
@@ -351,10 +351,10 @@
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 3
 
-    .line 1465
+    .line 1470
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
-    .line 1466
+    .line 1471
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iget-object p1, p1, Ltw/edu/kmu/act/TBLActivity;->progressDialog:Landroid/app/ProgressDialog;
@@ -363,7 +363,7 @@
 
     const-string p1, "true"
 
-    .line 1467
+    .line 1472
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->returnCode:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -372,7 +372,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 1469
+    .line 1474
     :try_start_0
     new-instance p1, Lorg/json/JSONObject;
 
@@ -386,17 +386,17 @@
 
     move-result-object p1
 
-    .line 1470
+    .line 1475
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     const-string v1, "question"
 
-    .line 1471
+    .line 1476
     invoke-virtual {v0, v1, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 1472
+    .line 1477
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
@@ -412,7 +412,7 @@
     :catch_0
     move-exception p1
 
-    .line 1475
+    .line 1480
     invoke-static {}, Ltw/edu/kmu/act/TBLActivity;->access$800()Ljava/lang/String;
 
     move-result-object v0
@@ -439,7 +439,7 @@
 
     goto :goto_1
 
-    .line 1478
+    .line 1483
     :cond_0
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
@@ -449,7 +449,7 @@
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->reason:Ljava/lang/String;
 
-    .line 1479
+    .line 1484
     invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
@@ -472,12 +472,12 @@
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu$1;-><init>(Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;)V
 
-    .line 1480
+    .line 1485
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    .line 1491
+    .line 1496
     invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     :goto_1
@@ -487,10 +487,10 @@
 .method protected onPreExecute()V
     .locals 1
 
-    .line 1429
+    .line 1434
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
-    .line 1430
+    .line 1435
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iget-object v0, v0, Ltw/edu/kmu/act/TBLActivity;->progressDialog:Landroid/app/ProgressDialog;

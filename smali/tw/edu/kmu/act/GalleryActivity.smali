@@ -541,12 +541,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a0067
+    const v0, 0x7f0a0069
 
     return v0
 
     :cond_0
-    const v0, 0x7f0a0068
+    const v0, 0x7f0a006a
 
     return v0
 .end method
@@ -664,7 +664,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c001d
+    const v0, 0x7f0c001c
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -832,7 +832,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/GalleryActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f080048
+    const p1, 0x7f080047
 
     .line 95
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/GalleryActivity;->findViewById(I)Landroid/view/View;
@@ -843,7 +843,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/GalleryActivity;->btMusic:Landroid/widget/Button;
 
-    const p1, 0x7f080150
+    const p1, 0x7f08015a
 
     .line 96
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/GalleryActivity;->findViewById(I)Landroid/view/View;
@@ -959,7 +959,7 @@
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4
-    const v0, 0x7f0800eb
+    const v0, 0x7f0800f5
 
     .line 119
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/GalleryActivity;->findViewById(I)Landroid/view/View;
@@ -979,7 +979,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     :cond_5
-    const v0, 0x7f0800e9
+    const v0, 0x7f0800f3
 
     .line 124
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/GalleryActivity;->findViewById(I)Landroid/view/View;

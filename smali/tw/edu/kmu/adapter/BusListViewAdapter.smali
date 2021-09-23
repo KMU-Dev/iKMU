@@ -329,7 +329,7 @@
 
     invoke-direct {v1, p0, v0}, Ltw/edu/kmu/adapter/BusListViewAdapter$ViewHolder;-><init>(Ltw/edu/kmu/adapter/BusListViewAdapter;Ltw/edu/kmu/adapter/BusListViewAdapter$1;)V
 
-    const v0, 0x7f0801c7
+    const v0, 0x7f0801d5
 
     .line 95
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -340,7 +340,7 @@
 
     iput-object v0, v1, Ltw/edu/kmu/adapter/BusListViewAdapter$ViewHolder;->title:Landroid/widget/TextView;
 
-    const v0, 0x7f08009f
+    const v0, 0x7f0800aa
 
     .line 96
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -351,7 +351,7 @@
 
     iput-object v0, v1, Ltw/edu/kmu/adapter/BusListViewAdapter$ViewHolder;->content:Landroid/widget/TextView;
 
-    const v0, 0x7f0800ff
+    const v0, 0x7f080109
 
     .line 97
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -362,7 +362,7 @@
 
     iput-object v0, v1, Ltw/edu/kmu/adapter/BusListViewAdapter$ViewHolder;->imageView01:Landroid/widget/ImageView;
 
-    const v0, 0x7f080100
+    const v0, 0x7f08010a
 
     .line 98
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;

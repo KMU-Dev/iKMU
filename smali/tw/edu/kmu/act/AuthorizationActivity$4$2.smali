@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/AuthorizationActivity$4;)V
     .locals 0
 
-    .line 349
+    .line 413
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity$4$2;->this$1:Ltw/edu/kmu/act/AuthorizationActivity$4;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    .line 352
+    .line 416
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity$4$2;->this$1:Ltw/edu/kmu/act/AuthorizationActivity$4;
 
     iget-object p1, p1, Ltw/edu/kmu/act/AuthorizationActivity$4;->this$0:Ltw/edu/kmu/act/AuthorizationActivity;
@@ -47,7 +47,7 @@
 
     invoke-virtual {p1}, Landroid/app/ProgressDialog;->show()V
 
-    .line 353
+    .line 417
     new-instance p1, Ltw/edu/kmu/act/AuthorizationActivity$ReadDataFromServer;
 
     iget-object p2, p0, Ltw/edu/kmu/act/AuthorizationActivity$4$2;->this$1:Ltw/edu/kmu/act/AuthorizationActivity$4;
@@ -60,7 +60,7 @@
 
     const/4 p2, 0x1
 
-    .line 354
+    .line 418
     new-array p2, p2, [Ljava/lang/Integer;
 
     const/16 v0, 0x3e8

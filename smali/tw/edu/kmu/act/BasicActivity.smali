@@ -292,7 +292,7 @@
 .method protected getFunctionButtonId()I
     .locals 1
 
-    const v0, 0x7f080040
+    const v0, 0x7f08003f
 
     return v0
 .end method
@@ -326,7 +326,7 @@
 .method protected getTitleId()I
     .locals 1
 
-    const v0, 0x7f08022e
+    const v0, 0x7f08023b
 
     return v0
 .end method
@@ -339,12 +339,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a006e
+    const v0, 0x7f0a0070
 
     return v0
 
     :cond_0
-    const v0, 0x7f0a006f
+    const v0, 0x7f0a0071
 
     return v0
 .end method
@@ -461,7 +461,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c008a
+    const v1, 0x7f0c0088
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -764,7 +764,7 @@
 
     if-eqz v1, :cond_0
 
-    const v0, 0x7f080168
+    const v0, 0x7f080175
 
     .line 131
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/BasicActivity;->findViewById(I)Landroid/view/View;

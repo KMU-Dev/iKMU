@@ -203,7 +203,7 @@
 
     new-array v1, v1, [I
 
-    const v2, 0x7f0801c7
+    const v2, 0x7f0801d5
 
     aput v2, v1, v7
 
@@ -243,7 +243,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00d6
+    const v0, 0x7f0a00d8
 
     return v0
 .end method
@@ -287,7 +287,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLMyGroupActivity;->sharedData:Landroid/content/SharedPreferences;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 50
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLMyGroupActivity;->findViewById(I)Landroid/view/View;
@@ -298,7 +298,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLMyGroupActivity;->lv:Landroid/widget/ListView;
 
-    const p1, 0x7f0801c9
+    const p1, 0x7f0801d7
 
     .line 51
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLMyGroupActivity;->findViewById(I)Landroid/view/View;
@@ -309,7 +309,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLMyGroupActivity;->title1:Landroid/widget/TextView;
 
-    const p1, 0x7f0801dc
+    const p1, 0x7f0801ea
 
     .line 52
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLMyGroupActivity;->findViewById(I)Landroid/view/View;
@@ -342,7 +342,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c0058
+    const v1, 0x7f0c0057
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -169,7 +169,7 @@
 
     new-array v7, v2, [I
 
-    const v2, 0x7f0801c7
+    const v2, 0x7f0801d5
 
     aput v2, v7, v0
 
@@ -248,7 +248,7 @@
     .line 36
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/WacTeaMainActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 38
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/WacTeaMainActivity;->findViewById(I)Landroid/view/View;

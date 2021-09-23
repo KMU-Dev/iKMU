@@ -44,19 +44,19 @@
 .method private constructor <init>(Ltw/edu/kmu/act/TBLGRATActivity;)V
     .locals 1
 
-    .line 1640
+    .line 1645
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     const-string p1, ""
 
-    .line 1642
+    .line 1647
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->resultString:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 1643
+    .line 1648
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->returnCode:Ljava/lang/String;
 
     const-string p1, ""
@@ -65,21 +65,21 @@
 
     const-string p1, ""
 
-    .line 1644
+    .line 1649
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->reason:Ljava/lang/String;
 
     const-string p1, ""
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->ereason:Ljava/lang/String;
 
-    .line 1645
+    .line 1650
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-virtual {p1}, Ltw/edu/kmu/act/TBLGRATActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const v0, 0x7f0c0050
+    const v0, 0x7f0c004f
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -93,7 +93,7 @@
 .method synthetic constructor <init>(Ltw/edu/kmu/act/TBLGRATActivity;Ltw/edu/kmu/act/TBLGRATActivity$1;)V
     .locals 0
 
-    .line 1640
+    .line 1645
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;)V
 
     return-void
@@ -102,7 +102,7 @@
 .method static synthetic access$1700(Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;)Ljava/lang/String;
     .locals 0
 
-    .line 1640
+    .line 1645
     iget-object p0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->rtnCode:Ljava/lang/String;
 
     return-object p0
@@ -113,7 +113,7 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1640
+    .line 1645
     check-cast p1, [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->doInBackground([Ljava/lang/String;)Ljava/lang/String;
@@ -131,7 +131,7 @@
 
     const/4 v1, 0x0
 
-    .line 1656
+    .line 1661
     aget-object v1, p1, v1
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -140,14 +140,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 1657
+    .line 1662
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-virtual {v0}, Ltw/edu/kmu/act/TBLGRATActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x7f0c0056
+    const v1, 0x7f0c0055
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -157,7 +157,7 @@
 
     goto :goto_0
 
-    .line 1659
+    .line 1664
     :cond_0
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
@@ -165,7 +165,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c0050
+    const v1, 0x7f0c004f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -173,7 +173,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->url:Ljava/lang/String;
 
-    .line 1661
+    .line 1666
     :goto_0
     new-instance v0, Ljava/util/HashMap;
 
@@ -181,7 +181,7 @@
 
     const-string v1, "stuno"
 
-    .line 1665
+    .line 1670
     iget-object v2, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iget-object v2, v2, Ltw/edu/kmu/act/TBLGRATActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
@@ -192,7 +192,7 @@
 
     const-string v1, "quid"
 
-    .line 1666
+    .line 1671
     iget-object v2, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-static {v2}, Ltw/edu/kmu/act/TBLGRATActivity;->access$1200(Ltw/edu/kmu/act/TBLGRATActivity;)Landroid/os/Bundle;
@@ -211,12 +211,12 @@
 
     const/4 v2, 0x1
 
-    .line 1667
+    .line 1672
     aget-object v2, p1, v2
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1668
+    .line 1673
     array-length v1, p1
 
     const/4 v2, 0x2
@@ -225,12 +225,12 @@
 
     const-string v1, "ans"
 
-    .line 1669
+    .line 1674
     aget-object p1, p1, v2
 
     invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1671
+    .line 1676
     :cond_1
     invoke-static {}, Ltw/edu/kmu/act/TBLGRATActivity;->access$900()Ljava/lang/String;
 
@@ -254,7 +254,7 @@
 
     invoke-static {p1, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1672
+    .line 1677
     invoke-static {}, Ltw/edu/kmu/act/TBLGRATActivity;->access$900()Ljava/lang/String;
 
     move-result-object p1
@@ -279,7 +279,7 @@
 
     invoke-static {p1, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1673
+    .line 1678
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iget-object p1, p1, Ltw/edu/kmu/act/TBLGRATActivity;->serverResource:Ltw/edu/kmu/resource/ServerResource;
@@ -292,7 +292,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->resultString:Ljava/lang/String;
 
-    .line 1675
+    .line 1680
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->resultString:Ljava/lang/String;
@@ -307,7 +307,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->returnCode:Ljava/lang/String;
 
-    .line 1676
+    .line 1681
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->resultString:Ljava/lang/String;
@@ -322,7 +322,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->rtnCode:Ljava/lang/String;
 
-    .line 1677
+    .line 1682
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->resultString:Ljava/lang/String;
@@ -337,7 +337,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->reason:Ljava/lang/String;
 
-    .line 1678
+    .line 1683
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->resultString:Ljava/lang/String;
@@ -359,7 +359,7 @@
     :catch_0
     move-exception p1
 
-    .line 1681
+    .line 1686
     invoke-static {}, Ltw/edu/kmu/act/TBLGRATActivity;->access$900()Ljava/lang/String;
 
     move-result-object v0
@@ -393,7 +393,7 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1640
+    .line 1645
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->onPostExecute(Ljava/lang/String;)V
@@ -404,10 +404,10 @@
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 3
 
-    .line 1688
+    .line 1693
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
-    .line 1689
+    .line 1694
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iget-object p1, p1, Ltw/edu/kmu/act/TBLGRATActivity;->progressDialog:Landroid/app/ProgressDialog;
@@ -416,7 +416,7 @@
 
     const-string p1, "true"
 
-    .line 1690
+    .line 1695
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->returnCode:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -425,7 +425,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 1692
+    .line 1697
     :try_start_0
     new-instance p1, Lorg/json/JSONObject;
 
@@ -439,17 +439,17 @@
 
     move-result-object p1
 
-    .line 1693
+    .line 1698
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     const-string v1, "question"
 
-    .line 1694
+    .line 1699
     invoke-virtual {v0, v1, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 1695
+    .line 1700
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
@@ -465,7 +465,7 @@
     :catch_0
     move-exception p1
 
-    .line 1698
+    .line 1703
     invoke-static {}, Ltw/edu/kmu/act/TBLGRATActivity;->access$900()Ljava/lang/String;
 
     move-result-object v0
@@ -492,7 +492,7 @@
 
     goto :goto_1
 
-    .line 1701
+    .line 1706
     :cond_0
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
@@ -502,7 +502,7 @@
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->reason:Ljava/lang/String;
 
-    .line 1702
+    .line 1707
     invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
@@ -525,12 +525,12 @@
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu$1;-><init>(Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;)V
 
-    .line 1703
+    .line 1708
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    .line 1713
+    .line 1718
     invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     :goto_1
@@ -540,10 +540,10 @@
 .method protected onPreExecute()V
     .locals 1
 
-    .line 1649
+    .line 1654
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
-    .line 1650
+    .line 1655
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iget-object v0, v0, Ltw/edu/kmu/act/TBLGRATActivity;->progressDialog:Landroid/app/ProgressDialog;

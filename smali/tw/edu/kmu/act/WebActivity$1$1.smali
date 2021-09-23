@@ -27,7 +27,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/WebActivity$1;Landroid/webkit/SslErrorHandler;)V
     .locals 0
 
-    .line 69
+    .line 70
     iput-object p1, p0, Ltw/edu/kmu/act/WebActivity$1$1;->this$1:Ltw/edu/kmu/act/WebActivity$1;
 
     iput-object p2, p0, Ltw/edu/kmu/act/WebActivity$1$1;->val$handler:Landroid/webkit/SslErrorHandler;
@@ -42,7 +42,7 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 72
+    .line 73
     iget-object p1, p0, Ltw/edu/kmu/act/WebActivity$1$1;->val$handler:Landroid/webkit/SslErrorHandler;
 
     invoke-virtual {p1}, Landroid/webkit/SslErrorHandler;->proceed()V

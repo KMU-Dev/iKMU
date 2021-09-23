@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/IRSActivity$30;)V
     .locals 0
 
-    .line 2245
+    .line 2248
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity$30$1;->this$1:Ltw/edu/kmu/act/IRSActivity$30;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

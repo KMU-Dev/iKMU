@@ -167,7 +167,7 @@
 .method private initDateBtn()V
     .locals 14
 
-    const v0, 0x7f080117
+    const v0, 0x7f080121
 
     .line 128
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/CalendarQueryActivity;->findViewById(I)Landroid/view/View;
@@ -563,7 +563,7 @@
 .method private initSearchText()V
     .locals 2
 
-    const v0, 0x7f0800d7
+    const v0, 0x7f0800e1
 
     .line 86
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/CalendarQueryActivity;->findViewById(I)Landroid/view/View;
@@ -1043,8 +1043,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801c9
-        0x7f0801dc
+        0x7f0801d7
+        0x7f0801ea
     .end array-data
 .end method
 
@@ -1124,7 +1124,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c00c0
+    const v0, 0x7f0c00be
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1156,7 +1156,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/CalendarQueryActivity;->display:Landroid/view/Display;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 69
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/CalendarQueryActivity;->findViewById(I)Landroid/view/View;

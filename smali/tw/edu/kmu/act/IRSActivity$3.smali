@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/IRSActivity;)V
     .locals 0
 
-    .line 548
+    .line 551
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity$3;->this$0:Ltw/edu/kmu/act/IRSActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 553
+    .line 556
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity$3;->this$0:Ltw/edu/kmu/act/IRSActivity;
@@ -58,7 +58,7 @@
     :cond_0
     const-string v0, "\u78ba\u5b9a\u9001\u51fa"
 
-    .line 554
+    .line 557
     :goto_0
     invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -82,7 +82,7 @@
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/IRSActivity$3$2;-><init>(Ltw/edu/kmu/act/IRSActivity$3;)V
 
-    .line 555
+    .line 558
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
@@ -105,12 +105,12 @@
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/IRSActivity$3$1;-><init>(Ltw/edu/kmu/act/IRSActivity$3;)V
 
-    .line 562
+    .line 565
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    .line 568
+    .line 571
     invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     return-void

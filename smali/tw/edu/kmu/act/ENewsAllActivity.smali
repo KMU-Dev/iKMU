@@ -372,8 +372,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801c7
-        0x7f080238
+        0x7f0801d5
+        0x7f080245
     .end array-data
 .end method
 
@@ -416,7 +416,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c00c2
+    const v1, 0x7f0c00c0
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -435,7 +435,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/ENewsAllActivity;->display:Landroid/view/Display;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 55
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ENewsAllActivity;->findViewById(I)Landroid/view/View;
@@ -451,7 +451,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c000f
+    const v1, 0x7f0c000e
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

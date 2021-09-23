@@ -172,7 +172,7 @@
 
     fill-array-data v5, :array_0
 
-    const v3, 0x7f0a007b
+    const v3, 0x7f0a007d
 
     move-object v0, v6
 
@@ -198,8 +198,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801cb
-        0x7f0801cf
+        0x7f0801d9
+        0x7f0801dd
     .end array-data
 .end method
 
@@ -208,7 +208,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a007c
+    const v0, 0x7f0a007e
 
     return v0
 .end method
@@ -268,7 +268,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c0033
+    const v0, 0x7f0c0032
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -276,7 +276,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSTAReplyListActivity;->url:Ljava/lang/String;
 
-    const p1, 0x7f0c00db
+    const p1, 0x7f0c00d9
 
     .line 53
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRSTAReplyListActivity;->getString(I)Ljava/lang/String;
@@ -285,7 +285,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRSTAReplyListActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 55
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRSTAReplyListActivity;->findViewById(I)Landroid/view/View;

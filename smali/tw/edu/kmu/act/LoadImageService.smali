@@ -836,7 +836,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/LoadImageService;->cmdReciver:Ltw/edu/kmu/act/LoadImageService$CommandReciver;
 
-    const v0, 0x7f0c001d
+    const v0, 0x7f0c001c
 
     .line 70
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/LoadImageService;->getString(I)Ljava/lang/String;

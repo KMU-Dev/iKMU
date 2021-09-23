@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/AuthorizationActivity$4;)V
     .locals 0
 
-    .line 357
+    .line 421
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity$4$1;->this$1:Ltw/edu/kmu/act/AuthorizationActivity$4;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

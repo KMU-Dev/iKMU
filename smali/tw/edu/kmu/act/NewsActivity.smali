@@ -328,7 +328,7 @@
 .method private initBtn()V
     .locals 3
 
-    const v0, 0x7f080052
+    const v0, 0x7f080051
 
     .line 168
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/NewsActivity;->findViewById(I)Landroid/view/View;
@@ -378,7 +378,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f08005c
+    const v0, 0x7f08005b
 
     .line 190
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/NewsActivity;->findViewById(I)Landroid/view/View;
@@ -421,7 +421,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080061
+    const v0, 0x7f080060
 
     .line 211
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/NewsActivity;->findViewById(I)Landroid/view/View;
@@ -464,7 +464,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080062
+    const v0, 0x7f080061
 
     .line 233
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/NewsActivity;->findViewById(I)Landroid/view/View;
@@ -826,7 +826,7 @@
 
     iget-object v5, p0, Ltw/edu/kmu/act/NewsActivity;->dataList:Ljava/util/ArrayList;
 
-    const v6, 0x7f0a009a
+    const v6, 0x7f0a009c
 
     const/4 v1, 0x3
 
@@ -882,9 +882,9 @@
 
     :array_0
     .array-data 4
-        0x7f0801c7
-        0x7f080238
-        0x7f0800b6
+        0x7f0801d5
+        0x7f080245
+        0x7f0800c1
     .end array-data
 .end method
 
@@ -1009,7 +1009,7 @@
 
     iget-object v6, p0, Ltw/edu/kmu/act/NewsActivity;->dataList:Ljava/util/ArrayList;
 
-    const v7, 0x7f0a009a
+    const v7, 0x7f0a009c
 
     const/4 v2, 0x3
 
@@ -1098,9 +1098,9 @@
 
     :array_0
     .array-data 4
-        0x7f0801c7
-        0x7f080238
-        0x7f0800b6
+        0x7f0801d5
+        0x7f080245
+        0x7f0800c1
     .end array-data
 .end method
 
@@ -1272,7 +1272,7 @@
 
     iget-object v4, p0, Ltw/edu/kmu/act/NewsActivity;->dataList:Ljava/util/ArrayList;
 
-    const v5, 0x7f0a009a
+    const v5, 0x7f0a009c
 
     const/4 v2, 0x3
 
@@ -1345,9 +1345,9 @@
 
     :array_0
     .array-data 4
-        0x7f0801c7
-        0x7f080238
-        0x7f0800b6
+        0x7f0801d5
+        0x7f080245
+        0x7f0800c1
     .end array-data
 .end method
 
@@ -1356,7 +1356,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a0099
+    const v0, 0x7f0a009b
 
     return v0
 .end method
@@ -1390,7 +1390,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c00c8
+    const v1, 0x7f0c00c6
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1409,7 +1409,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/NewsActivity;->display:Landroid/view/Display;
 
-    const p1, 0x7f080135
+    const p1, 0x7f08013f
 
     .line 97
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/NewsActivity;->findViewById(I)Landroid/view/View;
@@ -1431,7 +1431,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0a0095
+    const v2, 0x7f0a0097
 
     .line 100
     invoke-virtual {p1, v2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -1468,7 +1468,7 @@
 
     move-result-object p1
 
-    const v2, 0x7f0c0040
+    const v2, 0x7f0c003e
 
     invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

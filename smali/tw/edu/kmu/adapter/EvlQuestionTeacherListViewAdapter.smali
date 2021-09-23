@@ -94,7 +94,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f0c008a
+    const v0, 0x7f0c0088
 
     invoke-virtual {p3, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -133,7 +133,7 @@
 
     invoke-direct {v0, p0, v1}, Ltw/edu/kmu/adapter/EvlQuestionTeacherListViewAdapter$ViewHolder;-><init>(Ltw/edu/kmu/adapter/EvlQuestionTeacherListViewAdapter;Ltw/edu/kmu/adapter/EvlQuestionTeacherListViewAdapter$1;)V
 
-    const v1, 0x7f0801c7
+    const v1, 0x7f0801d5
 
     .line 53
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;

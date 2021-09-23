@@ -108,7 +108,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0c008b
+    const v4, 0x7f0c0089
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -341,7 +341,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0c008b
+    const v5, 0x7f0c0089
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -491,13 +491,13 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "sendIRSReplyNotification globalVariable.isLogin is "
+    const-string v2, "sendIRSReplyNotification globalVariable.isLoginV2 is "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-object v2, p0, Ltw/edu/kmu/fcm/MyFirebaseMessagingService;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    iget-boolean v2, v2, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v2, v2, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -538,7 +538,7 @@
 
     iget-object v0, p0, Ltw/edu/kmu/fcm/MyFirebaseMessagingService;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    iget-boolean v0, v0, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v0, v0, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-eqz v0, :cond_2
 
@@ -682,7 +682,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0c008b
+    const v5, 0x7f0c0089
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -842,7 +842,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0c008b
+    const v4, 0x7f0c0089
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

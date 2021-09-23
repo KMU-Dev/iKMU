@@ -165,7 +165,7 @@
 
     iput-boolean v0, p0, Ltw/edu/kmu/act/NewsContentActivity;->isInDB:Z
 
-    const v0, 0x7f080040
+    const v0, 0x7f08003f
 
     .line 197
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/NewsContentActivity;->findViewById(I)Landroid/view/View;
@@ -250,7 +250,7 @@
 .method private initWebView()V
     .locals 3
 
-    const v0, 0x7f08024c
+    const v0, 0x7f080259
 
     .line 98
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/NewsContentActivity;->findViewById(I)Landroid/view/View;
@@ -429,7 +429,7 @@
 .method private initWebViewBtn()V
     .locals 2
 
-    const v0, 0x7f080088
+    const v0, 0x7f080087
 
     .line 237
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/NewsContentActivity;->findViewById(I)Landroid/view/View;
@@ -449,7 +449,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080087
+    const v0, 0x7f080086
 
     .line 246
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/NewsContentActivity;->findViewById(I)Landroid/view/View;
@@ -469,7 +469,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080089
+    const v0, 0x7f080088
 
     .line 256
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/NewsContentActivity;->findViewById(I)Landroid/view/View;
@@ -489,7 +489,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f08008a
+    const v0, 0x7f080089
 
     .line 266
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/NewsContentActivity;->findViewById(I)Landroid/view/View;
@@ -736,7 +736,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a0093
+    const v0, 0x7f0a0095
 
     return v0
 .end method
@@ -747,7 +747,7 @@
     .line 55
     invoke-super {p0, p1}, Ltw/edu/kmu/act/BasicActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f08014f
+    const p1, 0x7f080159
 
     .line 56
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/NewsContentActivity;->findViewById(I)Landroid/view/View;
@@ -826,7 +826,7 @@
     :goto_1
     iput-object p1, p0, Ltw/edu/kmu/act/NewsContentActivity;->serialNo:Ljava/lang/String;
 
-    const p1, 0x7f0801c7
+    const p1, 0x7f0801d5
 
     .line 67
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/NewsContentActivity;->findViewById(I)Landroid/view/View;
@@ -859,7 +859,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const p1, 0x7f0801dc
+    const p1, 0x7f0801ea
 
     .line 71
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/NewsContentActivity;->findViewById(I)Landroid/view/View;
@@ -954,7 +954,7 @@
     :goto_4
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f080202
+    const p1, 0x7f080210
 
     .line 83
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/NewsContentActivity;->findViewById(I)Landroid/view/View;

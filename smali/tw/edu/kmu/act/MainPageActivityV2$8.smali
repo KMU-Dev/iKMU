@@ -22,7 +22,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 476
+    .line 483
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$8;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -35,14 +35,14 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
 
-    .line 478
+    .line 485
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$8;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     iget-object v0, v0, Ltw/edu/kmu/act/MainPageActivityV2;->progressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
-    .line 479
+    .line 486
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/16 v1, 0xa
@@ -63,7 +63,7 @@
 
     goto :goto_0
 
-    .line 488
+    .line 495
     :cond_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -73,14 +73,14 @@
 
     const-string v1, "\u76ee\u524d\u9023\u7dda\u932f\u8aa4"
 
-    .line 489
+    .line 496
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
     const-string v1, "\u9078\u64c7\u91cd\u65b0\u9023\u7dda\u6216\u53d6\u6d88\u9023\u7dda"
 
-    .line 490
+    .line 497
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
@@ -91,7 +91,7 @@
 
     invoke-direct {v2, p0}, Ltw/edu/kmu/act/MainPageActivityV2$8$2;-><init>(Ltw/edu/kmu/act/MainPageActivityV2$8;)V
 
-    .line 491
+    .line 498
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
@@ -102,17 +102,17 @@
 
     invoke-direct {v2, p0}, Ltw/edu/kmu/act/MainPageActivityV2$8$1;-><init>(Ltw/edu/kmu/act/MainPageActivityV2$8;)V
 
-    .line 495
+    .line 502
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 501
+    .line 508
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     goto :goto_0
 
-    .line 504
+    .line 511
     :cond_1
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$8;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
@@ -122,7 +122,7 @@
 
     goto :goto_0
 
-    .line 484
+    .line 491
     :cond_2
     invoke-static {}, Ltw/edu/kmu/act/MainPageActivityV2;->access$300()Ljava/lang/String;
 
@@ -132,7 +132,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 510
+    .line 517
     :cond_3
     :goto_0
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V

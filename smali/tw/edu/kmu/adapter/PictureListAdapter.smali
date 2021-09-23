@@ -212,7 +212,7 @@
     .line 81
     iget-object p2, p0, Ltw/edu/kmu/adapter/PictureListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const p3, 0x7f0a006d
+    const p3, 0x7f0a006f
 
     const/4 v0, 0x0
 

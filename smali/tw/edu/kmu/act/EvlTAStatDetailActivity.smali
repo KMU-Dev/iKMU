@@ -474,7 +474,7 @@
 
     iget-object v4, p0, Ltw/edu/kmu/act/EvlTAStatDetailActivity;->serverDataList:Ljava/util/ArrayList;
 
-    const v5, 0x7f0a005e
+    const v5, 0x7f0a0060
 
     const/4 v2, 0x2
 
@@ -526,8 +526,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801cb
-        0x7f0801cf
+        0x7f0801d9
+        0x7f0801dd
     .end array-data
 .end method
 
@@ -536,7 +536,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a005f
+    const v0, 0x7f0a0061
 
     return v0
 .end method
@@ -565,7 +565,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/EvlTAStatDetailActivity;->sharedData:Landroid/content/SharedPreferences;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 62
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/EvlTAStatDetailActivity;->findViewById(I)Landroid/view/View;
@@ -581,7 +581,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c001a
+    const v1, 0x7f0c0019
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -600,7 +600,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/EvlTAStatDetailActivity;->bundle:Landroid/os/Bundle;
 
-    const p1, 0x7f0801dc
+    const p1, 0x7f0801ea
 
     .line 69
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/EvlTAStatDetailActivity;->findViewById(I)Landroid/view/View;
@@ -624,7 +624,7 @@
     :goto_0
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f080202
+    const p1, 0x7f080210
 
     .line 72
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/EvlTAStatDetailActivity;->findViewById(I)Landroid/view/View;
@@ -911,7 +911,7 @@
 
     check-cast v3, Landroid/view/LayoutInflater;
 
-    const v4, 0x7f0a005d
+    const v4, 0x7f0a005f
 
     const/4 v5, 0x0
 
@@ -1099,7 +1099,7 @@
     .line 287
     invoke-virtual {v1, p1}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
-    const v2, 0x7f080052
+    const v2, 0x7f080051
 
     .line 289
     invoke-virtual {v3, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1131,29 +1131,29 @@
 
     :array_0
     .array-data 4
-        0x7f0801c9
-        0x7f0801dc
-        0x7f080202
-        0x7f08020e
-        0x7f080218
-        0x7f08021d
-        0x7f080222
-        0x7f080224
-        0x7f080225
-        0x7f0801ca
+        0x7f0801d7
+        0x7f0801ea
+        0x7f080210
+        0x7f08021c
+        0x7f080226
+        0x7f08022b
+        0x7f080230
+        0x7f080232
+        0x7f080233
+        0x7f0801d8
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f0800aa
-        0x7f0800ac
-        0x7f0800ad
-        0x7f0800ae
-        0x7f0800af
-        0x7f0800b0
-        0x7f0800b1
-        0x7f0800b2
-        0x7f0800b3
-        0x7f0800ab
+        0x7f0800b5
+        0x7f0800b7
+        0x7f0800b8
+        0x7f0800b9
+        0x7f0800ba
+        0x7f0800bb
+        0x7f0800bc
+        0x7f0800bd
+        0x7f0800be
+        0x7f0800b6
     .end array-data
 .end method

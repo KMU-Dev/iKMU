@@ -88,7 +88,7 @@
     .line 39
     iput p3, p0, Ltw/edu/kmu/adapter/IRSTAReplyListViewAdapter;->resource:I
 
-    const p2, 0x7f0c008a
+    const p2, 0x7f0c0088
 
     .line 40
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -153,7 +153,7 @@
 
     invoke-direct {p3, p0, v0}, Ltw/edu/kmu/adapter/IRSTAReplyListViewAdapter$ViewHolder;-><init>(Ltw/edu/kmu/adapter/IRSTAReplyListViewAdapter;Ltw/edu/kmu/adapter/IRSTAReplyListViewAdapter$1;)V
 
-    const v0, 0x7f0801c9
+    const v0, 0x7f0801d7
 
     .line 64
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -164,7 +164,7 @@
 
     iput-object v0, p3, Ltw/edu/kmu/adapter/IRSTAReplyListViewAdapter$ViewHolder;->title1:Landroid/widget/TextView;
 
-    const v0, 0x7f0801dc
+    const v0, 0x7f0801ea
 
     .line 65
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -175,7 +175,7 @@
 
     iput-object v0, p3, Ltw/edu/kmu/adapter/IRSTAReplyListViewAdapter$ViewHolder;->title2:Landroid/widget/TextView;
 
-    const v0, 0x7f080202
+    const v0, 0x7f080210
 
     .line 66
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;

@@ -2,8 +2,6 @@
 .super Ljava/lang/Object;
 .source "MyKMUActivity.java"
 
-# MyKMUActivity IRS button OnClickListener
-
 # interfaces
 .implements Landroid/view/View$OnClickListener;
 
@@ -47,7 +45,7 @@
 
     move-result-object p1
 
-    iget-boolean p1, p1, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean p1, p1, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-nez p1, :cond_0
 
@@ -119,7 +117,7 @@
 
     move-result-object p1
 
-    iget-boolean p1, p1, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean p1, p1, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-eqz p1, :cond_2
 

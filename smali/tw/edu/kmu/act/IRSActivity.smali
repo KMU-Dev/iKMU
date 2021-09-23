@@ -20,8 +20,6 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "IRSActivity"
 
-.field private static final SMALI_TAG:Ljava/lang/String; = "Smali: IRSActivity"
-
 
 # instance fields
 .field private aHandler:Landroid/os/Handler;
@@ -151,47 +149,47 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 61
+    .line 62
     invoke-direct {p0}, Ltw/edu/kmu/act/BasicActivity;-><init>()V
 
     const-string v0, "tcp://mbms.kmu.edu.tw:1883"
 
-    .line 67
+    .line 68
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->host:Ljava/lang/String;
 
     const-string v0, ""
 
-    .line 74
+    .line 75
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->quickTopic:Ljava/lang/String;
 
     const-string v0, ""
 
-    .line 75
+    .line 76
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->normalTopic:Ljava/lang/String;
 
     const-string v0, "1"
 
-    .line 77
+    .line 78
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->classId:Ljava/lang/String;
 
     const-string v0, "123456"
 
-    .line 79
+    .line 80
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->teacherNo:Ljava/lang/String;
 
     const-string v0, ""
 
-    .line 81
+    .line 82
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->currentSeqno:Ljava/lang/String;
 
     const-string v0, "https://mbms.kmu.edu.tw:443/KmuIrs/file.serv?fileID="
 
-    .line 104
+    .line 105
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->imageUrl:Ljava/lang/String;
 
     const-string v0, ""
 
-    .line 108
+    .line 109
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->ansUserId:Ljava/lang/String;
 
     const-string v0, ""
@@ -200,12 +198,12 @@
 
     const-wide/16 v0, 0x0
 
-    .line 123
+    .line 124
     iput-wide v0, p0, Ltw/edu/kmu/act/IRSActivity;->phoneTimeDiff:J
 
     const-string v0, ""
 
-    .line 125
+    .line 126
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->userID:Ljava/lang/String;
 
     const-string v0, ""
@@ -218,22 +216,22 @@
 
     const-string v0, ""
 
-    .line 127
+    .line 128
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->quickModeQuestionId:Ljava/lang/String;
 
     const-string v0, ""
 
-    .line 131
+    .line 132
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->quid:Ljava/lang/String;
 
-    .line 2302
+    .line 2305
     new-instance v0, Ltw/edu/kmu/act/IRSActivity$31;
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/IRSActivity$31;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->ctRunnable:Ljava/lang/Runnable;
 
-    .line 2364
+    .line 2367
     new-instance v0, Ltw/edu/kmu/act/IRSActivity$32;
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/IRSActivity$32;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
@@ -246,7 +244,7 @@
 .method static synthetic access$1000(Ltw/edu/kmu/act/IRSActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->secno:Ljava/lang/String;
 
     return-object p0
@@ -255,7 +253,7 @@
 .method static synthetic access$1002(Ltw/edu/kmu/act/IRSActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->secno:Ljava/lang/String;
 
     return-object p1
@@ -264,7 +262,7 @@
 .method static synthetic access$1100()Ljava/lang/String;
     .locals 1
 
-    .line 61
+    .line 62
     sget-object v0, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     return-object v0
@@ -273,7 +271,7 @@
 .method static synthetic access$1200(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/TextView;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->countTimeTitle:Landroid/widget/TextView;
 
     return-object p0
@@ -282,7 +280,7 @@
 .method static synthetic access$1300(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/Button;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->btnSend:Landroid/widget/Button;
 
     return-object p0
@@ -291,7 +289,7 @@
 .method static synthetic access$1400(Ltw/edu/kmu/act/IRSActivity;)I
     .locals 0
 
-    .line 61
+    .line 62
     iget p0, p0, Ltw/edu/kmu/act/IRSActivity;->ctPeriodCount:I
 
     return p0
@@ -300,7 +298,7 @@
 .method static synthetic access$1402(Ltw/edu/kmu/act/IRSActivity;I)I
     .locals 0
 
-    .line 61
+    .line 62
     iput p1, p0, Ltw/edu/kmu/act/IRSActivity;->ctPeriodCount:I
 
     return p1
@@ -309,7 +307,7 @@
 .method static synthetic access$1410(Ltw/edu/kmu/act/IRSActivity;)I
     .locals 2
 
-    .line 61
+    .line 62
     iget v0, p0, Ltw/edu/kmu/act/IRSActivity;->ctPeriodCount:I
 
     add-int/lit8 v1, v0, -0x1
@@ -322,7 +320,7 @@
 .method static synthetic access$1500(Ltw/edu/kmu/act/IRSActivity;)Landroid/os/Handler;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->ctHandler:Landroid/os/Handler;
 
     return-object p0
@@ -331,7 +329,7 @@
 .method static synthetic access$1502(Ltw/edu/kmu/act/IRSActivity;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
 
-    .line 61
+    .line 62
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->ctHandler:Landroid/os/Handler;
 
     return-object p1
@@ -340,7 +338,7 @@
 .method static synthetic access$1600(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/Button;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->btn21:Landroid/widget/Button;
 
     return-object p0
@@ -349,7 +347,7 @@
 .method static synthetic access$1700(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/Button;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->btn22:Landroid/widget/Button;
 
     return-object p0
@@ -358,7 +356,7 @@
 .method static synthetic access$1800(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/Button;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->btn23:Landroid/widget/Button;
 
     return-object p0
@@ -367,7 +365,7 @@
 .method static synthetic access$1900(Ltw/edu/kmu/act/IRSActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->ansUserName:Ljava/lang/String;
 
     return-object p0
@@ -376,7 +374,7 @@
 .method static synthetic access$200(Ltw/edu/kmu/act/IRSActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->classId:Ljava/lang/String;
 
     return-object p0
@@ -385,7 +383,7 @@
 .method static synthetic access$2000(Ltw/edu/kmu/act/IRSActivity;)V
     .locals 0
 
-    .line 61
+    .line 62
     invoke-direct {p0}, Ltw/edu/kmu/act/IRSActivity;->submitPaperFillData()V
 
     return-void
@@ -394,7 +392,7 @@
 .method static synthetic access$2100(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/LinearLayout;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->form1:Landroid/widget/LinearLayout;
 
     return-object p0
@@ -403,7 +401,7 @@
 .method static synthetic access$2200(Ltw/edu/kmu/act/IRSActivity;Ljava/lang/String;)V
     .locals 0
 
-    .line 61
+    .line 62
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/IRSActivity;->parseMsg(Ljava/lang/String;)V
 
     return-void
@@ -412,7 +410,7 @@
 .method static synthetic access$2300(Ltw/edu/kmu/act/IRSActivity;)Lorg/eclipse/paho/client/mqttv3/MqttClient;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->client:Lorg/eclipse/paho/client/mqttv3/MqttClient;
 
     return-object p0
@@ -421,7 +419,7 @@
 .method static synthetic access$2400(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/TextView;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->img_status:Landroid/widget/TextView;
 
     return-object p0
@@ -430,7 +428,7 @@
 .method static synthetic access$2500(Ltw/edu/kmu/act/IRSActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->quickTopic:Ljava/lang/String;
 
     return-object p0
@@ -439,7 +437,7 @@
 .method static synthetic access$2600(Ltw/edu/kmu/act/IRSActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->normalTopic:Ljava/lang/String;
 
     return-object p0
@@ -448,7 +446,7 @@
 .method static synthetic access$2700(Ltw/edu/kmu/act/IRSActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->quid:Ljava/lang/String;
 
     return-object p0
@@ -457,7 +455,7 @@
 .method static synthetic access$2702(Ltw/edu/kmu/act/IRSActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->quid:Ljava/lang/String;
 
     return-object p1
@@ -466,7 +464,7 @@
 .method static synthetic access$2900(Ltw/edu/kmu/act/IRSActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->currentType:Ljava/lang/String;
 
     return-object p0
@@ -475,7 +473,7 @@
 .method static synthetic access$3000(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/Button;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->btn1:Landroid/widget/Button;
 
     return-object p0
@@ -484,7 +482,7 @@
 .method static synthetic access$3100(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/Button;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->btn2:Landroid/widget/Button;
 
     return-object p0
@@ -493,7 +491,7 @@
 .method static synthetic access$3200(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/Button;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->btn3:Landroid/widget/Button;
 
     return-object p0
@@ -502,7 +500,7 @@
 .method static synthetic access$3300(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/Button;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->btn4:Landroid/widget/Button;
 
     return-object p0
@@ -511,7 +509,7 @@
 .method static synthetic access$3400(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/Button;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->btn5:Landroid/widget/Button;
 
     return-object p0
@@ -520,7 +518,7 @@
 .method static synthetic access$3500(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/Button;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->quickbtn:Landroid/widget/Button;
 
     return-object p0
@@ -529,7 +527,7 @@
 .method static synthetic access$3600(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/TextView;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->quickCountTime:Landroid/widget/TextView;
 
     return-object p0
@@ -538,7 +536,7 @@
 .method static synthetic access$3700(Ltw/edu/kmu/act/IRSActivity;)V
     .locals 0
 
-    .line 61
+    .line 62
     invoke-direct {p0}, Ltw/edu/kmu/act/IRSActivity;->hideQuickMode()V
 
     return-void
@@ -547,7 +545,7 @@
 .method static synthetic access$3800(Ltw/edu/kmu/act/IRSActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->currentEType:Ljava/lang/String;
 
     return-object p0
@@ -556,7 +554,7 @@
 .method static synthetic access$3900(Ltw/edu/kmu/act/IRSActivity;)Ltw/edu/kmu/act/IRSActivity$ViewDialog;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->alertDialog:Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
     return-object p0
@@ -565,7 +563,7 @@
 .method static synthetic access$4000(Ltw/edu/kmu/act/IRSActivity;)Landroid/os/Handler;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->aHandler:Landroid/os/Handler;
 
     return-object p0
@@ -574,7 +572,7 @@
 .method static synthetic access$4100(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/LinearLayout;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     return-object p0
@@ -583,7 +581,7 @@
 .method static synthetic access$4200(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/LinearLayout;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     return-object p0
@@ -592,7 +590,7 @@
 .method static synthetic access$4400(Ltw/edu/kmu/act/IRSActivity;Ljava/lang/String;)V
     .locals 0
 
-    .line 61
+    .line 62
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/IRSActivity;->sendQuickAns(Ljava/lang/String;)V
 
     return-void
@@ -601,7 +599,7 @@
 .method static synthetic access$4500(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/EditText;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->stuQuEdit:Landroid/widget/EditText;
 
     return-object p0
@@ -610,7 +608,7 @@
 .method static synthetic access$4600(Ltw/edu/kmu/act/IRSActivity;)Landroid/widget/CheckBox;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->checkbox1:Landroid/widget/CheckBox;
 
     return-object p0
@@ -619,7 +617,7 @@
 .method static synthetic access$4700(Ltw/edu/kmu/act/IRSActivity;)Landroid/os/Handler;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->handler:Landroid/os/Handler;
 
     return-object p0
@@ -628,7 +626,7 @@
 .method static synthetic access$4800(Ltw/edu/kmu/act/IRSActivity;)I
     .locals 0
 
-    .line 61
+    .line 62
     iget p0, p0, Ltw/edu/kmu/act/IRSActivity;->periodCount:I
 
     return p0
@@ -637,7 +635,7 @@
 .method static synthetic access$4810(Ltw/edu/kmu/act/IRSActivity;)I
     .locals 2
 
-    .line 61
+    .line 62
     iget v0, p0, Ltw/edu/kmu/act/IRSActivity;->periodCount:I
 
     add-int/lit8 v1, v0, -0x1
@@ -650,7 +648,7 @@
 .method static synthetic access$4900(Ltw/edu/kmu/act/IRSActivity;)V
     .locals 0
 
-    .line 61
+    .line 62
     invoke-direct {p0}, Ltw/edu/kmu/act/IRSActivity;->connect()V
 
     return-void
@@ -659,7 +657,7 @@
 .method static synthetic access$500(Ltw/edu/kmu/act/IRSActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->ansUserId:Ljava/lang/String;
 
     return-object p0
@@ -668,7 +666,7 @@
 .method static synthetic access$5000(Ltw/edu/kmu/act/IRSActivity;)Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->options:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     return-object p0
@@ -677,7 +675,7 @@
 .method static synthetic access$600(Ltw/edu/kmu/act/IRSActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->teacherNo:Ljava/lang/String;
 
     return-object p0
@@ -686,7 +684,7 @@
 .method static synthetic access$700(Ltw/edu/kmu/act/IRSActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->ctEndTime:Ljava/lang/String;
 
     return-object p0
@@ -695,7 +693,7 @@
 .method static synthetic access$702(Ltw/edu/kmu/act/IRSActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->ctEndTime:Ljava/lang/String;
 
     return-object p1
@@ -704,7 +702,7 @@
 .method static synthetic access$800(Ltw/edu/kmu/act/IRSActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iget-object p0, p0, Ltw/edu/kmu/act/IRSActivity;->ctServerTime:Ljava/lang/String;
 
     return-object p0
@@ -713,7 +711,7 @@
 .method static synthetic access$802(Ltw/edu/kmu/act/IRSActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 62
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->ctServerTime:Ljava/lang/String;
 
     return-object p1
@@ -722,7 +720,7 @@
 .method static synthetic access$902(Ltw/edu/kmu/act/IRSActivity;J)J
     .locals 0
 
-    .line 61
+    .line 62
     iput-wide p1, p0, Ltw/edu/kmu/act/IRSActivity;->phoneTimeDiff:J
 
     return-wide p1
@@ -731,7 +729,7 @@
 .method private connect()V
     .locals 2
 
-    .line 2491
+    .line 2494
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$35;
@@ -740,7 +738,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 2509
+    .line 2512
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     return-void
@@ -749,24 +747,24 @@
 .method private hideQuickMode()V
     .locals 2
 
-    .line 294
+    .line 297
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->root11:Landroid/widget/LinearLayout;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 295
+    .line 298
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->root2:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 296
+    .line 299
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->root21:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 297
+    .line 300
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->bar1:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
@@ -777,7 +775,7 @@
 .method private init()V
     .locals 4
 
-    .line 2430
+    .line 2433
     :try_start_0
     new-instance v0, Ljava/text/SimpleDateFormat;
 
@@ -785,12 +783,12 @@
 
     invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    .line 2431
+    .line 2434
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v1
 
-    .line 2432
+    .line 2435
     invoke-virtual {v1}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v1
@@ -799,7 +797,7 @@
 
     move-result-object v0
 
-    .line 2433
+    .line 2436
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -818,7 +816,7 @@
 
     move-result-object v0
 
-    .line 2437
+    .line 2440
     new-instance v1, Lorg/eclipse/paho/client/mqttv3/MqttClient;
 
     iget-object v2, p0, Ltw/edu/kmu/act/IRSActivity;->host:Ljava/lang/String;
@@ -831,35 +829,35 @@
 
     iput-object v1, p0, Ltw/edu/kmu/act/IRSActivity;->client:Lorg/eclipse/paho/client/mqttv3/MqttClient;
 
-    .line 2439
+    .line 2442
     new-instance v0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     invoke-direct {v0}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;-><init>()V
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->options:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
-    .line 2441
+    .line 2444
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->options:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->setCleanSession(Z)V
 
-    .line 2447
+    .line 2450
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->options:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     const/16 v1, 0xa
 
     invoke-virtual {v0, v1}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->setConnectionTimeout(I)V
 
-    .line 2449
+    .line 2452
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->options:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     const/16 v1, 0x14
 
     invoke-virtual {v0, v1}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->setKeepAliveInterval(I)V
 
-    .line 2451
+    .line 2454
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->client:Lorg/eclipse/paho/client/mqttv3/MqttClient;
 
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$34;
@@ -877,9 +875,9 @@
 .method private initBtn()V
     .locals 3
 
-    const v0, 0x7f080154
+    const v0, 0x7f08015e
 
-    .line 766
+    .line 769
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -888,16 +886,16 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->quickCountTime:Landroid/widget/TextView;
 
-    .line 767
+    .line 770
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->quickCountTime:Landroid/widget/TextView;
 
     const-string v1, "00:00:00"
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f080156
+    const v0, 0x7f080160
 
-    .line 769
+    .line 772
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -906,7 +904,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->quickbtn:Landroid/widget/Button;
 
-    .line 770
+    .line 773
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->quickbtn:Landroid/widget/Button;
 
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$7;
@@ -915,9 +913,9 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080052
+    const v0, 0x7f080051
 
-    .line 781
+    .line 784
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -926,26 +924,26 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn1:Landroid/widget/Button;
 
-    .line 782
+    .line 785
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn1:Landroid/widget/Button;
 
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->buttonEffect(Landroid/widget/Button;)V
 
-    .line 783
+    .line 786
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn1:Landroid/widget/Button;
 
     const-string v1, "1"
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 784
+    .line 787
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn1:Landroid/widget/Button;
 
     const v1, 0x7f0700f0
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 785
+    .line 788
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn1:Landroid/widget/Button;
 
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$8;
@@ -954,9 +952,9 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f08005c
+    const v0, 0x7f08005b
 
-    .line 794
+    .line 797
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -965,24 +963,24 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn2:Landroid/widget/Button;
 
-    .line 795
+    .line 798
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn2:Landroid/widget/Button;
 
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->buttonEffect(Landroid/widget/Button;)V
 
-    .line 796
+    .line 799
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn2:Landroid/widget/Button;
 
     const-string v2, "2"
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 797
+    .line 800
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn2:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 798
+    .line 801
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn2:Landroid/widget/Button;
 
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$9;
@@ -991,9 +989,9 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080061
+    const v0, 0x7f080060
 
-    .line 807
+    .line 810
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1002,24 +1000,24 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn3:Landroid/widget/Button;
 
-    .line 808
+    .line 811
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn3:Landroid/widget/Button;
 
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->buttonEffect(Landroid/widget/Button;)V
 
-    .line 809
+    .line 812
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn3:Landroid/widget/Button;
 
     const-string v2, "3"
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 810
+    .line 813
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn3:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 811
+    .line 814
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn3:Landroid/widget/Button;
 
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$10;
@@ -1028,9 +1026,9 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080062
+    const v0, 0x7f080061
 
-    .line 820
+    .line 823
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1039,24 +1037,24 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn4:Landroid/widget/Button;
 
-    .line 821
+    .line 824
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn4:Landroid/widget/Button;
 
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->buttonEffect(Landroid/widget/Button;)V
 
-    .line 822
+    .line 825
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn4:Landroid/widget/Button;
 
     const-string v2, "4"
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 823
+    .line 826
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn4:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 824
+    .line 827
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn4:Landroid/widget/Button;
 
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$11;
@@ -1065,9 +1063,9 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080065
+    const v0, 0x7f080064
 
-    .line 833
+    .line 836
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1076,24 +1074,24 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn5:Landroid/widget/Button;
 
-    .line 834
+    .line 837
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn5:Landroid/widget/Button;
 
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->buttonEffect(Landroid/widget/Button;)V
 
-    .line 835
+    .line 838
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn5:Landroid/widget/Button;
 
     const-string v2, "5"
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 836
+    .line 839
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn5:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 837
+    .line 840
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn5:Landroid/widget/Button;
 
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$12;
@@ -1102,41 +1100,41 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 846
+    .line 849
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn1:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 847
+    .line 850
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn2:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 848
+    .line 851
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn3:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 849
+    .line 852
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn4:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 850
+    .line 853
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn5:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 851
+    .line 854
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->quickbtn:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    const v0, 0x7f080099
+    const v0, 0x7f0800a2
 
-    .line 855
+    .line 858
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1145,9 +1143,9 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->checkbox1:Landroid/widget/CheckBox;
 
-    const v0, 0x7f08005e
+    const v0, 0x7f08005d
 
-    .line 858
+    .line 861
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1156,7 +1154,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn21:Landroid/widget/Button;
 
-    .line 859
+    .line 862
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn21:Landroid/widget/Button;
 
     iget-boolean v1, p0, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
@@ -1173,7 +1171,7 @@
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 860
+    .line 863
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn21:Landroid/widget/Button;
 
     const-string v1, "#62AFE2"
@@ -1184,7 +1182,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundColor(I)V
 
-    .line 861
+    .line 864
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn21:Landroid/widget/Button;
 
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$13;
@@ -1193,9 +1191,9 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f08005f
+    const v0, 0x7f08005e
 
-    .line 923
+    .line 926
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1204,7 +1202,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn22:Landroid/widget/Button;
 
-    .line 924
+    .line 927
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn22:Landroid/widget/Button;
 
     iget-boolean v1, p0, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
@@ -1221,7 +1219,7 @@
     :goto_1
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 925
+    .line 928
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn22:Landroid/widget/Button;
 
     const-string v1, "#62AFE2"
@@ -1232,7 +1230,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundColor(I)V
 
-    .line 926
+    .line 929
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn22:Landroid/widget/Button;
 
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$14;
@@ -1241,9 +1239,9 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080060
+    const v0, 0x7f08005f
 
-    .line 985
+    .line 988
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1252,7 +1250,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn23:Landroid/widget/Button;
 
-    .line 988
+    .line 991
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btn23:Landroid/widget/Button;
 
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$15;
@@ -1267,9 +1265,9 @@
 .method private initEditView()V
     .locals 6
 
-    const v0, 0x7f0800a6
+    const v0, 0x7f0800b1
 
-    .line 523
+    .line 526
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1278,7 +1276,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->countTimeTitle:Landroid/widget/TextView;
 
-    .line 524
+    .line 527
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->countTimeTitle:Landroid/widget/TextView;
 
     sget-object v1, Landroid/graphics/Typeface;->MONOSPACE:Landroid/graphics/Typeface;
@@ -1287,7 +1285,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
 
-    .line 525
+    .line 528
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->countTimeTitle:Landroid/widget/TextView;
 
     const/4 v1, 0x2
@@ -1296,21 +1294,21 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 526
+    .line 529
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->countTimeTitle:Landroid/widget/TextView;
 
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 527
+    .line 530
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->countTimeTitle:Landroid/widget/TextView;
 
     const-string v2, "00:00:00"
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 528
+    .line 531
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->countTimeTitle:Landroid/widget/TextView;
 
     const v2, -0x777778
@@ -1324,12 +1322,12 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 532
+    .line 535
     invoke-virtual {p0}, Ltw/edu/kmu/act/IRSActivity;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v2
 
-    const v3, 0x7f0a0072
+    const v3, 0x7f0a0074
 
     const/4 v4, 0x0
 
@@ -1337,16 +1335,16 @@
 
     move-result-object v2
 
-    const v3, 0x7f0801c7
+    const v3, 0x7f0801d5
 
-    .line 533
+    .line 536
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
     check-cast v3, Landroid/widget/TextView;
 
-    .line 534
+    .line 537
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -1365,14 +1363,14 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 535
+    .line 538
     iget-object v3, p0, Ltw/edu/kmu/act/IRSActivity;->form1:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     goto :goto_0
 
-    .line 538
+    .line 541
     :cond_0
     new-instance v0, Landroid/widget/Button;
 
@@ -1380,7 +1378,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btnSend:Landroid/widget/Button;
 
-    .line 539
+    .line 542
     new-instance v0, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v2, 0x42200000    # 40.0f
@@ -1393,40 +1391,40 @@
 
     const/high16 v2, 0x40a00000    # 5.0f
 
-    .line 540
+    .line 543
     invoke-static {p0, v2}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v3
 
     iput v3, v0, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 541
+    .line 544
     invoke-static {p0, v2}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v3
 
     iput v3, v0, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 542
+    .line 545
     invoke-static {p0, v2}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v3
 
     iput v3, v0, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 543
+    .line 546
     invoke-static {p0, v2}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v2
 
     iput v2, v0, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 544
+    .line 547
     iget-object v2, p0, Ltw/edu/kmu/act/IRSActivity;->btnSend:Landroid/widget/Button;
 
     invoke-virtual {v2, v0}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 545
+    .line 548
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btnSend:Landroid/widget/Button;
 
     const-string v2, "#F89022"
@@ -1437,7 +1435,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setBackgroundColor(I)V
 
-    .line 546
+    .line 549
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btnSend:Landroid/widget/Button;
 
     iget-boolean v2, p0, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
@@ -1454,12 +1452,12 @@
     :goto_1
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 547
+    .line 550
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btnSend:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setTextColor(I)V
 
-    .line 548
+    .line 551
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->btnSend:Landroid/widget/Button;
 
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$3;
@@ -1468,48 +1466,48 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 577
+    .line 580
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->form1:Landroid/widget/LinearLayout;
 
     iget-object v1, p0, Ltw/edu/kmu/act/IRSActivity;->btnSend:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    const v0, 0x7f080063
+    const v0, 0x7f080062
 
-    .line 579
+    .line 582
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 580
+    .line 583
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$4;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/IRSActivity$4;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080064
+    const v0, 0x7f080063
 
-    .line 593
+    .line 596
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 595
+    .line 598
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$5;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/IRSActivity$5;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0801a5
+    const v0, 0x7f0801b3
 
-    .line 607
+    .line 610
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1524,16 +1522,16 @@
 .method private initFuncBtn()V
     .locals 4
 
-    const v0, 0x7f080040
+    const v0, 0x7f08003f
 
-    .line 220
+    .line 223
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 221
+    .line 224
     new-instance v1, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v2, 0x420c0000    # 35.0f
@@ -1548,43 +1546,43 @@
 
     const/high16 v2, 0x40a00000    # 5.0f
 
-    .line 222
+    .line 225
     invoke-static {p0, v2}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v3
 
     iput v3, v1, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 223
+    .line 226
     invoke-static {p0, v2}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v2
 
     iput v2, v1, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 224
+    .line 227
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     const/4 v1, 0x0
 
-    .line 225
+    .line 228
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     const/4 v1, 0x0
 
-    .line 226
+    .line 229
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     const-string v1, "#FFFFFF"
 
-    .line 227
+    .line 230
     invoke-static {v1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setTextColor(I)V
 
-    .line 228
+    .line 231
     iget-boolean v1, p0, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v1, :cond_0
@@ -1599,23 +1597,23 @@
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 230
+    .line 233
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$1;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/IRSActivity$1;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f08006f
+    const v0, 0x7f08006e
 
-    .line 243
+    .line 246
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 244
+    .line 247
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$2;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/IRSActivity$2;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
@@ -1628,7 +1626,7 @@
 .method private initHandler()V
     .locals 1
 
-    .line 614
+    .line 617
     new-instance v0, Ltw/edu/kmu/act/IRSActivity$6;
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/IRSActivity$6;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
@@ -1641,9 +1639,9 @@
 .method private initQuickLy()V
     .locals 1
 
-    const v0, 0x7f08016a
+    const v0, 0x7f080177
 
-    .line 286
+    .line 289
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1652,9 +1650,9 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->root11:Landroid/widget/LinearLayout;
 
-    const v0, 0x7f08016b
+    const v0, 0x7f080178
 
-    .line 287
+    .line 290
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1663,9 +1661,9 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->root2:Landroid/widget/LinearLayout;
 
-    const v0, 0x7f08016c
+    const v0, 0x7f080179
 
-    .line 288
+    .line 291
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1676,7 +1674,7 @@
 
     const v0, 0x7f080030
 
-    .line 289
+    .line 292
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -1695,7 +1693,7 @@
 
     move-object/from16 v1, p1
 
-    .line 1107
+    .line 1110
     sget-object v2, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1714,7 +1712,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1110
+    .line 1113
     :try_start_0
     new-instance v2, Lorg/json/JSONObject;
 
@@ -1722,14 +1720,14 @@
 
     const-string v1, "msgType"
 
-    .line 1111
+    .line 1114
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     const-string v3, "4"
 
-    .line 1112
+    .line 1115
     invoke-virtual {v3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
@@ -1750,7 +1748,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 1114
+    .line 1117
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, v7}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
@@ -1766,7 +1764,7 @@
     :cond_0
     const-string v2, "\u4f5c\u7b54\u5b8c\u6210\uff0c\u6559\u5e2b\u5df2\u6536\u5230\u60a8\u7684\u7b54\u6848\uff01"
 
-    .line 1115
+    .line 1118
     :goto_0
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -1788,12 +1786,12 @@
 
     invoke-direct {v3, v7}, Ltw/edu/kmu/act/IRSActivity$17;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
-    .line 1116
+    .line 1119
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    .line 1120
+    .line 1123
     invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     return-void
@@ -1801,7 +1799,7 @@
     :cond_2
     const-string v3, "question"
 
-    .line 1124
+    .line 1127
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -1816,7 +1814,7 @@
 
     const-string v3, "question"
 
-    .line 1125
+    .line 1128
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -1829,7 +1827,7 @@
 
     const-string v3, "question"
 
-    .line 1128
+    .line 1131
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -1840,7 +1838,7 @@
 
     move-result-object v3
 
-    .line 1136
+    .line 1139
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->currentSeqno:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
@@ -1864,7 +1862,7 @@
     :cond_3
     const-string v3, "question"
 
-    .line 1144
+    .line 1147
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -1885,7 +1883,7 @@
 
     const/4 v9, 0x0
 
-    .line 1148
+    .line 1151
     :goto_2
     invoke-virtual {v3}, Lorg/json/JSONArray;->length()I
 
@@ -1893,7 +1891,7 @@
 
     if-ge v6, v10, :cond_5
 
-    .line 1149
+    .line 1152
     invoke-virtual {v3, v6}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v10
@@ -1919,7 +1917,7 @@
 
     goto :goto_2
 
-    .line 1153
+    .line 1156
     :cond_5
     invoke-virtual {v3}, Lorg/json/JSONArray;->length()I
 
@@ -1929,7 +1927,7 @@
 
     if-nez v9, :cond_6
 
-    .line 1154
+    .line 1157
     sget-object v1, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1950,7 +1948,7 @@
 
     return-void
 
-    .line 1163
+    .line 1166
     :cond_6
     sget-object v3, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
@@ -1972,7 +1970,7 @@
 
     invoke-static {v3, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1164
+    .line 1167
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->endTime:Ljava/lang/String;
 
     invoke-virtual {v7, v3}, Ltw/edu/kmu/act/IRSActivity;->dateDiff(Ljava/lang/String;)J
@@ -1981,7 +1979,7 @@
 
     const-wide/16 v11, 0x3e8
 
-    .line 1166
+    .line 1169
     div-long v11, v9, v11
 
     iget-wide v13, v7, Ltw/edu/kmu/act/IRSActivity;->phoneTimeDiff:J
@@ -1990,7 +1988,7 @@
 
     sub-long/2addr v11, v13
 
-    .line 1167
+    .line 1170
     sget-object v3, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -2009,7 +2007,7 @@
 
     invoke-static {v3, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1170
+    .line 1173
     sget-object v3, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -2034,7 +2032,7 @@
 
     if-gez v3, :cond_7
 
-    .line 1173
+    .line 1176
     sget-object v1, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     const-string v2, "time is up"
@@ -2043,7 +2041,7 @@
 
     return-void
 
-    .line 1178
+    .line 1181
     :cond_7
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2069,7 +2067,7 @@
 
     if-le v3, v6, :cond_8
 
-    .line 1179
+    .line 1182
     invoke-static {v8}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v3
@@ -2078,7 +2076,7 @@
 
     goto :goto_3
 
-    .line 1181
+    .line 1184
     :cond_8
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2100,7 +2098,7 @@
 
     iput v3, v7, Ltw/edu/kmu/act/IRSActivity;->periodCount:I
 
-    .line 1183
+    .line 1186
     :goto_3
     sget-object v3, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
@@ -2122,19 +2120,19 @@
 
     invoke-static {v3, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1185
+    .line 1188
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->aHandler:Landroid/os/Handler;
 
     if-eqz v3, :cond_9
 
-    .line 1186
+    .line 1189
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->aHandler:Landroid/os/Handler;
 
     iget-object v6, v7, Ltw/edu/kmu/act/IRSActivity;->runnable:Ljava/lang/Runnable;
 
     invoke-virtual {v3, v6}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 1189
+    .line 1192
     :cond_9
     new-instance v3, Landroid/os/Handler;
 
@@ -2142,7 +2140,7 @@
 
     iput-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->aHandler:Landroid/os/Handler;
 
-    .line 1190
+    .line 1193
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->aHandler:Landroid/os/Handler;
 
     iget-object v6, v7, Ltw/edu/kmu/act/IRSActivity;->runnable:Ljava/lang/Runnable;
@@ -2151,7 +2149,7 @@
 
     const-string v3, "0"
 
-    .line 1193
+    .line 1196
     invoke-virtual {v3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -2160,7 +2158,7 @@
 
     const-string v1, "question"
 
-    .line 1194
+    .line 1197
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
@@ -2173,7 +2171,7 @@
 
     const-string v1, "question"
 
-    .line 1196
+    .line 1199
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
@@ -2186,7 +2184,7 @@
 
     const-string v1, "question"
 
-    .line 1197
+    .line 1200
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
@@ -2201,7 +2199,7 @@
 
     const-string v1, "1"
 
-    .line 1200
+    .line 1203
     invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -2216,15 +2214,15 @@
 
     const-string v1, "\u5feb\u554f\u5feb\u7b54"
 
-    .line 1202
+    .line 1205
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->currentType:Ljava/lang/String;
 
     const-string v1, "Quick Quiz"
 
-    .line 1203
+    .line 1206
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->currentEType:Ljava/lang/String;
 
-    .line 1205
+    .line 1208
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->sharedData:Landroid/content/SharedPreferences;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2253,14 +2251,14 @@
 
     const-string v2, ""
 
-    .line 1206
+    .line 1209
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_b
 
-    .line 1207
+    .line 1210
     sget-object v2, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     iget-boolean v3, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
@@ -2300,7 +2298,7 @@
     :goto_5
     invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1208
+    .line 1211
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->aHandler:Landroid/os/Handler;
 
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->runnable:Ljava/lang/Runnable;
@@ -2309,21 +2307,21 @@
 
     return-void
 
-    .line 1212
+    .line 1215
     :cond_b
     invoke-direct/range {p0 .. p0}, Ltw/edu/kmu/act/IRSActivity;->showQuickMode()V
 
-    .line 1214
+    .line 1217
     iput-object v6, v7, Ltw/edu/kmu/act/IRSActivity;->quickModeQuestionId:Ljava/lang/String;
 
-    .line 1216
+    .line 1219
     sget-object v1, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     const-string v2, "\u5feb\u554f\u5feb\u7b54  start"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1217
+    .line 1220
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2348,7 +2346,7 @@
 
     move-result-object v1
 
-    .line 1218
+    .line 1221
     new-instance v2, Lorg/json/JSONObject;
 
     invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
@@ -2357,31 +2355,31 @@
 
     const-string v13, "98"
 
-    .line 1219
+    .line 1222
     invoke-virtual {v2, v12, v13}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v12, "userId"
 
-    .line 1220
+    .line 1223
     iget-object v13, v7, Ltw/edu/kmu/act/IRSActivity;->ansUserId:Ljava/lang/String;
 
     invoke-virtual {v2, v12, v13}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v12, "questionId"
 
-    .line 1221
+    .line 1224
     invoke-virtual {v2, v12, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v12, "os"
 
     const-string v13, "android"
 
-    .line 1222
+    .line 1225
     invoke-virtual {v2, v12, v13}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v12, "version"
 
-    .line 1223
+    .line 1226
     iget-object v13, v7, Ltw/edu/kmu/act/IRSActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     invoke-virtual {v13, v7}, Ltw/edu/kmu/act/MyApplication;->getVersionName(Landroid/content/Context;)Ljava/lang/String;
@@ -2392,7 +2390,7 @@
 
     const-string v12, "token"
 
-    .line 1224
+    .line 1227
     iget-object v13, v7, Ltw/edu/kmu/act/IRSActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v13, v13, Ltw/edu/kmu/act/MyApplication;->regId:Ljava/lang/String;
@@ -2401,37 +2399,37 @@
 
     const-string v12, "device"
 
-    .line 1225
+    .line 1228
     sget-object v13, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     invoke-virtual {v2, v12, v13}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 1226
+    .line 1229
     invoke-virtual {v2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1227
+    .line 1230
     new-array v12, v4, [B
 
     const-string v12, "UTF-8"
 
-    .line 1228
+    .line 1231
     invoke-virtual {v2, v12}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object v12
 
-    .line 1229
+    .line 1232
     new-instance v13, Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-direct {v13, v12}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;-><init>([B)V
 
-    .line 1233
+    .line 1236
     new-instance v12, Ltw/edu/kmu/act/IRSActivity$SendData4Type99;
 
     invoke-direct {v12, v7, v10}, Ltw/edu/kmu/act/IRSActivity$SendData4Type99;-><init>(Ltw/edu/kmu/act/IRSActivity;Ltw/edu/kmu/act/IRSActivity$1;)V
 
-    .line 1234
+    .line 1237
     new-array v3, v3, [Ljava/lang/String;
 
     aput-object v1, v3, v4
@@ -2448,37 +2446,37 @@
 
     invoke-virtual {v12, v3}, Ltw/edu/kmu/act/IRSActivity$SendData4Type99;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 1235
+    .line 1238
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->btn1:Landroid/widget/Button;
 
     invoke-virtual {v1, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 1236
+    .line 1239
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->btn2:Landroid/widget/Button;
 
     invoke-virtual {v1, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 1237
+    .line 1240
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->btn3:Landroid/widget/Button;
 
     invoke-virtual {v1, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 1238
+    .line 1241
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->btn4:Landroid/widget/Button;
 
     invoke-virtual {v1, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 1239
+    .line 1242
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->btn5:Landroid/widget/Button;
 
     invoke-virtual {v1, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 1240
+    .line 1243
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->quickbtn:Landroid/widget/Button;
 
     invoke-virtual {v1, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 1242
+    .line 1245
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, v7}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
@@ -2494,7 +2492,7 @@
     :cond_c
     const-string v2, "\u5feb\u554f\u5feb\u7b54\u5df2\u958b\u59cb,\u8acb\u4f5c\u7b54"
 
-    .line 1243
+    .line 1246
     :goto_6
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -2516,12 +2514,12 @@
 
     invoke-direct {v3, v7}, Ltw/edu/kmu/act/IRSActivity$18;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
-    .line 1244
+    .line 1247
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    .line 1248
+    .line 1251
     invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     goto/16 :goto_21
@@ -2529,7 +2527,7 @@
     :cond_e
     const-string v1, "2"
 
-    .line 1250
+    .line 1253
     invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -2561,14 +2559,14 @@
     :cond_f
     const-string v1, "99"
 
-    .line 1929
+    .line 1932
     invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_31
 
-    .line 1931
+    .line 1934
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->sharedData:Landroid/content/SharedPreferences;
 
     new-instance v14, Ljava/lang/StringBuilder;
@@ -2597,14 +2595,14 @@
 
     const-string v12, ""
 
-    .line 1932
+    .line 1935
     invoke-virtual {v1, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v12
 
     if-nez v12, :cond_11
 
-    .line 1933
+    .line 1936
     sget-object v2, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     iget-boolean v3, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
@@ -2644,7 +2642,7 @@
     :goto_9
     invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1934
+    .line 1937
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->aHandler:Landroid/os/Handler;
 
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->runnable:Ljava/lang/Runnable;
@@ -2653,7 +2651,7 @@
 
     return-void
 
-    .line 1940
+    .line 1943
     :cond_11
     new-instance v1, Lorg/json/JSONObject;
 
@@ -2663,31 +2661,31 @@
 
     const-string v14, "98"
 
-    .line 1941
+    .line 1944
     invoke-virtual {v1, v12, v14}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v12, "userId"
 
-    .line 1942
+    .line 1945
     iget-object v14, v7, Ltw/edu/kmu/act/IRSActivity;->ansUserId:Ljava/lang/String;
 
     invoke-virtual {v1, v12, v14}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v12, "questionId"
 
-    .line 1943
+    .line 1946
     invoke-virtual {v1, v12, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v12, "os"
 
     const-string v14, "android"
 
-    .line 1944
+    .line 1947
     invoke-virtual {v1, v12, v14}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v12, "version"
 
-    .line 1945
+    .line 1948
     iget-object v14, v7, Ltw/edu/kmu/act/IRSActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     invoke-virtual {v14, v7}, Ltw/edu/kmu/act/MyApplication;->getVersionName(Landroid/content/Context;)Ljava/lang/String;
@@ -2698,7 +2696,7 @@
 
     const-string v12, "token"
 
-    .line 1946
+    .line 1949
     iget-object v14, v7, Ltw/edu/kmu/act/IRSActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v14, v14, Ltw/edu/kmu/act/MyApplication;->regId:Ljava/lang/String;
@@ -2707,44 +2705,44 @@
 
     const-string v12, "device"
 
-    .line 1947
+    .line 1950
     sget-object v14, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     invoke-virtual {v1, v12, v14}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 1948
+    .line 1951
     invoke-virtual {v1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1949
+    .line 1952
     new-array v12, v4, [B
 
     const-string v12, "UTF-8"
 
-    .line 1950
+    .line 1953
     invoke-virtual {v1, v12}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object v12
 
-    .line 1951
+    .line 1954
     new-instance v14, Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-direct {v14, v12}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;-><init>([B)V
 
-    .line 1956
+    .line 1959
     new-instance v12, Landroid/widget/LinearLayout;
 
     invoke-direct {v12, v7}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     iput-object v12, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
-    .line 1957
+    .line 1960
     iget-object v12, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v12, v5}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 1958
+    .line 1961
     iget-object v12, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     const-string v14, "#1980E0"
@@ -2755,12 +2753,12 @@
 
     invoke-virtual {v12, v14}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
-    .line 1960
+    .line 1963
     new-instance v12, Ltw/edu/kmu/act/IRSActivity$SendData4Type99;
 
     invoke-direct {v12, v7, v10}, Ltw/edu/kmu/act/IRSActivity$SendData4Type99;-><init>(Ltw/edu/kmu/act/IRSActivity;Ltw/edu/kmu/act/IRSActivity$1;)V
 
-    .line 1961
+    .line 1964
     new-array v14, v3, [Ljava/lang/String;
 
     aput-object v6, v14, v4
@@ -2777,19 +2775,19 @@
 
     invoke-virtual {v12, v14}, Ltw/edu/kmu/act/IRSActivity$SendData4Type99;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 1962
+    .line 1965
     new-instance v1, Landroid/widget/LinearLayout;
 
     invoke-direct {v1, v7}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
-    .line 1963
+    .line 1966
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 1964
+    .line 1967
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     const-string v12, "#1980E0"
@@ -2800,14 +2798,14 @@
 
     invoke-virtual {v1, v12}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
-    .line 1966
+    .line 1969
     new-instance v1, Landroid/widget/ScrollView;
 
     invoke-direct {v1, v7}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
 
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
-    .line 1967
+    .line 1970
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
     new-instance v12, Landroid/widget/RelativeLayout$LayoutParams;
@@ -2816,88 +2814,88 @@
 
     invoke-virtual {v1, v12}, Landroid/widget/ScrollView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1969
+    .line 1972
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     const/16 v12, 0x11
 
-    .line 1970
+    .line 1973
     invoke-virtual {v1, v12}, Landroid/widget/TextView;->setGravity(I)V
 
     const/high16 v12, 0x41200000    # 10.0f
 
-    .line 1971
+    .line 1974
     invoke-static {v7, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v12
 
-    .line 1972
+    .line 1975
     invoke-virtual {v1, v4, v12, v4, v12}, Landroid/widget/TextView;->setPadding(IIII)V
 
     const-string v12, "timer"
 
-    .line 1973
+    .line 1976
     invoke-virtual {v1, v12}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    .line 1974
+    .line 1977
     new-instance v12, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v12, v13, v15}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     const/16 v14, 0x11
 
-    .line 1975
+    .line 1978
     iput v14, v12, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1980
+    .line 1983
     invoke-virtual {v1, v12}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1981
+    .line 1984
     sget-object v12, Landroid/graphics/Typeface;->MONOSPACE:Landroid/graphics/Typeface;
 
     invoke-virtual {v1, v12, v5}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
 
     const/high16 v12, 0x41800000    # 16.0f
 
-    .line 1982
+    .line 1985
     invoke-virtual {v1, v11, v12}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 1983
+    .line 1986
     invoke-virtual {v1, v13}, Landroid/widget/TextView;->setTextColor(I)V
 
     const-string v12, "00:00:00"
 
-    .line 1984
+    .line 1987
     invoke-virtual {v1, v12}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     const v12, -0x777778
 
-    .line 1985
+    .line 1988
     invoke-virtual {v1, v12}, Landroid/widget/TextView;->setBackgroundColor(I)V
 
-    .line 1986
+    .line 1989
     iget-object v12, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v12, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1988
+    .line 1991
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 1989
+    .line 1992
     invoke-virtual {v1, v13}, Landroid/widget/TextView;->setTextColor(I)V
 
     const/high16 v12, 0x41c00000    # 24.0f
 
-    .line 1990
+    .line 1993
     invoke-virtual {v1, v11, v12}, Landroid/widget/TextView;->setTextSize(IF)V
 
     const-string v12, "question"
 
-    .line 1991
+    .line 1994
     invoke-virtual {v2, v12}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v12
@@ -2910,14 +2908,14 @@
 
     invoke-virtual {v1, v12}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1992
+    .line 1995
     iget-object v12, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v12, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     const-string v1, "question"
 
-    .line 1994
+    .line 1997
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
@@ -2930,7 +2928,7 @@
 
     const/4 v1, 0x0
 
-    .line 1995
+    .line 1998
     :goto_a
     invoke-virtual {v12}, Lorg/json/JSONArray;->length()I
 
@@ -2938,37 +2936,37 @@
 
     if-ge v1, v2, :cond_19
 
-    .line 1996
+    .line 1999
     invoke-virtual {v12, v1}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v2
 
     const-string v14, "subQuOrder"
 
-    .line 1997
+    .line 2000
     invoke-virtual {v2, v14}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     const-string v14, "questionType"
 
-    .line 1998
+    .line 2001
     invoke-virtual {v2, v14}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v14
 
-    .line 1999
+    .line 2002
     new-instance v3, Landroid/widget/TextView;
 
     invoke-direct {v3, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 2000
+    .line 2003
     invoke-virtual {v3, v13}, Landroid/widget/TextView;->setTextColor(I)V
 
     const/high16 v13, 0x41a00000    # 20.0f
 
-    .line 2001
+    .line 2004
     invoke-virtual {v3, v11, v13}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 2002
+    .line 2005
     new-instance v13, Ljava/lang/StringBuilder;
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
@@ -2995,24 +2993,24 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 2003
+    .line 2006
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v4, v3}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     const-string v3, "imgPath"
 
-    .line 2005
+    .line 2008
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 2006
+    .line 2009
     new-instance v4, Landroid/widget/ImageView;
 
     invoke-direct {v4, v7}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 2007
+    .line 2010
     new-instance v13, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v11, 0x43160000    # 150.0f
@@ -3025,18 +3023,18 @@
 
     const/16 v10, 0x11
 
-    .line 2008
+    .line 2011
     iput v10, v13, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 2009
+    .line 2012
     invoke-virtual {v4, v13}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 2010
+    .line 2013
     sget-object v10, Landroid/widget/ImageView$ScaleType;->CENTER_INSIDE:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v4, v10}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 2011
+    .line 2014
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -3053,28 +3051,28 @@
 
     const-string v11, "imgFile"
 
-    .line 2012
+    .line 2015
     invoke-virtual {v2, v11}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
 
     const-string v13, ""
 
-    .line 2013
+    .line 2016
     invoke-virtual {v13, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_13
 
-    .line 2016
+    .line 2019
     new-instance v3, Ltw/edu/kmu/act/IRSActivity$28;
 
     invoke-direct {v3, v7, v11}, Ltw/edu/kmu/act/IRSActivity$28;-><init>(Ltw/edu/kmu/act/IRSActivity;Ljava/lang/String;)V
 
     invoke-virtual {v4, v3}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 2027
+    .line 2030
     new-instance v3, Ltw/edu/kmu/tool/ImageDownloaderTask;
 
     invoke-virtual/range {p0 .. p0}, Ltw/edu/kmu/act/IRSActivity;->getApplicationContext()Landroid/content/Context;
@@ -3099,17 +3097,17 @@
 
     invoke-virtual {v3, v15}, Ltw/edu/kmu/tool/ImageDownloaderTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 2028
+    .line 2031
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 2029
+    .line 2032
     new-instance v3, Landroid/widget/TextView;
 
     invoke-direct {v3, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 2030
+    .line 2033
     iget-boolean v4, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v4, :cond_12
@@ -3126,10 +3124,10 @@
 
     const/4 v4, -0x1
 
-    .line 2031
+    .line 2034
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 2032
+    .line 2035
     new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v10, -0x2
@@ -3138,13 +3136,13 @@
 
     const/16 v10, 0x11
 
-    .line 2033
+    .line 2036
     iput v10, v4, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 2034
+    .line 2037
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 2035
+    .line 2038
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v4, v3}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
@@ -3152,19 +3150,19 @@
     :cond_13
     const-string v3, "2"
 
-    .line 2038
+    .line 2041
     invoke-virtual {v3, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_15
 
-    .line 2040
+    .line 2043
     new-instance v3, Landroid/widget/RadioGroup;
 
     invoke-direct {v3, v7}, Landroid/widget/RadioGroup;-><init>(Landroid/content/Context;)V
 
-    .line 2041
+    .line 2044
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -3183,14 +3181,14 @@
 
     const-string v1, "optionList"
 
-    .line 2044
+    .line 2047
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    .line 2045
+    .line 2048
     :goto_c
     invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
 
@@ -3198,17 +3196,17 @@
 
     if-ge v2, v4, :cond_14
 
-    .line 2046
+    .line 2049
     invoke-virtual {v1, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v4
 
-    .line 2047
+    .line 2050
     new-instance v10, Landroid/widget/RadioButton;
 
     invoke-direct {v10, v7}, Landroid/widget/RadioButton;-><init>(Landroid/content/Context;)V
 
-    .line 2048
+    .line 2051
     new-instance v11, Ljava/lang/StringBuilder;
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
@@ -3229,10 +3227,10 @@
 
     const/4 v11, -0x1
 
-    .line 2049
+    .line 2052
     invoke-virtual {v10, v11}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 2050
+    .line 2053
     new-instance v11, Ljava/lang/StringBuilder;
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
@@ -3265,21 +3263,21 @@
 
     const-string v11, "optKey"
 
-    .line 2051
+    .line 2054
     invoke-virtual {v4, v11}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    const v11, 0x7f08004f
+    const v11, 0x7f08004e
 
     invoke-virtual {v10, v11, v4}, Landroid/widget/RadioButton;->setTag(ILjava/lang/Object;)V
 
-    .line 2052
+    .line 2055
     invoke-virtual {v3, v10}, Landroid/widget/RadioGroup;->addView(Landroid/view/View;)V
 
     goto :goto_c
 
-    .line 2055
+    .line 2058
     :cond_14
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
@@ -3290,7 +3288,7 @@
     :cond_15
     const-string v3, "3"
 
-    .line 2059
+    .line 2062
     invoke-virtual {v3, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
@@ -3299,14 +3297,14 @@
 
     const-string v3, "optionList"
 
-    .line 2062
+    .line 2065
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v2
 
     const/4 v3, 0x0
 
-    .line 2063
+    .line 2066
     :goto_d
     invoke-virtual {v2}, Lorg/json/JSONArray;->length()I
 
@@ -3314,17 +3312,17 @@
 
     if-ge v3, v4, :cond_18
 
-    .line 2064
+    .line 2067
     invoke-virtual {v2, v3}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v4
 
-    .line 2065
+    .line 2068
     new-instance v10, Landroid/widget/CheckBox;
 
     invoke-direct {v10, v7}, Landroid/widget/CheckBox;-><init>(Landroid/content/Context;)V
 
-    .line 2066
+    .line 2069
     new-instance v11, Ljava/lang/StringBuilder;
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
@@ -3351,10 +3349,10 @@
 
     const/4 v11, -0x1
 
-    .line 2067
+    .line 2070
     invoke-virtual {v10, v11}, Landroid/widget/CheckBox;->setTextColor(I)V
 
-    .line 2068
+    .line 2071
     new-instance v11, Ljava/lang/StringBuilder;
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
@@ -3387,16 +3385,16 @@
 
     const-string v11, "optKey"
 
-    .line 2069
+    .line 2072
     invoke-virtual {v4, v11}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    const v11, 0x7f08004f
+    const v11, 0x7f08004e
 
     invoke-virtual {v10, v11, v4}, Landroid/widget/CheckBox;->setTag(ILjava/lang/Object;)V
 
-    .line 2070
+    .line 2073
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v4, v10}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
@@ -3406,19 +3404,19 @@
     :cond_16
     const-string v2, "4"
 
-    .line 2074
+    .line 2077
     invoke-virtual {v2, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_18
 
-    .line 2076
+    .line 2079
     new-instance v2, Landroid/widget/EditText;
 
     invoke-direct {v2, v7}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
-    .line 2078
+    .line 2081
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v4, 0x43160000    # 150.0f
@@ -3433,38 +3431,38 @@
 
     const/high16 v4, 0x40a00000    # 5.0f
 
-    .line 2079
+    .line 2082
     invoke-static {v7, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v10
 
     iput v10, v3, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 2080
+    .line 2083
     invoke-static {v7, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v10
 
     iput v10, v3, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 2081
+    .line 2084
     invoke-static {v7, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v10
 
     iput v10, v3, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 2082
+    .line 2085
     invoke-static {v7, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v10
 
     iput v10, v3, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 2083
+    .line 2086
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 2084
+    .line 2087
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -3483,15 +3481,15 @@
 
     const/high16 v1, -0x1000000
 
-    .line 2085
+    .line 2088
     invoke-virtual {v2, v1}, Landroid/widget/EditText;->setTextColor(I)V
 
     const/4 v1, -0x1
 
-    .line 2086
+    .line 2089
     invoke-virtual {v2, v1}, Landroid/widget/EditText;->setBackgroundColor(I)V
 
-    .line 2087
+    .line 2090
     iget-boolean v1, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v1, :cond_17
@@ -3506,7 +3504,7 @@
     :goto_e
     invoke-virtual {v2, v1}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
-    .line 2088
+    .line 2091
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
@@ -3531,18 +3529,18 @@
 
     goto/16 :goto_a
 
-    .line 2094
+    .line 2097
     :cond_19
     new-instance v1, Landroid/widget/Button;
 
     invoke-direct {v1, v7}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f08004f
+    const v2, 0x7f08004e
 
-    .line 2095
+    .line 2098
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setId(I)V
 
-    .line 2096
+    .line 2099
     iget-boolean v2, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v2, :cond_1a
@@ -3559,15 +3557,15 @@
 
     const/4 v2, -0x1
 
-    .line 2097
+    .line 2100
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setTextColor(I)V
 
     const v2, 0x7f0700f2
 
-    .line 2098
+    .line 2101
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 2099
+    .line 2102
     new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
 
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->display:Landroid/view/Display;
@@ -3590,53 +3588,53 @@
 
     const/16 v3, 0x11
 
-    .line 2100
+    .line 2103
     iput v3, v2, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v3, 0x40a00000    # 5.0f
 
-    .line 2101
+    .line 2104
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 2102
+    .line 2105
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 2103
+    .line 2106
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 2104
+    .line 2107
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v3
 
     iput v3, v2, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 2105
+    .line 2108
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 2106
+    .line 2109
     new-instance v10, Landroid/widget/Button;
 
     invoke-direct {v10, v7}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f08005c
+    const v3, 0x7f08005b
 
-    .line 2107
+    .line 2110
     invoke-virtual {v10, v3}, Landroid/widget/Button;->setId(I)V
 
-    .line 2108
+    .line 2111
     iget-boolean v3, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v3, :cond_1b
@@ -3653,51 +3651,51 @@
 
     const/4 v3, -0x1
 
-    .line 2109
+    .line 2112
     invoke-virtual {v10, v3}, Landroid/widget/Button;->setTextColor(I)V
 
     const v3, 0x7f0700f2
 
-    .line 2110
+    .line 2113
     invoke-virtual {v10, v3}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     const/16 v3, 0x11
 
-    .line 2111
+    .line 2114
     invoke-virtual {v10, v3}, Landroid/widget/Button;->setGravity(I)V
 
-    .line 2112
+    .line 2115
     invoke-virtual {v10, v2}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 2113
+    .line 2116
     new-instance v2, Landroid/widget/LinearLayout;
 
     invoke-direct {v2, v7}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     const/4 v3, 0x0
 
-    .line 2114
+    .line 2117
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 2115
+    .line 2118
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 2116
+    .line 2119
     invoke-virtual {v2, v10}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 2117
+    .line 2120
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 2118
+    .line 2121
     new-instance v3, Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
     invoke-direct {v3, v7}, Ltw/edu/kmu/act/IRSActivity$ViewDialog;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
     iput-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->alertDialog:Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
-    .line 2119
+    .line 2122
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
@@ -3706,17 +3704,17 @@
 
     const/4 v3, 0x1
 
-    .line 2120
+    .line 2123
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 2121
+    .line 2124
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 2122
+    .line 2125
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->alertDialog:Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
@@ -3725,17 +3723,17 @@
 
     const/4 v2, 0x4
 
-    .line 2123
+    .line 2126
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 2124
+    .line 2127
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$29;
 
     invoke-direct {v2, v7}, Ltw/edu/kmu/act/IRSActivity$29;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 2134
+    .line 2137
     new-instance v11, Ltw/edu/kmu/act/IRSActivity$30;
 
     move-object v1, v11
@@ -3758,15 +3756,15 @@
     :goto_12
     const-string v1, "\u4e00\u822c\u51fa\u984c"
 
-    .line 1252
+    .line 1255
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->currentType:Ljava/lang/String;
 
     const-string v1, "Quiz"
 
-    .line 1253
+    .line 1256
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->currentEType:Ljava/lang/String;
 
-    .line 1254
+    .line 1257
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->sharedData:Landroid/content/SharedPreferences;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -3795,14 +3793,14 @@
 
     const-string v3, ""
 
-    .line 1255
+    .line 1258
     invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_1e
 
-    .line 1256
+    .line 1259
     sget-object v2, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     iget-boolean v3, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
@@ -3842,7 +3840,7 @@
     :goto_14
     invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1257
+    .line 1260
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->aHandler:Landroid/os/Handler;
 
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->runnable:Ljava/lang/Runnable;
@@ -3851,7 +3849,7 @@
 
     return-void
 
-    .line 1264
+    .line 1267
     :cond_1e
     new-instance v1, Lorg/json/JSONObject;
 
@@ -3861,31 +3859,31 @@
 
     const-string v4, "98"
 
-    .line 1265
+    .line 1268
     invoke-virtual {v1, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v3, "userId"
 
-    .line 1266
+    .line 1269
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->ansUserId:Ljava/lang/String;
 
     invoke-virtual {v1, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v3, "questionId"
 
-    .line 1267
+    .line 1270
     invoke-virtual {v1, v3, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v3, "os"
 
     const-string v4, "android"
 
-    .line 1268
+    .line 1271
     invoke-virtual {v1, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v3, "version"
 
-    .line 1269
+    .line 1272
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     invoke-virtual {v4, v7}, Ltw/edu/kmu/act/MyApplication;->getVersionName(Landroid/content/Context;)Ljava/lang/String;
@@ -3896,7 +3894,7 @@
 
     const-string v3, "token"
 
-    .line 1270
+    .line 1273
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v4, v4, Ltw/edu/kmu/act/MyApplication;->regId:Ljava/lang/String;
@@ -3905,34 +3903,34 @@
 
     const-string v3, "device"
 
-    .line 1271
+    .line 1274
     sget-object v4, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     invoke-virtual {v1, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 1272
+    .line 1275
     invoke-virtual {v1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v3, 0x0
 
-    .line 1273
+    .line 1276
     new-array v4, v3, [B
 
     const-string v3, "UTF-8"
 
-    .line 1274
+    .line 1277
     invoke-virtual {v1, v3}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object v3
 
-    .line 1275
+    .line 1278
     new-instance v4, Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-direct {v4, v3}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;-><init>([B)V
 
-    .line 1279
+    .line 1282
     new-instance v3, Ltw/edu/kmu/act/IRSActivity$SendData4Type99;
 
     const/4 v4, 0x0
@@ -3941,7 +3939,7 @@
 
     const/4 v4, 0x4
 
-    .line 1280
+    .line 1283
     new-array v5, v4, [Ljava/lang/String;
 
     const/4 v4, 0x0
@@ -3964,17 +3962,17 @@
 
     invoke-virtual {v3, v5}, Ltw/edu/kmu/act/IRSActivity$SendData4Type99;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 1281
+    .line 1284
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertDialog:Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
     if-eqz v1, :cond_1f
 
-    .line 1282
+    .line 1285
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertDialog:Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
     invoke-virtual {v1}, Ltw/edu/kmu/act/IRSActivity$ViewDialog;->dismiss()V
 
-    .line 1285
+    .line 1288
     :cond_1f
     new-instance v1, Landroid/widget/LinearLayout;
 
@@ -3982,14 +3980,14 @@
 
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
-    .line 1286
+    .line 1289
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     const/4 v3, 0x1
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 1287
+    .line 1290
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     const-string v3, "#1980E0"
@@ -4002,28 +4000,28 @@
 
     const-string v1, "2"
 
-    .line 1289
+    .line 1292
     invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_25
 
-    .line 1292
+    .line 1295
     new-instance v1, Landroid/widget/LinearLayout;
 
     invoke-direct {v1, v7}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
-    .line 1293
+    .line 1296
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     const/4 v3, 0x1
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 1294
+    .line 1297
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     const-string v3, "#1980E0"
@@ -4034,14 +4032,14 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
-    .line 1296
+    .line 1299
     new-instance v1, Landroid/widget/ScrollView;
 
     invoke-direct {v1, v7}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
 
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
-    .line 1297
+    .line 1300
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
     new-instance v3, Landroid/widget/RelativeLayout$LayoutParams;
@@ -4054,34 +4052,34 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/ScrollView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1299
+    .line 1302
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     const/16 v3, 0x11
 
-    .line 1300
+    .line 1303
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setGravity(I)V
 
     const/high16 v3, 0x41200000    # 10.0f
 
-    .line 1301
+    .line 1304
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v3
 
     const/4 v4, 0x0
 
-    .line 1302
+    .line 1305
     invoke-virtual {v1, v4, v3, v4, v3}, Landroid/widget/TextView;->setPadding(IIII)V
 
     const-string v3, "timer"
 
-    .line 1303
+    .line 1306
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    .line 1304
+    .line 1307
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v4, -0x1
@@ -4092,13 +4090,13 @@
 
     const/16 v4, 0x11
 
-    .line 1305
+    .line 1308
     iput v4, v3, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1310
+    .line 1313
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1311
+    .line 1314
     sget-object v3, Landroid/graphics/Typeface;->MONOSPACE:Landroid/graphics/Typeface;
 
     const/4 v4, 0x1
@@ -4109,30 +4107,30 @@
 
     const/high16 v4, 0x41800000    # 16.0f
 
-    .line 1312
+    .line 1315
     invoke-virtual {v1, v3, v4}, Landroid/widget/TextView;->setTextSize(IF)V
 
     const/4 v3, -0x1
 
-    .line 1313
+    .line 1316
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     const-string v3, "00:00:00"
 
-    .line 1314
+    .line 1317
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     const v3, -0x777778
 
-    .line 1315
+    .line 1318
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setBackgroundColor(I)V
 
-    .line 1316
+    .line 1319
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1318
+    .line 1321
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
@@ -4141,17 +4139,17 @@
 
     const/4 v4, 0x2
 
-    .line 1319
+    .line 1322
     invoke-virtual {v1, v4, v3}, Landroid/widget/TextView;->setTextSize(IF)V
 
     const/4 v3, -0x1
 
-    .line 1320
+    .line 1323
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     const-string v3, "question"
 
-    .line 1321
+    .line 1324
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -4164,14 +4162,14 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1322
+    .line 1325
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     const-string v1, "question"
 
-    .line 1324
+    .line 1327
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
@@ -4182,12 +4180,12 @@
 
     move-result-object v1
 
-    .line 1325
+    .line 1328
     new-instance v3, Landroid/widget/ImageView;
 
     invoke-direct {v3, v7}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 1326
+    .line 1329
     new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v5, 0x43160000    # 150.0f
@@ -4202,18 +4200,18 @@
 
     const/16 v5, 0x11
 
-    .line 1327
+    .line 1330
     iput v5, v4, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1328
+    .line 1331
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1329
+    .line 1332
     sget-object v4, Landroid/widget/ImageView$ScaleType;->CENTER_INSIDE:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 1330
+    .line 1333
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -4230,7 +4228,7 @@
 
     const-string v5, "question"
 
-    .line 1331
+    .line 1334
     invoke-virtual {v2, v5}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v5
@@ -4243,21 +4241,21 @@
 
     const-string v10, ""
 
-    .line 1332
+    .line 1335
     invoke-virtual {v10, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_21
 
-    .line 1333
+    .line 1336
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$19;
 
     invoke-direct {v1, v7, v5}, Ltw/edu/kmu/act/IRSActivity$19;-><init>(Ltw/edu/kmu/act/IRSActivity;Ljava/lang/String;)V
 
     invoke-virtual {v3, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 1344
+    .line 1347
     new-instance v1, Ltw/edu/kmu/tool/ImageDownloaderTask;
 
     invoke-virtual/range {p0 .. p0}, Ltw/edu/kmu/act/IRSActivity;->getApplicationContext()Landroid/content/Context;
@@ -4282,17 +4280,17 @@
 
     invoke-virtual {v1, v10}, Ltw/edu/kmu/tool/ImageDownloaderTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 1345
+    .line 1348
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1346
+    .line 1349
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 1347
+    .line 1350
     iget-boolean v3, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v3, :cond_20
@@ -4309,10 +4307,10 @@
 
     const/4 v3, -0x1
 
-    .line 1348
+    .line 1351
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1349
+    .line 1352
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v4, -0x2
@@ -4321,18 +4319,18 @@
 
     const/16 v4, 0x11
 
-    .line 1350
+    .line 1353
     iput v4, v3, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1351
+    .line 1354
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1352
+    .line 1355
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1355
+    .line 1358
     :cond_21
     new-instance v3, Landroid/widget/RadioGroup;
 
@@ -4340,12 +4338,12 @@
 
     const-string v1, "radioGroup"
 
-    .line 1356
+    .line 1359
     invoke-virtual {v3, v1}, Landroid/widget/RadioGroup;->setTag(Ljava/lang/Object;)V
 
     const-string v1, "question"
 
-    .line 1359
+    .line 1362
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
@@ -4358,7 +4356,7 @@
 
     const/4 v2, 0x0
 
-    .line 1360
+    .line 1363
     :goto_16
     invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
 
@@ -4366,17 +4364,17 @@
 
     if-ge v2, v4, :cond_22
 
-    .line 1361
+    .line 1364
     invoke-virtual {v1, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v4
 
-    .line 1362
+    .line 1365
     new-instance v5, Landroid/widget/RadioButton;
 
     invoke-direct {v5, v7}, Landroid/widget/RadioButton;-><init>(Landroid/content/Context;)V
 
-    .line 1363
+    .line 1366
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -4397,10 +4395,10 @@
 
     const/4 v10, -0x1
 
-    .line 1364
+    .line 1367
     invoke-virtual {v5, v10}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 1365
+    .line 1368
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -4433,37 +4431,37 @@
 
     const-string v10, "optKey"
 
-    .line 1366
+    .line 1369
     invoke-virtual {v4, v10}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    const v10, 0x7f08004f
+    const v10, 0x7f08004e
 
     invoke-virtual {v5, v10, v4}, Landroid/widget/RadioButton;->setTag(ILjava/lang/Object;)V
 
-    .line 1367
+    .line 1370
     invoke-virtual {v3, v5}, Landroid/widget/RadioGroup;->addView(Landroid/view/View;)V
 
     goto :goto_16
 
-    .line 1370
+    .line 1373
     :cond_22
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1371
+    .line 1374
     new-instance v1, Landroid/widget/Button;
 
     invoke-direct {v1, v7}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f08004f
+    const v2, 0x7f08004e
 
-    .line 1372
+    .line 1375
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setId(I)V
 
-    .line 1373
+    .line 1376
     iget-boolean v2, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v2, :cond_23
@@ -4480,15 +4478,15 @@
 
     const/4 v2, -0x1
 
-    .line 1374
+    .line 1377
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setTextColor(I)V
 
     const v2, 0x7f0700f2
 
-    .line 1375
+    .line 1378
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 1376
+    .line 1379
     new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
 
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->display:Landroid/view/Display;
@@ -4511,53 +4509,53 @@
 
     const/4 v4, 0x1
 
-    .line 1377
+    .line 1380
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v4, 0x40a00000    # 5.0f
 
-    .line 1378
+    .line 1381
     invoke-static {v7, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v5
 
     iput v5, v2, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 1379
+    .line 1382
     invoke-static {v7, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v5
 
     iput v5, v2, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 1380
+    .line 1383
     invoke-static {v7, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v5
 
     iput v5, v2, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 1381
+    .line 1384
     invoke-static {v7, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 1382
+    .line 1385
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1383
+    .line 1386
     new-instance v10, Landroid/widget/Button;
 
     invoke-direct {v10, v7}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f08005c
+    const v4, 0x7f08005b
 
-    .line 1384
+    .line 1387
     invoke-virtual {v10, v4}, Landroid/widget/Button;->setId(I)V
 
-    .line 1385
+    .line 1388
     iget-boolean v4, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v4, :cond_24
@@ -4574,65 +4572,65 @@
 
     const/4 v4, -0x1
 
-    .line 1386
+    .line 1389
     invoke-virtual {v10, v4}, Landroid/widget/Button;->setTextColor(I)V
 
     const v4, 0x7f0700f2
 
-    .line 1387
+    .line 1390
     invoke-virtual {v10, v4}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     const/16 v4, 0x11
 
-    .line 1388
+    .line 1391
     invoke-virtual {v10, v4}, Landroid/widget/Button;->setGravity(I)V
 
-    .line 1389
+    .line 1392
     invoke-virtual {v10, v2}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1390
+    .line 1393
     new-instance v2, Landroid/widget/LinearLayout;
 
     invoke-direct {v2, v7}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     const/4 v4, 0x0
 
-    .line 1391
+    .line 1394
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 1392
+    .line 1395
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1393
+    .line 1396
     invoke-virtual {v2, v10}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1394
+    .line 1397
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v4, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1395
+    .line 1398
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
     invoke-direct {v2, v7}, Ltw/edu/kmu/act/IRSActivity$ViewDialog;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
     iput-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->alertDialog:Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
-    .line 1396
+    .line 1399
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v4}, Landroid/widget/ScrollView;->addView(Landroid/view/View;)V
 
-    .line 1397
+    .line 1400
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1398
+    .line 1401
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->alertDialog:Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
@@ -4641,17 +4639,17 @@
 
     const/4 v2, 0x4
 
-    .line 1399
+    .line 1402
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 1400
+    .line 1403
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$20;
 
     invoke-direct {v2, v7}, Ltw/edu/kmu/act/IRSActivity$20;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 1410
+    .line 1413
     new-instance v11, Ltw/edu/kmu/act/IRSActivity$21;
 
     move-object v1, v11
@@ -4671,28 +4669,28 @@
     :cond_25
     const-string v1, "3"
 
-    .line 1502
+    .line 1505
     invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2b
 
-    .line 1504
+    .line 1507
     new-instance v1, Landroid/widget/LinearLayout;
 
     invoke-direct {v1, v7}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
-    .line 1505
+    .line 1508
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     const/4 v3, 0x1
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 1506
+    .line 1509
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     const-string v3, "#1980E0"
@@ -4703,14 +4701,14 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
-    .line 1508
+    .line 1511
     new-instance v1, Landroid/widget/ScrollView;
 
     invoke-direct {v1, v7}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
 
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
-    .line 1509
+    .line 1512
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
     new-instance v3, Landroid/widget/RelativeLayout$LayoutParams;
@@ -4723,34 +4721,34 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/ScrollView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1511
+    .line 1514
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     const/16 v3, 0x11
 
-    .line 1512
+    .line 1515
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setGravity(I)V
 
     const/high16 v3, 0x41200000    # 10.0f
 
-    .line 1513
+    .line 1516
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v3
 
     const/4 v4, 0x0
 
-    .line 1514
+    .line 1517
     invoke-virtual {v1, v4, v3, v4, v3}, Landroid/widget/TextView;->setPadding(IIII)V
 
     const-string v3, "timer"
 
-    .line 1515
+    .line 1518
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    .line 1516
+    .line 1519
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v4, -0x1
@@ -4761,13 +4759,13 @@
 
     const/16 v4, 0x11
 
-    .line 1517
+    .line 1520
     iput v4, v3, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1522
+    .line 1525
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1523
+    .line 1526
     sget-object v3, Landroid/graphics/Typeface;->MONOSPACE:Landroid/graphics/Typeface;
 
     const/4 v4, 0x1
@@ -4778,49 +4776,49 @@
 
     const/high16 v4, 0x41800000    # 16.0f
 
-    .line 1524
+    .line 1527
     invoke-virtual {v1, v3, v4}, Landroid/widget/TextView;->setTextSize(IF)V
 
     const/4 v3, -0x1
 
-    .line 1525
+    .line 1528
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     const-string v3, "00:00:00"
 
-    .line 1526
+    .line 1529
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     const v3, -0x777778
 
-    .line 1527
+    .line 1530
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setBackgroundColor(I)V
 
-    .line 1528
+    .line 1531
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1530
+    .line 1533
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     const/4 v3, -0x1
 
-    .line 1531
+    .line 1534
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     const/high16 v3, 0x41a00000    # 20.0f
 
     const/4 v4, 0x2
 
-    .line 1532
+    .line 1535
     invoke-virtual {v1, v4, v3}, Landroid/widget/TextView;->setTextSize(IF)V
 
     const-string v3, "question"
 
-    .line 1533
+    .line 1536
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -4833,14 +4831,14 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1534
+    .line 1537
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     const-string v1, "question"
 
-    .line 1536
+    .line 1539
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
@@ -4851,12 +4849,12 @@
 
     move-result-object v1
 
-    .line 1537
+    .line 1540
     new-instance v3, Landroid/widget/ImageView;
 
     invoke-direct {v3, v7}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 1538
+    .line 1541
     new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v5, 0x43160000    # 150.0f
@@ -4871,18 +4869,18 @@
 
     const/16 v5, 0x11
 
-    .line 1539
+    .line 1542
     iput v5, v4, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1540
+    .line 1543
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1541
+    .line 1544
     sget-object v4, Landroid/widget/ImageView$ScaleType;->CENTER_INSIDE:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 1542
+    .line 1545
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -4899,7 +4897,7 @@
 
     const-string v5, "question"
 
-    .line 1543
+    .line 1546
     invoke-virtual {v2, v5}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v5
@@ -4912,21 +4910,21 @@
 
     const-string v10, ""
 
-    .line 1544
+    .line 1547
     invoke-virtual {v10, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_27
 
-    .line 1547
+    .line 1550
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$22;
 
     invoke-direct {v1, v7, v5}, Ltw/edu/kmu/act/IRSActivity$22;-><init>(Ltw/edu/kmu/act/IRSActivity;Ljava/lang/String;)V
 
     invoke-virtual {v3, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 1558
+    .line 1561
     new-instance v1, Ltw/edu/kmu/tool/ImageDownloaderTask;
 
     invoke-virtual/range {p0 .. p0}, Ltw/edu/kmu/act/IRSActivity;->getApplicationContext()Landroid/content/Context;
@@ -4951,17 +4949,17 @@
 
     invoke-virtual {v1, v10}, Ltw/edu/kmu/tool/ImageDownloaderTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 1559
+    .line 1562
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1560
+    .line 1563
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 1561
+    .line 1564
     iget-boolean v3, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v3, :cond_26
@@ -4978,10 +4976,10 @@
 
     const/4 v3, -0x1
 
-    .line 1562
+    .line 1565
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1563
+    .line 1566
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v4, -0x2
@@ -4990,13 +4988,13 @@
 
     const/16 v4, 0x11
 
-    .line 1564
+    .line 1567
     iput v4, v3, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1565
+    .line 1568
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1566
+    .line 1569
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
@@ -5004,7 +5002,7 @@
     :cond_27
     const-string v1, "question"
 
-    .line 1570
+    .line 1573
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
@@ -5017,7 +5015,7 @@
 
     const/4 v1, 0x0
 
-    .line 1571
+    .line 1574
     :goto_1a
     invoke-virtual {v3}, Lorg/json/JSONArray;->length()I
 
@@ -5025,17 +5023,17 @@
 
     if-ge v1, v2, :cond_28
 
-    .line 1572
+    .line 1575
     invoke-virtual {v3, v1}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v2
 
-    .line 1573
+    .line 1576
     new-instance v4, Landroid/widget/CheckBox;
 
     invoke-direct {v4, v7}, Landroid/widget/CheckBox;-><init>(Landroid/content/Context;)V
 
-    .line 1574
+    .line 1577
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -5056,10 +5054,10 @@
 
     const/4 v5, -0x1
 
-    .line 1575
+    .line 1578
     invoke-virtual {v4, v5}, Landroid/widget/CheckBox;->setTextColor(I)V
 
-    .line 1576
+    .line 1579
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -5092,34 +5090,34 @@
 
     const-string v5, "optKey"
 
-    .line 1577
+    .line 1580
     invoke-virtual {v2, v5}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    const v5, 0x7f08004f
+    const v5, 0x7f08004e
 
     invoke-virtual {v4, v5, v2}, Landroid/widget/CheckBox;->setTag(ILjava/lang/Object;)V
 
-    .line 1578
+    .line 1581
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     goto :goto_1a
 
-    .line 1580
+    .line 1583
     :cond_28
     new-instance v1, Landroid/widget/Button;
 
     invoke-direct {v1, v7}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f08004f
+    const v2, 0x7f08004e
 
-    .line 1581
+    .line 1584
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setId(I)V
 
-    .line 1582
+    .line 1585
     iget-boolean v2, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v2, :cond_29
@@ -5136,15 +5134,15 @@
 
     const/4 v2, -0x1
 
-    .line 1583
+    .line 1586
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setTextColor(I)V
 
     const v2, 0x7f0700f2
 
-    .line 1584
+    .line 1587
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 1585
+    .line 1588
     new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
 
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->display:Landroid/view/Display;
@@ -5167,53 +5165,53 @@
 
     const/4 v4, 0x1
 
-    .line 1586
+    .line 1589
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v4, 0x40a00000    # 5.0f
 
-    .line 1587
+    .line 1590
     invoke-static {v7, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v5
 
     iput v5, v2, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 1588
+    .line 1591
     invoke-static {v7, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v5
 
     iput v5, v2, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 1589
+    .line 1592
     invoke-static {v7, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v5
 
     iput v5, v2, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 1590
+    .line 1593
     invoke-static {v7, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 1591
+    .line 1594
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1592
+    .line 1595
     new-instance v10, Landroid/widget/Button;
 
     invoke-direct {v10, v7}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f08005c
+    const v4, 0x7f08005b
 
-    .line 1593
+    .line 1596
     invoke-virtual {v10, v4}, Landroid/widget/Button;->setId(I)V
 
-    .line 1594
+    .line 1597
     iget-boolean v4, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v4, :cond_2a
@@ -5230,65 +5228,65 @@
 
     const/4 v4, -0x1
 
-    .line 1595
+    .line 1598
     invoke-virtual {v10, v4}, Landroid/widget/Button;->setTextColor(I)V
 
     const v4, 0x7f0700f2
 
-    .line 1596
+    .line 1599
     invoke-virtual {v10, v4}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     const/16 v4, 0x11
 
-    .line 1597
+    .line 1600
     invoke-virtual {v10, v4}, Landroid/widget/Button;->setGravity(I)V
 
-    .line 1598
+    .line 1601
     invoke-virtual {v10, v2}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1599
+    .line 1602
     new-instance v2, Landroid/widget/LinearLayout;
 
     invoke-direct {v2, v7}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     const/4 v4, 0x0
 
-    .line 1600
+    .line 1603
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 1601
+    .line 1604
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1602
+    .line 1605
     invoke-virtual {v2, v10}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1603
+    .line 1606
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v4, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1604
+    .line 1607
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
     invoke-direct {v2, v7}, Ltw/edu/kmu/act/IRSActivity$ViewDialog;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
     iput-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->alertDialog:Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
-    .line 1605
+    .line 1608
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v4}, Landroid/widget/ScrollView;->addView(Landroid/view/View;)V
 
-    .line 1606
+    .line 1609
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1607
+    .line 1610
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->alertDialog:Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
@@ -5297,17 +5295,17 @@
 
     const/4 v2, 0x4
 
-    .line 1608
+    .line 1611
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 1609
+    .line 1612
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$23;
 
     invoke-direct {v2, v7}, Ltw/edu/kmu/act/IRSActivity$23;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 1619
+    .line 1622
     new-instance v11, Ltw/edu/kmu/act/IRSActivity$24;
 
     move-object v1, v11
@@ -5327,28 +5325,28 @@
     :cond_2b
     const-string v1, "4"
 
-    .line 1726
+    .line 1729
     invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_31
 
-    .line 1728
+    .line 1731
     new-instance v1, Landroid/widget/LinearLayout;
 
     invoke-direct {v1, v7}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
-    .line 1729
+    .line 1732
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     const/4 v3, 0x1
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 1730
+    .line 1733
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     const-string v3, "#1980E0"
@@ -5359,14 +5357,14 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
-    .line 1732
+    .line 1735
     new-instance v1, Landroid/widget/ScrollView;
 
     invoke-direct {v1, v7}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
 
     iput-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
-    .line 1733
+    .line 1736
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
     new-instance v3, Landroid/widget/RelativeLayout$LayoutParams;
@@ -5379,34 +5377,34 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/ScrollView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1735
+    .line 1738
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     const/16 v3, 0x11
 
-    .line 1736
+    .line 1739
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setGravity(I)V
 
     const/high16 v3, 0x41200000    # 10.0f
 
-    .line 1737
+    .line 1740
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v3
 
     const/4 v4, 0x0
 
-    .line 1738
+    .line 1741
     invoke-virtual {v1, v4, v3, v4, v3}, Landroid/widget/TextView;->setPadding(IIII)V
 
     const-string v3, "timer"
 
-    .line 1739
+    .line 1742
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    .line 1740
+    .line 1743
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v4, -0x1
@@ -5417,13 +5415,13 @@
 
     const/16 v4, 0x11
 
-    .line 1741
+    .line 1744
     iput v4, v3, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1746
+    .line 1749
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1747
+    .line 1750
     sget-object v3, Landroid/graphics/Typeface;->MONOSPACE:Landroid/graphics/Typeface;
 
     const/4 v4, 0x1
@@ -5434,49 +5432,49 @@
 
     const/high16 v4, 0x41800000    # 16.0f
 
-    .line 1748
+    .line 1751
     invoke-virtual {v1, v3, v4}, Landroid/widget/TextView;->setTextSize(IF)V
 
     const/4 v3, -0x1
 
-    .line 1749
+    .line 1752
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     const-string v3, "00:00:00"
 
-    .line 1750
+    .line 1753
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     const v3, -0x777778
 
-    .line 1751
+    .line 1754
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setBackgroundColor(I)V
 
-    .line 1752
+    .line 1755
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1754
+    .line 1757
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     const/4 v3, -0x1
 
-    .line 1755
+    .line 1758
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     const/high16 v3, 0x41a00000    # 20.0f
 
     const/4 v4, 0x2
 
-    .line 1756
+    .line 1759
     invoke-virtual {v1, v4, v3}, Landroid/widget/TextView;->setTextSize(IF)V
 
     const-string v3, "question"
 
-    .line 1757
+    .line 1760
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -5489,14 +5487,14 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1758
+    .line 1761
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     const-string v1, "question"
 
-    .line 1760
+    .line 1763
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
@@ -5507,12 +5505,12 @@
 
     move-result-object v1
 
-    .line 1761
+    .line 1764
     new-instance v3, Landroid/widget/ImageView;
 
     invoke-direct {v3, v7}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 1762
+    .line 1765
     new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v5, 0x43160000    # 150.0f
@@ -5527,18 +5525,18 @@
 
     const/16 v5, 0x11
 
-    .line 1763
+    .line 1766
     iput v5, v4, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1764
+    .line 1767
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1765
+    .line 1768
     sget-object v4, Landroid/widget/ImageView$ScaleType;->CENTER_INSIDE:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 1766
+    .line 1769
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -5555,7 +5553,7 @@
 
     const-string v5, "question"
 
-    .line 1767
+    .line 1770
     invoke-virtual {v2, v5}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
@@ -5568,21 +5566,21 @@
 
     const-string v5, ""
 
-    .line 1768
+    .line 1771
     invoke-virtual {v5, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_2d
 
-    .line 1771
+    .line 1774
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$25;
 
     invoke-direct {v1, v7, v2}, Ltw/edu/kmu/act/IRSActivity$25;-><init>(Ltw/edu/kmu/act/IRSActivity;Ljava/lang/String;)V
 
     invoke-virtual {v3, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 1782
+    .line 1785
     new-instance v1, Ltw/edu/kmu/tool/ImageDownloaderTask;
 
     invoke-virtual/range {p0 .. p0}, Ltw/edu/kmu/act/IRSActivity;->getApplicationContext()Landroid/content/Context;
@@ -5607,17 +5605,17 @@
 
     invoke-virtual {v1, v5}, Ltw/edu/kmu/tool/ImageDownloaderTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 1783
+    .line 1786
     iget-object v1, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1784
+    .line 1787
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, v7}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 1785
+    .line 1788
     iget-boolean v2, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v2, :cond_2c
@@ -5634,10 +5632,10 @@
 
     const/4 v2, -0x1
 
-    .line 1786
+    .line 1789
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1787
+    .line 1790
     new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v3, -0x2
@@ -5646,24 +5644,24 @@
 
     const/16 v3, 0x11
 
-    .line 1788
+    .line 1791
     iput v3, v2, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1789
+    .line 1792
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1790
+    .line 1793
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1793
+    .line 1796
     :cond_2d
     new-instance v1, Landroid/widget/EditText;
 
     invoke-direct {v1, v7}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
-    .line 1795
+    .line 1798
     new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v3, 0x43160000    # 150.0f
@@ -5678,53 +5676,53 @@
 
     const/high16 v3, 0x40a00000    # 5.0f
 
-    .line 1796
+    .line 1799
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 1797
+    .line 1800
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 1798
+    .line 1801
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 1799
+    .line 1802
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 1800
+    .line 1803
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     const-string v2, "edit1"
 
-    .line 1801
+    .line 1804
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setTag(Ljava/lang/Object;)V
 
     const/high16 v2, -0x1000000
 
-    .line 1802
+    .line 1805
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setTextColor(I)V
 
     const/4 v2, -0x1
 
-    .line 1803
+    .line 1806
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setBackgroundColor(I)V
 
-    .line 1804
+    .line 1807
     iget-boolean v2, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v2, :cond_2e
@@ -5739,22 +5737,22 @@
     :goto_1e
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
-    .line 1805
+    .line 1808
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1807
+    .line 1810
     new-instance v1, Landroid/widget/Button;
 
     invoke-direct {v1, v7}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f08004f
+    const v2, 0x7f08004e
 
-    .line 1808
+    .line 1811
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setId(I)V
 
-    .line 1809
+    .line 1812
     iget-boolean v2, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v2, :cond_2f
@@ -5771,15 +5769,15 @@
 
     const/4 v2, -0x1
 
-    .line 1810
+    .line 1813
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setTextColor(I)V
 
     const v2, 0x7f0700f2
 
-    .line 1811
+    .line 1814
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 1812
+    .line 1815
     new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
 
     iget-object v3, v7, Ltw/edu/kmu/act/IRSActivity;->display:Landroid/view/Display;
@@ -5802,53 +5800,53 @@
 
     const/16 v3, 0x11
 
-    .line 1813
+    .line 1816
     iput v3, v2, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v3, 0x40a00000    # 5.0f
 
-    .line 1814
+    .line 1817
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 1815
+    .line 1818
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 1816
+    .line 1819
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v2, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 1817
+    .line 1820
     invoke-static {v7, v3}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v3
 
     iput v3, v2, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 1818
+    .line 1821
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1819
+    .line 1822
     new-instance v3, Landroid/widget/Button;
 
     invoke-direct {v3, v7}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f08005c
+    const v4, 0x7f08005b
 
-    .line 1820
+    .line 1823
     invoke-virtual {v3, v4}, Landroid/widget/Button;->setId(I)V
 
-    .line 1821
+    .line 1824
     iget-boolean v4, v7, Ltw/edu/kmu/act/IRSActivity;->isEnglish:Z
 
     if-eqz v4, :cond_30
@@ -5865,65 +5863,65 @@
 
     const/4 v4, -0x1
 
-    .line 1822
+    .line 1825
     invoke-virtual {v3, v4}, Landroid/widget/Button;->setTextColor(I)V
 
     const v4, 0x7f0700f2
 
-    .line 1823
+    .line 1826
     invoke-virtual {v3, v4}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     const/16 v4, 0x11
 
-    .line 1824
+    .line 1827
     invoke-virtual {v3, v4}, Landroid/widget/Button;->setGravity(I)V
 
-    .line 1825
+    .line 1828
     invoke-virtual {v3, v2}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1826
+    .line 1829
     new-instance v2, Landroid/widget/LinearLayout;
 
     invoke-direct {v2, v7}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     const/4 v4, 0x0
 
-    .line 1827
+    .line 1830
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 1828
+    .line 1831
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1829
+    .line 1832
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1830
+    .line 1833
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v4, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1831
+    .line 1834
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
     invoke-direct {v2, v7}, Ltw/edu/kmu/act/IRSActivity$ViewDialog;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
     iput-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->alertDialog:Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
-    .line 1832
+    .line 1835
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v4}, Landroid/widget/ScrollView;->addView(Landroid/view/View;)V
 
-    .line 1833
+    .line 1836
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
 
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->scrollView:Landroid/widget/ScrollView;
 
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1834
+    .line 1837
     iget-object v2, v7, Ltw/edu/kmu/act/IRSActivity;->alertDialog:Ltw/edu/kmu/act/IRSActivity$ViewDialog;
 
     iget-object v4, v7, Ltw/edu/kmu/act/IRSActivity;->rootView:Landroid/widget/LinearLayout;
@@ -5932,24 +5930,24 @@
 
     const/4 v2, 0x4
 
-    .line 1835
+    .line 1838
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 1836
+    .line 1839
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$26;
 
     invoke-direct {v2, v7}, Ltw/edu/kmu/act/IRSActivity$26;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 1846
+    .line 1849
     new-instance v1, Ltw/edu/kmu/act/IRSActivity$27;
 
     invoke-direct {v1, v7, v9, v6, v6}, Ltw/edu/kmu/act/IRSActivity$27;-><init>(Ltw/edu/kmu/act/IRSActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {v3, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 2259
+    .line 2262
     :cond_31
     :goto_21
     sget-object v1, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
@@ -5993,7 +5991,7 @@
 
     move-object v1, v0
 
-    .line 2265
+    .line 2268
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_32
@@ -6004,7 +6002,7 @@
 .method private sendQuickAns(Ljava/lang/String;)V
     .locals 4
 
-    .line 734
+    .line 737
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6030,7 +6028,7 @@
 
     move-result-object v0
 
-    .line 735
+    .line 738
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
@@ -6039,58 +6037,58 @@
 
     const-string v3, "1"
 
-    .line 736
+    .line 739
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v2, "questionType"
 
     const-string v3, "1"
 
-    .line 737
+    .line 740
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v2, "userId"
 
-    .line 738
+    .line 741
     iget-object v3, p0, Ltw/edu/kmu/act/IRSActivity;->ansUserId:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v2, "userName"
 
-    .line 739
+    .line 742
     iget-object v3, p0, Ltw/edu/kmu/act/IRSActivity;->ansUserName:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v2, "answer"
 
-    .line 740
+    .line 743
     invoke-virtual {v1, v2, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 741
+    .line 744
     invoke-virtual {v1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     const/4 v1, 0x0
 
-    .line 743
+    .line 746
     new-array v2, v1, [B
 
     const-string v2, "UTF-8"
 
-    .line 744
+    .line 747
     invoke-virtual {p1, v2}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object v2
 
-    .line 745
+    .line 748
     new-instance v3, Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-direct {v3, v2}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;-><init>([B)V
 
-    .line 749
+    .line 752
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$SendData4Type99;
 
     const/4 v3, 0x0
@@ -6099,7 +6097,7 @@
 
     const/4 v3, 0x3
 
-    .line 750
+    .line 753
     new-array v3, v3, [Ljava/lang/String;
 
     aput-object v0, v3, v1
@@ -6116,10 +6114,10 @@
 
     invoke-virtual {v2, v3}, Ltw/edu/kmu/act/IRSActivity$SendData4Type99;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 752
+    .line 755
     invoke-direct {p0}, Ltw/edu/kmu/act/IRSActivity;->hideQuickMode()V
 
-    .line 753
+    .line 756
     iget-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->aHandler:Landroid/os/Handler;
 
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->runnable:Ljava/lang/Runnable;
@@ -6133,7 +6131,7 @@
     :catch_0
     move-exception p1
 
-    .line 756
+    .line 759
     sget-object v0, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -6156,7 +6154,7 @@
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 759
+    .line 762
     :goto_0
     iget-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->sharedData:Landroid/content/SharedPreferences;
 
@@ -6164,7 +6162,7 @@
 
     move-result-object p1
 
-    .line 760
+    .line 763
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -6189,7 +6187,7 @@
 
     invoke-interface {p1, v0, v1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 761
+    .line 764
     invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     return-void
@@ -6198,24 +6196,24 @@
 .method private showQuickMode()V
     .locals 2
 
-    .line 303
+    .line 306
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->root11:Landroid/widget/LinearLayout;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 304
+    .line 307
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->root2:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 305
+    .line 308
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->root21:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 306
+    .line 309
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->bar1:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
@@ -6226,14 +6224,14 @@
 .method private startReconnect()V
     .locals 8
 
-    .line 2409
+    .line 2412
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadScheduledExecutor()Ljava/util/concurrent/ScheduledExecutorService;
 
     move-result-object v0
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->scheduler:Ljava/util/concurrent/ScheduledExecutorService;
 
-    .line 2410
+    .line 2413
     iget-object v1, p0, Ltw/edu/kmu/act/IRSActivity;->scheduler:Ljava/util/concurrent/ScheduledExecutorService;
 
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$33;
@@ -6254,7 +6252,7 @@
 .method private submitPaperFillData()V
     .locals 5
 
-    .line 312
+    .line 315
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
@@ -6263,7 +6261,7 @@
 
     const/4 v2, 0x0
 
-    .line 313
+    .line 316
     :goto_0
     iget-object v3, p0, Ltw/edu/kmu/act/IRSActivity;->form1:Landroid/widget/LinearLayout;
 
@@ -6273,16 +6271,16 @@
 
     if-ge v2, v3, :cond_1
 
-    .line 314
+    .line 317
     iget-object v3, p0, Ltw/edu/kmu/act/IRSActivity;->form1:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v2}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
-    const v4, 0x7f0800d0
+    const v4, 0x7f0800da
 
-    .line 315
+    .line 318
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
@@ -6291,7 +6289,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 317
+    .line 320
     invoke-virtual {v3}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
     move-result-object v3
@@ -6307,7 +6305,7 @@
 
     goto :goto_0
 
-    .line 321
+    .line 324
     :cond_1
     new-instance v2, Ltw/edu/kmu/act/IRSActivity$UploadIRSPaperFillData;
 
@@ -6317,7 +6315,7 @@
 
     const/4 v3, 0x1
 
-    .line 322
+    .line 325
     new-array v3, v3, [Ljava/lang/String;
 
     invoke-virtual {v0}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
@@ -6336,7 +6334,7 @@
 .method public buttonEffect(Landroid/widget/Button;)V
     .locals 1
 
-    .line 1079
+    .line 1082
     new-instance v0, Ltw/edu/kmu/act/IRSActivity$16;
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/IRSActivity$16;-><init>(Ltw/edu/kmu/act/IRSActivity;)V
@@ -6349,7 +6347,7 @@
 .method public dateDiff(Ljava/lang/String;)J
     .locals 8
 
-    .line 2540
+    .line 2543
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v1, "yyyy/MM/dd HH:mm:ss"
@@ -6358,13 +6356,13 @@
 
     const-wide/16 v1, 0x0
 
-    .line 2542
+    .line 2545
     :try_start_0
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v3
 
-    .line 2543
+    .line 2546
     invoke-virtual {v3}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v3
@@ -6373,12 +6371,12 @@
 
     move-result-object v3
 
-    .line 2545
+    .line 2548
     invoke-virtual {v0, p1}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p1
 
-    .line 2546
+    .line 2549
     invoke-virtual {p1}, Ljava/util/Date;->getTime()J
 
     move-result-wide v4
@@ -6397,22 +6395,22 @@
 
     const-wide/16 v3, 0x3e8
 
-    .line 2547
+    .line 2550
     div-long v3, v1, v3
 
     const-wide/32 v3, 0xea60
 
-    .line 2548
+    .line 2551
     div-long v3, v1, v3
 
     const-wide/32 v3, 0x36ee80
 
-    .line 2549
+    .line 2552
     div-long v3, v1, v3
 
     const-wide/32 v3, 0x5265c00
 
-    .line 2550
+    .line 2553
     div-long v3, v1, v3
     :try_end_0
     .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
@@ -6422,7 +6420,7 @@
     :catch_0
     move-exception p1
 
-    .line 2553
+    .line 2556
     invoke-virtual {p1}, Ljava/text/ParseException;->printStackTrace()V
 
     :goto_0
@@ -6434,23 +6432,23 @@
 
     const-wide/16 v0, 0x0
 
-    .line 2565
+    .line 2568
     :try_start_0
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v2
 
-    .line 2566
+    .line 2569
     invoke-virtual {v2}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v2
 
     invoke-virtual {p3, v2}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
-    .line 2568
+    .line 2571
     invoke-virtual {p3, p2}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
-    .line 2570
+    .line 2573
     invoke-virtual {p3, p2}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p2
@@ -6473,22 +6471,22 @@
 
     const-wide/16 p1, 0x3e8
 
-    .line 2571
+    .line 2574
     div-long p1, v0, p1
 
     const-wide/32 p1, 0xea60
 
-    .line 2572
+    .line 2575
     div-long p1, v0, p1
 
     const-wide/32 p1, 0x36ee80
 
-    .line 2573
+    .line 2576
     div-long p1, v0, p1
 
     const-wide/32 p1, 0x5265c00
 
-    .line 2574
+    .line 2577
     div-long p1, v0, p1
     :try_end_0
     .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
@@ -6498,7 +6496,7 @@
     :catch_0
     move-exception p1
 
-    .line 2577
+    .line 2580
     invoke-virtual {p1}, Ljava/text/ParseException;->printStackTrace()V
 
     :goto_0
@@ -6508,7 +6506,7 @@
 .method public dateDiff4Phone(Ljava/lang/String;)J
     .locals 8
 
-    .line 2517
+    .line 2520
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v1, "yyyyMMddHHmmss"
@@ -6517,13 +6515,13 @@
 
     const-wide/16 v1, 0x0
 
-    .line 2519
+    .line 2522
     :try_start_0
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v3
 
-    .line 2520
+    .line 2523
     invoke-virtual {v3}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v3
@@ -6532,12 +6530,12 @@
 
     move-result-object v3
 
-    .line 2522
+    .line 2525
     invoke-virtual {v0, p1}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p1
 
-    .line 2523
+    .line 2526
     invoke-virtual {p1}, Ljava/util/Date;->getTime()J
 
     move-result-wide v4
@@ -6556,22 +6554,22 @@
 
     const-wide/16 v3, 0x3e8
 
-    .line 2524
+    .line 2527
     div-long v3, v1, v3
 
     const-wide/32 v3, 0xea60
 
-    .line 2525
+    .line 2528
     div-long v3, v1, v3
 
     const-wide/32 v3, 0x36ee80
 
-    .line 2526
+    .line 2529
     div-long v3, v1, v3
 
     const-wide/32 v3, 0x5265c00
 
-    .line 2527
+    .line 2530
     div-long v3, v1, v3
     :try_end_0
     .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
@@ -6581,7 +6579,7 @@
     :catch_0
     move-exception p1
 
-    .line 2530
+    .line 2533
     invoke-virtual {p1}, Ljava/text/ParseException;->printStackTrace()V
 
     :goto_0
@@ -6591,7 +6589,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a0074
+    const v0, 0x7f0a0076
 
     return v0
 .end method
@@ -6599,10 +6597,10 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
 
-    .line 139
+    .line 140
     invoke-super {p0, p1}, Ltw/edu/kmu/act/BasicActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 141
+    .line 142
     invoke-virtual {p0}, Ltw/edu/kmu/act/IRSActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
@@ -6613,12 +6611,21 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->bundle:Landroid/os/Bundle;
 
+    .line 144
+    invoke-virtual {p0}, Ltw/edu/kmu/act/IRSActivity;->getWindow()Landroid/view/Window;
+
+    move-result-object p1
+
+    const/16 v0, 0x80
+
+    invoke-virtual {p1, v0, v0}, Landroid/view/Window;->setFlags(II)V
+
     const-string p1, "IRS"
 
-    .line 143
+    .line 146
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRSActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 149
+    .line 152
     iget-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->bundle:Landroid/os/Bundle;
 
     const-string v0, "classId"
@@ -6629,7 +6636,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->classId:Ljava/lang/String;
 
-    .line 150
+    .line 153
     iget-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->bundle:Landroid/os/Bundle;
 
     const-string v0, "teacherNo"
@@ -6640,7 +6647,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->teacherNo:Ljava/lang/String;
 
-    .line 151
+    .line 154
     iget-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->bundle:Landroid/os/Bundle;
 
     const-string v0, "seqno"
@@ -6651,7 +6658,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->currentSeqno:Ljava/lang/String;
 
-    .line 152
+    .line 155
     iget-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->bundle:Landroid/os/Bundle;
 
     const-string v0, "userID"
@@ -6662,7 +6669,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->userID:Ljava/lang/String;
 
-    .line 153
+    .line 156
     iget-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->bundle:Landroid/os/Bundle;
 
     const-string v0, "userType"
@@ -6673,7 +6680,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->userType:Ljava/lang/String;
 
-    .line 154
+    .line 157
     iget-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->bundle:Landroid/os/Bundle;
 
     const-string v0, "userName"
@@ -6684,7 +6691,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->userName:Ljava/lang/String;
 
-    .line 156
+    .line 159
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -6711,7 +6718,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->quickTopic:Ljava/lang/String;
 
-    .line 157
+    .line 160
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -6740,7 +6747,7 @@
 
     const-string p1, "\u5b78\u751f"
 
-    .line 161
+    .line 164
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->userType:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -6775,7 +6782,7 @@
 
     const-string p1, "\u5b78\u751f"
 
-    .line 162
+    .line 165
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->userType:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -6812,7 +6819,7 @@
     :goto_1
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->ansUserName:Ljava/lang/String;
 
-    .line 164
+    .line 167
     iget-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->bundle:Landroid/os/Bundle;
 
     const-string v0, "classRoomList"
@@ -6823,15 +6830,6 @@
 
     check-cast p1, Ljava/util/ArrayList;
 
-    # Log Bundle.getSerializable("classRoomList"):ArrayList
-    sget-object v0, Ltw/edu/kmu/act/IRSActivity;->SMALI_TAG:Ljava/lang/String;
-
-    invoke-virtual {p1}, Ljava/util/ArrayList;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
     const/4 v0, 0x1
 
     const/4 v1, 0x0
@@ -6840,21 +6838,21 @@
 
     if-eqz p1, :cond_3
 
-    .line 165
+    .line 168
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
     if-lez v3, :cond_3
 
-    .line 166
+    .line 169
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v4, ","
 
-    .line 168
+    .line 171
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -6872,21 +6870,21 @@
 
     check-cast v5, Ljava/lang/String;
 
-    .line 169
+    .line 172
     invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 170
+    .line 173
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_2
 
-    .line 173
+    .line 176
     :cond_2
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 174
+    .line 177
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -6901,7 +6899,7 @@
 
     move-result-object p1
 
-    .line 175
+    .line 178
     sget-object v3, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -6922,7 +6920,7 @@
 
     const-string v3, "\u5b78\u751f"
 
-    .line 176
+    .line 179
     iget-object v4, p0, Ltw/edu/kmu/act/IRSActivity;->userType:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -6931,12 +6929,12 @@
 
     if-eqz v3, :cond_4
 
-    .line 178
+    .line 181
     new-instance v3, Ltw/edu/kmu/act/IRSActivity$SendIRSLoginData;
 
     invoke-direct {v3, p0, v1}, Ltw/edu/kmu/act/IRSActivity$SendIRSLoginData;-><init>(Ltw/edu/kmu/act/IRSActivity;Ltw/edu/kmu/act/IRSActivity$1;)V
 
-    .line 179
+    .line 182
     new-array v4, v0, [Ljava/lang/String;
 
     aput-object p1, v4, v2
@@ -6948,7 +6946,7 @@
     :cond_3
     const-string p1, "\u5b78\u751f"
 
-    .line 183
+    .line 186
     iget-object v3, p0, Ltw/edu/kmu/act/IRSActivity;->userType:Ljava/lang/String;
 
     invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -6957,12 +6955,12 @@
 
     if-eqz p1, :cond_4
 
-    .line 185
+    .line 188
     new-instance p1, Ltw/edu/kmu/act/IRSActivity$SendIRSLoginData;
 
     invoke-direct {p1, p0, v1}, Ltw/edu/kmu/act/IRSActivity$SendIRSLoginData;-><init>(Ltw/edu/kmu/act/IRSActivity;Ltw/edu/kmu/act/IRSActivity$1;)V
 
-    .line 186
+    .line 189
     new-array v3, v0, [Ljava/lang/String;
 
     const-string v4, ""
@@ -6973,9 +6971,9 @@
 
     :cond_4
     :goto_3
-    const p1, 0x7f080108
+    const p1, 0x7f080112
 
-    .line 190
+    .line 193
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -6984,18 +6982,18 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->img_status:Landroid/widget/TextView;
 
-    .line 192
+    .line 195
     invoke-direct {p0}, Ltw/edu/kmu/act/IRSActivity;->initHandler()V
 
-    .line 194
+    .line 197
     invoke-direct {p0}, Ltw/edu/kmu/act/IRSActivity;->init()V
 
-    .line 196
+    .line 199
     invoke-direct {p0}, Ltw/edu/kmu/act/IRSActivity;->startReconnect()V
 
-    const p1, 0x7f080168
+    const p1, 0x7f080175
 
-    .line 198
+    .line 201
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -7004,9 +7002,9 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->root:Landroid/widget/RelativeLayout;
 
-    const p1, 0x7f0800e7
+    const p1, 0x7f0800f1
 
-    .line 200
+    .line 203
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRSActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -7015,27 +7013,27 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity;->form1:Landroid/widget/LinearLayout;
 
-    .line 202
+    .line 205
     invoke-direct {p0}, Ltw/edu/kmu/act/IRSActivity;->initEditView()V
 
-    .line 204
+    .line 207
     invoke-direct {p0}, Ltw/edu/kmu/act/IRSActivity;->initBtn()V
 
-    .line 206
+    .line 209
     invoke-direct {p0}, Ltw/edu/kmu/act/IRSActivity;->initQuickLy()V
 
-    .line 208
+    .line 211
     invoke-direct {p0}, Ltw/edu/kmu/act/IRSActivity;->hideQuickMode()V
 
-    .line 210
+    .line 213
     invoke-direct {p0}, Ltw/edu/kmu/act/IRSActivity;->initFuncBtn()V
 
-    .line 212
+    .line 215
     new-instance p1, Ltw/edu/kmu/act/IRSActivity$GetIRSCurrentData;
 
     invoke-direct {p1, p0, v1}, Ltw/edu/kmu/act/IRSActivity$GetIRSCurrentData;-><init>(Ltw/edu/kmu/act/IRSActivity;Ltw/edu/kmu/act/IRSActivity$1;)V
 
-    .line 213
+    .line 216
     new-array v0, v0, [Ljava/lang/String;
 
     const-string v1, ""
@@ -7050,17 +7048,17 @@
 .method protected onDestroy()V
     .locals 4
 
-    .line 2807
+    .line 2810
     sget-object v0, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "onDestroy start"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2808
+    .line 2811
     invoke-super {p0}, Ltw/edu/kmu/act/BasicActivity;->onDestroy()V
 
-    .line 2810
+    .line 2813
     :try_start_0
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->quid:Ljava/lang/String;
 
@@ -7076,7 +7074,7 @@
 
     if-nez v0, :cond_0
 
-    .line 2811
+    .line 2814
     new-instance v0, Ltw/edu/kmu/act/IRSActivity$SendAbnormalData;
 
     const/4 v1, 0x0
@@ -7085,7 +7083,7 @@
 
     const/4 v1, 0x2
 
-    .line 2812
+    .line 2815
     new-array v1, v1, [Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -7102,44 +7100,44 @@
 
     invoke-virtual {v0, v1}, Ltw/edu/kmu/act/IRSActivity$SendAbnormalData;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 2814
+    .line 2817
     :cond_0
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->aHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_1
 
-    .line 2815
+    .line 2818
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->aHandler:Landroid/os/Handler;
 
     iget-object v1, p0, Ltw/edu/kmu/act/IRSActivity;->runnable:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 2817
+    .line 2820
     :cond_1
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->ctHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_2
 
-    .line 2818
+    .line 2821
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->ctHandler:Landroid/os/Handler;
 
     iget-object v1, p0, Ltw/edu/kmu/act/IRSActivity;->ctRunnable:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 2820
+    .line 2823
     :cond_2
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->scheduler:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-interface {v0}, Ljava/util/concurrent/ScheduledExecutorService;->shutdown()V
 
-    .line 2821
+    .line 2824
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->client:Lorg/eclipse/paho/client/mqttv3/MqttClient;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttClient;->disconnect()V
 
-    .line 2822
+    .line 2825
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->client:Lorg/eclipse/paho/client/mqttv3/MqttClient;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttClient;->close()V
@@ -7151,7 +7149,7 @@
     :catch_0
     move-exception v0
 
-    .line 2824
+    .line 2827
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttException;->printStackTrace()V
 
     :goto_0
@@ -7161,7 +7159,7 @@
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
 
-    .line 2785
+    .line 2788
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->client:Lorg/eclipse/paho/client/mqttv3/MqttClient;
 
     if-eqz v0, :cond_0
@@ -7170,7 +7168,7 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 2787
+    .line 2790
     :try_start_0
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->client:Lorg/eclipse/paho/client/mqttv3/MqttClient;
 
@@ -7183,10 +7181,10 @@
     :catch_0
     move-exception v0
 
-    .line 2789
+    .line 2792
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 2792
+    .line 2795
     :cond_0
     :goto_0
     invoke-super {p0, p1, p2}, Ltw/edu/kmu/act/BasicActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
@@ -7199,17 +7197,17 @@
 .method protected onPause()V
     .locals 4
 
-    .line 2797
+    .line 2800
     sget-object v0, Ltw/edu/kmu/act/IRSActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "onPause start"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2798
+    .line 2801
     invoke-super {p0}, Ltw/edu/kmu/act/BasicActivity;->onPause()V
 
-    .line 2799
+    .line 2802
     iget-object v0, p0, Ltw/edu/kmu/act/IRSActivity;->quid:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -7224,7 +7222,7 @@
 
     if-nez v0, :cond_0
 
-    .line 2800
+    .line 2803
     new-instance v0, Ltw/edu/kmu/act/IRSActivity$SendAbnormalData;
 
     const/4 v1, 0x0
@@ -7233,7 +7231,7 @@
 
     const/4 v1, 0x2
 
-    .line 2801
+    .line 2804
     new-array v1, v1, [Ljava/lang/String;
 
     const/4 v2, 0x0

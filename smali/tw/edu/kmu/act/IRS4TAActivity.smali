@@ -854,7 +854,7 @@
 
     invoke-direct {v2, v1}, Landroid/widget/ListView;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f08011b
+    const v3, 0x7f080125
 
     .line 375
     invoke-virtual {v2, v3}, Landroid/widget/ListView;->setId(I)V
@@ -1228,7 +1228,7 @@
 
     move-result v3
 
-    const v7, 0x7f08004f
+    const v7, 0x7f08004e
 
     const/4 v9, -0x1
 
@@ -1960,7 +1960,7 @@
 .method private initSegmentedGroup()V
     .locals 2
 
-    const v0, 0x7f080190
+    const v0, 0x7f08019e
 
     .line 386
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRS4TAActivity;->findViewById(I)Landroid/view/View;
@@ -1978,7 +1978,7 @@
 
     invoke-virtual {v0, v1}, Ltw/edu/kmu/view/SegmentedGroup;->setOnCheckedChangeListener(Landroid/widget/RadioGroup$OnCheckedChangeListener;)V
 
-    const v0, 0x7f08008c
+    const v0, 0x7f08008b
 
     .line 389
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRS4TAActivity;->findViewById(I)Landroid/view/View;
@@ -2003,7 +2003,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f08008d
+    const v0, 0x7f08008c
 
     .line 392
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRS4TAActivity;->findViewById(I)Landroid/view/View;
@@ -2021,7 +2021,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f08008e
+    const v0, 0x7f08008d
 
     .line 394
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRS4TAActivity;->findViewById(I)Landroid/view/View;
@@ -2045,7 +2045,7 @@
 .method private initView()V
     .locals 6
 
-    const v0, 0x7f0800e7
+    const v0, 0x7f0800f1
 
     .line 163
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRS4TAActivity;->findViewById(I)Landroid/view/View;
@@ -2056,7 +2056,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/IRS4TAActivity;->form1:Landroid/widget/LinearLayout;
 
-    const v0, 0x7f080096
+    const v0, 0x7f08009f
 
     .line 164
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRS4TAActivity;->findViewById(I)Landroid/view/View;
@@ -2074,7 +2074,7 @@
 
     invoke-virtual {v0, v1}, Llecho/lib/hellocharts/view/ColumnChartView;->setVisibility(I)V
 
-    const v0, 0x7f0801c9
+    const v0, 0x7f0801d7
 
     .line 167
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRS4TAActivity;->findViewById(I)Landroid/view/View;
@@ -2127,7 +2127,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080192
+    const v0, 0x7f0801a0
 
     .line 184
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRS4TAActivity;->findViewById(I)Landroid/view/View;
@@ -2172,7 +2172,7 @@
 
     invoke-virtual {v0, v2}, Ltw/edu/kmu/act/IRS4TAActivity$GetExPoolDataList;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    const v0, 0x7f08006c
+    const v0, 0x7f08006b
 
     .line 247
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRS4TAActivity;->findViewById(I)Landroid/view/View;
@@ -2263,7 +2263,7 @@
 
     move-result v1
 
-    const v2, 0x7f080226
+    const v2, 0x7f080234
 
     if-eqz v1, :cond_0
 
@@ -2867,7 +2867,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f080122
+    const v2, 0x7f08012c
 
     .line 950
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2885,7 +2885,7 @@
 
     iget-object v4, p0, Ltw/edu/kmu/act/IRS4TAActivity;->exPoolList:Ljava/util/ArrayList;
 
-    const v5, 0x7f0a0077
+    const v5, 0x7f0a0079
 
     const/4 v2, 0x3
 
@@ -2936,9 +2936,9 @@
 
     :array_0
     .array-data 4
-        0x7f0801c9
-        0x7f0801dc
-        0x7f080202
+        0x7f0801d7
+        0x7f0801ea
+        0x7f080210
     .end array-data
 .end method
 
@@ -3064,7 +3064,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f080122
+    const v2, 0x7f08012c
 
     .line 698
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -3078,7 +3078,7 @@
 
     iget-object v4, p0, Ltw/edu/kmu/act/IRS4TAActivity;->seqDataList:Ljava/util/ArrayList;
 
-    const v5, 0x7f0a007d
+    const v5, 0x7f0a007f
 
     const/4 v2, 0x2
 
@@ -3128,8 +3128,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801cb
-        0x7f0801cf
+        0x7f0801d9
+        0x7f0801dd
     .end array-data
 .end method
 
@@ -3166,7 +3166,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a0078
+    const v0, 0x7f0a007a
 
     return v0
 .end method
@@ -3266,7 +3266,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRS4TAActivity;->bundle:Landroid/os/Bundle;
 
-    const p1, 0x7f0c00da
+    const p1, 0x7f0c00d8
 
     .line 132
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRS4TAActivity;->getString(I)Ljava/lang/String;
@@ -4114,7 +4114,7 @@
 
     move-result v3
 
-    const v4, 0x7f08004f
+    const v4, 0x7f08004e
 
     if-eqz v3, :cond_4
 

@@ -417,16 +417,16 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f0a00f7
+    const v1, 0x7f0a00f9
 
-    const v7, 0x7f0a00f7
+    const v7, 0x7f0a00f9
 
     goto :goto_1
 
     :cond_1
-    const v1, 0x7f0a00f8
+    const v1, 0x7f0a00fa
 
-    const v7, 0x7f0a00f8
+    const v7, 0x7f0a00fa
 
     :goto_1
     const/4 v1, 0x4
@@ -501,10 +501,10 @@
 
     :array_0
     .array-data 4
-        0x7f0801c7
-        0x7f08019c
-        0x7f0800fe
-        0x7f080118
+        0x7f0801d5
+        0x7f0801aa
+        0x7f080108
+        0x7f080122
     .end array-data
 .end method
 
@@ -513,7 +513,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00f9
+    const v0, 0x7f0a00fb
 
     return v0
 .end method
@@ -529,7 +529,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c001c
+    const v0, 0x7f0c001b
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -537,7 +537,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/AppInstallActivity;->url:Ljava/lang/String;
 
-    const p1, 0x7f0c00bd
+    const p1, 0x7f0c00bb
 
     .line 49
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/AppInstallActivity;->getString(I)Ljava/lang/String;
@@ -546,7 +546,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/AppInstallActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f080246
+    const p1, 0x7f080253
 
     .line 50
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/AppInstallActivity;->findViewById(I)Landroid/view/View;
@@ -619,7 +619,7 @@
     .line 221
     invoke-static {}, Ltw/edu/kmu/act/LoadImageService;->resetService()V
 
-    const v0, 0x7f0c001d
+    const v0, 0x7f0c001c
 
     .line 222
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/AppInstallActivity;->getString(I)Ljava/lang/String;

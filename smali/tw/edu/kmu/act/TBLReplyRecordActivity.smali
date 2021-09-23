@@ -210,7 +210,7 @@
 
     iget-object v3, p0, Ltw/edu/kmu/act/TBLReplyRecordActivity;->serverDataList:Ljava/util/ArrayList;
 
-    const v4, 0x7f0a00d8
+    const v4, 0x7f0a00da
 
     const/4 v1, 0x2
 
@@ -260,8 +260,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801cb
-        0x7f0801e2
+        0x7f0801d9
+        0x7f0801f0
     .end array-data
 .end method
 
@@ -294,7 +294,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00d9
+    const v0, 0x7f0a00db
 
     return v0
 .end method
@@ -330,7 +330,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLReplyRecordActivity;->sharedData:Landroid/content/SharedPreferences;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 69
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLReplyRecordActivity;->findViewById(I)Landroid/view/View;
@@ -1552,7 +1552,7 @@
 
     invoke-virtual {v11, v14}, Landroid/widget/RadioButton;->setText(Ljava/lang/CharSequence;)V
 
-    const v14, 0x7f08004f
+    const v14, 0x7f08004e
 
     const-string v15, "optKey"
 
@@ -1776,7 +1776,7 @@
 
     invoke-virtual {v11, v14}, Landroid/widget/CheckBox;->setText(Ljava/lang/CharSequence;)V
 
-    const v14, 0x7f08004f
+    const v14, 0x7f08004e
 
     const-string v15, "optKey"
 

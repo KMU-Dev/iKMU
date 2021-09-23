@@ -252,7 +252,7 @@
 
     move-result-object v2
 
-    iget-boolean v2, v2, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v2, v2, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-eqz v2, :cond_3
 
@@ -335,7 +335,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f08011b
+    const v2, 0x7f080125
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->findViewById(I)Landroid/view/View;
 

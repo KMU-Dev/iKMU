@@ -106,7 +106,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00d7
+    const v0, 0x7f0a00d9
 
     return v0
 .end method
@@ -128,7 +128,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLReadOnlyActivity;->bundle:Landroid/os/Bundle;
 
-    const p1, 0x7f080168
+    const p1, 0x7f080175
 
     .line 52
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLReadOnlyActivity;->findViewById(I)Landroid/view/View;
@@ -1236,7 +1236,7 @@
 
     invoke-virtual {v11, v14}, Landroid/widget/RadioButton;->setText(Ljava/lang/CharSequence;)V
 
-    const v14, 0x7f08004f
+    const v14, 0x7f08004e
 
     const-string v15, "optKey"
 
@@ -1457,7 +1457,7 @@
 
     invoke-virtual {v11, v14}, Landroid/widget/CheckBox;->setText(Ljava/lang/CharSequence;)V
 
-    const v14, 0x7f08004f
+    const v14, 0x7f08004e
 
     const-string v15, "optKey"
 

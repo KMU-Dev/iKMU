@@ -445,7 +445,7 @@
 .method private showList()V
     .locals 3
 
-    const v0, 0x7f080123
+    const v0, 0x7f08012d
 
     .line 79
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/EvlTACourseActivity;->findViewById(I)Landroid/view/View;
@@ -499,7 +499,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a005b
+    const v0, 0x7f0a005d
 
     return v0
 .end method
@@ -559,7 +559,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c008a
+    const v0, 0x7f0c0088
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

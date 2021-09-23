@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 873
+    .line 891
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$24;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 877
+    .line 895
     new-instance p1, Landroid/content/Intent;
 
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$24;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
@@ -47,7 +47,7 @@
 
     invoke-direct {p1, v0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 878
+    .line 896
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$24;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-virtual {v0, p1}, Ltw/edu/kmu/act/MainPageActivityV2;->startActivity(Landroid/content/Intent;)V

@@ -131,7 +131,7 @@
 
     iget-object v3, p0, Ltw/edu/kmu/act/WacTeaFun5Activity;->dataList:Ljava/util/ArrayList;
 
-    const v4, 0x7f0a00f3
+    const v4, 0x7f0a00f5
 
     const/4 v1, 0x2
 
@@ -181,8 +181,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801cb
-        0x7f0801e2
+        0x7f0801d9
+        0x7f0801f0
     .end array-data
 .end method
 
@@ -191,7 +191,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00ee
+    const v0, 0x7f0a00f0
 
     return v0
 .end method
@@ -242,7 +242,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/WacTeaFun5Activity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f080168
+    const p1, 0x7f080175
 
     .line 40
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/WacTeaFun5Activity;->findViewById(I)Landroid/view/View;
@@ -256,7 +256,7 @@
     .line 41
     invoke-virtual {p1, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 42
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/WacTeaFun5Activity;->findViewById(I)Landroid/view/View;

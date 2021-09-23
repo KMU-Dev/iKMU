@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 668
+    .line 675
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$12;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 674
+    .line 681
     new-instance p1, Landroid/content/Intent;
 
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$12;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
@@ -47,14 +47,14 @@
 
     invoke-direct {p1, v0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 675
+    .line 682
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$12;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-static {v0}, Ltw/edu/kmu/act/MainPageActivityV2;->access$100(Ltw/edu/kmu/act/MainPageActivityV2;)Ltw/edu/kmu/act/MyApplication;
 
     move-result-object v0
 
-    iget-boolean v0, v0, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v0, v0, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-nez v0, :cond_0
 
@@ -64,7 +64,7 @@
 
     if-nez v0, :cond_0
 
-    .line 676
+    .line 683
     new-instance p1, Landroid/content/Intent;
 
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$12;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
@@ -75,12 +75,12 @@
 
     const-string v0, "class"
 
-    .line 677
+    .line 684
     const-class v1, Ltw/edu/kmu/act/MyKMUActivity;
 
     invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 679
+    .line 686
     :cond_0
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$12;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 

@@ -124,7 +124,7 @@
 .method private initSwipe()V
     .locals 2
 
-    const v0, 0x7f08010d
+    const v0, 0x7f080117
 
     .line 60
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/IRSTAStuReplyListActivity;->findViewById(I)Landroid/view/View;
@@ -190,7 +190,7 @@
 
     fill-array-data v5, :array_0
 
-    const v3, 0x7f0a007e
+    const v3, 0x7f0a0080
 
     move-object v0, v6
 
@@ -216,8 +216,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801cb
-        0x7f0801cf
+        0x7f0801d9
+        0x7f0801dd
     .end array-data
 .end method
 
@@ -226,7 +226,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a007f
+    const v0, 0x7f0a0081
 
     return v0
 .end method
@@ -253,7 +253,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c0036
+    const v0, 0x7f0c0035
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -261,7 +261,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/IRSTAStuReplyListActivity;->url:Ljava/lang/String;
 
-    const p1, 0x7f0c00dd
+    const p1, 0x7f0c00db
 
     .line 47
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRSTAStuReplyListActivity;->getString(I)Ljava/lang/String;
@@ -270,7 +270,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRSTAStuReplyListActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 49
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/IRSTAStuReplyListActivity;->findViewById(I)Landroid/view/View;

@@ -8,8 +8,8 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/security/KeyStore;Landroid/content/Context;)V
-    .locals 2
+.method public constructor <init>(Ljava/security/KeyStore;Landroid/content/Context;Ljava/lang/String;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -31,22 +31,22 @@
     .line 21
     new-instance p1, Ltw/edu/kmu/resource/MyX509TrustManager;
 
-    invoke-direct {p1, p2}, Ltw/edu/kmu/resource/MyX509TrustManager;-><init>(Landroid/content/Context;)V
+    invoke-direct {p1, p2, p3}, Ltw/edu/kmu/resource/MyX509TrustManager;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 22
     iget-object p2, p0, Ltw/edu/kmu/resource/SSLSocketFactoryEx;->sslContext:Ljavax/net/ssl/SSLContext;
 
-    const/4 v0, 0x1
+    const/4 p3, 0x1
 
-    new-array v0, v0, [Ljavax/net/ssl/TrustManager;
+    new-array p3, p3, [Ljavax/net/ssl/TrustManager;
 
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
-    aput-object p1, v0, v1
+    aput-object p1, p3, v0
 
     const/4 p1, 0x0
 
-    invoke-virtual {p2, p1, v0, p1}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+    invoke-virtual {p2, p1, p3, p1}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
 
     return-void
 .end method

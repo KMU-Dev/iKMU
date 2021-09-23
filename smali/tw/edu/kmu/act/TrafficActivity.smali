@@ -33,12 +33,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a00de
+    const v0, 0x7f0a00e0
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0a00df
+    const v0, 0x7f0a00e1
 
     :goto_0
     return v0
@@ -73,7 +73,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c00ce
+    const v0, 0x7f0c00cc
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -81,7 +81,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TrafficActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f080070
+    const p1, 0x7f08006f
 
     .line 24
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TrafficActivity;->findViewById(I)Landroid/view/View;
@@ -97,7 +97,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f080074
+    const p1, 0x7f080073
 
     .line 35
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TrafficActivity;->findViewById(I)Landroid/view/View;
@@ -113,7 +113,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f080075
+    const p1, 0x7f080074
 
     .line 47
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TrafficActivity;->findViewById(I)Landroid/view/View;
@@ -129,7 +129,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f080076
+    const p1, 0x7f080075
 
     .line 59
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TrafficActivity;->findViewById(I)Landroid/view/View;

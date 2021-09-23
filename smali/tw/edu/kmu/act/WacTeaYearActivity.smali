@@ -179,7 +179,7 @@
 .method private initBtnFunction()V
     .locals 4
 
-    const v0, 0x7f080040
+    const v0, 0x7f08003f
 
     .line 84
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaYearActivity;->findViewById(I)Landroid/view/View;
@@ -255,7 +255,7 @@
 .method private initTypeBtn()V
     .locals 2
 
-    const v0, 0x7f080117
+    const v0, 0x7f080121
 
     .line 116
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaYearActivity;->findViewById(I)Landroid/view/View;
@@ -269,7 +269,7 @@
     .line 117
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v0, 0x7f080052
+    const v0, 0x7f080051
 
     .line 119
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaYearActivity;->findViewById(I)Landroid/view/View;
@@ -289,7 +289,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f08005c
+    const v0, 0x7f08005b
 
     .line 121
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaYearActivity;->findViewById(I)Landroid/view/View;
@@ -554,7 +554,7 @@
 
     iget-object v4, p0, Ltw/edu/kmu/act/WacTeaYearActivity;->serverDataList:Ljava/util/ArrayList;
 
-    const v5, 0x7f0a0057
+    const v5, 0x7f0a0059
 
     const/4 v2, 0x2
 
@@ -606,8 +606,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801cb
-        0x7f0801cf
+        0x7f0801d9
+        0x7f0801dd
     .end array-data
 .end method
 
@@ -645,7 +645,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/WacTeaYearActivity;->sharedData:Landroid/content/SharedPreferences;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 60
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/WacTeaYearActivity;->findViewById(I)Landroid/view/View;
@@ -661,7 +661,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c0016
+    const v0, 0x7f0c0015
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

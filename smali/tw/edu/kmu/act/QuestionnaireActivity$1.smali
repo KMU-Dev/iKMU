@@ -78,7 +78,7 @@
 
     move-result-object p4
 
-    const p5, 0x7f0c00cf
+    const p5, 0x7f0c00cd
 
     invoke-virtual {p4, p5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -115,7 +115,7 @@
 
     move-result-object p3
 
-    iget-boolean p3, p3, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean p3, p3, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-nez p3, :cond_0
 

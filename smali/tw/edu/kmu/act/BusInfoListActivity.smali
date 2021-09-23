@@ -546,10 +546,10 @@
 
     :array_0
     .array-data 4
-        0x7f0801c7
-        0x7f08009f
-        0x7f0800ff
-        0x7f080100
+        0x7f0801d5
+        0x7f0800aa
+        0x7f080109
+        0x7f08010a
     .end array-data
 
     :array_1
@@ -618,7 +618,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/BusInfoListActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f08008b
+    const p1, 0x7f08008a
 
     .line 58
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/BusInfoListActivity;->findViewById(I)Landroid/view/View;
@@ -670,7 +670,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c008e
+    const v0, 0x7f0c008c
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

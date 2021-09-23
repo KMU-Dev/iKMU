@@ -117,7 +117,7 @@
 .method private initEnTitle()V
     .locals 6
 
-    const v0, 0x7f0801c9
+    const v0, 0x7f0801d7
 
     .line 66
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyScheduledClassActivity;->findViewById(I)Landroid/view/View;
@@ -126,7 +126,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0801dc
+    const v1, 0x7f0801ea
 
     .line 67
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/MyScheduledClassActivity;->findViewById(I)Landroid/view/View;
@@ -135,7 +135,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f080202
+    const v2, 0x7f080210
 
     .line 68
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/MyScheduledClassActivity;->findViewById(I)Landroid/view/View;
@@ -144,7 +144,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f08020e
+    const v3, 0x7f08021c
 
     .line 69
     invoke-virtual {p0, v3}, Ltw/edu/kmu/act/MyScheduledClassActivity;->findViewById(I)Landroid/view/View;
@@ -153,7 +153,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v4, 0x7f080218
+    const v4, 0x7f080226
 
     .line 70
     invoke-virtual {p0, v4}, Ltw/edu/kmu/act/MyScheduledClassActivity;->findViewById(I)Landroid/view/View;
@@ -191,7 +191,7 @@
 .end method
 
 .method private readServerDataList()Ljava/util/ArrayList;
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -262,53 +262,7 @@
 
     invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 211
-    sget-object v2, Ltw/edu/kmu/act/MyScheduledClassActivity;->TAG:Ljava/lang/String;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "UserID is "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v4, p0, Ltw/edu/kmu/act/MyScheduledClassActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
-
-    iget-object v4, v4, Ltw/edu/kmu/act/MyApplication;->UserID:Ljava/lang/String;
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 212
-    sget-object v2, Ltw/edu/kmu/act/MyScheduledClassActivity;->TAG:Ljava/lang/String;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "UserPassWord is "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v4, p0, Ltw/edu/kmu/act/MyScheduledClassActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
-
-    iget-object v4, v4, Ltw/edu/kmu/act/MyApplication;->UserPassWord:Ljava/lang/String;
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 215
+    .line 217
     iget-object v2, p0, Ltw/edu/kmu/act/MyScheduledClassActivity;->serverResource:Ltw/edu/kmu/resource/ServerResource;
 
     iget-object v3, p0, Ltw/edu/kmu/act/MyScheduledClassActivity;->url:Ljava/lang/String;
@@ -323,7 +277,7 @@
 
     goto :goto_0
 
-    .line 219
+    .line 221
     :catch_0
     iget-object v1, p0, Ltw/edu/kmu/act/MyScheduledClassActivity;->handler:Landroid/os/Handler;
 
@@ -387,7 +341,7 @@
 
     fill-array-data v6, :array_0
 
-    const v4, 0x7f0a0085
+    const v4, 0x7f0a0087
 
     move-object v1, v7
 
@@ -407,7 +361,7 @@
 
     iget-object v2, v0, Ltw/edu/kmu/act/MyScheduledClassActivity;->serverDataList:Ljava/util/ArrayList;
 
-    const v17, 0x7f0a0085
+    const v17, 0x7f0a0087
 
     new-array v3, v8, [Ljava/lang/String;
 
@@ -469,20 +423,20 @@
 
     :array_0
     .array-data 4
-        0x7f0801c9
-        0x7f0801dc
-        0x7f080202
-        0x7f08020e
-        0x7f080218
+        0x7f0801d7
+        0x7f0801ea
+        0x7f080210
+        0x7f08021c
+        0x7f080226
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f0801c9
-        0x7f0801dc
-        0x7f080202
-        0x7f08020e
-        0x7f080218
+        0x7f0801d7
+        0x7f0801ea
+        0x7f080210
+        0x7f08021c
+        0x7f080226
     .end array-data
 .end method
 
@@ -491,7 +445,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a0086
+    const v0, 0x7f0a0088
 
     return v0
 .end method
@@ -514,7 +468,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c00e9
+    const v0, 0x7f0c00e5
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -531,7 +485,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/MyScheduledClassActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 48
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/MyScheduledClassActivity;->findViewById(I)Landroid/view/View;
@@ -547,7 +501,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c003a
+    const v0, 0x7f0c0039
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

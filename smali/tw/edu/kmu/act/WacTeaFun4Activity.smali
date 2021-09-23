@@ -226,7 +226,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/WacTeaFun4Activity;->pageList:Ljava/util/List;
 
-    const v0, 0x7f0801af
+    const v0, 0x7f0801bd
 
     .line 93
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -296,7 +296,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a00e9
+    const v1, 0x7f0a00eb
 
     const/4 v2, 0x0
 
@@ -309,7 +309,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0a00ea
+    const v3, 0x7f0a00ec
 
     invoke-virtual {v1, v3, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -325,7 +325,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const v0, 0x7f08011b
+    const v0, 0x7f080125
 
     .line 100
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -336,7 +336,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/WacTeaFun4Activity;->lv:Landroid/widget/ListView;
 
-    const v0, 0x7f08013c
+    const v0, 0x7f080146
 
     .line 101
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -365,7 +365,7 @@
 .method private getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a005c
+    const v0, 0x7f0a005e
 
     return v0
 .end method
@@ -424,7 +424,7 @@
 
     fill-array-data v5, :array_0
 
-    const v3, 0x7f0a00eb
+    const v3, 0x7f0a00ed
 
     move-object v0, v6
 
@@ -467,15 +467,15 @@
 
     :array_0
     .array-data 4
-        0x7f0801cb
-        0x7f0801cf
+        0x7f0801d9
+        0x7f0801dd
     .end array-data
 .end method
 
 .method private showTab1Info()V
     .locals 7
 
-    const v0, 0x7f0801c9
+    const v0, 0x7f0801d7
 
     .line 167
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -499,7 +499,7 @@
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0801cc
+    const v0, 0x7f0801da
 
     .line 170
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -508,7 +508,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0801cd
+    const v1, 0x7f0801db
 
     .line 171
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -517,7 +517,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0801ce
+    const v2, 0x7f0801dc
 
     .line 172
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -571,7 +571,7 @@
     :goto_3
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0801d4
+    const v0, 0x7f0801e2
 
     .line 177
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -580,7 +580,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0801d5
+    const v1, 0x7f0801e3
 
     .line 178
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -619,7 +619,7 @@
     :goto_5
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0801cf
+    const v0, 0x7f0801dd
 
     .line 183
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -628,7 +628,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f08020f
+    const v1, 0x7f08021d
 
     .line 184
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -637,7 +637,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f080219
+    const v2, 0x7f080227
 
     .line 185
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -691,7 +691,7 @@
     :goto_8
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0801d0
+    const v0, 0x7f0801de
 
     .line 190
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -700,7 +700,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0801d1
+    const v1, 0x7f0801df
 
     .line 191
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -709,7 +709,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0801d2
+    const v2, 0x7f0801e0
 
     .line 192
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -768,7 +768,7 @@
 
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0801d7
+    const v0, 0x7f0801e5
 
     .line 200
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -777,7 +777,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0801d8
+    const v1, 0x7f0801e6
 
     .line 201
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -818,7 +818,7 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0801e3
+    const v0, 0x7f0801f1
 
     .line 207
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -827,7 +827,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0801e4
+    const v1, 0x7f0801f2
 
     .line 208
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -836,7 +836,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0801e5
+    const v2, 0x7f0801f3
 
     .line 209
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -845,7 +845,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v4, 0x7f0801e6
+    const v4, 0x7f0801f4
 
     .line 210
     invoke-virtual {p0, v4}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -918,7 +918,7 @@
 
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0801ed
+    const v0, 0x7f0801fb
 
     .line 220
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -927,7 +927,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0801ee
+    const v1, 0x7f0801fc
 
     .line 221
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -936,7 +936,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0801ef
+    const v2, 0x7f0801fd
 
     .line 222
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -945,7 +945,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v4, 0x7f0801f0
+    const v4, 0x7f0801fe
 
     .line 223
     invoke-virtual {p0, v4}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1018,7 +1018,7 @@
 
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0801f6
+    const v0, 0x7f080204
 
     .line 233
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1027,7 +1027,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0801f7
+    const v1, 0x7f080205
 
     .line 234
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1036,7 +1036,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0801f8
+    const v2, 0x7f080206
 
     .line 235
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1045,7 +1045,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v4, 0x7f0801f9
+    const v4, 0x7f080207
 
     .line 236
     invoke-virtual {p0, v4}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1118,7 +1118,7 @@
 
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0801fe
+    const v0, 0x7f08020c
 
     .line 246
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1143,7 +1143,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f080208
+    const v0, 0x7f080216
 
     .line 250
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1152,7 +1152,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f080209
+    const v1, 0x7f080217
 
     .line 251
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1161,7 +1161,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f08020a
+    const v2, 0x7f080218
 
     .line 252
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1218,7 +1218,7 @@
 
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f080214
+    const v0, 0x7f080222
 
     .line 260
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1227,7 +1227,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f080215
+    const v1, 0x7f080223
 
     .line 261
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1236,7 +1236,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f080216
+    const v2, 0x7f080224
 
     .line 262
     invoke-virtual {p0, v2}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1245,7 +1245,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v4, 0x7f080217
+    const v4, 0x7f080225
 
     .line 263
     invoke-virtual {p0, v4}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;
@@ -1385,7 +1385,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c008a
+    const v0, 0x7f0c0088
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1456,7 +1456,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/WacTeaFun4Activity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    const p1, 0x7f08022e
+    const p1, 0x7f08023b
 
     .line 76
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/WacTeaFun4Activity;->findViewById(I)Landroid/view/View;

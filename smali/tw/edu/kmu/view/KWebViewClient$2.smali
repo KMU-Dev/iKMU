@@ -51,7 +51,7 @@
 
     iget-object p2, p0, Ltw/edu/kmu/view/KWebViewClient$2;->val$dialogLayout:Landroid/widget/LinearLayout;
 
-    const v0, 0x7f0800dd
+    const v0, 0x7f0800e7
 
     invoke-virtual {p2, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -74,7 +74,7 @@
 
     iget-object p2, p0, Ltw/edu/kmu/view/KWebViewClient$2;->val$dialogLayout:Landroid/widget/LinearLayout;
 
-    const v0, 0x7f0800dc
+    const v0, 0x7f0800e6
 
     invoke-virtual {p2, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

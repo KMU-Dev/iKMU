@@ -223,7 +223,7 @@
     .line 56
     iget-object p1, p0, Ltw/edu/kmu/listener/PlaySongListener;->button:Landroid/widget/Button;
 
-    const v1, 0x7f0c012b
+    const v1, 0x7f0c0127
 
     invoke-virtual {p1, v1}, Landroid/widget/Button;->setText(I)V
 

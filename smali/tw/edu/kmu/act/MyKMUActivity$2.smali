@@ -62,7 +62,7 @@
 
     move-result-object v0
 
-    iget-boolean v0, v0, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v0, v0, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-nez v0, :cond_0
 

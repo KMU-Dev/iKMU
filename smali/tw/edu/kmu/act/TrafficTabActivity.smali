@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c008a
+    const v1, 0x7f0c0088
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -88,7 +88,7 @@
 
     move-result v0
 
-    const v1, 0x7f080052
+    const v1, 0x7f080051
 
     .line 81
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/TrafficTabActivity;->findViewById(I)Landroid/view/View;
@@ -130,7 +130,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f08005c
+    const v1, 0x7f08005b
 
     .line 95
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/TrafficTabActivity;->findViewById(I)Landroid/view/View;
@@ -165,7 +165,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f080040
+    const v1, 0x7f08003f
 
     .line 108
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/TrafficTabActivity;->findViewById(I)Landroid/view/View;
@@ -200,7 +200,7 @@
 .method private initWebView()V
     .locals 3
 
-    const v0, 0x7f08024c
+    const v0, 0x7f080259
 
     .line 60
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/TrafficTabActivity;->findViewById(I)Landroid/view/View;
@@ -321,7 +321,7 @@
     .line 38
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TrafficTabActivity;->requestWindowFeature(I)Z
 
-    const v0, 0x7f0a00e1
+    const v0, 0x7f0a00e3
 
     .line 40
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/TrafficTabActivity;->setContentView(I)V
@@ -331,11 +331,11 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0087
+    const v1, 0x7f0a0089
 
     invoke-virtual {v0, p1, v1}, Landroid/view/Window;->setFeatureInt(II)V
 
-    const p1, 0x7f08022e
+    const p1, 0x7f08023b
 
     .line 44
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TrafficTabActivity;->findViewById(I)Landroid/view/View;
@@ -349,7 +349,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c00ce
+    const v1, 0x7f0c00cc
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -29,7 +29,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/TBLGRATActivity;Landroid/widget/RadioGroup;Ljava/lang/String;)V
     .locals 0
 
-    .line 488
+    .line 490
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$6;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iput-object p2, p0, Ltw/edu/kmu/act/TBLGRATActivity$6;->val$radioGroup:Landroid/widget/RadioGroup;
@@ -46,7 +46,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 3
 
-    .line 493
+    .line 495
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$6;->val$radioGroup:Landroid/widget/RadioGroup;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$6;->val$radioGroup:Landroid/widget/RadioGroup;
@@ -61,7 +61,7 @@
 
     check-cast p1, Landroid/widget/RadioButton;
 
-    .line 497
+    .line 499
     new-instance p1, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$6;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
@@ -72,7 +72,7 @@
 
     const/4 v0, 0x2
 
-    .line 498
+    .line 500
     new-array v0, v0, [Ljava/lang/String;
 
     const-string v1, "next"

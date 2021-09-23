@@ -65,7 +65,7 @@
 
     iget-object v1, p0, Ltw/edu/kmu/act/ENewsActivity$2;->this$0:Ltw/edu/kmu/act/ENewsActivity;
 
-    const v2, 0x7f0c00fc
+    const v2, 0x7f0c00f8
 
     .line 125
     invoke-virtual {v1, v2}, Ltw/edu/kmu/act/ENewsActivity;->getStringById(I)Ljava/lang/String;
@@ -78,7 +78,7 @@
 
     iget-object v1, p0, Ltw/edu/kmu/act/ENewsActivity$2;->this$0:Ltw/edu/kmu/act/ENewsActivity;
 
-    const v2, 0x7f0c00fa
+    const v2, 0x7f0c00f6
 
     .line 126
     invoke-virtual {v1, v2}, Ltw/edu/kmu/act/ENewsActivity;->getStringById(I)Ljava/lang/String;
@@ -91,7 +91,7 @@
 
     iget-object v1, p0, Ltw/edu/kmu/act/ENewsActivity$2;->this$0:Ltw/edu/kmu/act/ENewsActivity;
 
-    const v2, 0x7f0c00fb
+    const v2, 0x7f0c00f7
 
     .line 127
     invoke-virtual {v1, v2}, Ltw/edu/kmu/act/ENewsActivity;->getStringById(I)Ljava/lang/String;
@@ -108,7 +108,7 @@
 
     iget-object v1, p0, Ltw/edu/kmu/act/ENewsActivity$2;->this$0:Ltw/edu/kmu/act/ENewsActivity;
 
-    const v2, 0x7f0c00f9
+    const v2, 0x7f0c00f5
 
     .line 135
     invoke-virtual {v1, v2}, Ltw/edu/kmu/act/ENewsActivity;->getStringById(I)Ljava/lang/String;

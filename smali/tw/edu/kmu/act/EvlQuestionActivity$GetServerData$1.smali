@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;)V
     .locals 0
 
-    .line 890
+    .line 1068
     iput-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData$1;->this$1:Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 894
+    .line 1072
     iget-object p1, p0, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData$1;->this$1:Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;
 
     iget-object p1, p1, Ltw/edu/kmu/act/EvlQuestionActivity$GetServerData;->this$0:Ltw/edu/kmu/act/EvlQuestionActivity;

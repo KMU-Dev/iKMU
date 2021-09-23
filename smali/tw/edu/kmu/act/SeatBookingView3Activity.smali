@@ -121,11 +121,11 @@
 
     :array_0
     .array-data 4
-        0x7f080052
-        0x7f08005c
+        0x7f080051
+        0x7f08005b
+        0x7f080060
         0x7f080061
-        0x7f080062
-        0x7f080065
+        0x7f080064
     .end array-data
 .end method
 
@@ -265,7 +265,7 @@
 .method private initLogOutBtn()V
     .locals 3
 
-    const v0, 0x7f080040
+    const v0, 0x7f08003f
 
     .line 84
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/SeatBookingView3Activity;->findViewById(I)Landroid/view/View;
@@ -931,7 +931,7 @@
 
     iget-object v7, p0, Ltw/edu/kmu/act/SeatBookingView3Activity;->serverDataList:Ljava/util/ArrayList;
 
-    const v8, 0x7f0a00c3
+    const v8, 0x7f0a00c5
 
     const/4 v2, 0x4
 
@@ -987,10 +987,10 @@
 
     :array_0
     .array-data 4
-        0x7f0801c9
-        0x7f0801dc
-        0x7f080202
-        0x7f08020e
+        0x7f0801d7
+        0x7f0801ea
+        0x7f080210
+        0x7f08021c
     .end array-data
 .end method
 
@@ -1004,12 +1004,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a00cd
+    const v0, 0x7f0a00cf
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0a00ce
+    const v0, 0x7f0a00d0
 
     :goto_0
     return v0
@@ -1042,7 +1042,7 @@
     .line 59
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SeatBookingView3Activity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 61
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SeatBookingView3Activity;->findViewById(I)Landroid/view/View;
@@ -1064,7 +1064,7 @@
 
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/SeatBookingView3Activity;->setBtnColor(I)V
 
-    const p1, 0x7f0800f1
+    const p1, 0x7f0800fb
 
     .line 69
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SeatBookingView3Activity;->findViewById(I)Landroid/view/View;
@@ -1073,7 +1073,7 @@
 
     check-cast p1, Landroid/widget/RelativeLayout;
 
-    const v0, 0x7f0800f0
+    const v0, 0x7f0800fa
 
     .line 70
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/SeatBookingView3Activity;->findViewById(I)Landroid/view/View;

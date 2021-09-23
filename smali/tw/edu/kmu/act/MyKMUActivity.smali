@@ -20,8 +20,6 @@
 
 .field private static final TAG:Ljava/lang/String; = "MyKMUActivity"
 
-.field private static final SMALI_TAG:Ljava/lang/String; = "Smali: MyKMUActivity"
-
 
 # instance fields
 .field private beaconClassDataList:Ljava/util/ArrayList;
@@ -844,7 +842,7 @@
 
     invoke-direct {v2, v1}, Landroid/widget/ListView;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f08011b
+    const v3, 0x7f080125
 
     .line 1060
     invoke-virtual {v2, v3}, Landroid/widget/ListView;->setId(I)V
@@ -861,22 +859,6 @@
 
     iget-object v5, v1, Ltw/edu/kmu/act/MyKMUActivity;->elementsData:Ljava/util/ArrayList;
 
-    # get SMALI_TAG
-    sget-object v6, Ltw/edu/kmu/act/MyKMUActivity;->SMALI_TAG:Ljava/lang/String;
-
-    # set fake class room
-    # const/4 v7, 0x0
-
-    # invoke-virtual {v4, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    # move-result-object v7
-
-    # check-cast v7, Ltw/edu/kmu/view/TreeElement;
-
-    # const-string v8, "IR 301"
-
-    # invoke-virtual {v7, v8}, Ltw/edu/kmu/view/TreeElement;->setClassRoom(Ljava/lang/String;)V
-
     invoke-direct {v3, v1, v4, v5, v0}, Ltw/edu/kmu/adapter/CurrentClassTreeViewAdapter;-><init>(Ltw/edu/kmu/act/MyKMUActivity;Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/view/LayoutInflater;)V
 
     .line 1064
@@ -886,7 +868,7 @@
 .end method
 
 .method private showBeaconClassDialog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 9
+    .locals 8
 
     .line 1343
     sget-object v0, Ltw/edu/kmu/act/MyKMUActivity;->TAG:Ljava/lang/String;
@@ -943,7 +925,7 @@
 
     move-result v1
 
-    const v2, 0x7f0c00f8
+    const v2, 0x7f0c00f4
 
     if-nez v1, :cond_0
 
@@ -1028,16 +1010,11 @@
 
     move-object v6, p4
 
-    # TODO: pass classRoom to beaconClassDialog positiveButton OnClickListener
-    invoke-direct {p0, v3}, Ltw/edu/kmu/act/MyKMUActivity;->getClassRoom(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct/range {v1 .. v6}, Ltw/edu/kmu/act/MyKMUActivity$32;-><init>(Ltw/edu/kmu/act/MyKMUActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object v7
+    invoke-virtual {v0, p3, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    invoke-direct/range {v1 .. v7}, Ltw/edu/kmu/act/MyKMUActivity$32;-><init>(Ltw/edu/kmu/act/MyKMUActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-virtual {v0, p3, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    const p1, 0x7f0c00f9
+    const p1, 0x7f0c00f5
 
     .line 1359
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/MyKMUActivity;->getStringById(I)Ljava/lang/String;
@@ -1137,15 +1114,6 @@
     .line 1200
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->classDataList:Ljava/util/ArrayList;
 
-    # Log class Data List
-    invoke-virtual {v0}, Ljava/util/ArrayList;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    sget-object v2, Ltw/edu/kmu/act/MyKMUActivity;->SMALI_TAG:Ljava/lang/String;
-
-    invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
     if-eqz v0, :cond_2
 
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->classDataList:Ljava/util/ArrayList;
@@ -1187,7 +1155,7 @@
     .line 1207
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0c00f9
+    const v1, 0x7f0c00f5
 
     .line 1215
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/MyKMUActivity;->getStringById(I)Ljava/lang/String;
@@ -1311,7 +1279,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080122
+    const v3, 0x7f08012c
 
     .line 1087
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1459,7 +1427,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f080122
+    const v2, 0x7f08012c
 
     .line 1134
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1626,7 +1594,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f080122
+    const v2, 0x7f08012c
 
     .line 1260
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1665,7 +1633,7 @@
     .line 1281
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0c00f9
+    const v1, 0x7f0c00f5
 
     .line 1282
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/MyKMUActivity;->getStringById(I)Ljava/lang/String;
@@ -1805,7 +1773,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f080122
+    const v3, 0x7f08012c
 
     .line 445
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1868,12 +1836,17 @@
 
     move-result v0
 
+    if-nez v0, :cond_0
+
+    return-void
+
     .line 800
+    :cond_0
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->beaconManager:Lcom/estimote/sdk/BeaconManager;
 
     invoke-virtual {v0}, Lcom/estimote/sdk/BeaconManager;->isBluetoothEnabled()Z
 
-    const/4 v0, 0x1
+    move-result v0
 
     if-nez v0, :cond_1
 
@@ -1965,12 +1938,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a0089
+    const v0, 0x7f0a008b
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0a008c
+    const v0, 0x7f0a008e
 
     :goto_0
     return v0
@@ -1979,7 +1952,7 @@
 .method public initBtn()V
     .locals 4
 
-    const v0, 0x7f080070
+    const v0, 0x7f08006f
 
     .line 143
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -1995,7 +1968,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080074
+    const v0, 0x7f080073
 
     .line 157
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2011,7 +1984,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080075
+    const v0, 0x7f080074
 
     .line 171
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2027,7 +2000,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080076
+    const v0, 0x7f080075
 
     .line 182
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2043,7 +2016,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080077
+    const v0, 0x7f080076
 
     .line 197
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2059,7 +2032,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080078
+    const v0, 0x7f080077
 
     .line 213
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2075,7 +2048,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080079
+    const v0, 0x7f080078
 
     .line 271
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2091,10 +2064,9 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f08007a
+    const v0, 0x7f080079
 
     .line 329
-    # IRS button
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -2108,7 +2080,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f08007b
+    const v1, 0x7f08007a
 
     .line 385
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2125,7 +2097,7 @@
     .line 388
     iget-object v1, p0, Ltw/edu/kmu/act/MyKMUActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    iget-boolean v1, v1, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v1, v1, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-eqz v1, :cond_1
 
@@ -2163,7 +2135,7 @@
     :cond_1
     iget-object v1, p0, Ltw/edu/kmu/act/MyKMUActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    iget-boolean v1, v1, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v1, v1, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     const v2, 0x7f070172
 
@@ -2192,7 +2164,7 @@
     :cond_2
     iget-object v1, p0, Ltw/edu/kmu/act/MyKMUActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    iget-boolean v1, v1, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v1, v1, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-eqz v1, :cond_3
 
@@ -2224,7 +2196,7 @@
 .method public initTBLActBtn()V
     .locals 3
 
-    const v0, 0x7f080175
+    const v0, 0x7f080183
 
     .line 409
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2238,7 +2210,7 @@
     .line 410
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    const v0, 0x7f080176
+    const v0, 0x7f080184
 
     .line 412
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2252,7 +2224,7 @@
     .line 413
     invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    const v0, 0x7f0801aa
+    const v0, 0x7f0801b8
 
     .line 415
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2264,7 +2236,7 @@
     .line 416
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v0, 0x7f0801ab
+    const v0, 0x7f0801b9
 
     .line 418
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2276,7 +2248,7 @@
     .line 419
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v0, 0x7f0801ac
+    const v0, 0x7f0801ba
 
     .line 421
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2288,7 +2260,7 @@
     .line 422
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v0, 0x7f0801ad
+    const v0, 0x7f0801bb
 
     .line 424
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2306,7 +2278,7 @@
 .method public initWacTaBtn()V
     .locals 3
 
-    const v0, 0x7f080176
+    const v0, 0x7f080184
 
     .line 485
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2320,7 +2292,7 @@
     .line 486
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    const v0, 0x7f0801ad
+    const v0, 0x7f0801bb
 
     .line 488
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2332,7 +2304,7 @@
     .line 489
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v0, 0x7f0801ac
+    const v0, 0x7f0801ba
 
     .line 491
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2351,7 +2323,7 @@
     .line 493
     iput v1, v0, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    const v0, 0x7f080070
+    const v0, 0x7f08006f
 
     .line 496
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2382,7 +2354,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080074
+    const v0, 0x7f080073
 
     .line 510
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2413,7 +2385,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080075
+    const v0, 0x7f080074
 
     .line 527
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2444,7 +2416,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080076
+    const v0, 0x7f080075
 
     .line 546
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2475,7 +2447,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080077
+    const v0, 0x7f080076
 
     .line 597
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2506,7 +2478,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080078
+    const v0, 0x7f080077
 
     .line 650
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2537,7 +2509,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080079
+    const v0, 0x7f080078
 
     .line 665
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2568,7 +2540,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f08007a
+    const v0, 0x7f080079
 
     .line 682
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2599,7 +2571,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f08007b
+    const v0, 0x7f08007a
 
     .line 698
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2633,7 +2605,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080071
+    const v0, 0x7f080070
 
     .line 716
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2664,7 +2636,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080072
+    const v0, 0x7f080071
 
     .line 733
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2752,7 +2724,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c00c7
+    const v0, 0x7f0c00c5
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2856,7 +2828,7 @@
     .line 1632
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    iget-boolean v0, v0, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v0, v0, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-eqz v0, :cond_1
 
@@ -2894,11 +2866,11 @@
     :cond_1
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    iget-boolean v0, v0, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v0, v0, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     const v1, 0x7f070172
 
-    const v2, 0x7f08007a
+    const v2, 0x7f080079
 
     if-eqz v0, :cond_2
 
@@ -2926,7 +2898,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    const v0, 0x7f0801ad
+    const v0, 0x7f0801bb
 
     .line 1642
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MyKMUActivity;->findViewById(I)Landroid/view/View;
@@ -2946,7 +2918,7 @@
     :cond_2
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    iget-boolean v0, v0, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v0, v0, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-eqz v0, :cond_3
 
@@ -3535,12 +3507,9 @@
 .end method
 
 .method public startIRSEvent(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 4
+    .locals 3
 
     .line 952
-    # preserve classRoom
-    move-object v3, p1
-
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->dialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
@@ -3623,12 +3592,10 @@
 
     const-string v0, ""
 
-    # TODO: start crack bluetooth
     .line 972
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    # Always match condition -> :cond_4
-    const/4 v0, 0x1
+    move-result v0
 
     if-nez v0, :cond_4
 
@@ -3637,8 +3604,7 @@
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
-    # Always match condition -> not :cond_3, goto :goto_0
-    const/4 p1, 0x1
+    move-result p1
 
     if-eqz p1, :cond_3
 
@@ -3765,12 +3731,6 @@
     .line 1006
     iget-object p3, p0, Ltw/edu/kmu/act/MyKMUActivity;->classRoomList:Ljava/util/ArrayList;
 
-    new-instance p3, Ljava/util/ArrayList;
-
-    invoke-direct {p3}, Ljava/util/ArrayList;-><init>()V
-
-    invoke-virtual {p3, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     invoke-virtual {p1, p2, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
     .line 1014
@@ -3805,65 +3765,4 @@
     invoke-interface/range {v1 .. v7}, Ljava/util/concurrent/ScheduledExecutorService;->scheduleAtFixedRate(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
 
     return-void
-.end method
-
-# TODO: create method getClassRoom(String classId):String
-.method private getClassRoom(Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
-
-    iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->classDataList:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    # while variables: v0 -> Iterator, v1 -> HashMap<String, String>
-    # while condition start
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0 # while condition end
-
-    # while body start
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/HashMap;
-
-    const-string v2, "classId"
-
-    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String; # v2 -> classData.get("classId"): String
-
-    # if condition start
-    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1 # if condition end
-
-    # if body start
-    const-string v2, "classRoom"
-
-    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String; # v2 -> classData.get("classRoom"): String
-
-    return-object v2
-
-    :cond_1 # if body end
-    goto :goto_0 # while body end
-
-    :cond_0
-    const-string v0, ""
-
-    return-object v0
 .end method

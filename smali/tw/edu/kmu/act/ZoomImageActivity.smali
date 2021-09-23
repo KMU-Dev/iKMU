@@ -361,7 +361,7 @@
 .method private getAsyncImage()V
     .locals 3
 
-    const v0, 0x7f0800e9
+    const v0, 0x7f0800f3
 
     .line 96
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/ZoomImageActivity;->findViewById(I)Landroid/view/View;
@@ -425,7 +425,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00fa
+    const v0, 0x7f0a00fc
 
     return v0
 .end method
@@ -452,7 +452,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c0102
+    const v0, 0x7f0c00fe
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -499,7 +499,7 @@
     :cond_0
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ZoomImageActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f080151
+    const p1, 0x7f08015b
 
     .line 77
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ZoomImageActivity;->findViewById(I)Landroid/view/View;

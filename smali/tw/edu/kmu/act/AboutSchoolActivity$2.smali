@@ -219,25 +219,25 @@
     move-exception v0
 
     .line 133
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
     invoke-static {}, Ltw/edu/kmu/act/AboutSchoolActivity;->access$300()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, "Parse attList Json Exception"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Parse attList Json Exception"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -260,14 +260,16 @@
 
     invoke-direct {p4, p1, p2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string p1, "detailList"
+    .line 143
+    iget-object p1, p0, Ltw/edu/kmu/act/AboutSchoolActivity$2;->this$0:Ltw/edu/kmu/act/AboutSchoolActivity;
 
-    .line 142
-    invoke-virtual {p4, p1, p5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
+    iget-object p1, p1, Ltw/edu/kmu/act/AboutSchoolActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
+
+    iput-object p5, p1, Ltw/edu/kmu/act/MyApplication;->detailList:Ljava/util/ArrayList;
 
     const-string p1, "name"
 
-    .line 143
+    .line 144
     invoke-virtual {p4, p1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     goto/16 :goto_6
@@ -277,7 +279,7 @@
 
     const-string v0, "name"
 
-    .line 145
+    .line 146
     invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -292,10 +294,10 @@
 
     const-string p2, "loadData"
 
-    .line 148
+    .line 149
     invoke-virtual {p4, p2, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 149
+    .line 150
     invoke-static {}, Ltw/edu/kmu/act/AboutSchoolActivity;->access$300()Ljava/lang/String;
 
     move-result-object p2
@@ -321,7 +323,7 @@
     :cond_6
     const-string p5, "description"
 
-    .line 151
+    .line 152
     invoke-virtual {p1, p5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p5
@@ -336,7 +338,7 @@
 
     if-nez p5, :cond_8
 
-    .line 153
+    .line 154
     new-instance p5, Ljava/lang/StringBuilder;
 
     invoke-direct {p5}, Ljava/lang/StringBuilder;-><init>()V
@@ -349,7 +351,7 @@
 
     const-string v1, "<"
 
-    .line 154
+    .line 155
     invoke-virtual {p2, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
@@ -358,7 +360,7 @@
 
     const-string v1, ">"
 
-    .line 155
+    .line 156
     invoke-virtual {p2, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
@@ -367,7 +369,7 @@
 
     const-string v1, "&"
 
-    .line 156
+    .line 157
     invoke-virtual {p2, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
@@ -376,7 +378,7 @@
 
     const-string v1, ""
 
-    .line 158
+    .line 159
     invoke-virtual {p2, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
@@ -395,7 +397,7 @@
 
     const-string v0, "name"
 
-    .line 160
+    .line 161
     invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -406,7 +408,7 @@
 
     if-eqz p1, :cond_7
 
-    .line 162
+    .line 163
     new-instance p4, Landroid/content/Intent;
 
     iget-object p1, p0, Ltw/edu/kmu/act/AboutSchoolActivity$2;->this$0:Ltw/edu/kmu/act/AboutSchoolActivity;
@@ -418,17 +420,17 @@
     :cond_7
     const-string p1, "loadData"
 
-    .line 165
+    .line 166
     invoke-virtual {p4, p1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     :cond_8
     :goto_6
     const-string p1, "title"
 
-    .line 169
+    .line 170
     invoke-virtual {p4, p1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 170
+    .line 171
     iget-object p1, p0, Ltw/edu/kmu/act/AboutSchoolActivity$2;->this$0:Ltw/edu/kmu/act/AboutSchoolActivity;
 
     invoke-virtual {p1, p4}, Ltw/edu/kmu/act/AboutSchoolActivity;->startActivity(Landroid/content/Intent;)V

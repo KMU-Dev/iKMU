@@ -88,7 +88,7 @@
     .line 43
     iput p3, p0, Ltw/edu/kmu/adapter/IRSTAStuListViewAdapter;->resource:I
 
-    const p2, 0x7f0c008a
+    const p2, 0x7f0c0088
 
     .line 44
     invoke-virtual {p1, p2}, Ltw/edu/kmu/act/IRS4TAActivity;->getString(I)Ljava/lang/String;
@@ -171,7 +171,7 @@
 
     invoke-direct {v0, p0, v1}, Ltw/edu/kmu/adapter/IRSTAStuListViewAdapter$ViewHolder;-><init>(Ltw/edu/kmu/adapter/IRSTAStuListViewAdapter;Ltw/edu/kmu/adapter/IRSTAStuListViewAdapter$1;)V
 
-    const v1, 0x7f080052
+    const v1, 0x7f080051
 
     .line 69
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -182,7 +182,7 @@
 
     iput-object v1, v0, Ltw/edu/kmu/adapter/IRSTAStuListViewAdapter$ViewHolder;->btn1:Landroid/widget/Button;
 
-    const v1, 0x7f08005c
+    const v1, 0x7f08005b
 
     .line 70
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -193,7 +193,7 @@
 
     iput-object v1, v0, Ltw/edu/kmu/adapter/IRSTAStuListViewAdapter$ViewHolder;->btn2:Landroid/widget/Button;
 
-    const v1, 0x7f0801c9
+    const v1, 0x7f0801d7
 
     .line 71
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -204,7 +204,7 @@
 
     iput-object v1, v0, Ltw/edu/kmu/adapter/IRSTAStuListViewAdapter$ViewHolder;->title1:Landroid/widget/TextView;
 
-    const v1, 0x7f080202
+    const v1, 0x7f080210
 
     .line 72
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;

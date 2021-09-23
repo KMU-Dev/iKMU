@@ -27,7 +27,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;Landroid/widget/ImageView;)V
     .locals 0
 
-    .line 308
+    .line 315
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$5;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     iput-object p2, p0, Ltw/edu/kmu/act/MainPageActivityV2$5;->val$welcomTitle:Landroid/widget/ImageView;
@@ -42,7 +42,7 @@
 .method public run()V
     .locals 3
 
-    .line 313
+    .line 320
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$5;->val$welcomTitle:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -51,7 +51,7 @@
 
     check-cast v0, Landroid/widget/RelativeLayout$LayoutParams;
 
-    .line 314
+    .line 321
     iget-object v1, p0, Ltw/edu/kmu/act/MainPageActivityV2$5;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     const/high16 v2, 0x43aa0000    # 340.0f
@@ -62,7 +62,7 @@
 
     iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
-    .line 315
+    .line 322
     iget-object v1, p0, Ltw/edu/kmu/act/MainPageActivityV2$5;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     const/high16 v2, 0x428c0000    # 70.0f
@@ -73,7 +73,7 @@
 
     iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->height:I
 
-    .line 316
+    .line 323
     iget-object v1, p0, Ltw/edu/kmu/act/MainPageActivityV2$5;->val$welcomTitle:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V

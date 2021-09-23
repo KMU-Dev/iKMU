@@ -314,7 +314,7 @@
 
     invoke-virtual {p0, v0, v1}, Ltw/edu/kmu/act/ARViewActivity;->addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    const v1, 0x7f0801c7
+    const v1, 0x7f0801d5
 
     .line 279
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -473,7 +473,7 @@
 .method private createTab1()V
     .locals 4
 
-    const v0, 0x7f0801a8
+    const v0, 0x7f0801b6
 
     .line 390
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/ARViewActivity;->findViewById(I)Landroid/view/View;
@@ -694,7 +694,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0c008a
+    const v2, 0x7f0c0088
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1056,7 +1056,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c0113
+    const v3, 0x7f0c010f
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1075,7 +1075,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0c0114
+    const v5, 0x7f0c0110
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1593,7 +1593,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c0113
+    const v2, 0x7f0c010f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1612,7 +1612,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0c0114
+    const v4, 0x7f0c0110
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

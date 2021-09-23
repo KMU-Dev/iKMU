@@ -89,30 +89,30 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 57
+    .line 58
     invoke-direct {p0}, Ltw/edu/kmu/act/BasicActivity;-><init>()V
 
     const-string v0, "https://etbl.kmu.edu.tw/tblapi/tbl/download?file="
 
-    .line 75
+    .line 76
     iput-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->imageUrl:Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 
-    .line 81
+    .line 82
     iput-wide v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->phoneTimeDiff:J
 
     const/4 v0, 0x1
 
-    .line 85
+    .line 86
     iput-boolean v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->isSendTp:Z
 
     const/4 v0, 0x0
 
-    .line 87
+    .line 88
     iput-boolean v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->selCorrect:Z
 
-    .line 1315
+    .line 1320
     new-instance v0, Ltw/edu/kmu/act/TBLGRATActivity$21;
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/TBLGRATActivity$21;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;)V
@@ -125,7 +125,7 @@
 .method static synthetic access$100(Ltw/edu/kmu/act/TBLGRATActivity;)Landroid/os/Handler;
     .locals 0
 
-    .line 57
+    .line 58
     iget-object p0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctHandler:Landroid/os/Handler;
 
     return-object p0
@@ -134,7 +134,7 @@
 .method static synthetic access$1000(Ltw/edu/kmu/act/TBLGRATActivity;)I
     .locals 0
 
-    .line 57
+    .line 58
     iget p0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctPeriodCount:I
 
     return p0
@@ -143,7 +143,7 @@
 .method static synthetic access$1010(Ltw/edu/kmu/act/TBLGRATActivity;)I
     .locals 2
 
-    .line 57
+    .line 58
     iget v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctPeriodCount:I
 
     add-int/lit8 v1, v0, -0x1
@@ -156,7 +156,7 @@
 .method static synthetic access$1100(Ltw/edu/kmu/act/TBLGRATActivity;)Landroid/os/Handler;
     .locals 0
 
-    .line 57
+    .line 58
     iget-object p0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->handler:Landroid/os/Handler;
 
     return-object p0
@@ -165,7 +165,7 @@
 .method static synthetic access$1200(Ltw/edu/kmu/act/TBLGRATActivity;)Landroid/os/Bundle;
     .locals 0
 
-    .line 57
+    .line 58
     iget-object p0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->bundle:Landroid/os/Bundle;
 
     return-object p0
@@ -174,7 +174,7 @@
 .method static synthetic access$1400(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/lang/String;)V
     .locals 0
 
-    .line 57
+    .line 58
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/TBLGRATActivity;->parseMsg(Ljava/lang/String;)V
 
     return-void
@@ -183,7 +183,7 @@
 .method static synthetic access$1802(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/util/HashMap;)Ljava/util/HashMap;
     .locals 0
 
-    .line 57
+    .line 58
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity;->examMap:Ljava/util/HashMap;
 
     return-object p1
@@ -192,7 +192,7 @@
 .method static synthetic access$1902(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
 
-    .line 57
+    .line 58
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity;->examDataList:Ljava/util/ArrayList;
 
     return-object p1
@@ -201,7 +201,7 @@
 .method static synthetic access$200(Ltw/edu/kmu/act/TBLGRATActivity;)Landroid/widget/TextView;
     .locals 0
 
-    .line 57
+    .line 58
     iget-object p0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->countDownTime:Landroid/widget/TextView;
 
     return-object p0
@@ -210,7 +210,7 @@
 .method static synthetic access$2100(Ltw/edu/kmu/act/TBLGRATActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 57
+    .line 58
     iget-object p0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctServerTime:Ljava/lang/String;
 
     return-object p0
@@ -219,7 +219,7 @@
 .method static synthetic access$2102(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 57
+    .line 58
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctServerTime:Ljava/lang/String;
 
     return-object p1
@@ -228,7 +228,7 @@
 .method static synthetic access$2200(Ltw/edu/kmu/act/TBLGRATActivity;)J
     .locals 2
 
-    .line 57
+    .line 58
     iget-wide v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->phoneTimeDiff:J
 
     return-wide v0
@@ -237,7 +237,7 @@
 .method static synthetic access$2202(Ltw/edu/kmu/act/TBLGRATActivity;J)J
     .locals 0
 
-    .line 57
+    .line 58
     iput-wide p1, p0, Ltw/edu/kmu/act/TBLGRATActivity;->phoneTimeDiff:J
 
     return-wide p1
@@ -246,16 +246,16 @@
 .method static synthetic access$2300(Ltw/edu/kmu/act/TBLGRATActivity;)V
     .locals 0
 
-    .line 57
+    .line 58
     invoke-direct {p0}, Ltw/edu/kmu/act/TBLGRATActivity;->setCountDownTime()V
 
     return-void
 .end method
 
-.method static synthetic access$702(Ltw/edu/kmu/act/TBLGRATActivity;Z)Z
+.method static synthetic access$302(Ltw/edu/kmu/act/TBLGRATActivity;Z)Z
     .locals 0
 
-    .line 57
+    .line 58
     iput-boolean p1, p0, Ltw/edu/kmu/act/TBLGRATActivity;->isSendTp:Z
 
     return p1
@@ -264,7 +264,7 @@
 .method static synthetic access$800(Ltw/edu/kmu/act/TBLGRATActivity;)Landroid/widget/LinearLayout;
     .locals 0
 
-    .line 57
+    .line 58
     iget-object p0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     return-object p0
@@ -273,7 +273,7 @@
 .method static synthetic access$900()Ljava/lang/String;
     .locals 1
 
-    .line 57
+    .line 58
     sget-object v0, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     return-object v0
@@ -282,7 +282,7 @@
 .method private initHandler()V
     .locals 1
 
-    .line 111
+    .line 112
     new-instance v0, Ltw/edu/kmu/act/TBLGRATActivity$1;
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/TBLGRATActivity$1;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;)V
@@ -295,9 +295,9 @@
 .method private initView()V
     .locals 2
 
-    const v0, 0x7f080169
+    const v0, 0x7f080176
 
-    .line 134
+    .line 135
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/TBLGRATActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -306,9 +306,9 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->root1:Landroid/widget/LinearLayout;
 
-    const v0, 0x7f0800a5
+    const v0, 0x7f0800b0
 
-    .line 136
+    .line 137
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/TBLGRATActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -317,16 +317,16 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->countDownTime:Landroid/widget/TextView;
 
-    .line 137
+    .line 138
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->countDownTime:Landroid/widget/TextView;
 
     const-string v1, "00:00:00"
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0801c5
+    const v0, 0x7f0801d3
 
-    .line 139
+    .line 140
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/TBLGRATActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -335,14 +335,14 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->tilte1:Landroid/widget/TextView;
 
-    .line 140
+    .line 141
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->tilte1:Landroid/widget/TextView;
 
     const-string v1, "\u6ce8\u610f\uff01\u6700\u5f8c\u4e00\u984c\uff01"
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 141
+    .line 142
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->tilte1:Landroid/widget/TextView;
 
     const/high16 v1, -0x10000
@@ -359,7 +359,7 @@
 
     move-object/from16 v2, p1
 
-    .line 222
+    .line 223
     sget-object v3, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -378,13 +378,13 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 225
+    .line 226
     :try_start_0
     new-instance v3, Lorg/json/JSONObject;
 
     invoke-direct {v3, v2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 226
+    .line 227
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->tilte1:Landroid/widget/TextView;
 
     const/4 v4, 0x4
@@ -393,7 +393,7 @@
 
     const-string v2, "question"
 
-    .line 227
+    .line 228
     invoke-virtual {v3, v2}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
@@ -406,7 +406,7 @@
 
     const-string v4, "2"
 
-    .line 228
+    .line 229
     invoke-virtual {v4, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -432,7 +432,7 @@
     :cond_0
     const-string v4, "question"
 
-    .line 229
+    .line 230
     invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v4
@@ -443,7 +443,7 @@
 
     move-result-object v4
 
-    .line 230
+    .line 231
     sget-object v5, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -464,7 +464,7 @@
 
     const-string v5, "2"
 
-    .line 233
+    .line 234
     invoke-virtual {v5, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
@@ -491,22 +491,22 @@
 
     if-eqz v5, :cond_12
 
-    .line 234
+    .line 235
     iput-boolean v13, v1, Ltw/edu/kmu/act/TBLGRATActivity;->selCorrect:Z
 
-    .line 235
+    .line 236
     new-instance v2, Landroid/widget/LinearLayout;
 
     invoke-direct {v2, v1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     iput-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
-    .line 236
+    .line 237
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v15}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 237
+    .line 238
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     const-string v5, "#AB1980E0"
@@ -517,14 +517,14 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
-    .line 239
+    .line 240
     new-instance v2, Landroid/widget/ScrollView;
 
     invoke-direct {v2, v1}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
 
     iput-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->scrollView:Landroid/widget/ScrollView;
 
-    .line 240
+    .line 241
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->scrollView:Landroid/widget/ScrollView;
 
     new-instance v5, Landroid/widget/RelativeLayout$LayoutParams;
@@ -533,92 +533,92 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/ScrollView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 242
+    .line 243
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     const-string v5, "timer"
 
-    .line 243
+    .line 244
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    .line 244
+    .line 245
     new-instance v5, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v5, v14, v14}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 245
-    iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
-
     .line 246
-    invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v6
-
-    iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
+    iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     .line 247
     invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
-    iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
+    iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     .line 248
     invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
-    iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+    iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     .line 249
     invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
-    iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+    iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     .line 250
-    invoke-virtual {v2, v5}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v6
+
+    iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
     .line 251
+    invoke-virtual {v2, v5}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 252
     sget-object v5, Landroid/graphics/Typeface;->MONOSPACE:Landroid/graphics/Typeface;
 
     invoke-virtual {v2, v5, v15}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
 
     const/high16 v5, 0x41600000    # 14.0f
 
-    .line 252
+    .line 253
     invoke-virtual {v2, v12, v5}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 253
+    .line 254
     invoke-virtual {v2, v10}, Landroid/widget/TextView;->setTextColor(I)V
 
     const-string v5, "00:00:00"
 
-    .line 254
+    .line 255
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     const v5, -0x777778
 
-    .line 255
+    .line 256
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setBackgroundColor(I)V
 
-    .line 258
+    .line 259
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 259
+    .line 260
     invoke-virtual {v2, v12, v8}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 260
+    .line 261
     invoke-virtual {v2, v10}, Landroid/widget/TextView;->setTextColor(I)V
 
     const-string v5, "question"
 
-    .line 261
+    .line 262
     invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v5
@@ -631,14 +631,14 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 262
+    .line 263
     iget-object v5, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     const-string v2, "question"
 
-    .line 264
+    .line 265
     invoke-virtual {v3, v2}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
@@ -649,12 +649,12 @@
 
     move-result-object v2
 
-    .line 265
+    .line 266
     new-instance v5, Landroid/widget/ImageView;
 
     invoke-direct {v5, v1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 266
+    .line 267
     new-instance v6, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
@@ -663,18 +663,18 @@
 
     invoke-direct {v6, v14, v7}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 267
+    .line 268
     iput v11, v6, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 268
+    .line 269
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 269
+    .line 270
     sget-object v6, Landroid/widget/ImageView$ScaleType;->CENTER_INSIDE:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 270
+    .line 271
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -691,7 +691,7 @@
 
     const-string v7, "question"
 
-    .line 271
+    .line 272
     invoke-virtual {v3, v7}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v7
@@ -704,15 +704,12 @@
 
     const-string v8, ""
 
-    .line 272
+    .line 273
     invoke-virtual {v8, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_2
-
-    .line 273
-    iput-boolean v13, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isSendTp:Z
 
     .line 274
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$3;
@@ -721,7 +718,7 @@
 
     invoke-virtual {v5, v2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 284
+    .line 286
     new-instance v2, Ltw/edu/kmu/tool/ImageDownloaderTask;
 
     invoke-virtual/range {p0 .. p0}, Ltw/edu/kmu/act/TBLGRATActivity;->getApplicationContext()Landroid/content/Context;
@@ -740,17 +737,17 @@
 
     invoke-virtual {v2, v8}, Ltw/edu/kmu/tool/ImageDownloaderTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 285
+    .line 287
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 286
+    .line 288
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 287
+    .line 289
     iget-boolean v5, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v5, :cond_1
@@ -765,21 +762,21 @@
     :goto_0
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 288
+    .line 290
     invoke-virtual {v2, v10}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 289
+    .line 291
     new-instance v5, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v5, v14, v14}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 290
+    .line 292
     iput v11, v5, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 291
+    .line 293
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 292
+    .line 294
     iget-object v5, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
@@ -787,7 +784,7 @@
     :cond_2
     const-string v2, "question"
 
-    .line 295
+    .line 297
     invoke-virtual {v3, v2}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
@@ -798,19 +795,19 @@
 
     move-result-object v2
 
-    .line 296
+    .line 298
     new-instance v5, Landroid/widget/RadioGroup;
 
     invoke-direct {v5, v1}, Landroid/widget/RadioGroup;-><init>(Landroid/content/Context;)V
 
     const-string v6, "radioGroup"
 
-    .line 297
+    .line 299
     invoke-virtual {v5, v6}, Landroid/widget/RadioGroup;->setTag(Ljava/lang/Object;)V
 
     const-string v6, "question"
 
-    .line 300
+    .line 302
     invoke-virtual {v3, v6}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v6
@@ -823,7 +820,7 @@
 
     const/4 v7, 0x0
 
-    .line 301
+    .line 303
     :goto_1
     invoke-virtual {v6}, Lorg/json/JSONArray;->length()I
 
@@ -831,27 +828,27 @@
 
     if-ge v7, v8, :cond_6
 
-    .line 302
+    .line 304
     invoke-virtual {v6, v7}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v8
 
-    .line 303
+    .line 305
     new-instance v9, Landroid/widget/RadioButton;
 
     invoke-direct {v9, v1}, Landroid/widget/RadioButton;-><init>(Landroid/content/Context;)V
 
     const/high16 v12, 0x41200000    # 10.0f
 
-    .line 305
+    .line 307
     invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v12
 
-    .line 306
+    .line 308
     invoke-virtual {v9, v12, v13, v13, v13}, Landroid/widget/RadioButton;->setPadding(IIII)V
 
-    .line 308
+    .line 310
     new-instance v12, Ljava/lang/StringBuilder;
 
     invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
@@ -870,10 +867,10 @@
 
     invoke-virtual {v9, v11}, Landroid/widget/RadioButton;->setTag(Ljava/lang/Object;)V
 
-    .line 309
+    .line 311
     invoke-virtual {v9, v10}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 310
+    .line 312
     new-instance v11, Ljava/lang/StringBuilder;
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
@@ -906,30 +903,30 @@
 
     const-string v11, "optKey"
 
-    .line 311
+    .line 313
     invoke-virtual {v8, v11}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
 
-    const v12, 0x7f08004f
+    const v12, 0x7f08004e
 
     invoke-virtual {v9, v12, v11}, Landroid/widget/RadioButton;->setTag(ILjava/lang/Object;)V
 
     const-string v11, "selFilled"
 
-    .line 312
+    .line 314
     invoke-virtual {v8, v11}, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
 
     move-result v11
 
     if-eqz v11, :cond_4
 
-    .line 313
+    .line 315
     invoke-virtual {v9, v13}, Landroid/widget/RadioButton;->setEnabled(Z)V
 
     const-string v11, "selCorrect"
 
-    .line 315
+    .line 317
     invoke-virtual {v8, v11}, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
 
     move-result v11
@@ -938,10 +935,10 @@
 
     if-eqz v11, :cond_3
 
-    .line 316
+    .line 318
     iput-boolean v15, v1, Ltw/edu/kmu/act/TBLGRATActivity;->selCorrect:Z
 
-    .line 317
+    .line 319
     invoke-virtual/range {p0 .. p0}, Ltw/edu/kmu/act/TBLGRATActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v11
@@ -952,7 +949,7 @@
 
     move-result-object v11
 
-    .line 319
+    .line 321
     invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v13
@@ -965,17 +962,17 @@
 
     move-result-object v11
 
-    .line 321
+    .line 323
     invoke-virtual {v9, v11}, Landroid/widget/RadioButton;->setButtonDrawable(Landroid/graphics/drawable/Drawable;)V
 
     const/4 v11, 0x0
 
-    .line 323
+    .line 325
     invoke-virtual {v9, v11}, Landroid/widget/RadioButton;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_2
 
-    .line 325
+    .line 327
     :cond_3
     invoke-virtual/range {p0 .. p0}, Ltw/edu/kmu/act/TBLGRATActivity;->getResources()Landroid/content/res/Resources;
 
@@ -987,7 +984,7 @@
 
     move-result-object v11
 
-    .line 326
+    .line 328
     invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v13
@@ -1000,22 +997,22 @@
 
     move-result-object v11
 
-    .line 328
+    .line 330
     invoke-virtual {v9, v11}, Landroid/widget/RadioButton;->setButtonDrawable(Landroid/graphics/drawable/Drawable;)V
 
     const/4 v11, 0x0
 
-    .line 330
+    .line 332
     invoke-virtual {v9, v11}, Landroid/widget/RadioButton;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 333
+    .line 335
     :cond_4
     :goto_2
     invoke-virtual {v5, v9}, Landroid/widget/RadioGroup;->addView(Landroid/view/View;)V
 
     const-string v11, "optKey"
 
-    .line 334
+    .line 336
     invoke-virtual {v8, v11}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
@@ -1026,7 +1023,7 @@
 
     if-eqz v8, :cond_5
 
-    .line 336
+    .line 338
     invoke-virtual {v9}, Landroid/widget/RadioButton;->getId()I
 
     move-result v8
@@ -1042,68 +1039,68 @@
 
     goto/16 :goto_1
 
-    .line 339
+    .line 341
     :cond_6
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 341
+    .line 343
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     const/high16 v6, -0x10000
 
-    .line 342
+    .line 344
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 343
+    .line 345
     iget-boolean v6, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     const-string v6, "\u9078\u64c7\u9078\u9805\u5f8c\u6309\u4e0b\u78ba\u5b9a"
 
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 344
+    .line 346
     new-instance v6, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v6, v14, v14}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     const/16 v7, 0x11
 
-    .line 345
+    .line 347
     iput v7, v6, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v7, 0x40a00000    # 5.0f
 
-    .line 346
+    .line 348
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
     iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 347
+    .line 349
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
     iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 348
+    .line 350
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     const/4 v6, 0x2
 
     const/high16 v7, 0x41a00000    # 20.0f
 
-    .line 349
+    .line 351
     invoke-virtual {v2, v6, v7}, Landroid/widget/TextView;->setTextSize(IF)V
 
     const-string v6, "question"
 
-    .line 352
+    .line 354
     invoke-virtual {v3, v6}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v6
@@ -1116,23 +1113,23 @@
 
     if-nez v6, :cond_7
 
-    .line 353
+    .line 355
     iget-object v6, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v6, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 356
+    .line 358
     :cond_7
     new-instance v2, Landroid/widget/Button;
 
     invoke-direct {v2, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f08004f
+    const v6, 0x7f08004e
 
-    .line 357
+    .line 359
     invoke-virtual {v2, v6}, Landroid/widget/Button;->setId(I)V
 
-    .line 358
+    .line 360
     iget-boolean v6, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v6, :cond_8
@@ -1147,15 +1144,15 @@
     :goto_3
     invoke-virtual {v2, v6}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 359
+    .line 361
     invoke-virtual {v2, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v6, 0x7f0700f2
 
-    .line 360
+    .line 362
     invoke-virtual {v2, v6}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 361
+    .line 363
     new-instance v6, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v7, 0x42480000    # 50.0f
@@ -1166,53 +1163,53 @@
 
     invoke-direct {v6, v14, v8}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 362
+    .line 364
     iput v15, v6, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v7, 0x40a00000    # 5.0f
-
-    .line 363
-    invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v8
-
-    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
-
-    .line 364
-    invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v8
-
-    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     .line 365
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
-    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     .line 366
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
-    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     .line 367
-    invoke-virtual {v2, v6}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v8
+
+    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+
+    .line 368
+    invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v8
+
+    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
     .line 369
+    invoke-virtual {v2, v6}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 371
     new-instance v6, Landroid/widget/Button;
 
     invoke-direct {v6, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v7, 0x7f08004f
+    const v7, 0x7f08004e
 
-    .line 370
+    .line 372
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setId(I)V
 
-    .line 371
+    .line 373
     iget-boolean v7, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v7, :cond_9
@@ -1227,15 +1224,15 @@
     :goto_4
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 372
+    .line 374
     invoke-virtual {v6, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v7, 0x7f0700f2
 
-    .line 373
+    .line 375
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 374
+    .line 376
     new-instance v7, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v8, 0x42480000    # 50.0f
@@ -1246,53 +1243,53 @@
 
     invoke-direct {v7, v14, v9}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 375
+    .line 377
     iput v15, v7, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v8, 0x40a00000    # 5.0f
-
-    .line 376
-    invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v9
-
-    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
-
-    .line 377
-    invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v9
-
-    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     .line 378
     invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v9
 
-    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     .line 379
     invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v9
 
-    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     .line 380
+    invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v9
+
+    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+
+    .line 381
+    invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v9
+
+    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+
+    .line 382
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 383
+    .line 385
     new-instance v7, Landroid/widget/Button;
 
     invoke-direct {v7, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v8, 0x7f08004f
+    const v8, 0x7f08004e
 
-    .line 384
+    .line 386
     invoke-virtual {v7, v8}, Landroid/widget/Button;->setId(I)V
 
-    .line 385
+    .line 387
     iget-boolean v8, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v8, :cond_a
@@ -1307,15 +1304,15 @@
     :goto_5
     invoke-virtual {v7, v8}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 386
+    .line 388
     invoke-virtual {v7, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v8, 0x7f0700f2
 
-    .line 387
+    .line 389
     invoke-virtual {v7, v8}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 388
+    .line 390
     new-instance v8, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v9, 0x42480000    # 50.0f
@@ -1326,53 +1323,53 @@
 
     invoke-direct {v8, v14, v11}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 389
+    .line 391
     iput v15, v8, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v9, 0x40a00000    # 5.0f
-
-    .line 390
-    invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v11
-
-    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
-
-    .line 391
-    invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v11
-
-    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     .line 392
     invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v11
 
-    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     .line 393
     invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v11
 
-    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     .line 394
-    invoke-virtual {v7, v8}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v11
+
+    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+
+    .line 395
+    invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v11
+
+    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
     .line 396
+    invoke-virtual {v7, v8}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 398
     new-instance v8, Landroid/widget/Button;
 
     invoke-direct {v8, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v9, 0x7f08004f
+    const v9, 0x7f08004e
 
-    .line 397
+    .line 399
     invoke-virtual {v8, v9}, Landroid/widget/Button;->setId(I)V
 
-    .line 398
+    .line 400
     iget-boolean v9, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v9, :cond_b
@@ -1387,15 +1384,15 @@
     :goto_6
     invoke-virtual {v8, v9}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 399
+    .line 401
     invoke-virtual {v8, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v9, 0x7f0700f2
 
-    .line 400
+    .line 402
     invoke-virtual {v8, v9}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 401
+    .line 403
     new-instance v9, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v11, 0x42480000    # 50.0f
@@ -1406,53 +1403,53 @@
 
     invoke-direct {v9, v14, v11}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 402
+    .line 404
     iput v15, v9, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v11, 0x40a00000    # 5.0f
-
-    .line 403
-    invoke-static {v1, v11}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v12
-
-    iput v12, v9, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
-
-    .line 404
-    invoke-static {v1, v11}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v12
-
-    iput v12, v9, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     .line 405
     invoke-static {v1, v11}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v12
 
-    iput v12, v9, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+    iput v12, v9, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     .line 406
     invoke-static {v1, v11}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v12
 
-    iput v12, v9, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+    iput v12, v9, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     .line 407
-    invoke-virtual {v8, v9}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-static {v1, v11}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v12
+
+    iput v12, v9, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+
+    .line 408
+    invoke-static {v1, v11}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v12
+
+    iput v12, v9, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
     .line 409
+    invoke-virtual {v8, v9}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 411
     new-instance v11, Landroid/widget/Button;
 
     invoke-direct {v11, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v12, 0x7f08005c
+    const v12, 0x7f08005b
 
-    .line 410
+    .line 412
     invoke-virtual {v11, v12}, Landroid/widget/Button;->setId(I)V
 
-    .line 411
+    .line 413
     iget-boolean v12, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v12, :cond_c
@@ -1467,55 +1464,33 @@
     :goto_7
     invoke-virtual {v11, v12}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 412
+    .line 414
     invoke-virtual {v11, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v10, 0x7f0700f2
 
-    .line 413
+    .line 415
     invoke-virtual {v11, v10}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     const/16 v10, 0x11
 
-    .line 414
+    .line 416
     invoke-virtual {v11, v10}, Landroid/widget/Button;->setGravity(I)V
 
-    .line 415
+    .line 417
     invoke-virtual {v11, v9}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 416
+    .line 418
     new-instance v9, Landroid/widget/LinearLayout;
 
     invoke-direct {v9, v1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     const/4 v10, 0x0
 
-    .line 417
+    .line 419
     invoke-virtual {v9, v10}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
     const/high16 v12, 0x40a00000    # 5.0f
-
-    .line 419
-    invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v13
-
-    invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v14
-
-    invoke-virtual {v2, v13, v10, v14, v10}, Landroid/widget/Button;->setPadding(IIII)V
-
-    .line 420
-    invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v13
-
-    invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v14
-
-    invoke-virtual {v7, v13, v10, v14, v10}, Landroid/widget/Button;->setPadding(IIII)V
 
     .line 421
     invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
@@ -1526,7 +1501,7 @@
 
     move-result v14
 
-    invoke-virtual {v8, v13, v10, v14, v10}, Landroid/widget/Button;->setPadding(IIII)V
+    invoke-virtual {v2, v13, v10, v14, v10}, Landroid/widget/Button;->setPadding(IIII)V
 
     .line 422
     invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
@@ -1537,9 +1512,31 @@
 
     move-result v14
 
-    invoke-virtual {v11, v13, v10, v14, v10}, Landroid/widget/Button;->setPadding(IIII)V
+    invoke-virtual {v7, v13, v10, v14, v10}, Landroid/widget/Button;->setPadding(IIII)V
 
     .line 423
+    invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v13
+
+    invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v14
+
+    invoke-virtual {v8, v13, v10, v14, v10}, Landroid/widget/Button;->setPadding(IIII)V
+
+    .line 424
+    invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v13
+
+    invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v14
+
+    invoke-virtual {v11, v13, v10, v14, v10}, Landroid/widget/Button;->setPadding(IIII)V
+
+    .line 425
     invoke-static {v1, v12}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v13
@@ -1552,7 +1549,7 @@
 
     const-string v10, "question"
 
-    .line 425
+    .line 427
     invoke-virtual {v3, v10}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v10
@@ -1565,13 +1562,13 @@
 
     if-eqz v10, :cond_d
 
-    .line 426
+    .line 428
     invoke-virtual {v9, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     :cond_d
     const-string v10, "question"
 
-    .line 429
+    .line 431
     invoke-virtual {v3, v10}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v10
@@ -1584,13 +1581,13 @@
 
     if-eqz v10, :cond_e
 
-    .line 430
+    .line 432
     invoke-virtual {v9, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     :cond_e
     const-string v10, "question"
 
-    .line 433
+    .line 435
     invoke-virtual {v3, v10}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v10
@@ -1603,13 +1600,13 @@
 
     if-eqz v10, :cond_f
 
-    .line 434
+    .line 436
     invoke-virtual {v9, v7}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     :cond_f
     const-string v10, "question"
 
-    .line 436
+    .line 438
     invoke-virtual {v3, v10}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v10
@@ -1622,12 +1619,12 @@
 
     if-eqz v10, :cond_11
 
-    .line 437
+    .line 439
     invoke-virtual {v9, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     const-string v10, "question"
 
-    .line 438
+    .line 440
     invoke-virtual {v3, v10}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -1640,10 +1637,10 @@
 
     if-eqz v3, :cond_10
 
-    .line 439
+    .line 441
     invoke-virtual {v9, v11}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 441
+    .line 443
     :cond_10
     iget-object v3, v1, Ltw/edu/kmu/act/TBLGRATActivity;->tilte1:Landroid/widget/TextView;
 
@@ -1651,53 +1648,53 @@
 
     invoke-virtual {v3, v10}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 444
+    .line 446
     :cond_11
     iget-object v3, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v9}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 445
+    .line 447
     iget-object v3, v1, Ltw/edu/kmu/act/TBLGRATActivity;->root1:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3}, Landroid/widget/LinearLayout;->removeAllViews()V
 
-    .line 446
+    .line 448
     iget-object v3, v1, Ltw/edu/kmu/act/TBLGRATActivity;->root1:Landroid/widget/LinearLayout;
 
     iget-object v9, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v9}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 451
+    .line 453
     new-instance v3, Ltw/edu/kmu/act/TBLGRATActivity$4;
 
     invoke-direct {v3, v1, v5, v4}, Ltw/edu/kmu/act/TBLGRATActivity$4;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Landroid/widget/RadioGroup;Ljava/lang/String;)V
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 470
+    .line 472
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$5;
 
     invoke-direct {v2, v1, v5, v4}, Ltw/edu/kmu/act/TBLGRATActivity$5;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Landroid/widget/RadioGroup;Ljava/lang/String;)V
 
     invoke-virtual {v6, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 488
+    .line 490
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$6;
 
     invoke-direct {v2, v1, v5, v4}, Ltw/edu/kmu/act/TBLGRATActivity$6;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Landroid/widget/RadioGroup;Ljava/lang/String;)V
 
     invoke-virtual {v7, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 503
+    .line 505
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$7;
 
     invoke-direct {v2, v1, v5, v4}, Ltw/edu/kmu/act/TBLGRATActivity$7;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Landroid/widget/RadioGroup;Ljava/lang/String;)V
 
     invoke-virtual {v8, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 514
+    .line 516
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$8;
 
     invoke-direct {v2, v1, v4, v5}, Ltw/edu/kmu/act/TBLGRATActivity$8;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/lang/String;Landroid/widget/RadioGroup;)V
@@ -1709,26 +1706,26 @@
     :cond_12
     const-string v5, "3"
 
-    .line 543
+    .line 545
     invoke-virtual {v5, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
     if-eqz v5, :cond_1f
 
-    .line 545
+    .line 547
     new-instance v2, Landroid/widget/LinearLayout;
 
     invoke-direct {v2, v1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     iput-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
-    .line 546
+    .line 548
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v15}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 547
+    .line 549
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     const-string v5, "#AB1980E0"
@@ -1739,14 +1736,14 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
-    .line 549
+    .line 551
     new-instance v2, Landroid/widget/ScrollView;
 
     invoke-direct {v2, v1}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
 
     iput-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->scrollView:Landroid/widget/ScrollView;
 
-    .line 550
+    .line 552
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->scrollView:Landroid/widget/ScrollView;
 
     new-instance v5, Landroid/widget/RelativeLayout$LayoutParams;
@@ -1755,58 +1752,58 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/ScrollView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 552
+    .line 554
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     const-string v5, "timer"
 
-    .line 553
+    .line 555
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    .line 554
+    .line 556
     new-instance v5, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v5, v14, v14}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 555
+    .line 557
     iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v6, 0x40a00000    # 5.0f
-
-    .line 556
-    invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v8
-
-    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
-
-    .line 557
-    invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v8
-
-    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     .line 558
     invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
-    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     .line 559
     invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
-    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     .line 560
-    invoke-virtual {v2, v5}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v8
+
+    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     .line 561
+    invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v8
+
+    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+
+    .line 562
+    invoke-virtual {v2, v5}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 563
     sget-object v5, Landroid/graphics/Typeface;->MONOSPACE:Landroid/graphics/Typeface;
 
     invoke-virtual {v2, v5, v15}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
@@ -1815,40 +1812,40 @@
 
     const/4 v6, 0x2
 
-    .line 562
+    .line 564
     invoke-virtual {v2, v6, v5}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 563
+    .line 565
     invoke-virtual {v2, v10}, Landroid/widget/TextView;->setTextColor(I)V
 
     const-string v5, "00:00:00"
 
-    .line 564
+    .line 566
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     const v5, -0x777778
 
-    .line 565
+    .line 567
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setBackgroundColor(I)V
 
-    .line 568
+    .line 570
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 569
+    .line 571
     invoke-virtual {v2, v10}, Landroid/widget/TextView;->setTextColor(I)V
 
     const/4 v5, 0x2
 
     const/high16 v6, 0x41a00000    # 20.0f
 
-    .line 570
+    .line 572
     invoke-virtual {v2, v5, v6}, Landroid/widget/TextView;->setTextSize(IF)V
 
     const-string v5, "question"
 
-    .line 571
+    .line 573
     invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v5
@@ -1861,14 +1858,14 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 572
+    .line 574
     iget-object v5, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     const-string v2, "question"
 
-    .line 574
+    .line 576
     invoke-virtual {v3, v2}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
@@ -1879,12 +1876,12 @@
 
     move-result-object v2
 
-    .line 575
+    .line 577
     new-instance v5, Landroid/widget/ImageView;
 
     invoke-direct {v5, v1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 576
+    .line 578
     new-instance v6, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
@@ -1895,18 +1892,18 @@
 
     const/16 v7, 0x11
 
-    .line 577
+    .line 579
     iput v7, v6, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 578
+    .line 580
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 579
+    .line 581
     sget-object v6, Landroid/widget/ImageView$ScaleType;->CENTER_INSIDE:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 580
+    .line 582
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -1923,7 +1920,7 @@
 
     const-string v7, "question"
 
-    .line 581
+    .line 583
     invoke-virtual {v3, v7}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v7
@@ -1936,21 +1933,21 @@
 
     const-string v8, ""
 
-    .line 582
+    .line 584
     invoke-virtual {v8, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_14
 
-    .line 585
+    .line 587
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$9;
 
     invoke-direct {v2, v1, v7}, Ltw/edu/kmu/act/TBLGRATActivity$9;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/lang/String;)V
 
     invoke-virtual {v5, v2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 596
+    .line 599
     new-instance v2, Ltw/edu/kmu/tool/ImageDownloaderTask;
 
     invoke-virtual/range {p0 .. p0}, Ltw/edu/kmu/act/TBLGRATActivity;->getApplicationContext()Landroid/content/Context;
@@ -1973,17 +1970,17 @@
 
     invoke-virtual {v2, v8}, Ltw/edu/kmu/tool/ImageDownloaderTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 597
+    .line 600
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 598
+    .line 601
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 599
+    .line 602
     iget-boolean v5, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v5, :cond_13
@@ -1998,23 +1995,23 @@
     :goto_8
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 600
+    .line 603
     invoke-virtual {v2, v10}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 601
+    .line 604
     new-instance v5, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v5, v14, v14}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     const/16 v6, 0x11
 
-    .line 602
+    .line 605
     iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 603
+    .line 606
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 604
+    .line 607
     iget-object v5, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
@@ -2022,7 +2019,7 @@
     :cond_14
     const-string v2, "question"
 
-    .line 608
+    .line 611
     invoke-virtual {v3, v2}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
@@ -2035,14 +2032,14 @@
 
     const-string v5, "_"
 
-    .line 609
+    .line 612
     invoke-virtual {v2, v5}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v2
 
     const-string v5, "question"
 
-    .line 611
+    .line 614
     invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v5
@@ -2055,7 +2052,7 @@
 
     const/4 v6, 0x0
 
-    .line 612
+    .line 615
     :goto_9
     invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
 
@@ -2063,17 +2060,17 @@
 
     if-ge v6, v7, :cond_17
 
-    .line 613
+    .line 616
     invoke-virtual {v5, v6}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v7
 
-    .line 614
+    .line 617
     new-instance v8, Landroid/widget/CheckBox;
 
     invoke-direct {v8, v1}, Landroid/widget/CheckBox;-><init>(Landroid/content/Context;)V
 
-    .line 615
+    .line 618
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -2092,10 +2089,10 @@
 
     invoke-virtual {v8, v9}, Landroid/widget/CheckBox;->setTag(Ljava/lang/Object;)V
 
-    .line 616
+    .line 619
     invoke-virtual {v8, v10}, Landroid/widget/CheckBox;->setTextColor(I)V
 
-    .line 617
+    .line 620
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -2128,18 +2125,18 @@
 
     const-string v9, "optKey"
 
-    .line 618
+    .line 621
     invoke-virtual {v7, v9}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 
-    const v11, 0x7f08004f
+    const v11, 0x7f08004e
 
     invoke-virtual {v8, v11, v9}, Landroid/widget/CheckBox;->setTag(ILjava/lang/Object;)V
 
     const/4 v9, 0x0
 
-    .line 619
+    .line 622
     :goto_a
     array-length v11, v2
 
@@ -2147,7 +2144,7 @@
 
     const-string v11, "optKey"
 
-    .line 620
+    .line 623
     invoke-virtual {v7, v11}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
@@ -2160,7 +2157,7 @@
 
     if-eqz v11, :cond_15
 
-    .line 621
+    .line 624
     invoke-virtual {v8, v15}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     :cond_15
@@ -2168,7 +2165,7 @@
 
     goto :goto_a
 
-    .line 624
+    .line 627
     :cond_16
     iget-object v7, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
@@ -2176,18 +2173,18 @@
 
     goto :goto_9
 
-    .line 627
+    .line 630
     :cond_17
     new-instance v2, Landroid/widget/Button;
 
     invoke-direct {v2, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f08004f
+    const v6, 0x7f08004e
 
-    .line 628
+    .line 631
     invoke-virtual {v2, v6}, Landroid/widget/Button;->setId(I)V
 
-    .line 629
+    .line 632
     iget-boolean v6, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v6, :cond_18
@@ -2202,15 +2199,15 @@
     :goto_b
     invoke-virtual {v2, v6}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 630
+    .line 633
     invoke-virtual {v2, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v6, 0x7f0700f2
 
-    .line 631
+    .line 634
     invoke-virtual {v2, v6}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 632
+    .line 635
     new-instance v6, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v7, 0x42480000    # 50.0f
@@ -2221,53 +2218,53 @@
 
     invoke-direct {v6, v14, v8}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 633
+    .line 636
     iput v15, v6, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v7, 0x40a00000    # 5.0f
-
-    .line 634
-    invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v8
-
-    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
-
-    .line 635
-    invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v8
-
-    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
-
-    .line 636
-    invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v8
-
-    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     .line 637
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
-    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     .line 638
-    invoke-virtual {v2, v6}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v8
+
+    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
+
+    .line 639
+    invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v8
+
+    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     .line 640
+    invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v8
+
+    iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+
+    .line 641
+    invoke-virtual {v2, v6}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 643
     new-instance v6, Landroid/widget/Button;
 
     invoke-direct {v6, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v7, 0x7f08004f
+    const v7, 0x7f08004e
 
-    .line 641
+    .line 644
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setId(I)V
 
-    .line 642
+    .line 645
     iget-boolean v7, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v7, :cond_19
@@ -2282,15 +2279,15 @@
     :goto_c
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 643
+    .line 646
     invoke-virtual {v6, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v7, 0x7f0700f2
 
-    .line 644
+    .line 647
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 645
+    .line 648
     new-instance v7, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v8, 0x42480000    # 50.0f
@@ -2301,53 +2298,53 @@
 
     invoke-direct {v7, v14, v9}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 646
+    .line 649
     iput v15, v7, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v8, 0x40a00000    # 5.0f
-
-    .line 647
-    invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v9
-
-    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
-
-    .line 648
-    invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v9
-
-    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
-
-    .line 649
-    invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v9
-
-    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     .line 650
     invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v9
 
-    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     .line 651
-    invoke-virtual {v6, v7}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v9
+
+    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
+
+    .line 652
+    invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v9
+
+    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     .line 653
+    invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v9
+
+    iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+
+    .line 654
+    invoke-virtual {v6, v7}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 656
     new-instance v7, Landroid/widget/Button;
 
     invoke-direct {v7, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v8, 0x7f08004f
+    const v8, 0x7f08004e
 
-    .line 654
+    .line 657
     invoke-virtual {v7, v8}, Landroid/widget/Button;->setId(I)V
 
-    .line 655
+    .line 658
     iget-boolean v8, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v8, :cond_1a
@@ -2362,15 +2359,15 @@
     :goto_d
     invoke-virtual {v7, v8}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 656
+    .line 659
     invoke-virtual {v7, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v8, 0x7f0700f2
 
-    .line 657
+    .line 660
     invoke-virtual {v7, v8}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 658
+    .line 661
     new-instance v8, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v9, 0x42480000    # 50.0f
@@ -2381,53 +2378,53 @@
 
     invoke-direct {v8, v14, v9}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 659
+    .line 662
     iput v15, v8, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v9, 0x40a00000    # 5.0f
-
-    .line 660
-    invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v11
-
-    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
-
-    .line 661
-    invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v11
-
-    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
-
-    .line 662
-    invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v11
-
-    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     .line 663
     invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v11
 
-    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     .line 664
-    invoke-virtual {v7, v8}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v11
+
+    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
+
+    .line 665
+    invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v11
+
+    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     .line 666
+    invoke-static {v1, v9}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v11
+
+    iput v11, v8, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+
+    .line 667
+    invoke-virtual {v7, v8}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 669
     new-instance v9, Landroid/widget/Button;
 
     invoke-direct {v9, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v11, 0x7f08005c
+    const v11, 0x7f08005b
 
-    .line 667
+    .line 670
     invoke-virtual {v9, v11}, Landroid/widget/Button;->setId(I)V
 
-    .line 668
+    .line 671
     iget-boolean v11, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v11, :cond_1b
@@ -2442,35 +2439,35 @@
     :goto_e
     invoke-virtual {v9, v11}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 669
+    .line 672
     invoke-virtual {v9, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v10, 0x7f0700f2
 
-    .line 670
+    .line 673
     invoke-virtual {v9, v10}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     const/16 v10, 0x11
 
-    .line 671
+    .line 674
     invoke-virtual {v9, v10}, Landroid/widget/Button;->setGravity(I)V
 
-    .line 672
+    .line 675
     invoke-virtual {v9, v8}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 673
+    .line 676
     new-instance v8, Landroid/widget/LinearLayout;
 
     invoke-direct {v8, v1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     const/4 v10, 0x0
 
-    .line 674
+    .line 677
     invoke-virtual {v8, v10}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
     const/high16 v11, 0x40a00000    # 5.0f
 
-    .line 676
+    .line 679
     invoke-static {v1, v11}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v12
@@ -2481,7 +2478,7 @@
 
     invoke-virtual {v2, v12, v10, v13, v10}, Landroid/widget/Button;->setPadding(IIII)V
 
-    .line 677
+    .line 680
     invoke-static {v1, v11}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v12
@@ -2492,7 +2489,7 @@
 
     invoke-virtual {v6, v12, v10, v13, v10}, Landroid/widget/Button;->setPadding(IIII)V
 
-    .line 678
+    .line 681
     invoke-static {v1, v11}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v12
@@ -2503,7 +2500,7 @@
 
     invoke-virtual {v7, v12, v10, v13, v10}, Landroid/widget/Button;->setPadding(IIII)V
 
-    .line 679
+    .line 682
     invoke-static {v1, v11}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v12
@@ -2516,7 +2513,7 @@
 
     const-string v10, "question"
 
-    .line 681
+    .line 684
     invoke-virtual {v3, v10}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v10
@@ -2529,13 +2526,13 @@
 
     if-eqz v10, :cond_1c
 
-    .line 682
+    .line 685
     invoke-virtual {v8, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     :cond_1c
     const-string v10, "question"
 
-    .line 684
+    .line 687
     invoke-virtual {v3, v10}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v10
@@ -2548,13 +2545,13 @@
 
     if-eqz v10, :cond_1d
 
-    .line 685
+    .line 688
     invoke-virtual {v8, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     :cond_1d
     const-string v10, "question"
 
-    .line 687
+    .line 690
     invoke-virtual {v3, v10}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -2567,59 +2564,59 @@
 
     if-eqz v3, :cond_1e
 
-    .line 688
+    .line 691
     invoke-virtual {v8, v7}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 689
+    .line 692
     invoke-virtual {v8, v9}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 690
+    .line 693
     iget-object v3, v1, Ltw/edu/kmu/act/TBLGRATActivity;->tilte1:Landroid/widget/TextView;
 
     const/4 v10, 0x0
 
     invoke-virtual {v3, v10}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 694
+    .line 697
     :cond_1e
     iget-object v3, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 695
+    .line 698
     iget-object v3, v1, Ltw/edu/kmu/act/TBLGRATActivity;->root1:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3}, Landroid/widget/LinearLayout;->removeAllViews()V
 
-    .line 696
+    .line 699
     iget-object v3, v1, Ltw/edu/kmu/act/TBLGRATActivity;->root1:Landroid/widget/LinearLayout;
 
     iget-object v8, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 701
+    .line 704
     new-instance v3, Ltw/edu/kmu/act/TBLGRATActivity$10;
 
     invoke-direct {v3, v1, v5, v4}, Ltw/edu/kmu/act/TBLGRATActivity$10;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Lorg/json/JSONArray;Ljava/lang/String;)V
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 737
+    .line 740
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$11;
 
     invoke-direct {v2, v1, v5, v4}, Ltw/edu/kmu/act/TBLGRATActivity$11;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Lorg/json/JSONArray;Ljava/lang/String;)V
 
     invoke-virtual {v6, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 765
+    .line 768
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$12;
 
     invoke-direct {v2, v1, v5, v4}, Ltw/edu/kmu/act/TBLGRATActivity$12;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Lorg/json/JSONArray;Ljava/lang/String;)V
 
     invoke-virtual {v7, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 790
+    .line 793
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$13;
 
     invoke-direct {v2, v1, v5, v4}, Ltw/edu/kmu/act/TBLGRATActivity$13;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Lorg/json/JSONArray;Ljava/lang/String;)V
@@ -2631,26 +2628,26 @@
     :cond_1f
     const-string v5, "4"
 
-    .line 822
+    .line 825
     invoke-virtual {v5, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2a
 
-    .line 824
+    .line 827
     new-instance v2, Landroid/widget/LinearLayout;
 
     invoke-direct {v2, v1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     iput-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
-    .line 825
+    .line 828
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v15}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 826
+    .line 829
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     const-string v5, "#AB1980E0"
@@ -2661,14 +2658,14 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
-    .line 828
+    .line 831
     new-instance v2, Landroid/widget/ScrollView;
 
     invoke-direct {v2, v1}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
 
     iput-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->scrollView:Landroid/widget/ScrollView;
 
-    .line 829
+    .line 832
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->scrollView:Landroid/widget/ScrollView;
 
     new-instance v5, Landroid/widget/RelativeLayout$LayoutParams;
@@ -2677,58 +2674,58 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/ScrollView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 831
+    .line 834
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     const-string v5, "timer"
 
-    .line 832
+    .line 835
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    .line 833
+    .line 836
     new-instance v5, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v5, v14, v14}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 834
+    .line 837
     iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v6, 0x40a00000    # 5.0f
-
-    .line 835
-    invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v8
-
-    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
-
-    .line 836
-    invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v8
-
-    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
-
-    .line 837
-    invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
-
-    move-result v8
-
-    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     .line 838
     invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
-    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     .line 839
-    invoke-virtual {v2, v5}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v8
+
+    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     .line 840
+    invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v8
+
+    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+
+    .line 841
+    invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
+
+    move-result v8
+
+    iput v8, v5, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+
+    .line 842
+    invoke-virtual {v2, v5}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 843
     sget-object v5, Landroid/graphics/Typeface;->MONOSPACE:Landroid/graphics/Typeface;
 
     invoke-virtual {v2, v5, v15}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
@@ -2737,40 +2734,40 @@
 
     const/4 v6, 0x2
 
-    .line 841
+    .line 844
     invoke-virtual {v2, v6, v5}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 842
+    .line 845
     invoke-virtual {v2, v10}, Landroid/widget/TextView;->setTextColor(I)V
 
     const-string v5, "00:00:00"
 
-    .line 843
+    .line 846
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     const v5, -0x777778
 
-    .line 844
+    .line 847
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setBackgroundColor(I)V
 
-    .line 847
+    .line 850
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 848
+    .line 851
     invoke-virtual {v2, v10}, Landroid/widget/TextView;->setTextColor(I)V
 
     const/4 v5, 0x2
 
     const/high16 v6, 0x41a00000    # 20.0f
 
-    .line 849
+    .line 852
     invoke-virtual {v2, v5, v6}, Landroid/widget/TextView;->setTextSize(IF)V
 
     const-string v5, "question"
 
-    .line 850
+    .line 853
     invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v5
@@ -2783,14 +2780,14 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 851
+    .line 854
     iget-object v5, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     const-string v2, "question"
 
-    .line 853
+    .line 856
     invoke-virtual {v3, v2}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
@@ -2801,12 +2798,12 @@
 
     move-result-object v2
 
-    .line 854
+    .line 857
     new-instance v5, Landroid/widget/ImageView;
 
     invoke-direct {v5, v1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 855
+    .line 858
     new-instance v6, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
@@ -2817,18 +2814,18 @@
 
     const/16 v8, 0x11
 
-    .line 856
+    .line 859
     iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 857
+    .line 860
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 858
+    .line 861
     sget-object v6, Landroid/widget/ImageView$ScaleType;->CENTER_INSIDE:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 859
+    .line 862
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -2845,7 +2842,7 @@
 
     const-string v8, "question"
 
-    .line 860
+    .line 863
     invoke-virtual {v3, v8}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v8
@@ -2858,26 +2855,21 @@
 
     const-string v9, ""
 
-    .line 861
+    .line 864
     invoke-virtual {v9, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_21
 
-    const/4 v2, 0x0
-
-    .line 864
-    iput-boolean v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isSendTp:Z
-
-    .line 865
+    .line 867
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$14;
 
     invoke-direct {v2, v1, v8}, Ltw/edu/kmu/act/TBLGRATActivity$14;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/lang/String;)V
 
     invoke-virtual {v5, v2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 875
+    .line 879
     new-instance v2, Ltw/edu/kmu/tool/ImageDownloaderTask;
 
     invoke-virtual/range {p0 .. p0}, Ltw/edu/kmu/act/TBLGRATActivity;->getApplicationContext()Landroid/content/Context;
@@ -2900,17 +2892,17 @@
 
     invoke-virtual {v2, v9}, Ltw/edu/kmu/tool/ImageDownloaderTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 876
+    .line 880
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 877
+    .line 881
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 878
+    .line 882
     iget-boolean v5, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v5, :cond_20
@@ -2925,23 +2917,23 @@
     :goto_f
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 879
+    .line 883
     invoke-virtual {v2, v10}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 880
+    .line 884
     new-instance v5, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v5, v14, v14}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     const/16 v6, 0x11
 
-    .line 881
+    .line 885
     iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 882
+    .line 886
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 883
+    .line 887
     iget-object v5, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
@@ -2949,7 +2941,7 @@
     :cond_21
     const-string v2, "question"
 
-    .line 886
+    .line 890
     invoke-virtual {v3, v2}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
@@ -2960,12 +2952,12 @@
 
     move-result-object v2
 
-    .line 887
+    .line 891
     new-instance v5, Landroid/widget/EditText;
 
     invoke-direct {v5, v1}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
-    .line 889
+    .line 893
     new-instance v6, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
@@ -2976,54 +2968,54 @@
 
     const/high16 v7, 0x40a00000    # 5.0f
 
-    .line 890
+    .line 894
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
     iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 891
+    .line 895
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
     iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 892
+    .line 896
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
     iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 893
+    .line 897
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
     iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 894
+    .line 898
     invoke-virtual {v5, v6}, Landroid/widget/EditText;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 895
+    .line 899
     invoke-virtual {v5, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     const-string v2, "edit1"
 
-    .line 896
+    .line 900
     invoke-virtual {v5, v2}, Landroid/widget/EditText;->setTag(Ljava/lang/Object;)V
 
     const/high16 v2, -0x1000000
 
-    .line 897
+    .line 901
     invoke-virtual {v5, v2}, Landroid/widget/EditText;->setTextColor(I)V
 
-    .line 898
+    .line 902
     invoke-virtual {v5, v10}, Landroid/widget/EditText;->setBackgroundColor(I)V
 
-    .line 899
+    .line 903
     iget-boolean v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v2, :cond_22
@@ -3038,22 +3030,22 @@
     :goto_10
     invoke-virtual {v5, v2}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
-    .line 900
+    .line 904
     iget-object v2, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 902
+    .line 906
     new-instance v2, Landroid/widget/Button;
 
     invoke-direct {v2, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f08004f
+    const v5, 0x7f08004e
 
-    .line 903
+    .line 907
     invoke-virtual {v2, v5}, Landroid/widget/Button;->setId(I)V
 
-    .line 904
+    .line 908
     iget-boolean v5, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v5, :cond_23
@@ -3068,15 +3060,15 @@
     :goto_11
     invoke-virtual {v2, v5}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 905
+    .line 909
     invoke-virtual {v2, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v5, 0x7f0700f2
 
-    .line 906
+    .line 910
     invoke-virtual {v2, v5}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 907
+    .line 911
     new-instance v5, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v6, 0x42480000    # 50.0f
@@ -3087,53 +3079,53 @@
 
     invoke-direct {v5, v14, v7}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 908
+    .line 912
     iput v15, v5, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v6, 0x40a00000    # 5.0f
 
-    .line 909
+    .line 913
     invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v7
 
     iput v7, v5, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 910
+    .line 914
     invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v7
 
     iput v7, v5, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 911
+    .line 915
     invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v7
 
     iput v7, v5, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 912
+    .line 916
     invoke-static {v1, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v7
 
     iput v7, v5, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 913
+    .line 917
     invoke-virtual {v2, v5}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 915
+    .line 919
     new-instance v5, Landroid/widget/Button;
 
     invoke-direct {v5, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f08004f
+    const v6, 0x7f08004e
 
-    .line 916
+    .line 920
     invoke-virtual {v5, v6}, Landroid/widget/Button;->setId(I)V
 
-    .line 917
+    .line 921
     iget-boolean v6, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v6, :cond_24
@@ -3148,15 +3140,15 @@
     :goto_12
     invoke-virtual {v5, v6}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 918
+    .line 922
     invoke-virtual {v5, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v6, 0x7f0700f2
 
-    .line 919
+    .line 923
     invoke-virtual {v5, v6}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 920
+    .line 924
     new-instance v6, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v7, 0x42480000    # 50.0f
@@ -3167,53 +3159,53 @@
 
     invoke-direct {v6, v14, v8}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 921
+    .line 925
     iput v15, v6, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v7, 0x40a00000    # 5.0f
 
-    .line 922
+    .line 926
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
     iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 923
+    .line 927
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
     iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 924
+    .line 928
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
     iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 925
+    .line 929
     invoke-static {v1, v7}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v8
 
     iput v8, v6, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 926
+    .line 930
     invoke-virtual {v5, v6}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 928
+    .line 932
     new-instance v6, Landroid/widget/Button;
 
     invoke-direct {v6, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v7, 0x7f08004f
+    const v7, 0x7f08004e
 
-    .line 929
+    .line 933
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setId(I)V
 
-    .line 930
+    .line 934
     iget-boolean v7, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v7, :cond_25
@@ -3228,15 +3220,15 @@
     :goto_13
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 931
+    .line 935
     invoke-virtual {v6, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v7, 0x7f0700f2
 
-    .line 932
+    .line 936
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 933
+    .line 937
     new-instance v7, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v8, 0x42480000    # 50.0f
@@ -3247,53 +3239,53 @@
 
     invoke-direct {v7, v14, v8}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 934
+    .line 938
     iput v15, v7, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v8, 0x40a00000    # 5.0f
 
-    .line 935
+    .line 939
     invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v9
 
     iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 936
+    .line 940
     invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v9
 
     iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 937
+    .line 941
     invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v9
 
     iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 938
+    .line 942
     invoke-static {v1, v8}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v9
 
     iput v9, v7, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 939
+    .line 943
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 941
+    .line 945
     new-instance v8, Landroid/widget/Button;
 
     invoke-direct {v8, v1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    const v9, 0x7f08005c
+    const v9, 0x7f08005b
 
-    .line 942
+    .line 946
     invoke-virtual {v8, v9}, Landroid/widget/Button;->setId(I)V
 
-    .line 943
+    .line 947
     iget-boolean v9, v1, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v9, :cond_26
@@ -3308,35 +3300,35 @@
     :goto_14
     invoke-virtual {v8, v9}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 944
+    .line 948
     invoke-virtual {v8, v10}, Landroid/widget/Button;->setTextColor(I)V
 
     const v9, 0x7f0700f2
 
-    .line 945
+    .line 949
     invoke-virtual {v8, v9}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     const/16 v9, 0x11
 
-    .line 946
+    .line 950
     invoke-virtual {v8, v9}, Landroid/widget/Button;->setGravity(I)V
 
-    .line 947
+    .line 951
     invoke-virtual {v8, v7}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 948
+    .line 952
     new-instance v7, Landroid/widget/LinearLayout;
 
     invoke-direct {v7, v1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     const/4 v9, 0x0
 
-    .line 949
+    .line 953
     invoke-virtual {v7, v9}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
     const/high16 v10, 0x40a00000    # 5.0f
 
-    .line 951
+    .line 955
     invoke-static {v1, v10}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v11
@@ -3347,7 +3339,7 @@
 
     invoke-virtual {v2, v11, v9, v12, v9}, Landroid/widget/Button;->setPadding(IIII)V
 
-    .line 952
+    .line 956
     invoke-static {v1, v10}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v11
@@ -3358,7 +3350,7 @@
 
     invoke-virtual {v5, v11, v9, v12, v9}, Landroid/widget/Button;->setPadding(IIII)V
 
-    .line 953
+    .line 957
     invoke-static {v1, v10}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v11
@@ -3369,7 +3361,7 @@
 
     invoke-virtual {v6, v11, v9, v12, v9}, Landroid/widget/Button;->setPadding(IIII)V
 
-    .line 954
+    .line 958
     invoke-static {v1, v10}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v11
@@ -3382,7 +3374,7 @@
 
     const-string v9, "question"
 
-    .line 956
+    .line 960
     invoke-virtual {v3, v9}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v9
@@ -3395,13 +3387,13 @@
 
     if-eqz v9, :cond_27
 
-    .line 957
+    .line 961
     invoke-virtual {v7, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     :cond_27
     const-string v9, "question"
 
-    .line 959
+    .line 963
     invoke-virtual {v3, v9}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v9
@@ -3414,13 +3406,13 @@
 
     if-eqz v9, :cond_28
 
-    .line 960
+    .line 964
     invoke-virtual {v7, v5}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     :cond_28
     const-string v9, "question"
 
-    .line 962
+    .line 966
     invoke-virtual {v3, v9}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -3433,59 +3425,59 @@
 
     if-eqz v3, :cond_29
 
-    .line 963
+    .line 967
     invoke-virtual {v7, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 964
+    .line 968
     invoke-virtual {v7, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 965
+    .line 969
     iget-object v3, v1, Ltw/edu/kmu/act/TBLGRATActivity;->tilte1:Landroid/widget/TextView;
 
     const/4 v9, 0x0
 
     invoke-virtual {v3, v9}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 968
+    .line 972
     :cond_29
     iget-object v3, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v7}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 969
+    .line 973
     iget-object v3, v1, Ltw/edu/kmu/act/TBLGRATActivity;->root1:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3}, Landroid/widget/LinearLayout;->removeAllViews()V
 
-    .line 970
+    .line 974
     iget-object v3, v1, Ltw/edu/kmu/act/TBLGRATActivity;->root1:Landroid/widget/LinearLayout;
 
     iget-object v7, v1, Ltw/edu/kmu/act/TBLGRATActivity;->alertView:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v7}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 974
+    .line 978
     new-instance v3, Ltw/edu/kmu/act/TBLGRATActivity$15;
 
     invoke-direct {v3, v1, v4}, Ltw/edu/kmu/act/TBLGRATActivity$15;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/lang/String;)V
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 990
+    .line 994
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$16;
 
     invoke-direct {v2, v1, v4}, Ltw/edu/kmu/act/TBLGRATActivity$16;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/lang/String;)V
 
     invoke-virtual {v5, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 1005
+    .line 1009
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$17;
 
     invoke-direct {v2, v1, v4}, Ltw/edu/kmu/act/TBLGRATActivity$17;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/lang/String;)V
 
     invoke-virtual {v6, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 1016
+    .line 1020
     new-instance v2, Ltw/edu/kmu/act/TBLGRATActivity$18;
 
     invoke-direct {v2, v1, v4}, Ltw/edu/kmu/act/TBLGRATActivity$18;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/lang/String;)V
@@ -3501,7 +3493,7 @@
 
     move-object v2, v0
 
-    .line 1038
+    .line 1042
     invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_2a
@@ -3512,14 +3504,14 @@
 .method private setCountDownTime()V
     .locals 7
 
-    .line 174
+    .line 175
     sget-object v0, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "setCountDownTime start "
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 176
+    .line 177
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->bundle:Landroid/os/Bundle;
 
     const-string v1, "etime"
@@ -3528,7 +3520,7 @@
 
     move-result-object v0
 
-    .line 177
+    .line 178
     sget-object v1, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -3549,21 +3541,21 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 179
+    .line 180
     new-instance v1, Ljava/text/SimpleDateFormat;
 
     const-string v2, "yyyyMMddHHmmss"
 
     invoke-direct {v1, v2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    .line 180
+    .line 181
     new-instance v2, Ljava/text/SimpleDateFormat;
 
     const-string v3, "yyyy-MM-dd HH:mm"
 
     invoke-direct {v2, v3}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    .line 181
+    .line 182
     iget-object v3, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctServerTime:Ljava/lang/String;
 
     invoke-virtual {p0, v3, v1, v0, v2}, Ltw/edu/kmu/act/TBLGRATActivity;->dateDiff(Ljava/lang/String;Ljava/text/SimpleDateFormat;Ljava/lang/String;Ljava/text/SimpleDateFormat;)J
@@ -3572,10 +3564,10 @@
 
     const-wide/16 v2, 0x3e8
 
-    .line 182
+    .line 183
     div-long v2, v0, v2
 
-    .line 183
+    .line 184
     sget-object v4, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -3594,7 +3586,7 @@
 
     invoke-static {v4, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 185
+    .line 186
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -3615,21 +3607,21 @@
 
     iput v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctPeriodCount:I
 
-    .line 186
+    .line 187
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     iput-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctHandler:Landroid/os/Handler;
 
-    .line 187
+    .line 188
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctHandler:Landroid/os/Handler;
 
     iget-object v1, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctRunnable:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 188
+    .line 189
     sget-object v0, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3656,7 +3648,7 @@
 .method public buttonEffect(Landroid/widget/Button;)V
     .locals 1
 
-    .line 147
+    .line 148
     new-instance v0, Ltw/edu/kmu/act/TBLGRATActivity$2;
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/TBLGRATActivity$2;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;)V
@@ -3671,7 +3663,7 @@
 
     const-wide/16 v0, 0x0
 
-    .line 1406
+    .line 1411
     :try_start_0
     invoke-virtual {p4, p3}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
@@ -3695,22 +3687,22 @@
 
     const-wide/16 p1, 0x3e8
 
-    .line 1407
+    .line 1412
     div-long p1, v0, p1
 
     const-wide/32 p1, 0xea60
 
-    .line 1408
+    .line 1413
     div-long p1, v0, p1
 
     const-wide/32 p1, 0x36ee80
 
-    .line 1409
+    .line 1414
     div-long p1, v0, p1
 
     const-wide/32 p1, 0x5265c00
 
-    .line 1410
+    .line 1415
     div-long p1, v0, p1
     :try_end_0
     .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
@@ -3720,7 +3712,7 @@
     :catch_0
     move-exception p1
 
-    .line 1413
+    .line 1418
     invoke-virtual {p1}, Ljava/text/ParseException;->printStackTrace()V
 
     :goto_0
@@ -3730,7 +3722,7 @@
 .method public dateDiff4Phone(Ljava/lang/String;)J
     .locals 8
 
-    .line 1379
+    .line 1384
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v1, "yyyyMMddHHmmss"
@@ -3739,13 +3731,13 @@
 
     const-wide/16 v1, 0x0
 
-    .line 1381
+    .line 1386
     :try_start_0
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v3
 
-    .line 1382
+    .line 1387
     invoke-virtual {v3}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v3
@@ -3754,12 +3746,12 @@
 
     move-result-object v3
 
-    .line 1384
+    .line 1389
     invoke-virtual {v0, p1}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p1
 
-    .line 1385
+    .line 1390
     invoke-virtual {p1}, Ljava/util/Date;->getTime()J
 
     move-result-wide v4
@@ -3778,22 +3770,22 @@
 
     const-wide/16 v3, 0x3e8
 
-    .line 1386
+    .line 1391
     div-long v3, v1, v3
 
     const-wide/32 v3, 0xea60
 
-    .line 1387
+    .line 1392
     div-long v3, v1, v3
 
     const-wide/32 v3, 0x36ee80
 
-    .line 1388
+    .line 1393
     div-long v3, v1, v3
 
     const-wide/32 v3, 0x5265c00
 
-    .line 1389
+    .line 1394
     div-long v3, v1, v3
     :try_end_0
     .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
@@ -3803,7 +3795,7 @@
     :catch_0
     move-exception p1
 
-    .line 1392
+    .line 1397
     invoke-virtual {p1}, Ljava/text/ParseException;->printStackTrace()V
 
     :goto_0
@@ -3813,17 +3805,17 @@
 .method drawableToBitmap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
     .locals 5
 
-    .line 210
+    .line 211
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v0
 
-    .line 211
+    .line 212
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v1
 
-    .line 212
+    .line 213
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getOpacity()I
 
     move-result v2
@@ -3839,23 +3831,23 @@
     :cond_0
     sget-object v2, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    .line 213
+    .line 214
     :goto_0
     invoke-static {v0, v1, v2}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    .line 214
+    .line 215
     new-instance v3, Landroid/graphics/Canvas;
 
     invoke-direct {v3, v2}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
     const/4 v4, 0x0
 
-    .line 215
+    .line 216
     invoke-virtual {p1, v4, v4, v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 216
+    .line 217
     invoke-virtual {p1, v3}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     return-object v2
@@ -3864,7 +3856,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00d7
+    const v0, 0x7f0a00d9
 
     return v0
 .end method
@@ -3872,28 +3864,28 @@
 .method public onBackPressed()V
     .locals 3
 
-    .line 1959
+    .line 1964
     sget-object v0, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "onBackPressed"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1960
+    .line 1965
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     const-string v1, "\u78ba\u5b9a\u8981\u96e2\u958b\u55ce?"
 
-    .line 1961
+    .line 1966
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0c012e
+    const v1, 0x7f0c012a
 
-    .line 1962
+    .line 1967
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/TBLGRATActivity;->getStringById(I)Ljava/lang/String;
 
     move-result-object v1
@@ -3906,9 +3898,9 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c0133
+    const v1, 0x7f0c012f
 
-    .line 1971
+    .line 1976
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/TBLGRATActivity;->getStringById(I)Ljava/lang/String;
 
     move-result-object v1
@@ -3921,7 +3913,7 @@
 
     move-result-object v0
 
-    .line 1977
+    .line 1982
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     return-void
@@ -3930,10 +3922,19 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
 
-    .line 92
+    .line 93
     invoke-super {p0, p1}, Ltw/edu/kmu/act/BasicActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 96
+    .line 95
+    invoke-virtual {p0}, Ltw/edu/kmu/act/TBLGRATActivity;->getWindow()Landroid/view/Window;
+
+    move-result-object p1
+
+    const/16 v0, 0x80
+
+    invoke-virtual {p1, v0, v0}, Landroid/view/Window;->setFlags(II)V
+
+    .line 97
     invoke-virtual {p0}, Ltw/edu/kmu/act/TBLGRATActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
@@ -3944,7 +3945,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity;->bundle:Landroid/os/Bundle;
 
-    .line 98
+    .line 99
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3969,13 +3970,13 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLGRATActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 100
+    .line 101
     invoke-direct {p0}, Ltw/edu/kmu/act/TBLGRATActivity;->initView()V
 
-    .line 102
+    .line 103
     invoke-direct {p0}, Ltw/edu/kmu/act/TBLGRATActivity;->initHandler()V
 
-    .line 104
+    .line 105
     new-instance p1, Ltw/edu/kmu/act/TBLGRATActivity$GetServerTime;
 
     const/4 v0, 0x0
@@ -3984,7 +3985,7 @@
 
     const/4 v0, 0x1
 
-    .line 105
+    .line 106
     new-array v0, v0, [Ljava/lang/String;
 
     const-string v1, ""
@@ -4001,23 +4002,23 @@
 .method protected onDestroy()V
     .locals 2
 
-    .line 2010
+    .line 2015
     sget-object v0, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "onDestroy start"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2011
+    .line 2016
     invoke-super {p0}, Ltw/edu/kmu/act/BasicActivity;->onDestroy()V
 
-    .line 2013
+    .line 2018
     :try_start_0
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
-    .line 2014
+    .line 2019
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctHandler:Landroid/os/Handler;
 
     iget-object v1, p0, Ltw/edu/kmu/act/TBLGRATActivity;->ctRunnable:Ljava/lang/Runnable;
@@ -4031,7 +4032,7 @@
     :catch_0
     move-exception v0
 
-    .line 2017
+    .line 2022
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_0
@@ -4042,7 +4043,7 @@
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 0
 
-    .line 1984
+    .line 1989
     invoke-super {p0, p1, p2}, Ltw/edu/kmu/act/BasicActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result p1
@@ -4053,26 +4054,26 @@
 .method protected onPause()V
     .locals 2
 
-    .line 1996
+    .line 2001
     sget-object v0, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "onPause start"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1997
+    .line 2002
     iget-boolean v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->isSendTp:Z
 
     if-eqz v0, :cond_0
 
-    .line 1998
+    .line 2003
     sget-object v0, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "\u4e2d\u9014\u96e2\u958b\u4e86\u5594"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1999
+    .line 2004
     new-instance v0, Ltw/edu/kmu/act/TBLGRATActivity$SendBlockTp;
 
     const/4 v1, 0x0
@@ -4081,14 +4082,14 @@
 
     const/4 v1, 0x0
 
-    .line 2000
+    .line 2005
     new-array v1, v1, [Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ltw/edu/kmu/act/TBLGRATActivity$SendBlockTp;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 
-    .line 2002
+    .line 2007
     :cond_0
     sget-object v0, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
@@ -4096,7 +4097,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2005
+    .line 2010
     :goto_0
     invoke-super {p0}, Ltw/edu/kmu/act/BasicActivity;->onPause()V
 
@@ -4106,7 +4107,7 @@
 .method protected onResume()V
     .locals 2
 
-    .line 1990
+    .line 1995
     sget-object v0, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "onResume"
@@ -4115,10 +4116,10 @@
 
     const/4 v0, 0x1
 
-    .line 1991
+    .line 1996
     iput-boolean v0, p0, Ltw/edu/kmu/act/TBLGRATActivity;->isSendTp:Z
 
-    .line 1992
+    .line 1997
     invoke-super {p0}, Ltw/edu/kmu/act/BasicActivity;->onResume()V
 
     return-void
@@ -4138,12 +4139,12 @@
         }
     .end annotation
 
-    .line 1786
+    .line 1791
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 1789
+    .line 1794
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -4153,7 +4154,7 @@
 
     if-le v1, v2, :cond_0
 
-    .line 1790
+    .line 1795
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
@@ -4164,12 +4165,12 @@
 
     move-result-object p1
 
-    .line 1791
+    .line 1796
     invoke-virtual {p1}, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
 
     move-result-object v1
 
-    .line 1792
+    .line 1797
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -4177,14 +4178,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 1793
+    .line 1798
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/String;
 
-    .line 1794
+    .line 1799
     invoke-virtual {p1, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -4202,7 +4203,7 @@
     :catch_0
     move-exception p1
 
-    .line 1799
+    .line 1804
     sget-object v1, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -4245,12 +4246,12 @@
         }
     .end annotation
 
-    .line 1808
+    .line 1813
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1811
+    .line 1816
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -4260,7 +4261,7 @@
 
     if-le v1, v2, :cond_2
 
-    .line 1812
+    .line 1817
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
@@ -4271,7 +4272,7 @@
 
     const/4 p2, 0x0
 
-    .line 1813
+    .line 1818
     :goto_0
     invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
 
@@ -4279,29 +4280,29 @@
 
     if-ge p2, v1, :cond_2
 
-    .line 1814
+    .line 1819
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 1815
+    .line 1820
     invoke-virtual {p1, p2}, Lorg/json/JSONArray;->isNull(I)Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 1816
+    .line 1821
     invoke-virtual {p1, p2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v2
 
-    .line 1817
+    .line 1822
     invoke-virtual {v2}, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
 
     move-result-object v3
 
-    .line 1818
+    .line 1823
     :goto_1
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
@@ -4309,14 +4310,14 @@
 
     if-eqz v4, :cond_0
 
-    .line 1819
+    .line 1824
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Ljava/lang/String;
 
-    .line 1820
+    .line 1825
     invoke-virtual {v2, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
@@ -4329,7 +4330,7 @@
 
     goto :goto_1
 
-    .line 1822
+    .line 1827
     :cond_0
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_0
@@ -4343,7 +4344,7 @@
     :catch_0
     move-exception p1
 
-    .line 1828
+    .line 1833
     sget-object p2, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -4380,39 +4381,39 @@
 
     move-object/from16 v0, p0
 
-    .line 1047
+    .line 1051
     new-instance v1, Landroid/widget/LinearLayout;
 
     invoke-direct {v1, v0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     const/4 v2, 0x1
 
-    .line 1048
+    .line 1052
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
     const-string v3, "#FFFFFF"
 
-    .line 1049
+    .line 1053
     invoke-static {v3}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     move-result v3
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
-    .line 1051
+    .line 1055
     new-instance v3, Landroid/widget/LinearLayout;
 
     invoke-direct {v3, v0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    .line 1052
+    .line 1056
     invoke-virtual {v3, v2}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
     const v4, 0x7f0700f4
 
-    .line 1053
+    .line 1057
     invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
-    .line 1056
+    .line 1060
     new-instance v5, Landroid/widget/TextView;
 
     invoke-direct {v5, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
@@ -4421,15 +4422,15 @@
 
     const/4 v7, 0x2
 
-    .line 1057
+    .line 1061
     invoke-virtual {v5, v7, v6}, Landroid/widget/TextView;->setTextSize(IF)V
 
     const/high16 v8, -0x1000000
 
-    .line 1058
+    .line 1062
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1059
+    .line 1063
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -4456,7 +4457,7 @@
 
     invoke-virtual {v5, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1060
+    .line 1064
     invoke-virtual/range {p0 .. p0}, Ltw/edu/kmu/act/TBLGRATActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
@@ -4469,7 +4470,7 @@
 
     const/high16 v10, 0x41a00000    # 20.0f
 
-    .line 1061
+    .line 1065
     invoke-static {v0, v10}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v11
@@ -4484,21 +4485,21 @@
 
     const/4 v11, 0x0
 
-    .line 1062
+    .line 1066
     invoke-virtual {v5, v9, v11, v11, v11}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 1064
+    .line 1068
     new-instance v9, Landroid/widget/TextView;
 
     invoke-direct {v9, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 1065
+    .line 1069
     invoke-virtual {v9, v7, v6}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 1066
+    .line 1070
     invoke-virtual {v9, v8}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1067
+    .line 1071
     iget-object v12, v0, Ltw/edu/kmu/act/TBLGRATActivity;->examMap:Ljava/util/HashMap;
 
     iget-boolean v14, v0, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
@@ -4521,7 +4522,7 @@
 
     invoke-virtual {v9, v12}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1068
+    .line 1072
     invoke-virtual/range {p0 .. p0}, Ltw/edu/kmu/act/TBLGRATActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v12
@@ -4532,7 +4533,7 @@
 
     move-result-object v12
 
-    .line 1069
+    .line 1073
     invoke-static {v0, v10}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v14
@@ -4543,32 +4544,32 @@
 
     invoke-virtual {v12, v13, v13, v14, v10}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 1070
+    .line 1074
     invoke-virtual {v9, v12, v11, v11, v11}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 1072
+    .line 1076
     new-instance v10, Landroid/widget/LinearLayout;
 
     invoke-direct {v10, v0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    .line 1073
+    .line 1077
     invoke-virtual {v10, v13}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 1074
+    .line 1078
     invoke-virtual {v10, v5}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1075
+    .line 1079
     invoke-virtual {v10, v9}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1076
+    .line 1080
     invoke-virtual {v3, v10}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1078
+    .line 1082
     new-instance v5, Landroid/widget/TextView;
 
     invoke-direct {v5, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 1079
+    .line 1083
     new-instance v9, Landroid/widget/LinearLayout$LayoutParams;
 
     iget-object v10, v0, Ltw/edu/kmu/act/TBLGRATActivity;->display:Landroid/view/Display;
@@ -4587,22 +4588,22 @@
 
     const/4 v10, 0x3
 
-    .line 1080
+    .line 1084
     iput v10, v9, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1081
+    .line 1085
     invoke-virtual {v5, v9}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1082
+    .line 1086
     invoke-virtual {v5, v10}, Landroid/widget/TextView;->setGravity(I)V
 
-    .line 1083
+    .line 1087
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1084
+    .line 1088
     invoke-virtual {v5, v7, v6}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 1085
+    .line 1089
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -4629,12 +4630,12 @@
 
     invoke-virtual {v5, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1087
+    .line 1091
     new-instance v9, Landroid/widget/TextView;
 
     invoke-direct {v9, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 1088
+    .line 1092
     new-instance v14, Landroid/widget/LinearLayout$LayoutParams;
 
     iget-object v15, v0, Ltw/edu/kmu/act/TBLGRATActivity;->display:Landroid/view/Display;
@@ -4649,22 +4650,22 @@
 
     invoke-direct {v14, v15, v12}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 1089
+    .line 1093
     iput v10, v14, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1090
+    .line 1094
     invoke-virtual {v9, v14}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1091
+    .line 1095
     invoke-virtual {v9, v10}, Landroid/widget/TextView;->setGravity(I)V
 
-    .line 1092
+    .line 1096
     invoke-virtual {v9, v8}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1093
+    .line 1097
     invoke-virtual {v9, v7, v6}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 1094
+    .line 1098
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -4693,29 +4694,29 @@
 
     invoke-virtual {v9, v10}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1096
+    .line 1100
     new-instance v10, Landroid/widget/LinearLayout;
 
     invoke-direct {v10, v0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    .line 1097
+    .line 1101
     invoke-virtual {v10, v13}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 1098
+    .line 1102
     invoke-virtual {v10, v5}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1099
+    .line 1103
     invoke-virtual {v10, v9}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1100
+    .line 1104
     invoke-virtual {v3, v10}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1101
+    .line 1105
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     const/4 v3, 0x0
 
-    .line 1103
+    .line 1107
     :goto_2
     iget-object v5, v0, Ltw/edu/kmu/act/TBLGRATActivity;->examDataList:Ljava/util/ArrayList;
 
@@ -4725,18 +4726,18 @@
 
     if-ge v3, v5, :cond_e
 
-    .line 1104
+    .line 1108
     new-instance v5, Landroid/widget/LinearLayout;
 
     invoke-direct {v5, v0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    .line 1105
+    .line 1109
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 1106
+    .line 1110
     invoke-virtual {v5, v4}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
-    .line 1107
+    .line 1111
     iget-object v10, v0, Ltw/edu/kmu/act/TBLGRATActivity;->examDataList:Ljava/util/ArrayList;
 
     invoke-virtual {v10, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -4747,25 +4748,25 @@
 
     const-string v14, "questionType"
 
-    .line 1108
+    .line 1112
     invoke-virtual {v10, v14}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v14
 
     check-cast v14, Ljava/lang/String;
 
-    .line 1109
+    .line 1113
     new-instance v15, Landroid/widget/TextView;
 
     invoke-direct {v15, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 1110
+    .line 1114
     invoke-virtual {v15, v8}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1111
+    .line 1115
     invoke-virtual {v15, v7, v6}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 1112
+    .line 1116
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -4794,69 +4795,69 @@
 
     invoke-virtual {v15, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1113
+    .line 1117
     invoke-virtual {v5, v15}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1115
+    .line 1119
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     const-string v4, "timer"
 
-    .line 1116
+    .line 1120
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    .line 1117
+    .line 1121
     new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v4, v12, v12}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     const/4 v15, 0x5
 
-    .line 1118
+    .line 1122
     iput v15, v4, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
     const/high16 v15, 0x40a00000    # 5.0f
 
-    .line 1119
+    .line 1123
     invoke-static {v0, v15}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v13
 
     iput v13, v4, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 1120
+    .line 1124
     invoke-static {v0, v15}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v13
 
     iput v13, v4, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 1121
+    .line 1125
     invoke-static {v0, v15}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v13
 
     iput v13, v4, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 1122
+    .line 1126
     invoke-static {v0, v15}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v13
 
     iput v13, v4, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 1123
+    .line 1127
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1125
+    .line 1129
     invoke-virtual {v2, v7, v6}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 1126
+    .line 1130
     invoke-virtual {v2, v8}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1127
+    .line 1131
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -4897,27 +4898,27 @@
 
     const v4, 0x7f0700f6
 
-    .line 1129
+    .line 1133
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
-    .line 1130
+    .line 1134
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     const-string v2, "imgPath"
 
-    .line 1132
+    .line 1136
     invoke-virtual {v10, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/String;
 
-    .line 1133
+    .line 1137
     new-instance v4, Landroid/widget/ImageView;
 
     invoke-direct {v4, v0}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 1134
+    .line 1138
     new-instance v13, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v6, 0x43160000    # 150.0f
@@ -4930,18 +4931,18 @@
 
     const/16 v6, 0x11
 
-    .line 1135
+    .line 1139
     iput v6, v13, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1136
+    .line 1140
     invoke-virtual {v4, v13}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1137
+    .line 1141
     sget-object v13, Landroid/widget/ImageView$ScaleType;->CENTER_INSIDE:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v4, v13}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 1138
+    .line 1142
     new-instance v13, Ljava/lang/StringBuilder;
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
@@ -4958,21 +4959,21 @@
 
     const-string v15, ""
 
-    .line 1140
+    .line 1144
     invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v15
 
     if-nez v15, :cond_4
 
-    .line 1141
+    .line 1145
     new-instance v15, Ltw/edu/kmu/act/TBLGRATActivity$19;
 
     invoke-direct {v15, v0, v2}, Ltw/edu/kmu/act/TBLGRATActivity$19;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/lang/String;)V
 
     invoke-virtual {v4, v15}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 1152
+    .line 1157
     new-instance v15, Ltw/edu/kmu/tool/ImageDownloaderTask;
 
     invoke-direct {v15, v4, v11, v0}, Ltw/edu/kmu/tool/ImageDownloaderTask;-><init>(Landroid/widget/ImageView;Landroid/widget/ProgressBar;Landroid/content/Context;)V
@@ -4989,15 +4990,15 @@
 
     invoke-virtual {v15, v11}, Ltw/edu/kmu/tool/ImageDownloaderTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 1153
+    .line 1158
     invoke-virtual {v5, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1154
+    .line 1159
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 1155
+    .line 1160
     iget-boolean v4, v0, Ltw/edu/kmu/act/TBLGRATActivity;->isEnglish:Z
 
     if-eqz v4, :cond_3
@@ -5012,21 +5013,21 @@
     :goto_4
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1156
+    .line 1161
     invoke-virtual {v2, v8}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1157
+    .line 1162
     new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v4, v12, v12}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 1158
+    .line 1163
     iput v6, v4, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 1159
+    .line 1164
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1160
+    .line 1165
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     goto :goto_5
@@ -5037,19 +5038,19 @@
     :goto_5
     const-string v2, "2"
 
-    .line 1163
+    .line 1168
     invoke-virtual {v2, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_7
 
-    .line 1165
+    .line 1170
     new-instance v2, Landroid/widget/RadioGroup;
 
     invoke-direct {v2, v0}, Landroid/widget/RadioGroup;-><init>(Landroid/content/Context;)V
 
-    .line 1166
+    .line 1171
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -5066,7 +5067,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/RadioGroup;->setTag(Ljava/lang/Object;)V
 
-    .line 1169
+    .line 1174
     new-instance v3, Lorg/json/JSONArray;
 
     const-string v4, "optionList"
@@ -5081,7 +5082,7 @@
 
     const/4 v4, 0x0
 
-    .line 1170
+    .line 1175
     :goto_6
     invoke-virtual {v3}, Lorg/json/JSONArray;->length()I
 
@@ -5089,17 +5090,17 @@
 
     if-ge v4, v6, :cond_5
 
-    .line 1171
+    .line 1176
     invoke-virtual {v3, v4}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v6
 
-    .line 1172
+    .line 1177
     new-instance v11, Landroid/widget/RadioButton;
 
     invoke-direct {v11, v0}, Landroid/widget/RadioButton;-><init>(Landroid/content/Context;)V
 
-    .line 1173
+    .line 1178
     new-instance v14, Ljava/lang/StringBuilder;
 
     invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
@@ -5118,10 +5119,10 @@
 
     invoke-virtual {v11, v14}, Landroid/widget/RadioButton;->setTag(Ljava/lang/Object;)V
 
-    .line 1174
+    .line 1179
     invoke-virtual {v11, v8}, Landroid/widget/RadioButton;->setTextColor(I)V
 
-    .line 1175
+    .line 1180
     new-instance v14, Ljava/lang/StringBuilder;
 
     invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
@@ -5152,11 +5153,11 @@
 
     invoke-virtual {v11, v14}, Landroid/widget/RadioButton;->setText(Ljava/lang/CharSequence;)V
 
-    const v14, 0x7f08004f
+    const v14, 0x7f08004e
 
     const-string v15, "optKey"
 
-    .line 1176
+    .line 1181
     invoke-virtual {v6, v15}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v15
@@ -5165,33 +5166,33 @@
 
     const/4 v14, 0x0
 
-    .line 1177
+    .line 1182
     invoke-virtual {v11, v14}, Landroid/widget/RadioButton;->setEnabled(Z)V
 
     const-string v14, "correct"
 
-    .line 1178
+    .line 1183
     invoke-virtual {v6, v14}, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
 
     move-result v6
 
     invoke-virtual {v11, v6}, Landroid/widget/RadioButton;->setChecked(Z)V
 
-    .line 1179
+    .line 1184
     invoke-virtual {v2, v11}, Landroid/widget/RadioGroup;->addView(Landroid/view/View;)V
 
     goto :goto_6
 
-    .line 1182
+    .line 1187
     :cond_5
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1183
+    .line 1188
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 1184
+    .line 1189
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v4, -0x1
@@ -5200,41 +5201,41 @@
 
     const/high16 v4, 0x40a00000    # 5.0f
 
-    .line 1185
+    .line 1190
     invoke-static {v0, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
     iput v6, v3, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 1186
+    .line 1191
     invoke-static {v0, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
     iput v6, v3, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 1187
+    .line 1192
     invoke-static {v0, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
     iput v6, v3, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 1188
+    .line 1193
     invoke-static {v0, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v3, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 1189
+    .line 1194
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1190
+    .line 1195
     invoke-virtual {v2, v8}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1192
+    .line 1197
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -5269,7 +5270,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1193
+    .line 1198
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     goto/16 :goto_b
@@ -5277,14 +5278,14 @@
     :cond_7
     const-string v2, "3"
 
-    .line 1195
+    .line 1200
     invoke-virtual {v2, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_a
 
-    .line 1198
+    .line 1203
     new-instance v2, Lorg/json/JSONArray;
 
     const-string v4, "optionList"
@@ -5299,7 +5300,7 @@
 
     const/4 v4, 0x0
 
-    .line 1199
+    .line 1204
     :goto_8
     invoke-virtual {v2}, Lorg/json/JSONArray;->length()I
 
@@ -5307,17 +5308,17 @@
 
     if-ge v4, v6, :cond_8
 
-    .line 1200
+    .line 1205
     invoke-virtual {v2, v4}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v6
 
-    .line 1201
+    .line 1206
     new-instance v11, Landroid/widget/CheckBox;
 
     invoke-direct {v11, v0}, Landroid/widget/CheckBox;-><init>(Landroid/content/Context;)V
 
-    .line 1202
+    .line 1207
     new-instance v14, Ljava/lang/StringBuilder;
 
     invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
@@ -5342,10 +5343,10 @@
 
     invoke-virtual {v11, v14}, Landroid/widget/CheckBox;->setTag(Ljava/lang/Object;)V
 
-    .line 1203
+    .line 1208
     invoke-virtual {v11, v8}, Landroid/widget/CheckBox;->setTextColor(I)V
 
-    .line 1204
+    .line 1209
     new-instance v14, Ljava/lang/StringBuilder;
 
     invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
@@ -5376,11 +5377,11 @@
 
     invoke-virtual {v11, v14}, Landroid/widget/CheckBox;->setText(Ljava/lang/CharSequence;)V
 
-    const v14, 0x7f08004f
+    const v14, 0x7f08004e
 
     const-string v15, "optKey"
 
-    .line 1205
+    .line 1210
     invoke-virtual {v6, v15}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v15
@@ -5389,7 +5390,7 @@
 
     const-string v14, "correct"
 
-    .line 1206
+    .line 1211
     invoke-virtual {v6, v14}, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
 
     move-result v6
@@ -5398,21 +5399,21 @@
 
     const/4 v6, 0x0
 
-    .line 1207
+    .line 1212
     invoke-virtual {v11, v6}, Landroid/widget/CheckBox;->setEnabled(Z)V
 
-    .line 1208
+    .line 1213
     invoke-virtual {v5, v11}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     goto :goto_8
 
-    .line 1210
+    .line 1215
     :cond_8
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 1211
+    .line 1216
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v4, -0x1
@@ -5421,41 +5422,41 @@
 
     const/high16 v4, 0x40a00000    # 5.0f
 
-    .line 1212
+    .line 1217
     invoke-static {v0, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
     iput v6, v3, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 1213
+    .line 1218
     invoke-static {v0, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
     iput v6, v3, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 1214
+    .line 1219
     invoke-static {v0, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
     iput v6, v3, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 1215
+    .line 1220
     invoke-static {v0, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v4
 
     iput v4, v3, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 1216
+    .line 1221
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1217
+    .line 1222
     invoke-virtual {v2, v8}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1219
+    .line 1224
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -5490,7 +5491,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1220
+    .line 1225
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     goto/16 :goto_b
@@ -5498,19 +5499,19 @@
     :cond_a
     const-string v2, "4"
 
-    .line 1222
+    .line 1227
     invoke-virtual {v2, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_c
 
-    .line 1224
+    .line 1229
     new-instance v2, Landroid/widget/EditText;
 
     invoke-direct {v2, v0}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
-    .line 1225
+    .line 1230
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v4, -0x1
@@ -5519,58 +5520,58 @@
 
     const/high16 v4, 0x40a00000    # 5.0f
 
-    .line 1226
+    .line 1231
     invoke-static {v0, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
     iput v6, v3, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 1227
+    .line 1232
     invoke-static {v0, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
     iput v6, v3, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 1228
+    .line 1233
     invoke-static {v0, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
     iput v6, v3, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 1229
+    .line 1234
     invoke-static {v0, v4}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
     iput v6, v3, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 1230
+    .line 1235
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     const/4 v3, 0x0
 
-    .line 1231
+    .line 1236
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->setEnabled(Z)V
 
     const-string v4, "edit1"
 
-    .line 1232
+    .line 1237
     invoke-virtual {v2, v4}, Landroid/widget/EditText;->setTag(Ljava/lang/Object;)V
 
-    .line 1233
+    .line 1238
     invoke-virtual {v2, v8}, Landroid/widget/EditText;->setTextColor(I)V
 
     const v4, 0x7f0700f5
 
-    .line 1234
+    .line 1239
     invoke-virtual {v2, v4}, Landroid/widget/EditText;->setBackgroundResource(I)V
 
     const-string v4, "myAnswer"
 
-    .line 1236
+    .line 1241
     invoke-virtual {v10, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
@@ -5579,15 +5580,15 @@
 
     invoke-virtual {v2, v4}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1237
+    .line 1242
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1239
+    .line 1244
     new-instance v2, Landroid/widget/TextView;
 
     invoke-direct {v2, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 1240
+    .line 1245
     new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v6, -0x1
@@ -5596,41 +5597,41 @@
 
     const/high16 v6, 0x40a00000    # 5.0f
 
-    .line 1241
+    .line 1246
     invoke-static {v0, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v11
 
     iput v11, v4, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 1242
+    .line 1247
     invoke-static {v0, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v11
 
     iput v11, v4, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 1243
+    .line 1248
     invoke-static {v0, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v11
 
     iput v11, v4, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 1244
+    .line 1249
     invoke-static {v0, v6}, Ltw/edu/kmu/tool/ImageTool;->dip2px(Landroid/content/Context;F)I
 
     move-result v6
 
     iput v6, v4, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 1245
+    .line 1250
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1246
+    .line 1251
     invoke-virtual {v2, v8}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1248
+    .line 1253
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -5669,7 +5670,7 @@
 
     const-string v6, "stdAnswer"
 
-    .line 1249
+    .line 1254
     invoke-virtual {v10, v6}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
@@ -5680,7 +5681,7 @@
 
     if-nez v4, :cond_d
 
-    .line 1250
+    .line 1255
     invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     goto :goto_c
@@ -5689,7 +5690,7 @@
     :goto_b
     const/4 v3, 0x0
 
-    .line 1254
+    .line 1259
     :cond_d
     :goto_c
     invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
@@ -5708,13 +5709,13 @@
 
     goto/16 :goto_2
 
-    .line 1257
+    .line 1262
     :cond_e
     new-instance v2, Landroid/widget/ScrollView;
 
     invoke-direct {v2, v0}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
 
-    .line 1258
+    .line 1263
     new-instance v3, Landroid/widget/RelativeLayout$LayoutParams;
 
     const/4 v4, -0x1
@@ -5723,28 +5724,28 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ScrollView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1259
+    .line 1264
     invoke-virtual {v2, v1}, Landroid/widget/ScrollView;->addView(Landroid/view/View;)V
 
-    .line 1261
+    .line 1266
     new-instance v1, Landroid/widget/RelativeLayout;
 
     invoke-direct {v1, v0}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
-    .line 1262
+    .line 1267
     invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
-    .line 1264
+    .line 1269
     new-instance v2, Landroid/widget/Button;
 
     invoke-direct {v2, v0}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
     const v3, 0x7f0700f3
 
-    .line 1265
+    .line 1270
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setBackgroundResource(I)V
 
-    .line 1266
+    .line 1271
     new-instance v3, Landroid/widget/RelativeLayout$LayoutParams;
 
     const/high16 v4, 0x41f00000    # 30.0f
@@ -5761,26 +5762,26 @@
 
     const/16 v4, 0xb
 
-    .line 1267
+    .line 1272
     invoke-virtual {v3, v4}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
 
-    .line 1268
+    .line 1273
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1269
+    .line 1274
     invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
-    .line 1271
+    .line 1276
     new-instance v3, Ltw/edu/kmu/act/TBLGRATActivity$ViewDialog;
 
     invoke-direct {v3, v0}, Ltw/edu/kmu/act/TBLGRATActivity$ViewDialog;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;)V
 
     const-string v4, "99"
 
-    .line 1272
+    .line 1277
     invoke-virtual {v3, v0, v1, v4}, Ltw/edu/kmu/act/TBLGRATActivity$ViewDialog;->showDialog(Landroid/app/Activity;Landroid/view/View;Ljava/lang/String;)V
 
-    .line 1273
+    .line 1278
     new-instance v1, Ltw/edu/kmu/act/TBLGRATActivity$20;
 
     invoke-direct {v1, v0, v3}, Ltw/edu/kmu/act/TBLGRATActivity$20;-><init>(Ltw/edu/kmu/act/TBLGRATActivity;Ltw/edu/kmu/act/TBLGRATActivity$ViewDialog;)V
@@ -5793,17 +5794,17 @@
 .method zoomDrawable(Landroid/graphics/drawable/Drawable;II)Landroid/graphics/drawable/Drawable;
     .locals 7
 
-    .line 193
+    .line 194
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v3
 
-    .line 194
+    .line 195
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v4
 
-    .line 196
+    .line 197
     sget-object v0, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -5822,7 +5823,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 197
+    .line 198
     sget-object v0, Ltw/edu/kmu/act/TBLGRATActivity;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -5841,12 +5842,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 199
+    .line 200
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLGRATActivity;->drawableToBitmap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 200
+    .line 201
     new-instance v5, Landroid/graphics/Matrix;
 
     invoke-direct {v5}, Landroid/graphics/Matrix;-><init>()V
@@ -5863,7 +5864,7 @@
 
     div-float/2addr p2, p3
 
-    .line 203
+    .line 204
     invoke-virtual {v5, p1, p2}, Landroid/graphics/Matrix;->postScale(FF)Z
 
     const/4 v1, 0x0
@@ -5872,12 +5873,12 @@
 
     const/4 v6, 0x1
 
-    .line 205
+    .line 206
     invoke-static/range {v0 .. v6}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;
 
     move-result-object p1
 
-    .line 206
+    .line 207
     new-instance p2, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-direct {p2, p1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/graphics/Bitmap;)V

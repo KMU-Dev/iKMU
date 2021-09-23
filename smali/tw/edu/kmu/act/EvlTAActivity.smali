@@ -286,7 +286,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/EvlTAActivity;->pageList:Ljava/util/List;
 
-    const v0, 0x7f0801af
+    const v0, 0x7f0801bd
 
     .line 98
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/EvlTAActivity;->findViewById(I)Landroid/view/View;
@@ -356,7 +356,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0061
+    const v1, 0x7f0a0063
 
     const/4 v2, 0x0
 
@@ -383,7 +383,7 @@
 
     invoke-interface {v3, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const v1, 0x7f08011b
+    const v1, 0x7f080125
 
     .line 105
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -394,7 +394,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/EvlTAActivity;->lv:Landroid/widget/ListView;
 
-    const v0, 0x7f08013c
+    const v0, 0x7f080146
 
     .line 106
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/EvlTAActivity;->findViewById(I)Landroid/view/View;
@@ -423,7 +423,7 @@
 .method private getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a005c
+    const v0, 0x7f0a005e
 
     return v0
 .end method
@@ -686,7 +686,7 @@
     :cond_3
     new-instance v0, Ltw/edu/kmu/adapter/Evl4TAListViewAdapter;
 
-    const v4, 0x7f0a0060
+    const v4, 0x7f0a0062
 
     const/4 v1, 0x2
 
@@ -738,8 +738,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801cb
-        0x7f0801cf
+        0x7f0801d9
+        0x7f0801dd
     .end array-data
 .end method
 
@@ -824,7 +824,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c008a
+    const v0, 0x7f0c0088
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -895,7 +895,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/EvlTAActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    const p1, 0x7f08022e
+    const p1, 0x7f08023b
 
     .line 81
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/EvlTAActivity;->findViewById(I)Landroid/view/View;

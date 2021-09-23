@@ -124,7 +124,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00d2
+    const v0, 0x7f0a00d4
 
     return v0
 .end method
@@ -147,7 +147,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c0102
+    const v0, 0x7f0c00fe
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -160,7 +160,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c00cc
+    const v0, 0x7f0c00ca
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -188,7 +188,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/SettingActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    const p1, 0x7f08004f
+    const p1, 0x7f08004e
 
     .line 42
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SettingActivity;->findViewById(I)Landroid/view/View;
@@ -230,7 +230,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/ToggleButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f08005c
+    const p1, 0x7f08005b
 
     .line 66
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SettingActivity;->findViewById(I)Landroid/view/View;
@@ -246,7 +246,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f080061
+    const p1, 0x7f080060
 
     .line 76
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SettingActivity;->findViewById(I)Landroid/view/View;

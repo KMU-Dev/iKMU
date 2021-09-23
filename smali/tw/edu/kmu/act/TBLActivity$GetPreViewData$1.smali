@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/TBLActivity$GetPreViewData;)V
     .locals 0
 
-    .line 1548
+    .line 1553
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData$1;->this$1:Ltw/edu/kmu/act/TBLActivity$GetPreViewData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 1552
+    .line 1557
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData$1;->this$1:Ltw/edu/kmu/act/TBLActivity$GetPreViewData;
 
     invoke-static {p1}, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->access$1800(Ltw/edu/kmu/act/TBLActivity$GetPreViewData;)Ljava/lang/String;
@@ -53,16 +53,16 @@
 
     if-eqz p1, :cond_0
 
-    .line 1553
+    .line 1558
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData$1;->this$1:Ltw/edu/kmu/act/TBLActivity$GetPreViewData;
 
     iget-object p1, p1, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     const/4 p2, 0x0
 
-    invoke-static {p1, p2}, Ltw/edu/kmu/act/TBLActivity;->access$602(Ltw/edu/kmu/act/TBLActivity;Z)Z
+    invoke-static {p1, p2}, Ltw/edu/kmu/act/TBLActivity;->access$302(Ltw/edu/kmu/act/TBLActivity;Z)Z
 
-    .line 1554
+    .line 1559
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetPreViewData$1;->this$1:Ltw/edu/kmu/act/TBLActivity$GetPreViewData;
 
     iget-object p1, p1, Ltw/edu/kmu/act/TBLActivity$GetPreViewData;->this$0:Ltw/edu/kmu/act/TBLActivity;

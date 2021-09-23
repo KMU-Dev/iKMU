@@ -36,7 +36,7 @@
 .method private constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 360
+    .line 367
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$VersionChecker;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -47,7 +47,7 @@
 .method synthetic constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;Ltw/edu/kmu/act/MainPageActivityV2$1;)V
     .locals 0
 
-    .line 360
+    .line 367
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2$VersionChecker;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     return-void
@@ -58,7 +58,7 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 360
+    .line 367
     check-cast p1, [Ljava/lang/Integer;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2$VersionChecker;->doInBackground([Ljava/lang/Integer;)Ljava/lang/String;
@@ -71,7 +71,7 @@
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/String;
     .locals 2
 
-    .line 375
+    .line 382
     :try_start_0
     iget-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$VersionChecker;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
@@ -87,7 +87,7 @@
 
     move-result-object p1
 
-    .line 376
+    .line 383
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
@@ -96,7 +96,7 @@
 
     const-string v1, "result"
 
-    .line 377
+    .line 384
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -109,7 +109,7 @@
 
     const-string p1, "items"
 
-    .line 378
+    .line 385
     invoke-virtual {v0, p1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -123,7 +123,7 @@
     :catch_0
     move-exception p1
 
-    .line 381
+    .line 388
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_0
@@ -136,7 +136,7 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 360
+    .line 367
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2$VersionChecker;->onPostExecute(Ljava/lang/String;)V
@@ -147,15 +147,15 @@
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 1
 
-    .line 388
+    .line 395
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
-    .line 389
+    .line 396
     iget-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$VersionChecker;->newVersion:Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
-    .line 390
+    .line 397
     iget-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$VersionChecker;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$VersionChecker;->newVersion:Ljava/lang/String;
@@ -169,17 +169,17 @@
 .method protected onPreExecute()V
     .locals 2
 
-    .line 368
+    .line 375
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
-    .line 369
+    .line 376
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$VersionChecker;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-virtual {v0}, Ltw/edu/kmu/act/MainPageActivityV2;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x7f0c0063
+    const v1, 0x7f0c0061
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

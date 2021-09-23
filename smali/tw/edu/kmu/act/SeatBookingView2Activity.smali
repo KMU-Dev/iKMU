@@ -121,11 +121,11 @@
 
     :array_0
     .array-data 4
-        0x7f080052
-        0x7f08005c
+        0x7f080051
+        0x7f08005b
+        0x7f080060
         0x7f080061
-        0x7f080062
-        0x7f080065
+        0x7f080064
     .end array-data
 .end method
 
@@ -265,7 +265,7 @@
 .method private initLogOutBtn()V
     .locals 3
 
-    const v0, 0x7f080040
+    const v0, 0x7f08003f
 
     .line 87
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/SeatBookingView2Activity;->findViewById(I)Landroid/view/View;
@@ -699,11 +699,11 @@
 
     new-array v7, v2, [I
 
-    const v2, 0x7f0801c9
+    const v2, 0x7f0801d7
 
     aput v2, v7, v1
 
-    const v5, 0x7f0a00c2
+    const v5, 0x7f0a00c4
 
     move-object v2, v0
 
@@ -738,12 +738,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a00cd
+    const v0, 0x7f0a00cf
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0a00ce
+    const v0, 0x7f0a00d0
 
     :goto_0
     return v0
@@ -776,7 +776,7 @@
     .line 63
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SeatBookingView2Activity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 65
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SeatBookingView2Activity;->findViewById(I)Landroid/view/View;
@@ -798,7 +798,7 @@
 
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/SeatBookingView2Activity;->setBtnColor(I)V
 
-    const p1, 0x7f0800f1
+    const p1, 0x7f0800fb
 
     .line 73
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/SeatBookingView2Activity;->findViewById(I)Landroid/view/View;
@@ -807,7 +807,7 @@
 
     check-cast p1, Landroid/widget/RelativeLayout;
 
-    const v0, 0x7f0800f0
+    const v0, 0x7f0800fa
 
     .line 74
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/SeatBookingView2Activity;->findViewById(I)Landroid/view/View;

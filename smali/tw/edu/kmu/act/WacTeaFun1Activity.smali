@@ -301,7 +301,7 @@
 
     new-array v6, v1, [I
 
-    const v1, 0x7f0801c7
+    const v1, 0x7f0801d5
 
     aput v1, v6, v7
 
@@ -368,7 +368,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/WacTeaFun1Activity;->sharedData:Landroid/content/SharedPreferences;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 45
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/WacTeaFun1Activity;->findViewById(I)Landroid/view/View;
@@ -384,7 +384,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c0065
+    const v1, 0x7f0c0063
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -397,7 +397,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c00f2
+    const v1, 0x7f0c00ee
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

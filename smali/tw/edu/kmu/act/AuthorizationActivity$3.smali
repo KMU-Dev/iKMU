@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/AuthorizationActivity;)V
     .locals 0
 
-    .line 297
+    .line 361
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity$3;->this$0:Ltw/edu/kmu/act/AuthorizationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 1
 
-    .line 300
+    .line 364
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity$3;->this$0:Ltw/edu/kmu/act/AuthorizationActivity;
 
     invoke-virtual {v0}, Ltw/edu/kmu/act/AuthorizationActivity;->finish()V

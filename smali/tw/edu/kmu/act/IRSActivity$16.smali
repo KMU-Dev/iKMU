@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/IRSActivity;)V
     .locals 0
 
-    .line 1079
+    .line 1082
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity$16;->this$0:Ltw/edu/kmu/act/IRSActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
 
-    .line 1082
+    .line 1085
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result p2
@@ -50,10 +50,10 @@
     :pswitch_0
     const p2, 0x7f0700f0
 
-    .line 1091
+    .line 1094
     invoke-virtual {p1, p2}, Landroid/view/View;->setBackgroundResource(I)V
 
-    .line 1092
+    .line 1095
     check-cast p1, Landroid/widget/Button;
 
     const/high16 p2, -0x1000000
@@ -65,10 +65,10 @@
     :pswitch_1
     const p2, 0x7f0700f1
 
-    .line 1085
+    .line 1088
     invoke-virtual {p1, p2}, Landroid/view/View;->setBackgroundResource(I)V
 
-    .line 1086
+    .line 1089
     move-object p2, p1
 
     check-cast p2, Landroid/widget/Button;
@@ -77,7 +77,7 @@
 
     invoke-virtual {p2, v0}, Landroid/widget/Button;->setTextColor(I)V
 
-    .line 1087
+    .line 1090
     invoke-virtual {p1}, Landroid/view/View;->invalidate()V
 
     :goto_0

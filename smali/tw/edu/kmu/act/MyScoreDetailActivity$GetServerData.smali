@@ -168,7 +168,7 @@
 
     iget-object v0, p0, Ltw/edu/kmu/act/MyScoreDetailActivity$GetServerData;->this$0:Ltw/edu/kmu/act/MyScoreDetailActivity;
 
-    const v1, 0x7f0c012e
+    const v1, 0x7f0c012a
 
     .line 179
     invoke-virtual {v0, v1}, Ltw/edu/kmu/act/MyScoreDetailActivity;->getStringById(I)Ljava/lang/String;

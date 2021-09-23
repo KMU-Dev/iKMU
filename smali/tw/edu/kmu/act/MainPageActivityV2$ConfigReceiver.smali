@@ -22,7 +22,7 @@
 .method public constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 465
+    .line 472
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$ConfigReceiver;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -35,7 +35,7 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
 
-    .line 469
+    .line 476
     invoke-static {}, Ltw/edu/kmu/act/MainPageActivityV2;->access$300()Ljava/lang/String;
 
     move-result-object p2
@@ -44,7 +44,7 @@
 
     invoke-static {p2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 471
+    .line 478
     iget-object p2, p0, Ltw/edu/kmu/act/MainPageActivityV2$ConfigReceiver;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-static {p1}, Ltw/edu/kmu/vo/ConfigData;->getInstance(Landroid/content/Context;)Ltw/edu/kmu/vo/ConfigData;

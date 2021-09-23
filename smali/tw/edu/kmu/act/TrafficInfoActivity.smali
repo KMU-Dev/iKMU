@@ -41,12 +41,12 @@
     .line 21
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0a00f4
+    const p1, 0x7f0a00f6
 
     .line 22
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TrafficInfoActivity;->setContentView(I)V
 
-    const p1, 0x7f08014f
+    const p1, 0x7f080159
 
     .line 23
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TrafficInfoActivity;->findViewById(I)Landroid/view/View;
@@ -62,7 +62,7 @@
 
     const-string v2, "<html><body><font size=\"14\"><font size=\"14\"><font color=\"#ff0000\" size=\"14\"><strong>\u4ea4\u901a\u8cc7\u8a0a</strong><br /></font>\u25cf\u706b\u8eca\u9ad8\u96c4\u7ad9\u5f8c\u7ad9\u51fa\u53e3\u8ddd\u672c\u6821\u7d04\u5169\u516c\u91cc\uff0c\u8eca\u7a0b\u7d045\u5206\u9418<br />\u25cf\u5c0f\u6e2f\u6a5f\u5834\u8f49\u642d\u8a08\u7a0b\u8eca\u7d0430\u5206\u9418<br />\u25cf\u958b\u8eca\u6cbf\u4e2d\u5c71\u9ad8\u901f\u516c\u8def\u5357\u4e0b -\u4e0b\u300c\u9f0e\u91d1\u4ea4\u6d41\u9053\u300d\u65bc\u6c11\u65cf\u8def\u5de6\u8f49\uff0c\u518d\u65bc\u540c\u76df\u8def\u53f3\u8f49\uff0c\u5373\u9054\u672c\u6821 -\u4e0b\u300c\u4e5d\u5982\u4ea4\u6d41\u9053\u300d\u6cbf\u4e5d\u5982\u8def\u5f80\u706b\u8eca\u7ad9\u65b9\u5411\uff0c\u65bc\u81ea\u7531\u8def\u53f3\u8f49\uff0c\u9047\u540c\u76df\u8def\u53f3\u8f49\uff0c\u5373\u9054\u672c\u6821<br />\u25cf\u9ad8\u9435\u8eca\u7ad9\u8f49\u642d\u8a08\u7a0b\u8eca\u7d0417\u5206\u9418\uff0c\u6cbf\u5927\u4e2d\u8def\u65bc\u81ea\u7531\u8def\u53f3\u8f49\uff0c\u518d\u65bc\u540c\u76df\u8def\u5de6\u8f49\u5373\u9054\u672c\u6821 \u3002<br />\u25cf\u9ad8\u6377\u8eca\u7ad9\u8f49\u642d\u6377\u904b\u63a5\u99c1\u516c\u8eca\uff0c\u7531<font color=\"#000080\"><a href=\"http://www.krtco.com.tw/b-map/R12.html\" target=\"_blank\"><font color=\"#000080\">\u5f8c\u9a5b\u7ad9\u51fa\u5165\u53e32</font></a></font><font color=\"#dc143c\"><font color=\"#000000\">\u642d\u4e58</font><a href=\"http://www.krtco2.com/b-map/Red29.jpg\" target=\"_blank\"><font color=\"#dc143c\">\u7d0529</font></a></font><font color=\"#000000\">\u63a5\u99c1\u8eca\uff0c\u5373\u9054\u672c\u6821\u3002</font></font><br><iframe width=\"100%\" height=\"60%\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"http://maps.google.com.tw/maps?f=q&amp;source=s_q&amp;hl=zh-TW&amp;geocode=&amp;q=%E9%AB%98%E9%9B%84%E5%B8%82%E4%B8%89%E6%B0%91%E5%8D%80%E5%8D%81%E5%85%A8%E4%B8%80%E8%B7%AF100%E8%99%9F&amp;sll=22.645482,120.309799&amp;sspn=0.014833,0.019248&amp;brcurrent=3,0x346e051e1f1d35d7:0xe6d0eb950fb496a3,0,0x346e04bf6cb74463:0xd266fce264dae085&amp;ie=UTF8&amp;hq=&amp;hnear=807%E9%AB%98%E9%9B%84%E5%B8%82%E4%B8%89%E6%B0%91%E5%8D%80%E5%8D%81%E5%85%A8%E4%B8%80%E8%B7%AF100%E8%99%9F&amp;ll=22.645581,120.309799&amp;spn=0.014832,0.019248&amp;z=14&amp;output=embed\"></iframe></body></html>"
 
-    const p1, 0x7f08024c
+    const p1, 0x7f080259
 
     .line 29
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TrafficInfoActivity;->findViewById(I)Landroid/view/View;

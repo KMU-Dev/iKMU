@@ -42,38 +42,38 @@
 .method private constructor <init>(Ltw/edu/kmu/act/TBLActivity;)V
     .locals 1
 
-    .line 1614
+    .line 1619
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     const-string p1, ""
 
-    .line 1616
+    .line 1621
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->resultString:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 1617
+    .line 1622
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->returnCode:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 1618
+    .line 1623
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->reason:Ljava/lang/String;
 
     const-string p1, ""
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->ereason:Ljava/lang/String;
 
-    .line 1619
+    .line 1624
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-virtual {p1}, Ltw/edu/kmu/act/TBLActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const v0, 0x7f0c004c
+    const v0, 0x7f0c004b
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -87,7 +87,7 @@
 .method synthetic constructor <init>(Ltw/edu/kmu/act/TBLActivity;Ltw/edu/kmu/act/TBLActivity$1;)V
     .locals 0
 
-    .line 1614
+    .line 1619
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/TBLActivity$GetServerTime;-><init>(Ltw/edu/kmu/act/TBLActivity;)V
 
     return-void
@@ -98,7 +98,7 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1614
+    .line 1619
     check-cast p1, [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->doInBackground([Ljava/lang/String;)Ljava/lang/String;
@@ -111,13 +111,13 @@
 .method protected varargs doInBackground([Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    .line 1630
+    .line 1635
     :try_start_0
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    .line 1631
+    .line 1636
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iget-object v0, v0, Ltw/edu/kmu/act/TBLActivity;->serverResource:Ltw/edu/kmu/resource/ServerResource;
@@ -130,7 +130,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->resultString:Ljava/lang/String;
 
-    .line 1632
+    .line 1637
     new-instance p1, Lorg/json/JSONObject;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->resultString:Ljava/lang/String;
@@ -152,7 +152,7 @@
     :catch_0
     move-exception p1
 
-    .line 1639
+    .line 1644
     invoke-static {}, Ltw/edu/kmu/act/TBLActivity;->access$800()Ljava/lang/String;
 
     move-result-object v0
@@ -186,7 +186,7 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1614
+    .line 1619
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->onPostExecute(Ljava/lang/String;)V
@@ -197,12 +197,12 @@
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 4
 
-    .line 1646
+    .line 1651
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
     const-string p1, "true"
 
-    .line 1648
+    .line 1653
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->returnCode:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -211,7 +211,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 1650
+    .line 1655
     :try_start_0
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
@@ -229,7 +229,7 @@
 
     invoke-static {p1, v0}, Ltw/edu/kmu/act/TBLActivity;->access$1902(Ltw/edu/kmu/act/TBLActivity;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1651
+    .line 1656
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->this$0:Ltw/edu/kmu/act/TBLActivity;
@@ -250,7 +250,7 @@
 
     invoke-static {p1, v0, v1}, Ltw/edu/kmu/act/TBLActivity;->access$2002(Ltw/edu/kmu/act/TBLActivity;J)J
 
-    .line 1652
+    .line 1657
     invoke-static {}, Ltw/edu/kmu/act/TBLActivity;->access$800()Ljava/lang/String;
 
     move-result-object p1
@@ -277,7 +277,7 @@
 
     invoke-static {p1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1653
+    .line 1658
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$GetServerTime;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-static {p1}, Ltw/edu/kmu/act/TBLActivity;->access$2100(Ltw/edu/kmu/act/TBLActivity;)V
@@ -289,7 +289,7 @@
     :catch_0
     move-exception p1
 
-    .line 1656
+    .line 1661
     invoke-static {}, Ltw/edu/kmu/act/TBLActivity;->access$800()Ljava/lang/String;
 
     move-result-object v0
@@ -314,7 +314,7 @@
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1659
+    .line 1664
     :cond_0
     :goto_0
     new-instance p1, Ltw/edu/kmu/act/TBLActivity$GetIRATFirstQu;
@@ -327,7 +327,7 @@
 
     const/4 v0, 0x1
 
-    .line 1660
+    .line 1665
     new-array v0, v0, [Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -344,7 +344,7 @@
 .method protected onPreExecute()V
     .locals 0
 
-    .line 1623
+    .line 1628
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
     return-void

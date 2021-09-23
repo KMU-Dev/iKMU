@@ -6,15 +6,14 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Ltw/edu/kmu/act/AuthorizationActivity$ReadDataFromServer;
+        Ltw/edu/kmu/act/AuthorizationActivity$ReadDataFromServer;,
+        Ltw/edu/kmu/act/AuthorizationActivity$LogOut;
     }
 .end annotation
 
 
 # static fields
 .field private static final TAG:Ljava/lang/String; = "AuthorizationActivity"
-
-.field private static final SMALI_TAG:Ljava/lang/String; = "Smali: AuthorizationActivity"
 
 
 # instance fields
@@ -55,10 +54,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 28
+    .line 29
     invoke-direct {p0}, Ltw/edu/kmu/act/BasicActivity;-><init>()V
 
-    .line 322
+    .line 386
     new-instance v0, Ltw/edu/kmu/act/AuthorizationActivity$4;
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/AuthorizationActivity$4;-><init>(Ltw/edu/kmu/act/AuthorizationActivity;)V
@@ -71,17 +70,8 @@
 .method static synthetic access$000(Ltw/edu/kmu/act/AuthorizationActivity;)Ltw/edu/kmu/act/MyApplication;
     .locals 0
 
-    .line 28
+    .line 29
     iget-object p0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
-
-    return-object p0
-.end method
-
-.method static synthetic access$100(Ltw/edu/kmu/act/AuthorizationActivity;)Landroid/widget/TextView;
-    .locals 0
-
-    .line 28
-    iget-object p0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->title:Landroid/widget/TextView;
 
     return-object p0
 .end method
@@ -89,7 +79,7 @@
 .method static synthetic access$1000(Ltw/edu/kmu/act/AuthorizationActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 28
+    .line 29
     invoke-direct {p0}, Ltw/edu/kmu/act/AuthorizationActivity;->readServerDataList()Ljava/lang/String;
 
     move-result-object p0
@@ -100,7 +90,7 @@
 .method static synthetic access$1100(Ltw/edu/kmu/act/AuthorizationActivity;)Landroid/os/Handler;
     .locals 0
 
-    .line 28
+    .line 29
     iget-object p0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->handler:Landroid/os/Handler;
 
     return-object p0
@@ -109,7 +99,7 @@
 .method static synthetic access$1200(Ltw/edu/kmu/act/AuthorizationActivity;)Landroid/os/Bundle;
     .locals 0
 
-    .line 28
+    .line 29
     iget-object p0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->bundle:Landroid/os/Bundle;
 
     return-object p0
@@ -118,17 +108,17 @@
 .method static synthetic access$1300(Ltw/edu/kmu/act/AuthorizationActivity;)V
     .locals 0
 
-    .line 28
+    .line 29
     invoke-direct {p0}, Ltw/edu/kmu/act/AuthorizationActivity;->updateData()V
 
     return-void
 .end method
 
-.method static synthetic access$200(Ltw/edu/kmu/act/AuthorizationActivity;)Landroid/widget/Button;
+.method static synthetic access$200(Ltw/edu/kmu/act/AuthorizationActivity;)Landroid/widget/EditText;
     .locals 0
 
-    .line 28
-    iget-object p0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->btn:Landroid/widget/Button;
+    .line 29
+    iget-object p0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit1:Landroid/widget/EditText;
 
     return-object p0
 .end method
@@ -136,55 +126,163 @@
 .method static synthetic access$300(Ltw/edu/kmu/act/AuthorizationActivity;)Landroid/widget/EditText;
     .locals 0
 
-    .line 28
+    .line 29
     iget-object p0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit2:Landroid/widget/EditText;
 
     return-object p0
 .end method
 
-.method static synthetic access$400(Ltw/edu/kmu/act/AuthorizationActivity;)Landroid/content/SharedPreferences;
+.method static synthetic access$402(Ltw/edu/kmu/act/AuthorizationActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 28
-    iget-object p0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->sharedData:Landroid/content/SharedPreferences;
-
-    return-object p0
-.end method
-
-.method static synthetic access$500(Ltw/edu/kmu/act/AuthorizationActivity;)Landroid/widget/EditText;
-    .locals 0
-
-    .line 28
-    iget-object p0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit1:Landroid/widget/EditText;
-
-    return-object p0
-.end method
-
-.method static synthetic access$602(Ltw/edu/kmu/act/AuthorizationActivity;Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-
-    .line 28
+    .line 29
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->userId:Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method static synthetic access$702(Ltw/edu/kmu/act/AuthorizationActivity;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$502(Ltw/edu/kmu/act/AuthorizationActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 28
+    .line 29
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->password:Ljava/lang/String;
 
     return-object p1
 .end method
 
+.method static synthetic access$700()Ljava/lang/String;
+    .locals 1
+
+    .line 29
+    sget-object v0, Ltw/edu/kmu/act/AuthorizationActivity;->TAG:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method static synthetic access$800(Ltw/edu/kmu/act/AuthorizationActivity;)V
+    .locals 0
+
+    .line 29
+    invoke-direct {p0}, Ltw/edu/kmu/act/AuthorizationActivity;->doLogOutAction()V
+
+    return-void
+.end method
+
 .method static synthetic access$902(Ltw/edu/kmu/act/AuthorizationActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 28
+    .line 29
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->resultString:Ljava/lang/String;
 
     return-object p1
+.end method
+
+.method private doLogOutAction()V
+    .locals 4
+
+    .line 160
+    iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
+
+    const/4 v1, 0x0
+
+    iput-boolean v1, v0, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
+
+    .line 161
+    iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
+
+    const-string v2, ""
+
+    iput-object v2, v0, Ltw/edu/kmu/act/MyApplication;->token:Ljava/lang/String;
+
+    .line 163
+    iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->title:Landroid/widget/TextView;
+
+    const-string v2, ""
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 164
+    iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->btn:Landroid/widget/Button;
+
+    iget-boolean v2, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
+
+    if-eqz v2, :cond_0
+
+    const-string v2, "Login"
+
+    goto :goto_0
+
+    :cond_0
+    const-string v2, "\u767b\u5165"
+
+    :goto_0
+    invoke-virtual {v0, v2}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
+
+    .line 165
+    iget-boolean v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
+
+    if-eqz v0, :cond_1
+
+    const-string v0, "Logout Successful"
+
+    goto :goto_1
+
+    :cond_1
+    const-string v0, "\u5df2\u767b\u51fa"
+
+    :goto_1
+    const/4 v2, 0x1
+
+    invoke-static {p0, v0, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    const/16 v3, 0x11
+
+    .line 167
+    invoke-virtual {v0, v3, v1, v1}, Landroid/widget/Toast;->setGravity(III)V
+
+    .line 168
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    .line 169
+    iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit2:Landroid/widget/EditText;
+
+    const-string v3, ""
+
+    invoke-virtual {v0, v3}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+
+    .line 170
+    iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->sharedData:Landroid/content/SharedPreferences;
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    const-string v3, "token"
+
+    .line 172
+    invoke-interface {v0, v3}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    .line 173
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    .line 174
+    iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit1:Landroid/widget/EditText;
+
+    invoke-virtual {v0, v2}, Landroid/widget/EditText;->setEnabled(Z)V
+
+    .line 175
+    iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit2:Landroid/widget/EditText;
+
+    invoke-virtual {v0, v2}, Landroid/widget/EditText;->setEnabled(Z)V
+
+    .line 176
+    iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit2:Landroid/widget/EditText;
+
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setVisibility(I)V
+
+    return-void
 .end method
 
 .method private readServerDataList()Ljava/lang/String;
@@ -192,14 +290,14 @@
 
     const-string v0, ""
 
-    .line 192
+    .line 254
     invoke-virtual {p0}, Ltw/edu/kmu/act/AuthorizationActivity;->isNetworkAlive()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 193
+    .line 255
     iget-object v1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->mainHandler:Landroid/os/Handler;
 
     const/16 v2, 0x7d0
@@ -208,14 +306,14 @@
 
     return-object v0
 
-    .line 201
+    .line 263
     :cond_0
     :try_start_0
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 202
+    .line 264
     sget-object v2, Ltw/edu/kmu/act/AuthorizationActivity;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -238,7 +336,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 203
+    .line 265
     iget-object v2, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v2, v2, Ltw/edu/kmu/act/MyApplication;->regId:Ljava/lang/String;
@@ -261,12 +359,12 @@
 
     const-string v3, "android"
 
-    .line 205
+    .line 267
     invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v2, "t"
 
-    .line 206
+    .line 268
     iget-object v3, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v3, v3, Ltw/edu/kmu/act/MyApplication;->regId:Ljava/lang/String;
@@ -276,7 +374,7 @@
     :cond_1
     const-string v2, "device"
 
-    .line 210
+    .line 272
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -297,14 +395,14 @@
 
     const-string v2, "deviceid"
 
-    .line 211
+    .line 273
     sget-object v3, Landroid/os/Build;->SERIAL:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v2, "id"
 
-    .line 212
+    .line 274
     iget-object v3, p0, Ltw/edu/kmu/act/AuthorizationActivity;->userId:Ljava/lang/String;
 
     invoke-static {v3}, Ltw/edu/kmu/tool/EncodeTool;->encrypt(Ljava/lang/String;)Ljava/lang/String;
@@ -315,7 +413,7 @@
 
     const-string v2, "pw"
 
-    .line 213
+    .line 275
     iget-object v3, p0, Ltw/edu/kmu/act/AuthorizationActivity;->password:Ljava/lang/String;
 
     invoke-static {v3}, Ltw/edu/kmu/tool/EncodeTool;->encrypt(Ljava/lang/String;)Ljava/lang/String;
@@ -326,7 +424,7 @@
 
     const-string v2, "lang"
 
-    .line 214
+    .line 276
     iget-boolean v3, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
 
     if-eqz v3, :cond_2
@@ -341,28 +439,18 @@
     :goto_0
     invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 215
+    .line 277
     iget-object v2, p0, Ltw/edu/kmu/act/AuthorizationActivity;->serverResource:Ltw/edu/kmu/resource/ServerResource;
 
     iget-object v3, p0, Ltw/edu/kmu/act/AuthorizationActivity;->url:Ljava/lang/String;
 
-    sget-object v4, Ltw/edu/kmu/act/AuthorizationActivity;->SMALI_TAG:Ljava/lang/String;
-
-    invoke-static {v4, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {v1}, Ljava/util/HashMap;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {v2, v3, v1}, Ltw/edu/kmu/resource/ServerResource;->getWebServiceDataUsingGet(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
+    invoke-virtual {v2, v3, v1}, Ltw/edu/kmu/resource/ServerResource;->getWebServiceDataUsingPost(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
 
     move-result-object v1
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 216
+    .line 278
     :try_start_1
     new-instance v0, Lorg/json/JSONObject;
 
@@ -396,11 +484,11 @@
     :catch_1
     move-exception v1
 
-    .line 219
+    .line 281
     :goto_1
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 220
+    .line 282
     iget-object v1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->handler:Landroid/os/Handler;
 
     const/16 v2, 0xbb8
@@ -416,7 +504,7 @@
 
     const-string v0, "true"
 
-    .line 231
+    .line 293
     iget-object v1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->resultCode:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -431,7 +519,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 233
+    .line 295
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->btn:Landroid/widget/Button;
 
     iget-boolean v4, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
@@ -448,26 +536,26 @@
     :goto_0
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 234
+    .line 296
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    iput-boolean v3, v0, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iput-boolean v3, v0, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
-    .line 235
+    .line 297
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v4, p0, Ltw/edu/kmu/act/AuthorizationActivity;->userId:Ljava/lang/String;
 
     iput-object v4, v0, Ltw/edu/kmu/act/MyApplication;->UserID:Ljava/lang/String;
 
-    .line 236
+    .line 298
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v4, p0, Ltw/edu/kmu/act/AuthorizationActivity;->password:Ljava/lang/String;
 
     iput-object v4, v0, Ltw/edu/kmu/act/MyApplication;->UserPassWord:Ljava/lang/String;
 
-    .line 237
+    .line 299
     sget-object v0, Ltw/edu/kmu/act/AuthorizationActivity;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -490,7 +578,7 @@
 
     invoke-static {v0, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 240
+    .line 302
     :try_start_0
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
@@ -514,7 +602,7 @@
 
     iput-object v4, v0, Ltw/edu/kmu/act/MyApplication;->userType:Ljava/lang/String;
 
-    .line 241
+    .line 303
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     new-instance v4, Lorg/json/JSONObject;
@@ -537,8 +625,30 @@
 
     iput-object v4, v0, Ltw/edu/kmu/act/MyApplication;->userName:Ljava/lang/String;
 
-    .line 242
+    .line 304
+    iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
+    new-instance v4, Lorg/json/JSONObject;
+
+    iget-object v5, p0, Ltw/edu/kmu/act/AuthorizationActivity;->resultString:Ljava/lang/String;
+
+    invoke-direct {v4, v5}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    const-string v5, "items"
+
+    invoke-virtual {v4, v5}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v4
+
+    const-string v5, "token"
+
+    invoke-virtual {v4, v5}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    iput-object v4, v0, Ltw/edu/kmu/act/MyApplication;->token:Ljava/lang/String;
+
+    .line 305
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     new-instance v4, Lorg/json/JSONObject;
@@ -559,10 +669,6 @@
 
     move-result-object v4
 
-    sget-object v5, Ltw/edu/kmu/act/AuthorizationActivity;->SMALI_TAG:Ljava/lang/String;
-
-    invoke-static {v5, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
     iput-object v4, v0, Ltw/edu/kmu/act/MyApplication;->actSeq:Ljava/lang/String;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -572,10 +678,10 @@
     :catch_0
     move-exception v0
 
-    .line 245
+    .line 308
     invoke-virtual {v0}, Lorg/json/JSONException;->printStackTrace()V
 
-    .line 247
+    .line 310
     :goto_1
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->sharedData:Landroid/content/SharedPreferences;
 
@@ -585,7 +691,7 @@
 
     const-string v4, "\u6d3b\u52d5\u5c08\u5340"
 
-    .line 248
+    .line 311
     iget-object v5, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v5, v5, Ltw/edu/kmu/act/MyApplication;->userType:Ljava/lang/String;
@@ -598,7 +704,7 @@
 
     const-string v4, "actSeq"
 
-    .line 249
+    .line 312
     iget-object v5, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v5, v5, Ltw/edu/kmu/act/MyApplication;->actSeq:Ljava/lang/String;
@@ -608,7 +714,7 @@
     :cond_1
     const-string v4, "userType"
 
-    .line 251
+    .line 314
     iget-object v5, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v5, v5, Ltw/edu/kmu/act/MyApplication;->userType:Ljava/lang/String;
@@ -617,31 +723,35 @@
 
     const-string v4, "userName"
 
-    .line 252
+    .line 315
     iget-object v5, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v5, v5, Ltw/edu/kmu/act/MyApplication;->userName:Ljava/lang/String;
 
     invoke-interface {v0, v4, v5}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
+    const-string v4, "token"
+
+    .line 316
+    iget-object v5, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
+
+    iget-object v5, v5, Ltw/edu/kmu/act/MyApplication;->token:Ljava/lang/String;
+
+    invoke-interface {v0, v4, v5}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
     const-string v4, "userId"
 
-    .line 253
+    .line 317
     iget-object v5, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v5, v5, Ltw/edu/kmu/act/MyApplication;->UserID:Ljava/lang/String;
 
     invoke-interface {v0, v4, v5}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    const-string v4, "isLogin"
-
-    .line 254
-    invoke-interface {v0, v4, v3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    .line 255
+    .line 319
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    .line 266
+    .line 330
     iget-boolean v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
 
     if-eqz v0, :cond_2
@@ -658,13 +768,13 @@
 
     move-result-object v0
 
-    .line 267
+    .line 331
     invoke-virtual {v0, v1, v2, v2}, Landroid/widget/Toast;->setGravity(III)V
 
-    .line 268
+    .line 332
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 270
+    .line 334
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->title:Landroid/widget/TextView;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -697,12 +807,12 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 271
+    .line 335
     iget-boolean v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
 
     if-eqz v0, :cond_3
 
-    .line 272
+    .line 336
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->title:Landroid/widget/TextView;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -735,7 +845,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 275
+    .line 339
     :cond_3
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->bundle:Landroid/os/Bundle;
 
@@ -743,7 +853,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 277
+    .line 341
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
@@ -756,7 +866,7 @@
 
     goto :goto_4
 
-    .line 297
+    .line 361
     :cond_4
     new-instance v0, Landroid/os/Handler;
 
@@ -770,7 +880,7 @@
 
     goto :goto_4
 
-    .line 309
+    .line 373
     :cond_5
     iget-boolean v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
 
@@ -788,18 +898,18 @@
 
     move-result-object v0
 
-    .line 310
+    .line 374
     invoke-virtual {v0, v1, v2, v2}, Landroid/widget/Toast;->setGravity(III)V
 
-    .line 311
+    .line 375
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 312
+    .line 376
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit1:Landroid/widget/EditText;
 
     invoke-virtual {v0, v3}, Landroid/widget/EditText;->setEnabled(Z)V
 
-    .line 313
+    .line 377
     iget-object v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit2:Landroid/widget/EditText;
 
     invoke-virtual {v0, v3}, Landroid/widget/EditText;->setEnabled(Z)V
@@ -821,17 +931,17 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
 
-    .line 58
+    .line 59
     sget-object v0, Ltw/edu/kmu/act/AuthorizationActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "onCreate Start"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 59
+    .line 60
     invoke-super {p0, p1}, Ltw/edu/kmu/act/BasicActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 61
+    .line 62
     invoke-virtual {p0}, Ltw/edu/kmu/act/AuthorizationActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
@@ -842,7 +952,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->bundle:Landroid/os/Bundle;
 
-    .line 63
+    .line 64
     iget-boolean p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
 
     if-eqz p1, :cond_0
@@ -857,12 +967,12 @@
     :goto_0
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/AuthorizationActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 64
+    .line 65
     invoke-virtual {p0}, Ltw/edu/kmu/act/AuthorizationActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const v0, 0x7f0c0062
+    const v0, 0x7f0c0060
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -870,7 +980,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->url:Ljava/lang/String;
 
-    .line 66
+    .line 67
     invoke-virtual {p0}, Ltw/edu/kmu/act/AuthorizationActivity;->getApplication()Landroid/app/Application;
 
     move-result-object p1
@@ -883,16 +993,16 @@
 
     const/4 v0, 0x0
 
-    .line 68
+    .line 69
     invoke-virtual {p0, p1, v0}, Ltw/edu/kmu/act/AuthorizationActivity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p1
 
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->sharedData:Landroid/content/SharedPreferences;
 
-    const p1, 0x7f0801c7
+    const p1, 0x7f0801d5
 
-    .line 70
+    .line 71
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/AuthorizationActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -901,18 +1011,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->title:Landroid/widget/TextView;
 
-    const p1, 0x7f0800d1
-
-    .line 72
-    invoke-virtual {p0, p1}, Ltw/edu/kmu/act/AuthorizationActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/EditText;
-
-    iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit1:Landroid/widget/EditText;
-
-    const p1, 0x7f0800d2
+    const p1, 0x7f0800db
 
     .line 73
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/AuthorizationActivity;->findViewById(I)Landroid/view/View;
@@ -921,9 +1020,20 @@
 
     check-cast p1, Landroid/widget/EditText;
 
+    iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit1:Landroid/widget/EditText;
+
+    const p1, 0x7f0800dc
+
+    .line 74
+    invoke-virtual {p0, p1}, Ltw/edu/kmu/act/AuthorizationActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/EditText;
+
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit2:Landroid/widget/EditText;
 
-    .line 77
+    .line 78
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit1:Landroid/widget/EditText;
 
     iget-boolean v1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
@@ -940,7 +1050,7 @@
     :goto_1
     invoke-virtual {p1, v1}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
-    .line 78
+    .line 79
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit2:Landroid/widget/EditText;
 
     iget-boolean v1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
@@ -957,7 +1067,7 @@
     :goto_2
     invoke-virtual {p1, v1}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
-    .line 82
+    .line 83
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit1:Landroid/widget/EditText;
 
     iget-object v1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
@@ -984,12 +1094,12 @@
     :goto_3
     invoke-virtual {p1, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 83
+    .line 84
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit2:Landroid/widget/EditText;
 
     iget-object v1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    iget-boolean v1, v1, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v1, v1, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-eqz v1, :cond_4
 
@@ -1005,7 +1115,7 @@
     :goto_4
     invoke-virtual {p1, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 84
+    .line 85
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit2:Landroid/widget/EditText;
 
     invoke-static {}, Landroid/text/method/PasswordTransformationMethod;->getInstance()Landroid/text/method/PasswordTransformationMethod;
@@ -1014,20 +1124,20 @@
 
     invoke-virtual {p1, v1}, Landroid/widget/EditText;->setTransformationMethod(Landroid/text/method/TransformationMethod;)V
 
-    .line 89
+    .line 90
     sget-object p1, Ltw/edu/kmu/act/AuthorizationActivity;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "globalVariable.isLogin is "
+    const-string v2, "globalVariable.isLoginV2 is "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-object v2, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    iget-boolean v2, v2, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean v2, v2, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1037,9 +1147,9 @@
 
     invoke-static {p1, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const p1, 0x7f08004f
+    const p1, 0x7f08004e
 
-    .line 91
+    .line 92
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/AuthorizationActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -1048,14 +1158,14 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->btn:Landroid/widget/Button;
 
-    .line 92
+    .line 93
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    iget-boolean p1, p1, Ltw/edu/kmu/act/MyApplication;->isLogin:Z
+    iget-boolean p1, p1, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
 
     if-eqz p1, :cond_6
 
-    .line 94
+    .line 95
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->btn:Landroid/widget/Button;
 
     iget-boolean v1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
@@ -1072,17 +1182,24 @@
     :goto_5
     invoke-virtual {p1, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 95
+    .line 96
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit1:Landroid/widget/EditText;
 
     invoke-virtual {p1, v0}, Landroid/widget/EditText;->setEnabled(Z)V
 
-    .line 96
+    .line 97
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit2:Landroid/widget/EditText;
 
     invoke-virtual {p1, v0}, Landroid/widget/EditText;->setEnabled(Z)V
 
-    .line 97
+    .line 98
+    iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->edit2:Landroid/widget/EditText;
+
+    const/16 v0, 0x8
+
+    invoke-virtual {p1, v0}, Landroid/widget/EditText;->setVisibility(I)V
+
+    .line 99
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->title:Landroid/widget/TextView;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1115,12 +1232,12 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 98
+    .line 100
     iget-boolean p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
 
     if-eqz p1, :cond_8
 
-    .line 99
+    .line 101
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->title:Landroid/widget/TextView;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1155,7 +1272,7 @@
 
     goto :goto_7
 
-    .line 102
+    .line 104
     :cond_6
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->title:Landroid/widget/TextView;
 
@@ -1163,7 +1280,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 104
+    .line 106
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->btn:Landroid/widget/Button;
 
     iget-boolean v0, p0, Ltw/edu/kmu/act/AuthorizationActivity;->isEnglish:Z
@@ -1180,7 +1297,7 @@
     :goto_6
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 107
+    .line 109
     :cond_8
     :goto_7
     iget-object p1, p0, Ltw/edu/kmu/act/AuthorizationActivity;->btn:Landroid/widget/Button;
@@ -1191,7 +1308,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 163
+    .line 153
     sget-object p1, Ltw/edu/kmu/act/AuthorizationActivity;->TAG:Ljava/lang/String;
 
     const-string v0, "onCreate End"

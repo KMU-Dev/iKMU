@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 170
+    .line 177
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$1;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 4
 
-    .line 173
+    .line 180
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$1;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-static {v0}, Ltw/edu/kmu/act/MainPageActivityV2;->access$100(Ltw/edu/kmu/act/MainPageActivityV2;)Ltw/edu/kmu/act/MyApplication;
@@ -55,7 +55,7 @@
 
     iput-object v1, v0, Ltw/edu/kmu/act/MyApplication;->regId:Ljava/lang/String;
 
-    .line 175
+    .line 182
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$1;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-static {v0}, Ltw/edu/kmu/act/MainPageActivityV2;->access$100(Ltw/edu/kmu/act/MainPageActivityV2;)Ltw/edu/kmu/act/MyApplication;
@@ -66,14 +66,14 @@
 
     if-nez v0, :cond_0
 
-    .line 176
+    .line 183
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$1;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-static {v0}, Ltw/edu/kmu/act/MainPageActivityV2;->access$200(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     goto :goto_0
 
-    .line 178
+    .line 185
     :cond_0
     new-instance v0, Ltw/edu/kmu/act/MainPageActivityV2$UpdateMachineData;
 
@@ -91,7 +91,7 @@
 
     const/4 v1, 0x1
 
-    .line 179
+    .line 186
     new-array v1, v1, [Ljava/lang/Integer;
 
     const/4 v2, 0x0

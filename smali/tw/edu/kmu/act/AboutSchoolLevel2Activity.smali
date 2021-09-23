@@ -55,16 +55,10 @@
 .method private showList()V
     .locals 8
 
-    .line 45
-    iget-object v0, p0, Ltw/edu/kmu/act/AboutSchoolLevel2Activity;->bundle:Landroid/os/Bundle;
+    .line 46
+    iget-object v0, p0, Ltw/edu/kmu/act/AboutSchoolLevel2Activity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    const-string v1, "detailList"
-
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/ArrayList;
+    iget-object v0, v0, Ltw/edu/kmu/act/MyApplication;->detailList:Ljava/util/ArrayList;
 
     iput-object v0, p0, Ltw/edu/kmu/act/AboutSchoolLevel2Activity;->serverDataList:Ljava/util/ArrayList;
 
@@ -124,7 +118,7 @@
 
     new-array v6, v1, [I
 
-    const v1, 0x7f0801c7
+    const v1, 0x7f0801d5
 
     aput v1, v6, v7
 
@@ -180,7 +174,7 @@
     .line 27
     invoke-super {p0, p1}, Ltw/edu/kmu/act/BasicActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 28
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/AboutSchoolLevel2Activity;->findViewById(I)Landroid/view/View;

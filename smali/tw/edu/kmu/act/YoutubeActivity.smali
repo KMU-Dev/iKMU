@@ -137,16 +137,16 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a00f7
+    const v0, 0x7f0a00f9
 
-    const v3, 0x7f0a00f7
+    const v3, 0x7f0a00f9
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0a00f8
+    const v0, 0x7f0a00fa
 
-    const v3, 0x7f0a00f8
+    const v3, 0x7f0a00fa
 
     :goto_0
     const/4 v0, 0x4
@@ -223,10 +223,10 @@
 
     :array_0
     .array-data 4
-        0x7f0801c7
-        0x7f08019c
-        0x7f0800fe
-        0x7f080118
+        0x7f0801d5
+        0x7f0801aa
+        0x7f080108
+        0x7f080122
     .end array-data
 .end method
 
@@ -541,7 +541,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00f9
+    const v0, 0x7f0a00fb
 
     return v0
 .end method
@@ -552,7 +552,7 @@
     .line 49
     invoke-super {p0, p1}, Ltw/edu/kmu/act/BasicActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f08014f
+    const p1, 0x7f080159
 
     .line 51
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/YoutubeActivity;->findViewById(I)Landroid/view/View;
@@ -563,7 +563,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/YoutubeActivity;->progressbar:Landroid/widget/ProgressBar;
 
-    const p1, 0x7f0c00d0
+    const p1, 0x7f0c00ce
 
     .line 52
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/YoutubeActivity;->getString(I)Ljava/lang/String;
@@ -572,7 +572,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/YoutubeActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f080246
+    const p1, 0x7f080253
 
     .line 53
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/YoutubeActivity;->findViewById(I)Landroid/view/View;
@@ -650,7 +650,7 @@
     .line 229
     invoke-static {}, Ltw/edu/kmu/act/LoadImageService;->resetService()V
 
-    const v0, 0x7f0c001d
+    const v0, 0x7f0c001c
 
     .line 230
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/YoutubeActivity;->getString(I)Ljava/lang/String;

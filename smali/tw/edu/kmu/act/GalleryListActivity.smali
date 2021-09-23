@@ -217,7 +217,7 @@
 .method private showList()V
     .locals 9
 
-    const v0, 0x7f080248
+    const v0, 0x7f080255
 
     .line 65
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/GalleryListActivity;->findViewById(I)Landroid/view/View;
@@ -323,7 +323,7 @@
 
     iget-object v4, p0, Ltw/edu/kmu/act/GalleryListActivity;->newServerDataList:Ljava/util/ArrayList;
 
-    const v5, 0x7f0a006b
+    const v5, 0x7f0a006d
 
     const/4 v2, 0x2
 
@@ -382,8 +382,8 @@
 
     :array_0
     .array-data 4
-        0x7f0800ed
-        0x7f0800bb
+        0x7f0800f7
+        0x7f0800c6
     .end array-data
 .end method
 
@@ -392,7 +392,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a00e5
+    const v0, 0x7f0a00e7
 
     return v0
 .end method
@@ -414,7 +414,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/GalleryListActivity;->sharedData:Landroid/content/SharedPreferences;
 
-    const p1, 0x7f0c00c4
+    const p1, 0x7f0c00c2
 
     .line 48
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/GalleryListActivity;->setTitle(I)V
@@ -424,7 +424,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c001b
+    const v1, 0x7f0c001a
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -94,7 +94,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f0c008a
+    const v0, 0x7f0c0088
 
     invoke-virtual {p3, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -133,7 +133,7 @@
 
     invoke-direct {v1, p0, v2}, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;-><init>(Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter;Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$1;)V
 
-    const v2, 0x7f0801cb
+    const v2, 0x7f0801d9
 
     .line 74
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -144,7 +144,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;->title11:Landroid/widget/TextView;
 
-    const v2, 0x7f0801cf
+    const v2, 0x7f0801dd
 
     .line 75
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -155,7 +155,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;->title12:Landroid/widget/TextView;
 
-    const v2, 0x7f0801dd
+    const v2, 0x7f0801eb
 
     .line 76
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -166,7 +166,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;->title21:Landroid/widget/TextView;
 
-    const v2, 0x7f0801e2
+    const v2, 0x7f0801f0
 
     .line 77
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -177,7 +177,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;->title22:Landroid/widget/TextView;
 
-    const v2, 0x7f0801e7
+    const v2, 0x7f0801f5
 
     .line 78
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -188,7 +188,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;->title23:Landroid/widget/TextView;
 
-    const v2, 0x7f0801ec
+    const v2, 0x7f0801fa
 
     .line 79
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -199,7 +199,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;->title24:Landroid/widget/TextView;
 
-    const v2, 0x7f0801f1
+    const v2, 0x7f0801ff
 
     .line 80
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -210,7 +210,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;->title25:Landroid/widget/TextView;
 
-    const v2, 0x7f080203
+    const v2, 0x7f080211
 
     .line 81
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -221,7 +221,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;->title31:Landroid/widget/TextView;
 
-    const v2, 0x7f080207
+    const v2, 0x7f080215
 
     .line 82
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -232,7 +232,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;->title32:Landroid/widget/TextView;
 
-    const v2, 0x7f08020b
+    const v2, 0x7f080219
 
     .line 83
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -243,7 +243,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;->title33:Landroid/widget/TextView;
 
-    const v2, 0x7f08020c
+    const v2, 0x7f08021a
 
     .line 84
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -254,7 +254,7 @@
 
     iput-object v2, v1, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;->title34:Landroid/widget/TextView;
 
-    const v2, 0x7f08020d
+    const v2, 0x7f08021b
 
     .line 85
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -279,7 +279,7 @@
     check-cast v1, Ltw/edu/kmu/adapter/WacTAmidAlertListViewAdapter$ViewHolder;
 
     :goto_0
-    const v2, 0x7f080168
+    const v2, 0x7f080175
 
     .line 93
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;

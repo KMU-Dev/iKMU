@@ -173,7 +173,7 @@
 
     check-cast p3, Landroid/view/LayoutInflater;
 
-    const p4, 0x7f0a005a
+    const p4, 0x7f0a005c
 
     const/4 p5, 0x0
 
@@ -183,7 +183,7 @@
     move-result-object p4
 
     :cond_0
-    const p3, 0x7f080113
+    const p3, 0x7f08011d
 
     .line 59
     invoke-virtual {p4, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -206,7 +206,7 @@
     invoke-virtual {p3, p5}, Landroid/view/View;->setVisibility(I)V
 
     :goto_0
-    const p3, 0x7f080168
+    const p3, 0x7f080175
 
     .line 66
     invoke-virtual {p4, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -254,7 +254,7 @@
     invoke-virtual {p3, p2}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
     :cond_3
-    const p2, 0x7f0801c9
+    const p2, 0x7f0801d7
 
     .line 89
     invoke-virtual {p4, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -263,7 +263,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const p3, 0x7f0801dc
+    const p3, 0x7f0801ea
 
     .line 90
     invoke-virtual {p4, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -272,7 +272,7 @@
 
     check-cast p3, Landroid/widget/TextView;
 
-    const p5, 0x7f080202
+    const p5, 0x7f080210
 
     .line 91
     invoke-virtual {p4, p5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -288,7 +288,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c008a
+    const v1, 0x7f0c0088
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -459,7 +459,7 @@
 
     check-cast p3, Landroid/view/LayoutInflater;
 
-    const p4, 0x7f0a0059
+    const p4, 0x7f0a005b
 
     const/4 v0, 0x0
 
@@ -496,7 +496,7 @@
     invoke-virtual {p3, p1}, Landroid/view/View;->setBackgroundColor(I)V
 
     :goto_0
-    const p1, 0x7f080108
+    const p1, 0x7f080112
 
     .line 142
     invoke-virtual {p3, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -538,7 +538,7 @@
     :goto_1
     invoke-virtual {p1, p4}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    const p1, 0x7f080107
+    const p1, 0x7f080111
 
     .line 148
     invoke-virtual {p3, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -554,7 +554,7 @@
 
     invoke-virtual {p1, p4}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0801c9
+    const p1, 0x7f0801d7
 
     .line 174
     invoke-virtual {p3, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -563,7 +563,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const p4, 0x7f0801dc
+    const p4, 0x7f0801ea
 
     .line 175
     invoke-virtual {p3, p4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -572,7 +572,7 @@
 
     check-cast p4, Landroid/widget/TextView;
 
-    const v0, 0x7f080202
+    const v0, 0x7f080210
 
     .line 176
     invoke-virtual {p3, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -581,7 +581,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f08020e
+    const v1, 0x7f08021c
 
     .line 177
     invoke-virtual {p3, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;

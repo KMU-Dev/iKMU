@@ -287,7 +287,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/EvlTACourseDetailActivity;->pageList:Ljava/util/List;
 
-    const v0, 0x7f0801af
+    const v0, 0x7f0801bd
 
     .line 110
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/EvlTACourseDetailActivity;->findViewById(I)Landroid/view/View;
@@ -357,7 +357,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0061
+    const v1, 0x7f0a0063
 
     const/4 v2, 0x0
 
@@ -384,7 +384,7 @@
 
     invoke-interface {v3, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const v1, 0x7f08011b
+    const v1, 0x7f080125
 
     .line 117
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -395,7 +395,7 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/EvlTACourseDetailActivity;->lv:Landroid/widget/ListView;
 
-    const v0, 0x7f08013c
+    const v0, 0x7f080146
 
     .line 118
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/EvlTACourseDetailActivity;->findViewById(I)Landroid/view/View;
@@ -424,7 +424,7 @@
 .method private getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a005c
+    const v0, 0x7f0a005e
 
     return v0
 .end method
@@ -744,7 +744,7 @@
 
     iget-object v5, p0, Ltw/edu/kmu/act/EvlTACourseDetailActivity;->contentList:Ljava/util/ArrayList;
 
-    const v6, 0x7f0a005e
+    const v6, 0x7f0a0060
 
     const/4 v3, 0x2
 
@@ -814,7 +814,7 @@
 
     check-cast v0, Landroid/view/View;
 
-    const v3, 0x7f080123
+    const v3, 0x7f08012d
 
     .line 257
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -870,8 +870,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801cb
-        0x7f0801cf
+        0x7f0801d9
+        0x7f0801dd
     .end array-data
 .end method
 
@@ -939,7 +939,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c008a
+    const v0, 0x7f0c0088
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1010,7 +1010,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/EvlTACourseDetailActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    const p1, 0x7f08022e
+    const p1, 0x7f08023b
 
     .line 86
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/EvlTACourseDetailActivity;->findViewById(I)Landroid/view/View;
@@ -1039,7 +1039,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0a0058
+    const v1, 0x7f0a005a
 
     const/4 v2, 0x0
 
@@ -1052,7 +1052,7 @@
     .line 91
     iget-object p1, p0, Ltw/edu/kmu/act/EvlTACourseDetailActivity;->header_View:Landroid/view/View;
 
-    const v1, 0x7f0801dc
+    const v1, 0x7f0801ea
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1078,7 +1078,7 @@
     .line 94
     iget-object p1, p0, Ltw/edu/kmu/act/EvlTACourseDetailActivity;->header_View:Landroid/view/View;
 
-    const v1, 0x7f080202
+    const v1, 0x7f080210
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1325,7 +1325,7 @@
 
     check-cast v3, Landroid/view/LayoutInflater;
 
-    const v4, 0x7f0a005d
+    const v4, 0x7f0a005f
 
     const/4 v5, 0x0
 
@@ -1334,7 +1334,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0801c8
+    const v4, 0x7f0801d6
 
     .line 278
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1537,7 +1537,7 @@
     .line 309
     invoke-virtual {v1, p1}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
-    const v2, 0x7f080052
+    const v2, 0x7f080051
 
     .line 311
     invoke-virtual {v3, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1586,29 +1586,29 @@
 
     :array_0
     .array-data 4
-        0x7f0801c9
-        0x7f0801dc
-        0x7f080202
-        0x7f08020e
-        0x7f080218
-        0x7f08021d
-        0x7f080222
-        0x7f080224
-        0x7f080225
-        0x7f0801ca
+        0x7f0801d7
+        0x7f0801ea
+        0x7f080210
+        0x7f08021c
+        0x7f080226
+        0x7f08022b
+        0x7f080230
+        0x7f080232
+        0x7f080233
+        0x7f0801d8
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f0800aa
-        0x7f0800ac
-        0x7f0800ad
-        0x7f0800ae
-        0x7f0800af
-        0x7f0800b0
-        0x7f0800b1
-        0x7f0800b2
-        0x7f0800b3
-        0x7f0800ab
+        0x7f0800b5
+        0x7f0800b7
+        0x7f0800b8
+        0x7f0800b9
+        0x7f0800ba
+        0x7f0800bb
+        0x7f0800bc
+        0x7f0800bd
+        0x7f0800be
+        0x7f0800b6
     .end array-data
 .end method

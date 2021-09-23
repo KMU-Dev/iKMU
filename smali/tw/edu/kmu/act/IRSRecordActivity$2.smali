@@ -91,7 +91,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f08011b
+    const v3, 0x7f080125
 
     if-nez v0, :cond_0
 

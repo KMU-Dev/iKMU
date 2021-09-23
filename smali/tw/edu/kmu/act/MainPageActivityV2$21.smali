@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 819
+    .line 837
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$21;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,21 +40,21 @@
 
     const-string p1, "https://seat.kmu.edu.tw"
 
-    .line 837
+    .line 855
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.VIEW"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 838
+    .line 856
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p1
 
     invoke-virtual {v0, p1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 839
+    .line 857
     iget-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$21;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-virtual {p1, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->startActivity(Landroid/content/Intent;)V

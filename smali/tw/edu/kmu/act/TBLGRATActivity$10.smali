@@ -29,7 +29,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/TBLGRATActivity;Lorg/json/JSONArray;Ljava/lang/String;)V
     .locals 0
 
-    .line 701
+    .line 704
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$10;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iput-object p2, p0, Ltw/edu/kmu/act/TBLGRATActivity$10;->val$optionList:Lorg/json/JSONArray;
@@ -56,7 +56,7 @@
 
     const/4 v2, 0x0
 
-    .line 711
+    .line 714
     :cond_0
     :goto_0
     iget-object v3, p0, Ltw/edu/kmu/act/TBLGRATActivity$10;->val$optionList:Lorg/json/JSONArray;
@@ -67,7 +67,7 @@
 
     if-ge p1, v3, :cond_2
 
-    .line 712
+    .line 715
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -84,7 +84,7 @@
 
     move-result-object v3
 
-    .line 713
+    .line 716
     iget-object v4, p0, Ltw/edu/kmu/act/TBLGRATActivity$10;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-static {v4}, Ltw/edu/kmu/act/TBLGRATActivity;->access$800(Ltw/edu/kmu/act/TBLGRATActivity;)Landroid/widget/LinearLayout;
@@ -97,12 +97,12 @@
 
     check-cast v3, Landroid/widget/CheckBox;
 
-    .line 714
+    .line 717
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v5, 0x7f08004f
+    const v5, 0x7f08004e
 
     invoke-virtual {v3, v5}, Landroid/widget/CheckBox;->getTag(I)Ljava/lang/Object;
 
@@ -118,7 +118,7 @@
 
     move-result-object v4
 
-    .line 715
+    .line 718
     invoke-virtual {v3}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v3
@@ -129,7 +129,7 @@
 
     goto :goto_1
 
-    .line 717
+    .line 720
     :cond_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -154,7 +154,7 @@
 
     goto :goto_0
 
-    .line 721
+    .line 724
     :cond_2
     invoke-static {}, Ltw/edu/kmu/act/TBLGRATActivity;->access$900()Ljava/lang/String;
 
@@ -176,7 +176,7 @@
 
     invoke-static {p1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 728
+    .line 731
     new-instance p1, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;
 
     iget-object v2, p0, Ltw/edu/kmu/act/TBLGRATActivity$10;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
@@ -187,7 +187,7 @@
 
     const/4 v2, 0x3
 
-    .line 729
+    .line 732
     new-array v2, v2, [Ljava/lang/String;
 
     const-string v3, "pre"

@@ -2269,7 +2269,7 @@
 .method public getLimitedBitmap(Ljava/lang/String;Landroid/content/res/Resources;Ljava/lang/String;III)Landroid/graphics/Bitmap;
     .locals 9
 
-    const v0, 0x7f0c001d
+    const v0, 0x7f0c001c
 
     .line 203
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -2562,7 +2562,7 @@
 .method public getLimitedBitmap(Ljava/lang/String;Landroid/content/res/Resources;Ljava/lang/String;IIIZ)Landroid/graphics/Bitmap;
     .locals 10
 
-    const v0, 0x7f0c001d
+    const v0, 0x7f0c001c
 
     move-object v3, p2
 
@@ -2709,7 +2709,7 @@
 .method public getLimitedBitmapFromServer(Landroid/content/res/Resources;Ljava/lang/String;IIIZ)Landroid/graphics/Bitmap;
     .locals 9
 
-    const v0, 0x7f0c001d
+    const v0, 0x7f0c001c
 
     .line 420
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -3242,7 +3242,7 @@
 
     if-nez v2, :cond_0
 
-    goto/16 :goto_4
+    goto/16 :goto_2
 
     .line 860
     :cond_0
@@ -3342,8 +3342,7 @@
 
     invoke-static {v1, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
-    .catch Ljava/net/MalformedURLException; {:try_start_0 .. :try_end_0} :catch_6
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_3
 
     .line 883
     :try_start_1
@@ -3351,9 +3350,8 @@
 
     move-result-object v1
     :try_end_1
-    .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_4
-    .catch Ljava/net/MalformedURLException; {:try_start_1 .. :try_end_1} :catch_6
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_5
+    .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_2
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
 
     .line 888
     :try_start_2
@@ -3432,8 +3430,7 @@
 
     move-result-object v1
     :try_end_2
-    .catch Ljava/net/MalformedURLException; {:try_start_2 .. :try_end_2} :catch_6
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
 
     if-nez v1, :cond_3
 
@@ -3509,8 +3506,7 @@
 
     move-result-object v7
     :try_end_3
-    .catch Ljava/net/MalformedURLException; {:try_start_3 .. :try_end_3} :catch_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_1
 
     :try_start_4
     const-string v1, "\u5716\u7247\u8cc7\u6e90"
@@ -3566,8 +3562,7 @@
     .line 915
     invoke-direct/range {v1 .. v6}, Ltw/edu/kmu/resource/ImageResource;->addBitmapToBuffer(Landroid/graphics/Bitmap;Ljava/lang/String;III)V
     :try_end_4
-    .catch Ljava/net/MalformedURLException; {:try_start_4 .. :try_end_4} :catch_1
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
 
     return-object v7
 
@@ -3581,25 +3576,11 @@
     :catch_1
     move-exception v0
 
-    move-object v11, v7
-
-    goto :goto_2
-
-    :catch_2
-    move-exception v0
-
     move-object v11, v1
 
     goto :goto_1
 
-    :catch_3
-    move-exception v0
-
-    move-object v11, v1
-
-    goto :goto_2
-
-    :catch_4
+    :catch_2
     move-exception v0
 
     move-object v1, v0
@@ -3608,32 +3589,41 @@
     :try_start_5
     invoke-virtual {v1}, Ljava/io/FileNotFoundException;->printStackTrace()V
     :try_end_5
-    .catch Ljava/net/MalformedURLException; {:try_start_5 .. :try_end_5} :catch_6
-    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_3
 
     return-object v11
 
-    :catch_5
+    :catch_3
     move-exception v0
 
-    .line 923
     :goto_1
-    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
-
-    goto :goto_3
-
-    :catch_6
-    move-exception v0
+    const-string v1, "\u5716\u7247\u8cc7\u6e90"
 
     .line 921
-    :goto_2
-    invoke-virtual {v0}, Ljava/net/MalformedURLException;->printStackTrace()V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    :goto_3
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Exception is "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {v0}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     return-object v11
 
     :cond_5
-    :goto_4
+    :goto_2
     const-string v0, "\u5716\u7247\u8cc7\u6e90"
 
     const-string v1, "\u7121\u5716\u7247\u540d\u7a31\u8cc7\u6599"

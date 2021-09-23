@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 274
+    .line 281
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$3;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,19 +38,19 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    .line 278
+    .line 285
     new-instance p1, Landroid/content/Intent;
 
     invoke-direct {p1}, Landroid/content/Intent;-><init>()V
 
     const-string p2, "android.settings.APPLICATION_DETAILS_SETTINGS"
 
-    .line 279
+    .line 286
     invoke-virtual {p1, p2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     const-string p2, "package"
 
-    .line 280
+    .line 287
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$3;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-virtual {v0}, Ltw/edu/kmu/act/MainPageActivityV2;->getPackageName()Ljava/lang/String;
@@ -63,10 +63,10 @@
 
     move-result-object p2
 
-    .line 281
+    .line 288
     invoke-virtual {p1, p2}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 282
+    .line 289
     iget-object p2, p0, Ltw/edu/kmu/act/MainPageActivityV2$3;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-virtual {p2, p1}, Ltw/edu/kmu/act/MainPageActivityV2;->startActivity(Landroid/content/Intent;)V

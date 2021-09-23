@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/IRSActivity$GetIRSCurrentQu;)V
     .locals 0
 
-    .line 2770
+    .line 2773
     iput-object p1, p0, Ltw/edu/kmu/act/IRSActivity$GetIRSCurrentQu$1;->this$1:Ltw/edu/kmu/act/IRSActivity$GetIRSCurrentQu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

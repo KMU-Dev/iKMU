@@ -29,7 +29,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/TBLActivity;Landroid/widget/RadioGroup;Ljava/lang/String;)V
     .locals 0
 
-    .line 351
+    .line 353
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$4;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     iput-object p2, p0, Ltw/edu/kmu/act/TBLActivity$4;->val$radioGroup:Landroid/widget/RadioGroup;
@@ -46,7 +46,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 4
 
-    .line 359
+    .line 361
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$4;->val$radioGroup:Landroid/widget/RadioGroup;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$4;->val$radioGroup:Landroid/widget/RadioGroup;
@@ -61,7 +61,7 @@
 
     check-cast p1, Landroid/widget/RadioButton;
 
-    .line 360
+    .line 362
     new-instance v0, Ltw/edu/kmu/act/TBLActivity$GetIRATNextQu;
 
     iget-object v1, p0, Ltw/edu/kmu/act/TBLActivity$4;->this$0:Ltw/edu/kmu/act/TBLActivity;
@@ -72,7 +72,7 @@
 
     const/4 v1, 0x3
 
-    .line 361
+    .line 363
     new-array v1, v1, [Ljava/lang/String;
 
     const-string v2, "pre"
@@ -89,7 +89,7 @@
 
     if-eqz p1, :cond_0
 
-    const v2, 0x7f08004f
+    const v2, 0x7f08004e
 
     invoke-virtual {p1, v2}, Landroid/widget/RadioButton;->getTag(I)Ljava/lang/Object;
 

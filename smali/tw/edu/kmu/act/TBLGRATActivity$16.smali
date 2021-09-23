@@ -27,7 +27,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/TBLGRATActivity;Ljava/lang/String;)V
     .locals 0
 
-    .line 990
+    .line 994
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$16;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iput-object p2, p0, Ltw/edu/kmu/act/TBLGRATActivity$16;->val$subQuOrder:Ljava/lang/String;
@@ -42,7 +42,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 4
 
-    .line 994
+    .line 998
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$16;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     invoke-static {p1}, Ltw/edu/kmu/act/TBLGRATActivity;->access$800(Ltw/edu/kmu/act/TBLGRATActivity;)Landroid/widget/LinearLayout;
@@ -57,7 +57,7 @@
 
     check-cast p1, Landroid/widget/EditText;
 
-    .line 999
+    .line 1003
     new-instance v0, Ltw/edu/kmu/act/TBLGRATActivity$GetGRATNextQu;
 
     iget-object v1, p0, Ltw/edu/kmu/act/TBLGRATActivity$16;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
@@ -68,7 +68,7 @@
 
     const/4 v1, 0x3
 
-    .line 1000
+    .line 1004
     new-array v1, v1, [Ljava/lang/String;
 
     const-string v2, "next"

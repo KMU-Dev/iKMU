@@ -132,7 +132,7 @@
 
     invoke-direct {p3, p0, v0}, Ltw/edu/kmu/adapter/SeatBookingView5L4TimeAdapter$ViewHolder;-><init>(Ltw/edu/kmu/adapter/SeatBookingView5L4TimeAdapter;Ltw/edu/kmu/adapter/SeatBookingView5L4TimeAdapter$1;)V
 
-    const v0, 0x7f080052
+    const v0, 0x7f080051
 
     .line 63
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -143,7 +143,7 @@
 
     iput-object v0, p3, Ltw/edu/kmu/adapter/SeatBookingView5L4TimeAdapter$ViewHolder;->btn1:Landroid/widget/CheckBox;
 
-    const v0, 0x7f08005c
+    const v0, 0x7f08005b
 
     .line 64
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -154,7 +154,7 @@
 
     iput-object v0, p3, Ltw/edu/kmu/adapter/SeatBookingView5L4TimeAdapter$ViewHolder;->btn2:Landroid/widget/CheckBox;
 
-    const v0, 0x7f080061
+    const v0, 0x7f080060
 
     .line 65
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -165,7 +165,7 @@
 
     iput-object v0, p3, Ltw/edu/kmu/adapter/SeatBookingView5L4TimeAdapter$ViewHolder;->btn3:Landroid/widget/CheckBox;
 
-    const v0, 0x7f080062
+    const v0, 0x7f080061
 
     .line 66
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;

@@ -358,7 +358,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f080252
+    const v0, 0x7f08025f
 
     .line 133
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/ClassRoomQueryActivity;->findViewById(I)Landroid/view/View;
@@ -504,7 +504,7 @@
     goto :goto_1
 
     :cond_1
-    const v0, 0x7f0800ba
+    const v0, 0x7f0800c5
 
     .line 151
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/ClassRoomQueryActivity;->findViewById(I)Landroid/view/View;
@@ -530,7 +530,7 @@
 
     invoke-virtual {v3, v0}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
-    const v0, 0x7f08024d
+    const v0, 0x7f08025a
 
     .line 160
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/ClassRoomQueryActivity;->findViewById(I)Landroid/view/View;
@@ -659,7 +659,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c00ea
+    const v0, 0x7f0c00e6
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -691,7 +691,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/ClassRoomQueryActivity;->display:Landroid/view/Display;
 
-    const p1, 0x7f0801c9
+    const p1, 0x7f0801d7
 
     .line 58
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ClassRoomQueryActivity;->findViewById(I)Landroid/view/View;
@@ -700,7 +700,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const v0, 0x7f0801dc
+    const v0, 0x7f0801ea
 
     .line 59
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/ClassRoomQueryActivity;->findViewById(I)Landroid/view/View;
@@ -719,7 +719,7 @@
     .line 61
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f080153
+    const p1, 0x7f08015d
 
     .line 63
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ClassRoomQueryActivity;->findViewById(I)Landroid/view/View;

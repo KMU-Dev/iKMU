@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 786
+    .line 793
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$19;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,27 +38,26 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 790
-    new-instance p1, Landroid/content/Intent;
+    const-string p1, "https://wac.kmu.edu.tw/indexapp.php"
 
-    invoke-direct {p1}, Landroid/content/Intent;-><init>()V
+    .line 800
+    new-instance v0, Landroid/content/Intent;
 
-    iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$19;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
+    const-string v1, "android.intent.action.VIEW"
 
-    invoke-virtual {v0}, Ltw/edu/kmu/act/MainPageActivityV2;->getApplicationContext()Landroid/content/Context;
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
-
-    const-class v1, Ltw/edu/kmu/act/ENewsAllActivity;
-
-    invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+    .line 801
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p1
 
-    .line 791
-    iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$19;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
+    invoke-virtual {v0, p1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    invoke-virtual {v0, p1}, Ltw/edu/kmu/act/MainPageActivityV2;->startActivity(Landroid/content/Intent;)V
+    .line 802
+    iget-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$19;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
+
+    invoke-virtual {p1, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->startActivity(Landroid/content/Intent;)V
 
     return-void
 .end method

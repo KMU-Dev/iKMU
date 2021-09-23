@@ -473,7 +473,7 @@
 .method private createTab1()V
     .locals 4
 
-    const v0, 0x7f0801a8
+    const v0, 0x7f0801b6
 
     .line 191
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/ARListActivity;->findViewById(I)Landroid/view/View;
@@ -911,7 +911,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c0113
+    const v3, 0x7f0c010f
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -930,7 +930,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0c0114
+    const v5, 0x7f0c0110
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1276,9 +1276,9 @@
 
     :array_0
     .array-data 4
-        0x7f0801c7
-        0x7f0800fe
-        0x7f0800ca
+        0x7f0801d5
+        0x7f080108
+        0x7f0800d5
     .end array-data
 .end method
 
@@ -1375,7 +1375,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c008a
+    const v0, 0x7f0c0088
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1512,7 +1512,7 @@
     .line 146
     invoke-direct {p0}, Ltw/edu/kmu/act/ARListActivity;->checkBundle()V
 
-    const p1, 0x7f0801c7
+    const p1, 0x7f0801d5
 
     .line 148
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ARListActivity;->findViewById(I)Landroid/view/View;
@@ -1526,7 +1526,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c00cb
+    const v1, 0x7f0c00c9
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

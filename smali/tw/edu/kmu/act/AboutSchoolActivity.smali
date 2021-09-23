@@ -138,24 +138,24 @@
         }
     .end annotation
 
-    .line 210
+    .line 211
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 211
+    .line 212
     invoke-virtual {p0}, Ltw/edu/kmu/act/AboutSchoolActivity;->readSharedPreferencesData()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 214
+    .line 215
     invoke-virtual {p0}, Ltw/edu/kmu/act/AboutSchoolActivity;->isNetworkAlive()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 215
+    .line 216
     iget-object v1, p0, Ltw/edu/kmu/act/AboutSchoolActivity;->mainHandler:Landroid/os/Handler;
 
     const/16 v2, 0x7d0
@@ -164,14 +164,14 @@
 
     return-object v0
 
-    .line 220
+    .line 221
     :cond_0
     :try_start_0
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 221
+    .line 222
     iget-object v2, p0, Ltw/edu/kmu/act/AboutSchoolActivity;->serverResource:Ltw/edu/kmu/resource/ServerResource;
 
     iget-object v3, p0, Ltw/edu/kmu/act/AboutSchoolActivity;->url:Ljava/lang/String;
@@ -182,7 +182,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 222
+    .line 223
     :try_start_1
     iget-object v0, p0, Ltw/edu/kmu/act/AboutSchoolActivity;->sharedData:Landroid/content/SharedPreferences;
 
@@ -190,7 +190,7 @@
 
     move-result-object v0
 
-    .line 223
+    .line 224
     sget-object v3, Ltw/edu/kmu/act/AboutSchoolActivity;->TAG:Ljava/lang/String;
 
     const-string v4, "result"
@@ -203,7 +203,7 @@
 
     invoke-interface {v0, v3, v1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 224
+    .line 225
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
@@ -222,7 +222,7 @@
 
     move-object v0, v1
 
-    .line 227
+    .line 228
     :goto_0
     sget-object v1, Ltw/edu/kmu/act/AboutSchoolActivity;->TAG:Ljava/lang/String;
 
@@ -246,7 +246,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 228
+    .line 229
     iget-object v0, p0, Ltw/edu/kmu/act/AboutSchoolActivity;->handler:Landroid/os/Handler;
 
     const/16 v1, 0xbb8
@@ -316,7 +316,7 @@
 
     new-array v6, v1, [I
 
-    const v1, 0x7f0801c7
+    const v1, 0x7f0801d5
 
     aput v1, v6, v7
 
@@ -383,7 +383,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/AboutSchoolActivity;->sharedData:Landroid/content/SharedPreferences;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 44
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/AboutSchoolActivity;->findViewById(I)Landroid/view/View;
@@ -412,7 +412,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c00be
+    const v1, 0x7f0c00bc
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -470,7 +470,7 @@
         }
     .end annotation
 
-    .line 237
+    .line 238
     iget-object v0, p0, Ltw/edu/kmu/act/AboutSchoolActivity;->sharedData:Landroid/content/SharedPreferences;
 
     sget-object v1, Ltw/edu/kmu/act/AboutSchoolActivity;->TAG:Ljava/lang/String;
@@ -481,12 +481,12 @@
 
     move-result-object v0
 
-    .line 238
+    .line 239
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 242
+    .line 243
     :try_start_0
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -496,21 +496,21 @@
 
     if-le v2, v3, :cond_2
 
-    .line 243
+    .line 244
     new-instance v2, Lorg/json/JSONObject;
 
     invoke-direct {v2, v0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
     const-string v0, "items"
 
-    .line 244
+    .line 245
     invoke-virtual {v2, v0}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v0
 
     const/4 v2, 0x0
 
-    .line 245
+    .line 246
     :goto_0
     invoke-virtual {v0}, Lorg/json/JSONArray;->length()I
 
@@ -518,29 +518,29 @@
 
     if-ge v2, v3, :cond_2
 
-    .line 246
+    .line 247
     new-instance v3, Ljava/util/HashMap;
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
-    .line 247
+    .line 248
     invoke-virtual {v0, v2}, Lorg/json/JSONArray;->isNull(I)Z
 
     move-result v4
 
     if-nez v4, :cond_1
 
-    .line 248
+    .line 249
     invoke-virtual {v0, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v4
 
-    .line 249
+    .line 250
     invoke-virtual {v4}, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
 
     move-result-object v5
 
-    .line 250
+    .line 251
     :goto_1
     invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
 
@@ -548,14 +548,14 @@
 
     if-eqz v6, :cond_0
 
-    .line 251
+    .line 252
     invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v6
 
     check-cast v6, Ljava/lang/String;
 
-    .line 252
+    .line 253
     invoke-virtual {v4, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
@@ -568,7 +568,7 @@
 
     goto :goto_1
 
-    .line 254
+    .line 255
     :cond_0
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_0
@@ -582,7 +582,7 @@
     :catch_0
     move-exception v0
 
-    .line 260
+    .line 261
     sget-object v2, Ltw/edu/kmu/act/AboutSchoolActivity;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;

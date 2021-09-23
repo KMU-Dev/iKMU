@@ -87,7 +87,7 @@
 
     move-result v0
 
-    const v1, 0x7f08011b
+    const v1, 0x7f080125
 
     if-nez v0, :cond_0
 
@@ -181,7 +181,7 @@
     .line 136
     iget-object v0, p0, Ltw/edu/kmu/act/EvlTAActivity$1;->this$0:Ltw/edu/kmu/act/EvlTAActivity;
 
-    const v1, 0x7f080123
+    const v1, 0x7f08012d
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

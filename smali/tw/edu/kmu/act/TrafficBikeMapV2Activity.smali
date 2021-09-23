@@ -731,7 +731,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c008a
+    const v0, 0x7f0c0088
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -830,7 +830,7 @@
 
     invoke-virtual {v1, v2, v2}, Landroid/view/Window;->setFlags(II)V
 
-    const v1, 0x7f0a00b7
+    const v1, 0x7f0a00b9
 
     .line 94
     invoke-virtual {p0, v1}, Ltw/edu/kmu/act/TrafficBikeMapV2Activity;->setContentView(I)V
@@ -840,7 +840,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a006f
+    const v2, 0x7f0a0071
 
     invoke-virtual {v1, p1, v2}, Landroid/view/Window;->setFeatureInt(II)V
 
@@ -855,7 +855,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/TrafficBikeMapV2Activity;->bundle:Landroid/os/Bundle;
 
-    const p1, 0x7f08022e
+    const p1, 0x7f08023b
 
     .line 98
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/TrafficBikeMapV2Activity;->findViewById(I)Landroid/view/View;
@@ -869,7 +869,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c0139
+    const v2, 0x7f0c0135
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -942,7 +942,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f080125
+    const v0, 0x7f08012f
 
     invoke-virtual {p1, v0}, Landroid/support/v4/app/FragmentManager;->findFragmentById(I)Landroid/support/v4/app/Fragment;
 

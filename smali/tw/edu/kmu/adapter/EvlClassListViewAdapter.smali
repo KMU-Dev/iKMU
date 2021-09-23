@@ -156,7 +156,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f0c008a
+    const v0, 0x7f0c0088
 
     invoke-virtual {p3, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -195,7 +195,7 @@
 
     invoke-direct {v0, p0, v1}, Ltw/edu/kmu/adapter/EvlClassListViewAdapter$ViewHolder;-><init>(Ltw/edu/kmu/adapter/EvlClassListViewAdapter;Ltw/edu/kmu/adapter/EvlClassListViewAdapter$1;)V
 
-    const v1, 0x7f080102
+    const v1, 0x7f08010c
 
     .line 62
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -206,7 +206,7 @@
 
     iput-object v1, v0, Ltw/edu/kmu/adapter/EvlClassListViewAdapter$ViewHolder;->img1:Landroid/widget/ImageView;
 
-    const v1, 0x7f080103
+    const v1, 0x7f08010d
 
     .line 63
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -217,7 +217,7 @@
 
     iput-object v1, v0, Ltw/edu/kmu/adapter/EvlClassListViewAdapter$ViewHolder;->img2:Landroid/widget/TextView;
 
-    const v1, 0x7f0801cb
+    const v1, 0x7f0801d9
 
     .line 64
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -228,7 +228,7 @@
 
     iput-object v1, v0, Ltw/edu/kmu/adapter/EvlClassListViewAdapter$ViewHolder;->title11:Landroid/widget/TextView;
 
-    const v1, 0x7f0801cf
+    const v1, 0x7f0801dd
 
     .line 65
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;

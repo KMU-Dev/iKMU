@@ -22,7 +22,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/TBLActivity;)V
     .locals 0
 
-    .line 103
+    .line 104
     iput-object p1, p0, Ltw/edu/kmu/act/TBLActivity$1;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -35,17 +35,17 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
 
-    .line 106
+    .line 107
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 107
+    .line 108
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x5
 
     if-ne v0, v1, :cond_2
 
-    .line 108
+    .line 109
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$1;->this$0:Ltw/edu/kmu/act/TBLActivity;
@@ -65,7 +65,7 @@
     :cond_0
     const-string v0, "\u6642\u9593\u5230\u4e86"
 
-    .line 109
+    .line 110
     :goto_0
     invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -89,15 +89,15 @@
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/TBLActivity$1$1;-><init>(Ltw/edu/kmu/act/TBLActivity$1;)V
 
-    .line 110
+    .line 111
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    .line 114
+    .line 115
     invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
-    .line 115
+    .line 116
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$1;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-static {p1}, Ltw/edu/kmu/act/TBLActivity;->access$100(Ltw/edu/kmu/act/TBLActivity;)Landroid/os/Handler;
@@ -110,7 +110,7 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 116
+    .line 117
     iget-object p1, p0, Ltw/edu/kmu/act/TBLActivity$1;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-static {p1}, Ltw/edu/kmu/act/TBLActivity;->access$200(Ltw/edu/kmu/act/TBLActivity;)Landroid/widget/TextView;
@@ -123,7 +123,7 @@
 
     goto :goto_2
 
-    .line 117
+    .line 118
     :cond_2
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -131,7 +131,7 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 118
+    .line 119
     iget-object v0, p0, Ltw/edu/kmu/act/TBLActivity$1;->this$0:Ltw/edu/kmu/act/TBLActivity;
 
     invoke-static {v0}, Ltw/edu/kmu/act/TBLActivity;->access$200(Ltw/edu/kmu/act/TBLActivity;)Landroid/widget/TextView;

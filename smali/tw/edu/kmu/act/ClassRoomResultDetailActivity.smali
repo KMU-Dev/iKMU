@@ -264,8 +264,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801c9
-        0x7f0801dc
+        0x7f0801d7
+        0x7f0801ea
     .end array-data
 .end method
 
@@ -303,7 +303,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/ClassRoomResultDetailActivity;->display:Landroid/view/Display;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 31
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ClassRoomResultDetailActivity;->findViewById(I)Landroid/view/View;
@@ -336,7 +336,7 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ClassRoomResultDetailActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f0801c9
+    const p1, 0x7f0801d7
 
     .line 37
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/ClassRoomResultDetailActivity;->findViewById(I)Landroid/view/View;
@@ -345,7 +345,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const v0, 0x7f0801dc
+    const v0, 0x7f0801ea
 
     .line 38
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/ClassRoomResultDetailActivity;->findViewById(I)Landroid/view/View;

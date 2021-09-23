@@ -2,8 +2,6 @@
 .super Ljava/lang/Object;
 .source "MyKMUActivity.java"
 
-# MyKMUActivity.showSwitchDialog() -> AdapterView.OnClickListener
-
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemClickListener;
 

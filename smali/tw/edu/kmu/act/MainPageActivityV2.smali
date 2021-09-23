@@ -9,6 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Ltw/edu/kmu/act/MainPageActivityV2$CheckToken;,
         Ltw/edu/kmu/act/MainPageActivityV2$UpdateMachineData;,
         Ltw/edu/kmu/act/MainPageActivityV2$RenewBeaconData;,
         Ltw/edu/kmu/act/MainPageActivityV2$ConfigReceiver;,
@@ -69,25 +70,25 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 61
+    .line 64
     invoke-direct {p0}, Ltw/edu/kmu/act/BasicActivity;-><init>()V
 
     const/16 v0, 0x14
 
-    .line 69
+    .line 72
     iput v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->CLOSE_TIMER:I
 
     const/16 v0, 0xa
 
-    .line 71
+    .line 74
     iput v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->CLOSE_PROGRESSBAR:I
 
     const/4 v0, 0x0
 
-    .line 81
+    .line 84
     iput-boolean v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->isNetReg:Z
 
-    .line 90
+    .line 93
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v1}, Ljava/io/ByteArrayOutputStream;-><init>()V
@@ -96,12 +97,12 @@
 
     const/16 v1, 0x64
 
-    .line 92
+    .line 95
     iput v1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->APP_PERMISSONS:I
 
     const/4 v1, 0x4
 
-    .line 93
+    .line 96
     new-array v1, v1, [Ljava/lang/String;
 
     const-string v2, "android.permission.ACCESS_FINE_LOCATION"
@@ -128,7 +129,7 @@
 
     iput-object v1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->appPermissonsParams:[Ljava/lang/String;
 
-    .line 476
+    .line 483
     new-instance v0, Ltw/edu/kmu/act/MainPageActivityV2$8;
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/MainPageActivityV2$8;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
@@ -141,7 +142,7 @@
 .method static synthetic access$100(Ltw/edu/kmu/act/MainPageActivityV2;)Ltw/edu/kmu/act/MyApplication;
     .locals 0
 
-    .line 61
+    .line 64
     iget-object p0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     return-object p0
@@ -150,7 +151,7 @@
 .method static synthetic access$200(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 61
+    .line 64
     invoke-direct {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->getToken()V
 
     return-void
@@ -159,7 +160,7 @@
 .method static synthetic access$300()Ljava/lang/String;
     .locals 1
 
-    .line 61
+    .line 64
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     return-object v0
@@ -168,7 +169,7 @@
 .method static synthetic access$402(Ltw/edu/kmu/act/MainPageActivityV2;Ltw/edu/kmu/vo/ConfigData;)Ltw/edu/kmu/vo/ConfigData;
     .locals 0
 
-    .line 61
+    .line 64
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->configData:Ltw/edu/kmu/vo/ConfigData;
 
     return-object p1
@@ -177,7 +178,7 @@
 .method static synthetic access$500(Ltw/edu/kmu/act/MainPageActivityV2;)Landroid/widget/ProgressBar;
     .locals 0
 
-    .line 61
+    .line 64
     iget-object p0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->progressbar:Landroid/widget/ProgressBar;
 
     return-object p0
@@ -186,7 +187,7 @@
 .method static synthetic access$600(Ltw/edu/kmu/act/MainPageActivityV2;I)Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 64
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2;->getResourceString(I)Ljava/lang/String;
 
     move-result-object p0
@@ -197,16 +198,25 @@
 .method static synthetic access$700(Ltw/edu/kmu/act/MainPageActivityV2;Ljava/lang/String;)V
     .locals 0
 
-    .line 61
+    .line 64
     invoke-direct {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2;->readServerData(Ljava/lang/String;)V
 
     return-void
 .end method
 
+.method static synthetic access$800(Ltw/edu/kmu/act/MainPageActivityV2;)Landroid/content/SharedPreferences;
+    .locals 0
+
+    .line 64
+    iget-object p0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->sharedData:Landroid/content/SharedPreferences;
+
+    return-object p0
+.end method
+
 .method private checkPermissions()V
     .locals 3
 
-    .line 235
+    .line 242
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->appPermissonsParams:[Ljava/lang/String;
 
     invoke-static {p0, v0}, Lpub/devrel/easypermissions/EasyPermissions;->hasPermissions(Landroid/content/Context;[Ljava/lang/String;)Z
@@ -215,14 +225,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 236
+    .line 243
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     const-string v1, "checkPermissions start"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 237
+    .line 244
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->start()V
 
     goto :goto_0
@@ -230,7 +240,7 @@
     :cond_0
     const-string v0, "\u9700\u8981\u4f4d\u7f6e\u3001\u76f8\u6a5f\u3001\u5132\u5b58\u3001\u96fb\u8a71\u7b49\u6b0a\u9650"
 
-    .line 239
+    .line 246
     iget v1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->APP_PERMISSONS:I
 
     iget-object v2, p0, Ltw/edu/kmu/act/MainPageActivityV2;->appPermissonsParams:[Ljava/lang/String;
@@ -244,7 +254,7 @@
 .method private getResourceString(I)Ljava/lang/String;
     .locals 1
 
-    .line 893
+    .line 911
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -263,10 +273,10 @@
 .method private getToken()V
     .locals 4
 
-    .line 169
+    .line 176
     invoke-static {p0}, Lcom/google/firebase/FirebaseApp;->initializeApp(Landroid/content/Context;)Lcom/google/firebase/FirebaseApp;
 
-    .line 170
+    .line 177
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
@@ -287,14 +297,14 @@
 
     const-string v0, "connectivity"
 
-    .line 928
+    .line 946
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    .line 929
+    .line 947
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object v0
@@ -303,7 +313,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 930
+    .line 948
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
 
     move-result v2
@@ -312,7 +322,7 @@
 
     goto/16 :goto_3
 
-    .line 937
+    .line 955
     :cond_0
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
 
@@ -320,7 +330,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 938
+    .line 956
     sget-object v2, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     const-string v3, "info connected"
@@ -329,7 +339,7 @@
 
     goto :goto_0
 
-    .line 940
+    .line 958
     :cond_1
     sget-object v2, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
@@ -337,7 +347,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 941
+    .line 959
     :goto_0
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isAvailable()Z
 
@@ -345,7 +355,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 945
+    .line 963
     :try_start_0
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
@@ -353,7 +363,7 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 951
+    .line 969
     new-instance v0, Ljava/lang/ProcessBuilder;
 
     new-array v2, v1, [Ljava/lang/String;
@@ -384,12 +394,12 @@
 
     move-result-object v0
 
-    .line 952
+    .line 970
     invoke-virtual {v0, v4}, Ljava/lang/ProcessBuilder;->redirectErrorStream(Z)Ljava/lang/ProcessBuilder;
 
     move-result-object v0
 
-    .line 953
+    .line 971
     invoke-virtual {v0}, Ljava/lang/ProcessBuilder;->start()Ljava/lang/Process;
 
     move-result-object v0
@@ -399,31 +409,31 @@
     :try_start_1
     const-string v2, ""
 
-    .line 957
+    .line 975
     invoke-virtual {v0}, Ljava/lang/Process;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v3
 
-    .line 958
+    .line 976
     invoke-virtual {v0}, Ljava/lang/Process;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v5
 
-    .line 959
+    .line 977
     new-instance v6, Ljava/io/InputStreamReader;
 
     const-string v7, "utf-8"
 
     invoke-direct {v6, v3, v7}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/lang/String;)V
 
-    .line 961
+    .line 979
     sget-object v7, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     const-string v8, "read instream"
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 962
+    .line 980
     :goto_1
     invoke-virtual {v3}, Ljava/io/InputStream;->read()I
 
@@ -433,7 +443,7 @@
 
     if-eq v7, v8, :cond_2
 
-    .line 964
+    .line 982
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -450,17 +460,17 @@
 
     goto :goto_1
 
-    .line 966
+    .line 984
     :cond_2
     invoke-virtual {v5}, Ljava/io/OutputStream;->close()V
 
-    .line 967
+    .line 985
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
 
-    .line 968
+    .line 986
     invoke-virtual {v6}, Ljava/io/InputStreamReader;->close()V
 
-    .line 969
+    .line 987
     sget-object v3, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -481,14 +491,14 @@
 
     const-string v3, "ttl"
 
-    .line 970
+    .line 988
     invoke-virtual {v2, v3}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v2
 
     if-ltz v2, :cond_3
 
-    .line 972
+    .line 990
     sget-object v2, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     const-string v3, "strPing \u5b57\u4e32\u4e2d\u6709 ttl"
@@ -497,7 +507,7 @@
 
     goto :goto_2
 
-    .line 977
+    .line 995
     :cond_3
     sget-object v2, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
@@ -510,7 +520,7 @@
 
     const/4 v4, 0x0
 
-    .line 988
+    .line 1006
     :goto_2
     :try_start_2
     invoke-virtual {v0}, Ljava/lang/Process;->destroy()V
@@ -524,10 +534,10 @@
 
     invoke-virtual {v0}, Ljava/lang/Process;->destroy()V
 
-    .line 989
+    .line 1007
     throw v2
 
-    .line 988
+    .line 1006
     :catch_0
     invoke-virtual {v0}, Ljava/lang/Process;->destroy()V
     :try_end_2
@@ -538,7 +548,7 @@
     :catch_1
     move-exception v0
 
-    .line 993
+    .line 1011
     sget-object v2, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -563,7 +573,7 @@
 
     goto :goto_4
 
-    .line 999
+    .line 1017
     :cond_4
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
@@ -573,7 +583,7 @@
 
     goto :goto_4
 
-    .line 932
+    .line 950
     :cond_5
     :goto_3
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
@@ -591,7 +601,7 @@
 
     const-string v0, ""
 
-    .line 1063
+    .line 1081
     :try_start_0
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->getResources()Landroid/content/res/Resources;
 
@@ -601,12 +611,12 @@
 
     move-result-object v1
 
-    .line 1064
+    .line 1082
     new-instance v2, Ljava/util/HashMap;
 
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
-    .line 1065
+    .line 1083
     iget-object v3, p0, Ltw/edu/kmu/act/MainPageActivityV2;->serverResource:Ltw/edu/kmu/resource/ServerResource;
 
     invoke-virtual {v3, v1, v2}, Ltw/edu/kmu/resource/ServerResource;->getWebServiceDataUsingGet(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
@@ -622,7 +632,7 @@
     :catch_0
     move-exception v1
 
-    .line 1068
+    .line 1086
     sget-object v2, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -645,8 +655,10 @@
 
     invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1071
     :goto_0
+    if-eqz v0, :cond_0
+
+    .line 1089
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v1
@@ -659,17 +671,17 @@
 
     if-nez v1, :cond_0
 
-    .line 1072
+    .line 1090
     iget-object v1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->sharedData:Landroid/content/SharedPreferences;
 
     invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v1
 
-    .line 1073
+    .line 1091
     invoke-interface {v1, p1, v0}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 1074
+    .line 1092
     invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     :cond_0
@@ -681,33 +693,33 @@
 
     const-string v0, ""
 
-    .line 210
+    .line 217
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 212
+    .line 219
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     const-string v1, "\u8a0a\u606f\u901a\u77e5"
 
-    .line 213
+    .line 220
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    .line 214
+    .line 221
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 215
+    .line 222
     invoke-virtual {v0, p1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
@@ -718,12 +730,12 @@
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$2;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
-    .line 216
+    .line 223
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    .line 226
+    .line 233
     invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     :cond_0
@@ -735,7 +747,7 @@
 .method public checkGCMMsg(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
 
-    .line 199
+    .line 206
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -768,14 +780,14 @@
 
     const-string p2, "999"
 
-    .line 201
+    .line 208
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 203
+    .line 210
     invoke-direct {p0, p3}, Ltw/edu/kmu/act/MainPageActivityV2;->showMsg(Ljava/lang/String;)V
 
     :cond_0
@@ -785,7 +797,7 @@
 .method public checkVersion(Ljava/lang/String;)V
     .locals 5
 
-    .line 397
+    .line 404
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -804,26 +816,26 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 399
+    .line 406
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->isFinishing()Z
 
     move-result v0
 
     if-nez v0, :cond_4
 
-    .line 401
+    .line 408
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     invoke-virtual {v0, p0}, Ltw/edu/kmu/act/MyApplication;->getVersionName(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 402
+    .line 409
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f0c008b
+    const v2, 0x7f0c0089
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -836,7 +848,7 @@
 
     const-string v4, ""
 
-    .line 406
+    .line 413
     invoke-virtual {v0, v3, v4}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v0
@@ -852,7 +864,7 @@
 
     const-string v4, ""
 
-    .line 407
+    .line 414
     invoke-virtual {p1, v3, v4}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p1
@@ -874,7 +886,7 @@
     :goto_0
     if-ge v0, p1, :cond_4
 
-    .line 414
+    .line 421
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {p1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
@@ -890,7 +902,7 @@
     :cond_0
     const-string v0, "\u6700\u65b0\u7248\u672c"
 
-    .line 415
+    .line 422
     :goto_1
     invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -928,7 +940,7 @@
 
     goto :goto_2
 
-    .line 416
+    .line 423
     :goto_3
     invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -950,7 +962,7 @@
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$7;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
-    .line 417
+    .line 424
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
@@ -971,12 +983,12 @@
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$6;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
-    .line 428
+    .line 435
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    .line 434
+    .line 441
     invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     :cond_4
@@ -986,7 +998,7 @@
 .method protected getLayoutId()I
     .locals 2
 
-    .line 1146
+    .line 1218
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->currentLocale:Ljava/lang/String;
 
     const-string v1, "en"
@@ -997,12 +1009,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a0082
+    const v0, 0x7f0a0084
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0a0084
+    const v0, 0x7f0a0086
 
     :goto_0
     return v0
@@ -1011,256 +1023,256 @@
 .method public initBtn()V
     .locals 2
 
-    const v0, 0x7f080052
+    const v0, 0x7f080051
 
-    .line 612
+    .line 619
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 614
+    .line 621
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$9;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$9;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f08005c
+    const v0, 0x7f08005b
 
-    .line 624
+    .line 631
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 626
+    .line 633
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$10;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$10;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080061
+    const v0, 0x7f080060
 
-    .line 636
+    .line 643
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 638
+    .line 645
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$11;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$11;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080062
+    const v0, 0x7f080061
 
-    .line 666
+    .line 673
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 668
+    .line 675
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$12;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$12;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080065
+    const v0, 0x7f080064
 
-    .line 687
+    .line 694
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 689
+    .line 696
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$13;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$13;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080066
+    const v0, 0x7f080065
 
-    .line 705
+    .line 712
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 707
+    .line 714
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$14;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$14;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080069
+    const v0, 0x7f080068
 
-    .line 722
+    .line 729
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 724
+    .line 731
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$15;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$15;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080054
+    const v0, 0x7f080053
 
-    .line 737
+    .line 744
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 739
+    .line 746
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$16;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$16;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080067
+    const v0, 0x7f080066
 
-    .line 750
+    .line 757
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 752
+    .line 759
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$17;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$17;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080053
+    const v0, 0x7f080052
 
-    .line 761
+    .line 768
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 763
+    .line 770
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$18;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$18;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080068
+    const v0, 0x7f080067
 
-    .line 784
+    .line 791
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 786
+    .line 793
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$19;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$19;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080055
+    const v0, 0x7f080054
 
-    .line 795
+    .line 807
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 797
+    .line 809
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$20;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$20;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080056
+    const v0, 0x7f080055
 
-    .line 817
+    .line 835
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 819
+    .line 837
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$21;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$21;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080057
+    const v0, 0x7f080056
 
-    .line 845
+    .line 863
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 847
+    .line 865
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$22;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$22;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080058
+    const v0, 0x7f080057
 
-    .line 858
+    .line 876
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 860
+    .line 878
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$23;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$23;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f080059
+    const v0, 0x7f080058
 
-    .line 871
+    .line 889
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    .line 873
+    .line 891
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$24;
 
     invoke-direct {v1, p0}, Ltw/edu/kmu/act/MainPageActivityV2$24;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
@@ -1273,16 +1285,16 @@
 .method public initLogo()V
     .locals 2
 
-    const v0, 0x7f08024e
+    const v0, 0x7f08025b
 
-    .line 307
+    .line 314
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 308
+    .line 315
     new-instance v1, Ltw/edu/kmu/act/MainPageActivityV2$5;
 
     invoke-direct {v1, p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2$5;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;Landroid/widget/ImageView;)V
@@ -1297,64 +1309,64 @@
 
     const/4 v0, 0x0
 
-    .line 445
+    .line 452
     iput-boolean v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->isNetReg:Z
 
-    .line 446
+    .line 453
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
     iput-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->mFilter:Landroid/content/IntentFilter;
 
-    .line 447
+    .line 454
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->mFilter:Landroid/content/IntentFilter;
 
     const-string v1, "android.net.conn.CONNECTIVITY_CHANGE"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 448
+    .line 455
     new-instance v0, Ltw/edu/kmu/receiver/NetworkReceiver;
 
     invoke-direct {v0}, Ltw/edu/kmu/receiver/NetworkReceiver;-><init>()V
 
     iput-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->mReceiver:Ltw/edu/kmu/receiver/NetworkReceiver;
 
-    .line 450
+    .line 457
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
     iput-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->configFilter:Landroid/content/IntentFilter;
 
-    .line 451
+    .line 458
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->configFilter:Landroid/content/IntentFilter;
 
     const-string v1, "systemConfig"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 452
+    .line 459
     new-instance v0, Ltw/edu/kmu/act/MainPageActivityV2$ConfigReceiver;
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/MainPageActivityV2$ConfigReceiver;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
     iput-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->configReceiver:Ltw/edu/kmu/act/MainPageActivityV2$ConfigReceiver;
 
-    .line 454
+    .line 461
     iget-boolean v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->isNetReg:Z
 
     if-nez v0, :cond_0
 
-    .line 458
+    .line 465
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->mReceiver:Ltw/edu/kmu/receiver/NetworkReceiver;
 
     iget-object v1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->mFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {p0, v0, v1}, Ltw/edu/kmu/act/MainPageActivityV2;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 459
+    .line 466
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->configReceiver:Ltw/edu/kmu/act/MainPageActivityV2$ConfigReceiver;
 
     iget-object v1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->configFilter:Landroid/content/IntentFilter;
@@ -1363,7 +1375,7 @@
 
     const/4 v0, 0x1
 
-    .line 460
+    .line 467
     iput-boolean v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->isNetReg:Z
 
     :cond_0
@@ -1381,21 +1393,21 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
 
-    .line 100
+    .line 103
     invoke-super {p0, p1}, Ltw/edu/kmu/act/BasicActivity;->onCreate(Landroid/os/Bundle;)V
 
     const-string p1, "Data"
 
     const/4 v0, 0x0
 
-    .line 102
+    .line 105
     invoke-virtual {p0, p1, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p1
 
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->sharedData:Landroid/content/SharedPreferences;
 
-    .line 104
+    .line 107
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->getApplication()Landroid/app/Application;
 
     move-result-object p1
@@ -1404,7 +1416,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    .line 106
+    .line 109
     iget-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->sharedData:Landroid/content/SharedPreferences;
@@ -1419,7 +1431,7 @@
 
     iput-object v0, p1, Ltw/edu/kmu/act/MyApplication;->UserID:Ljava/lang/String;
 
-    .line 110
+    .line 113
     iget-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->sharedData:Landroid/content/SharedPreferences;
@@ -1434,7 +1446,7 @@
 
     iput-object v0, p1, Ltw/edu/kmu/act/MyApplication;->account:Ljava/lang/String;
 
-    .line 113
+    .line 116
     invoke-static {}, Lcom/google/firebase/iid/FirebaseInstanceId;->getInstance()Lcom/google/firebase/iid/FirebaseInstanceId;
 
     move-result-object p1
@@ -1443,7 +1455,7 @@
 
     move-result-object p1
 
-    .line 114
+    .line 117
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1462,12 +1474,12 @@
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 116
+    .line 119
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const v0, 0x7f0c00e5
+    const v0, 0x7f0c00e3
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1475,9 +1487,9 @@
 
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2;->setTitle(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f08014f
+    const p1, 0x7f080159
 
-    .line 118
+    .line 121
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -1486,49 +1498,75 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->progressbar:Landroid/widget/ProgressBar;
 
-    .line 120
+    .line 123
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->setBtnLy()V
 
-    .line 122
+    .line 125
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->initBtn()V
 
-    .line 124
+    .line 127
     invoke-direct {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->checkPermissions()V
+
+    const-string p1, "107001110"
+
+    .line 129
+    invoke-static {p1, p0}, Ltw/edu/kmu/tool/EncodeTool;->encrypt(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 130
+    sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "encodeString is: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method
 
 .method protected onDestroy()V
-    .locals 3
+    .locals 2
 
-    .line 1153
+    .line 1225
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     const-string v1, "onDestroy Start"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1158
+    .line 1230
     iget-boolean v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->isNetReg:Z
-
-    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 1162
+    .line 1234
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->mReceiver:Ltw/edu/kmu/receiver/NetworkReceiver;
 
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 1163
+    .line 1235
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->configReceiver:Ltw/edu/kmu/act/MainPageActivityV2$ConfigReceiver;
 
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 1164
-    iput-boolean v1, p0, Ltw/edu/kmu/act/MainPageActivityV2;->isNetReg:Z
+    const/4 v0, 0x0
 
-    .line 1167
+    .line 1236
+    iput-boolean v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->isNetReg:Z
+
+    .line 1239
     :cond_0
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->sharedData:Landroid/content/SharedPreferences;
 
@@ -1536,15 +1574,10 @@
 
     move-result-object v0
 
-    const-string v2, "isLogin"
-
-    .line 1168
-    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    .line 1169
+    .line 1241
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    .line 1170
+    .line 1242
     invoke-super {p0}, Ltw/edu/kmu/act/BasicActivity;->onDestroy()V
 
     return-void
@@ -1553,20 +1586,20 @@
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 4
 
-    .line 189
+    .line 196
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     const-string v1, "onNewIntent start"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 190
+    .line 197
     invoke-super {p0, p1}, Ltw/edu/kmu/act/BasicActivity;->onNewIntent(Landroid/content/Intent;)V
 
-    .line 191
+    .line 198
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/MainPageActivityV2;->setIntent(Landroid/content/Intent;)V
 
-    .line 192
+    .line 199
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
@@ -1577,7 +1610,7 @@
 
     move-result-object v0
 
-    .line 193
+    .line 200
     sget-object v1, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1596,7 +1629,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 194
+    .line 201
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v1
@@ -1625,14 +1658,14 @@
 .method protected onPause()V
     .locals 2
 
-    .line 1187
+    .line 1270
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     const-string v1, "onPause"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1188
+    .line 1271
     invoke-super {p0}, Ltw/edu/kmu/act/BasicActivity;->onPause()V
 
     return-void
@@ -1649,7 +1682,7 @@
         }
     .end annotation
 
-    .line 255
+    .line 262
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1678,21 +1711,21 @@
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 262
+    .line 269
     invoke-static {p0, p2}, Lpub/devrel/easypermissions/EasyPermissions;->somePermissionPermanentlyDenied(Landroid/app/Activity;Ljava/util/List;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 265
+    .line 272
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {p1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     const-string p2, "\u6b0a\u9650\u63d0\u793a"
 
-    .line 266
+    .line 273
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
@@ -1701,9 +1734,9 @@
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v0, 0x7f0c008b
+    const v0, 0x7f0c0089
 
-    .line 267
+    .line 274
     invoke-direct {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->getResourceString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -1728,7 +1761,7 @@
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/MainPageActivityV2$4;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
-    .line 268
+    .line 275
     invoke-virtual {p1, p2, v0}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
@@ -1739,12 +1772,12 @@
 
     invoke-direct {v0, p0}, Ltw/edu/kmu/act/MainPageActivityV2$3;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
 
-    .line 274
+    .line 281
     invoke-virtual {p1, p2, v0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    .line 285
+    .line 292
     invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object p1
@@ -1753,7 +1786,7 @@
 
     goto :goto_0
 
-    .line 289
+    .line 296
     :cond_0
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->finish()V
 
@@ -1776,7 +1809,7 @@
         }
     .end annotation
 
-    .line 298
+    .line 305
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1805,7 +1838,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 299
+    .line 306
     iget v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->APP_PERMISSONS:I
 
     if-ne p1, v0, :cond_0
@@ -1820,7 +1853,7 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 300
+    .line 307
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->start()V
 
     :cond_0
@@ -1830,10 +1863,10 @@
 .method public onRequestPermissionsResult(I[Ljava/lang/String;[I)V
     .locals 3
 
-    .line 246
+    .line 253
     invoke-super {p0, p1, p2, p3}, Ltw/edu/kmu/act/BasicActivity;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
 
-    .line 248
+    .line 255
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1862,7 +1895,7 @@
 
     const/4 v0, 0x1
 
-    .line 250
+    .line 257
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -1875,39 +1908,86 @@
 .end method
 
 .method protected onResume()V
-    .locals 2
+    .locals 6
 
-    .line 1177
+    .line 1249
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     const-string v1, "onResume"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1178
+    .line 1250
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->progressbar:Landroid/widget/ProgressBar;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
-    .line 1179
+    .line 1251
     invoke-super {p0}, Ltw/edu/kmu/act/BasicActivity;->onResume()V
 
-    .line 1180
+    .line 1252
     new-instance v0, Ltw/edu/kmu/act/MainPageActivityV2$RenewBeaconData;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p0, v1}, Ltw/edu/kmu/act/MainPageActivityV2$RenewBeaconData;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;Ltw/edu/kmu/act/MainPageActivityV2$1;)V
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
-    .line 1181
-    new-array v1, v1, [Ljava/lang/Integer;
+    .line 1253
+    new-array v3, v2, [Ljava/lang/Integer;
 
-    invoke-virtual {v0, v1}, Ltw/edu/kmu/act/MainPageActivityV2$RenewBeaconData;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v3}, Ltw/edu/kmu/act/MainPageActivityV2$RenewBeaconData;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
+    .line 1255
+    iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->globalVariable:Ltw/edu/kmu/act/MyApplication;
+
+    iget-object v3, p0, Ltw/edu/kmu/act/MainPageActivityV2;->sharedData:Landroid/content/SharedPreferences;
+
+    const-string v4, "token"
+
+    const-string v5, ""
+
+    invoke-interface {v3, v4, v5}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    iput-object v3, v0, Ltw/edu/kmu/act/MyApplication;->token:Ljava/lang/String;
+
+    const-string v0, ""
+
+    .line 1259
+    iget-object v3, p0, Ltw/edu/kmu/act/MainPageActivityV2;->globalVariable:Ltw/edu/kmu/act/MyApplication;
+
+    iget-object v3, v3, Ltw/edu/kmu/act/MyApplication;->token:Ljava/lang/String;
+
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 1260
+    new-instance v0, Ltw/edu/kmu/act/MainPageActivityV2$CheckToken;
+
+    invoke-direct {v0, p0, v1}, Ltw/edu/kmu/act/MainPageActivityV2$CheckToken;-><init>(Ltw/edu/kmu/act/MainPageActivityV2;Ltw/edu/kmu/act/MainPageActivityV2$1;)V
+
+    .line 1261
+    new-array v1, v2, [Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ltw/edu/kmu/act/MainPageActivityV2$CheckToken;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+
+    goto :goto_0
+
+    .line 1263
+    :cond_0
+    iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->globalVariable:Ltw/edu/kmu/act/MyApplication;
+
+    iput-boolean v2, v0, Ltw/edu/kmu/act/MyApplication;->isLoginV2:Z
+
+    :goto_0
     return-void
 .end method
 
@@ -1916,7 +1996,7 @@
 
     const-string v0, ""
 
-    .line 1011
+    .line 1029
     :try_start_0
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
@@ -1940,7 +2020,7 @@
 
     move-result-object p1
 
-    .line 1012
+    .line 1030
     new-instance v1, Ljava/io/BufferedReader;
 
     new-instance v2, Ljava/io/InputStreamReader;
@@ -1955,25 +2035,25 @@
 
     const/16 p1, 0x1000
 
-    .line 1014
+    .line 1032
     new-array p1, p1, [C
 
-    .line 1015
+    .line 1033
     new-instance v2, Ljava/lang/StringBuffer;
 
     invoke-direct {v2}, Ljava/lang/StringBuffer;-><init>()V
 
     const/16 v3, 0x40
 
-    .line 1016
+    .line 1034
     new-array v3, v3, [Ljava/lang/String;
 
     const/16 v3, 0x8
 
-    .line 1017
+    .line 1035
     new-array v3, v3, [Ljava/lang/String;
 
-    .line 1018
+    .line 1036
     :goto_0
     invoke-virtual {v1, p1}, Ljava/io/BufferedReader;->read([C)I
 
@@ -1983,16 +2063,16 @@
 
     const/4 v4, 0x0
 
-    .line 1019
+    .line 1037
     invoke-virtual {v2, p1, v4, v3}, Ljava/lang/StringBuffer;->append([CII)Ljava/lang/StringBuffer;
 
     goto :goto_0
 
-    .line 1020
+    .line 1038
     :cond_0
     invoke-virtual {v1}, Ljava/io/BufferedReader;->close()V
 
-    .line 1021
+    .line 1039
     invoke-virtual {v2}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -2005,7 +2085,7 @@
 
     const/4 v1, 0x1
 
-    .line 1022
+    .line 1040
     aget-object p1, p1, v1
 
     const-string v2, "time="
@@ -2014,12 +2094,12 @@
 
     move-result-object p1
 
-    .line 1025
+    .line 1043
     aget-object v2, p1, v1
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 1026
+    .line 1044
     :try_start_1
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
@@ -2055,7 +2135,7 @@
 
     move-object v2, v0
 
-    .line 1029
+    .line 1047
     :goto_1
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
@@ -2064,7 +2144,7 @@
 
     const-string v0, ""
 
-    .line 1031
+    .line 1049
     invoke-virtual {v2, p1, v0}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -2079,7 +2159,7 @@
 .method public setBtnLy()V
     .locals 8
 
-    .line 577
+    .line 584
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->display:Landroid/view/Display;
 
     invoke-virtual {v0}, Landroid/view/Display;->getHeight()I
@@ -2143,7 +2223,7 @@
     :goto_1
     if-gt v3, v2, :cond_1
 
-    .line 589
+    .line 596
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
@@ -2178,14 +2258,14 @@
 
     check-cast v4, Landroid/widget/LinearLayout;
 
-    .line 590
+    .line 597
     invoke-virtual {v4}, Landroid/widget/LinearLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v5
 
     check-cast v5, Landroid/widget/LinearLayout$LayoutParams;
 
-    .line 591
+    .line 598
     iget-object v6, p0, Ltw/edu/kmu/act/MainPageActivityV2;->display:Landroid/view/Display;
 
     invoke-virtual {v6}, Landroid/view/Display;->getWidth()I
@@ -2194,7 +2274,7 @@
 
     iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
-    .line 592
+    .line 599
     iget-object v6, p0, Ltw/edu/kmu/act/MainPageActivityV2;->display:Landroid/view/Display;
 
     invoke-virtual {v6}, Landroid/view/Display;->getWidth()I
@@ -2209,7 +2289,7 @@
 
     iput v6, v5, Landroid/widget/LinearLayout$LayoutParams;->height:I
 
-    .line 593
+    .line 600
     invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     add-int/lit8 v3, v3, 0x1
@@ -2222,7 +2302,7 @@
 
     if-gt v1, v2, :cond_2
 
-    .line 600
+    .line 607
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -2257,14 +2337,14 @@
 
     check-cast v2, Landroid/widget/Button;
 
-    .line 601
+    .line 608
     invoke-virtual {v2}, Landroid/widget/Button;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v3
 
     check-cast v3, Landroid/widget/RelativeLayout$LayoutParams;
 
-    .line 602
+    .line 609
     iget-object v4, p0, Ltw/edu/kmu/act/MainPageActivityV2;->display:Landroid/view/Display;
 
     invoke-virtual {v4}, Landroid/view/Display;->getWidth()I
@@ -2275,7 +2355,7 @@
 
     iput v4, v3, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
-    .line 603
+    .line 610
     iget-object v4, p0, Ltw/edu/kmu/act/MainPageActivityV2;->display:Landroid/view/Display;
 
     invoke-virtual {v4}, Landroid/view/Display;->getWidth()I
@@ -2290,7 +2370,7 @@
 
     iput v4, v3, Landroid/widget/RelativeLayout$LayoutParams;->height:I
 
-    .line 604
+    .line 611
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     add-int/lit8 v1, v1, 0x1
@@ -2304,10 +2384,10 @@
 .method public start()V
     .locals 4
 
-    .line 132
+    .line 139
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->initReceiver()V
 
-    .line 134
+    .line 141
     new-instance v0, Landroid/os/StrictMode$ThreadPolicy$Builder;
 
     invoke-direct {v0}, Landroid/os/StrictMode$ThreadPolicy$Builder;-><init>()V
@@ -2320,10 +2400,10 @@
 
     move-result-object v0
 
-    .line 135
+    .line 142
     invoke-static {v0}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
 
-    .line 137
+    .line 144
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
@@ -2334,12 +2414,12 @@
 
     iput-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->bundle:Landroid/os/Bundle;
 
-    .line 140
+    .line 147
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->bundle:Landroid/os/Bundle;
 
     if-eqz v0, :cond_0
 
-    .line 142
+    .line 149
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->bundle:Landroid/os/Bundle;
 
     const-string v1, "functionIndex"
@@ -2366,7 +2446,7 @@
 
     invoke-virtual {p0, v0, v1, v2}, Ltw/edu/kmu/act/MainPageActivityV2;->checkGCMMsg(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 150
+    .line 157
     :cond_0
     new-instance v0, Ltw/edu/kmu/act/MainPageActivityV2$VersionChecker;
 
@@ -2376,7 +2456,7 @@
 
     const/4 v1, 0x1
 
-    .line 151
+    .line 158
     new-array v1, v1, [Ljava/lang/Integer;
 
     const/4 v2, 0x0
@@ -2391,15 +2471,15 @@
 
     invoke-virtual {v0, v1}, Ltw/edu/kmu/act/MainPageActivityV2$VersionChecker;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 155
+    .line 162
     iget-boolean v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->isPad:Z
 
     if-eqz v0, :cond_1
 
-    .line 156
+    .line 163
     invoke-virtual {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->initLogo()V
 
-    .line 159
+    .line 166
     :cond_1
     invoke-direct {p0}, Ltw/edu/kmu/act/MainPageActivityV2;->getToken()V
 
@@ -2409,14 +2489,14 @@
 .method protected updateBg()V
     .locals 5
 
-    .line 900
+    .line 918
     sget-object v0, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     const-string v1, "updateBg start"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 902
+    .line 920
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->sharedData:Landroid/content/SharedPreferences;
 
     const/4 v1, 0x0
@@ -2425,14 +2505,14 @@
 
     const-string v0, "Data"
 
-    .line 904
+    .line 922
     invoke-virtual {p0, v0, v1}, Ltw/edu/kmu/act/MainPageActivityV2;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
     iput-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->sharedData:Landroid/content/SharedPreferences;
 
-    .line 907
+    .line 925
     :cond_0
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2;->sharedData:Landroid/content/SharedPreferences;
 
@@ -2444,7 +2524,7 @@
 
     move-result-object v0
 
-    .line 908
+    .line 926
     iget-object v2, p0, Ltw/edu/kmu/act/MainPageActivityV2;->sharedData:Landroid/content/SharedPreferences;
 
     const-string v3, "updateComplete"
@@ -2455,7 +2535,7 @@
 
     const-string v2, "1.0.1"
 
-    .line 909
+    .line 927
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -2464,16 +2544,16 @@
 
     if-eqz v1, :cond_1
 
-    const v0, 0x7f080168
+    const v0, 0x7f080175
 
-    .line 911
+    .line 929
     invoke-virtual {p0, v0}, Ltw/edu/kmu/act/MainPageActivityV2;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 912
+    .line 930
     invoke-virtual {v0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
@@ -2482,12 +2562,12 @@
 
     const-string v1, "main_page_bg.png"
 
-    .line 913
+    .line 931
     invoke-static {p0, v1}, Ltw/edu/kmu/tool/ImageTool;->getBitmapFromStorage(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    .line 914
+    .line 932
     sget-object v2, Ltw/edu/kmu/act/MainPageActivityV2;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -2508,7 +2588,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 916
+    .line 934
     new-instance v2, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-direct {v2, v1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/graphics/Bitmap;)V

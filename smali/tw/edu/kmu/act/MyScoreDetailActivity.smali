@@ -556,7 +556,7 @@
 
     iget-object v4, p0, Ltw/edu/kmu/act/MyScoreDetailActivity;->serverDataList:Ljava/util/ArrayList;
 
-    const v5, 0x7f0a008e
+    const v5, 0x7f0a0090
 
     const/4 v2, 0x2
 
@@ -591,8 +591,8 @@
 
     :array_0
     .array-data 4
-        0x7f0801c7
-        0x7f080238
+        0x7f0801d5
+        0x7f080245
     .end array-data
 .end method
 
@@ -601,7 +601,7 @@
 .method protected getLayoutId()I
     .locals 1
 
-    const v0, 0x7f0a008d
+    const v0, 0x7f0a008f
 
     return v0
 .end method
@@ -650,7 +650,7 @@
 
     iput-object p1, p0, Ltw/edu/kmu/act/MyScoreDetailActivity;->globalVariable:Ltw/edu/kmu/act/MyApplication;
 
-    const p1, 0x7f08011b
+    const p1, 0x7f080125
 
     .line 50
     invoke-virtual {p0, p1}, Ltw/edu/kmu/act/MyScoreDetailActivity;->findViewById(I)Landroid/view/View;
@@ -666,7 +666,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c003e
+    const v0, 0x7f0c003c
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

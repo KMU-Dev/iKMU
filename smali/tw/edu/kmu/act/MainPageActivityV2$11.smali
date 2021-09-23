@@ -25,7 +25,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/MainPageActivityV2;)V
     .locals 0
 
-    .line 638
+    .line 645
     iput-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$11;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 642
+    .line 649
     iget-object p1, p0, Ltw/edu/kmu/act/MainPageActivityV2$11;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-static {p1}, Ltw/edu/kmu/act/MainPageActivityV2;->access$500(Ltw/edu/kmu/act/MainPageActivityV2;)Landroid/widget/ProgressBar;
@@ -49,7 +49,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
-    .line 643
+    .line 650
     new-instance p1, Landroid/content/Intent;
 
     invoke-direct {p1}, Landroid/content/Intent;-><init>()V
@@ -66,7 +66,7 @@
 
     move-result-object p1
 
-    .line 644
+    .line 651
     iget-object v0, p0, Ltw/edu/kmu/act/MainPageActivityV2$11;->this$0:Ltw/edu/kmu/act/MainPageActivityV2;
 
     invoke-virtual {v0, p1}, Ltw/edu/kmu/act/MainPageActivityV2;->startActivity(Landroid/content/Intent;)V

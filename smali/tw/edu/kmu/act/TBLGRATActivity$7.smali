@@ -29,7 +29,7 @@
 .method constructor <init>(Ltw/edu/kmu/act/TBLGRATActivity;Landroid/widget/RadioGroup;Ljava/lang/String;)V
     .locals 0
 
-    .line 503
+    .line 505
     iput-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$7;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
 
     iput-object p2, p0, Ltw/edu/kmu/act/TBLGRATActivity$7;->val$radioGroup:Landroid/widget/RadioGroup;
@@ -46,7 +46,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 4
 
-    .line 507
+    .line 509
     iget-object p1, p0, Ltw/edu/kmu/act/TBLGRATActivity$7;->val$radioGroup:Landroid/widget/RadioGroup;
 
     iget-object v0, p0, Ltw/edu/kmu/act/TBLGRATActivity$7;->val$radioGroup:Landroid/widget/RadioGroup;
@@ -61,7 +61,7 @@
 
     check-cast p1, Landroid/widget/RadioButton;
 
-    .line 508
+    .line 510
     new-instance v0, Ltw/edu/kmu/act/TBLGRATActivity$GetPreViewData;
 
     iget-object v1, p0, Ltw/edu/kmu/act/TBLGRATActivity$7;->this$0:Ltw/edu/kmu/act/TBLGRATActivity;
@@ -72,7 +72,7 @@
 
     const/4 v1, 0x2
 
-    .line 509
+    .line 511
     new-array v1, v1, [Ljava/lang/String;
 
     iget-object v2, p0, Ltw/edu/kmu/act/TBLGRATActivity$7;->val$subQuOrder:Ljava/lang/String;
@@ -83,7 +83,7 @@
 
     if-eqz p1, :cond_0
 
-    const v2, 0x7f08004f
+    const v2, 0x7f08004e
 
     invoke-virtual {p1, v2}, Landroid/widget/RadioButton;->getTag(I)Ljava/lang/Object;
 
