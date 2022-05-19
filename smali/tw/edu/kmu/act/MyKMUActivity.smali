@@ -886,7 +886,7 @@
 .end method
 
 .method private showBeaconClassDialog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 8
+    .locals 9
 
     .line 1343
     sget-object v0, Ltw/edu/kmu/act/MyKMUActivity;->TAG:Ljava/lang/String;
@@ -1028,9 +1028,14 @@
 
     move-object v6, p4
 
-    invoke-direct/range {v1 .. v6}, Ltw/edu/kmu/act/MyKMUActivity$32;-><init>(Ltw/edu/kmu/act/MyKMUActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    # TODO: pass classRoom to beaconClassDialog positiveButton OnClickListener
+    invoke-direct {p0, v3}, Ltw/edu/kmu/act/MyKMUActivity;->getClassRoom(Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-virtual {v0, p3, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    move-result-object v7
+
+    invoke-direct/range {v1 .. v7}, Ltw/edu/kmu/act/MyKMUActivity$32;-><init>(Ltw/edu/kmu/act/MyKMUActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v0, p3, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     const p1, 0x7f0c00f9
 
@@ -1863,17 +1868,12 @@
 
     move-result v0
 
-    if-nez v0, :cond_0
-
-    return-void
-
     .line 800
-    :cond_0
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->beaconManager:Lcom/estimote/sdk/BeaconManager;
 
     invoke-virtual {v0}, Lcom/estimote/sdk/BeaconManager;->isBluetoothEnabled()Z
 
-    move-result v0
+    const/4 v0, 0x1
 
     if-nez v0, :cond_1
 
@@ -3535,9 +3535,12 @@
 .end method
 
 .method public startIRSEvent(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 3
+    .locals 4
 
     .line 952
+    # preserve classRoom
+    move-object v3, p1
+
     iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->dialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
@@ -3620,10 +3623,12 @@
 
     const-string v0, ""
 
+    # TODO: start crack bluetooth
     .line 972
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v0
+    # Always match condition -> :cond_4
+    const/4 v0, 0x1
 
     if-nez v0, :cond_4
 
@@ -3632,7 +3637,8 @@
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
-    move-result p1
+    # Always match condition -> not :cond_3, goto :goto_0
+    const/4 p1, 0x1
 
     if-eqz p1, :cond_3
 
@@ -3759,6 +3765,12 @@
     .line 1006
     iget-object p3, p0, Ltw/edu/kmu/act/MyKMUActivity;->classRoomList:Ljava/util/ArrayList;
 
+    new-instance p3, Ljava/util/ArrayList;
+
+    invoke-direct {p3}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-virtual {p3, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     invoke-virtual {p1, p2, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
     .line 1014
@@ -3793,4 +3805,65 @@
     invoke-interface/range {v1 .. v7}, Ljava/util/concurrent/ScheduledExecutorService;->scheduleAtFixedRate(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
 
     return-void
+.end method
+
+# TODO: create method getClassRoom(String classId):String
+.method private getClassRoom(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
+
+    iget-object v0, p0, Ltw/edu/kmu/act/MyKMUActivity;->classDataList:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    # while variables: v0 -> Iterator, v1 -> HashMap<String, String>
+    # while condition start
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0 # while condition end
+
+    # while body start
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/HashMap;
+
+    const-string v2, "classId"
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String; # v2 -> classData.get("classId"): String
+
+    # if condition start
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1 # if condition end
+
+    # if body start
+    const-string v2, "classRoom"
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String; # v2 -> classData.get("classRoom"): String
+
+    return-object v2
+
+    :cond_1 # if body end
+    goto :goto_0 # while body end
+
+    :cond_0
+    const-string v0, ""
+
+    return-object v0
 .end method
